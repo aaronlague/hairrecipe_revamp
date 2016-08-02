@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AttributeRouting.Web.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,35 +7,26 @@ using System.Web.Mvc;
 
 namespace hairrecipe.Controllers
 {
-    public class ProductController : Controller
+    public class HomeController : Controller
     {
         //
-        // GET: /Product/
+        // GET: /Home/
 
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult Booster()
+        [Route("About")]
+        public ActionResult About()
         {
             return View();
         }
 
-        public ActionResult Apricot()
+        [Route("Contact")]
+        public ActionResult Contact()
         {
             return View();
         }
-
-        public ActionResult Kiwi()
-        {
-            return View();
-        }
-
-        public ActionResult Mint()
-        {
-            return View();
-        }
-
     }
 }

@@ -145,11 +145,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AboutController.cs" />
-    <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Controllers\SPController.cs" />
+    <Compile Include="Controllers\sp\SpController.cs" />
+    <Compile Include="Controllers\sp\SpProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -257,18 +256,20 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Layout.Mobile.cshtml" />
-    <Content Include="Views\SP\Index.cshtml" />
-    <Content Include="Views\Index\Index.cshtml" />
-    <Content Include="Views\SP\About.cshtml" />
-    <Content Include="Views\About\Index.cshtml" />
-    <Content Include="Views\SP\Contact.cshtml" />
-    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Product.cshtml" />
+    <Content Include="Views\Product\Booster.cshtml" />
+    <Content Include="Views\Product\Apricot.cshtml" />
+    <Content Include="Views\Product\Kiwi.cshtml" />
+    <Content Include="Views\Product\Mint.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\booster.cshtml" />
-    <Content Include="Views\SP\product\Booster.cshtml" />
-    <Content Include="Views\Product\apricot.cshtml" />
-    <Content Include="Views\SP\product\Apricot.cshtml" />
-    <Content Include="Views\SP\Product.cshtml" />
+    <Content Include="Views\Sp\Index.cshtml" />
+    <Content Include="Views\Sp\About.cshtml" />
+    <Content Include="Views\Sp\Contact.cshtml" />
+    <Content Include="Views\SpProduct\Index.cshtml" />
+    <Content Include="Views\SpProduct\Booster.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
