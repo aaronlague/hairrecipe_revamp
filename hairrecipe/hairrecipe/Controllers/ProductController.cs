@@ -13,27 +13,70 @@ namespace hairrecipe.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Index", "SpProduct");
+
+            } else {
+
+                return View();
+            }
         }
 
         public ActionResult Booster()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Booster", "SpProduct");
+
+            }
+            else
+            {
+
+                return View();
+            }
         }
 
         public ActionResult Apricot()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Apricot", "SpProduct");
+
+            }
+            else
+            {
+
+                return View();
+            }
         }
 
         public ActionResult Kiwi()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Kiwi", "SpProduct");
+
+            }
+            else
+            {
+
+                return View();
+            }
         }
 
         public ActionResult Mint()
         {
-            return View();
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Mint", "SpProduct");
+
+            }
+            else
+            {
+
+                return View();
+            }
         }
 
     }

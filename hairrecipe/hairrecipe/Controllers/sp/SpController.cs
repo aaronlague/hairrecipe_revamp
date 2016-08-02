@@ -14,19 +14,43 @@ namespace hairrecipe.Controllers.sp
 
         public ActionResult Index()
         {
-            return View();
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Index", "Home");
+
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [Route("sp/about")]
         public ActionResult About()
         {
-            return View();
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("About", "Home");
+
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [Route("sp/contact")]
         public ActionResult Contact()
         {
-            return View();
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Contact", "Home");
+
+            }
+            else
+            {
+                return View();
+            }
         }
 
     }
