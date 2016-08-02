@@ -1,0 +1,9 @@
+
+# Created by https://www.gitignore.io/api/c
+
+### C ###
+
+*.dll
+/bin
+/packages
+/obj
