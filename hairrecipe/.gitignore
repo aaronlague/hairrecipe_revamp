@@ -4,6 +4,6 @@
 ### C ###
 
 *.dll
-/bin
-/packages
-/obj
+bin
+packages
+obj
