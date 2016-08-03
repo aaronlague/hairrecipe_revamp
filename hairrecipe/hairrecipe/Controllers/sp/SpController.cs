@@ -53,5 +53,34 @@ namespace hairrecipe.Controllers.sp
             }
         }
 
+        [Route("sp/faq")]
+        public ActionResult Faq()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Faq", "Home");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
+
+        [Route("sp/cm")]
+        public ActionResult Cm()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Cm", "Home");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
     }
 }

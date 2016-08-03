@@ -53,6 +53,10 @@
       <HintPath>..\packages\AttributeRouting.3.5.6\lib\net40\AttributeRouting.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FiftyOne.Foundation, Version=3.2.9.1, Culture=neutral, PublicKeyToken=e0b3a8da0bbce49c, processorArchitecture=MSIL">
+      <HintPath>..\packages\51Degrees.mobi.3.2.9.1\lib\NET40\FiftyOne.Foundation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,12 +149,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DiagnosisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\sp\SpController.cs" />
+    <Compile Include="Controllers\sp\SpDiagnosisController.cs" />
     <Compile Include="Controllers\sp\SpProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Infrastructure\LegacyRoute.cs" />
+    <Compile Include="Infrastructure\UrlRequests.cs" />
+    <Compile Include="Mobile\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -225,7 +237,10 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="App_Data\51Degrees.dat" />
+    <Content Include="51Degrees.config" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Mobile\Default.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
@@ -269,9 +284,20 @@
     <Content Include="Views\Sp\Contact.cshtml" />
     <Content Include="Views\SpProduct\Index.cshtml" />
     <Content Include="Views\SpProduct\Booster.cshtml" />
+    <Content Include="Views\Home\Faq.cshtml" />
+    <Content Include="Views\Home\Cm.cshtml" />
+    <Content Include="Views\Sp\Faq.cshtml" />
+    <Content Include="Views\Sp\Cm.cshtml" />
+    <Content Include="Views\Shared\_q.cshtml" />
+    <Content Include="Views\Diagnosis\Index.cshtml" />
+    <Content Include="Views\SpDiagnosis\Index.cshtml" />
+    <Content Include="Views\SpProduct\Apricot.cshtml" />
+    <Content Include="Views\SpProduct\Kiwi.cshtml" />
+    <Content Include="Views\SpProduct\Mint.cshtml" />
+    <Content Include="Views\Home\Index.Mobile.cshtml" />
+    <Content Include="Views\Home\About.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

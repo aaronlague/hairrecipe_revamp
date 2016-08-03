@@ -1,4 +1,5 @@
-﻿using System;
+﻿using hairrecipe.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,6 +21,23 @@ namespace hairrecipe
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Diagnosis",
+                url: "{controller}/{action}/{id}/{page}",
+                defaults: new { controller = "Home", action = "Diagnosis", id = "", page = "" }
+            );
+
+            routes.Add(new LegacyRoute(
+                "index.html",
+                "~/index.html"
+            ));
+
+            //routes.MapRoute(
+            //    name: "CrazyPants",
+            //    url: "{page}.html",
+            //    defaults: new { controller = "Home", action = "Html", page = UrlParameter.Optional }
+            //);
         }
     }
 }

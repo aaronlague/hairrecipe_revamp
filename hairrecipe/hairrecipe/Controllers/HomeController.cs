@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using hairrecipe.Infrastructure;
 
 namespace hairrecipe.Controllers
 {
@@ -11,7 +12,7 @@ namespace hairrecipe.Controllers
     {
         //
         // GET: /Home/
-
+        [Route("Index")]
         public ActionResult Index()
         {
             if (Request.Browser.IsMobileDevice)
@@ -47,6 +48,36 @@ namespace hairrecipe.Controllers
             if (Request.Browser.IsMobileDevice)
             {
                 return RedirectToAction("Contact", "Sp");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
+
+        [Route("Faq")]
+        public ActionResult Faq()
+        {
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Faq", "Sp");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
+
+        [Route("Cm")]
+        public ActionResult Cm()
+        {
+            if (Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Cm", "Sp");
 
             }
             else
