@@ -23,21 +23,17 @@ namespace hairrecipe
             );
 
             routes.MapRoute(
-                name: "Diagnosis",
-                url: "{controller}/{action}/{id}/{page}",
-                defaults: new { controller = "Home", action = "Diagnosis", id = "", page = "" }
+                name: "Home",
+                url: "",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
-            routes.Add(new LegacyRoute(
-                "index.html",
-                "~/index.html"
-            ));
+            routes.MapRoute(
+                name: "Diagnosis",
+                url: "{controller}/{action}/{question}/{page}",
+                defaults: new { controller = "Diagnosis", action = "Index", question = "", page = "" }
+            );
 
-            //routes.MapRoute(
-            //    name: "CrazyPants",
-            //    url: "{page}.html",
-            //    defaults: new { controller = "Home", action = "Html", page = UrlParameter.Optional }
-            //);
         }
     }
 }

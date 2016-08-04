@@ -12,7 +12,7 @@ namespace hairrecipe.Controllers
         //
         // GET: /Diagnosis/
         [Route("Diagnosis")]
-        public ActionResult Index()
+        public ActionResult Index(string question, string page)
         {
             if (Request.Browser.IsMobileDevice)
             {
