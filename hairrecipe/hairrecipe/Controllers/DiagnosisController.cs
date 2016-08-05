@@ -21,7 +21,9 @@ namespace hairrecipe.Controllers
             }
             else
             {
-
+                ViewBag.question = Request.QueryString["question"];
+                ViewBag.page = Request.QueryString["page"];
+                ViewBag.text = "test";
                 return View();
             }
         }

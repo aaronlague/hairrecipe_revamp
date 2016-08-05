@@ -160,10 +160,6 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
-    <Compile Include="Mobile\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -243,7 +239,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="App_Data\51Degrees.dat" />
     <Content Include="51Degrees.config" />
-    <Content Include="Mobile\Default.aspx" />
     <Content Include="Scripts\bootstrap-off-canvas-nav.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -299,7 +294,7 @@
     <Content Include="Views\Home\Cm.cshtml" />
     <Content Include="Views\Sp\Faq.cshtml" />
     <Content Include="Views\Sp\Cm.cshtml" />
-    <Content Include="Views\Shared\_q.cshtml" />
+    <Content Include="Views\Shared\_qTemplate1.cshtml" />
     <Content Include="Views\Diagnosis\Index.cshtml" />
     <Content Include="Views\SpDiagnosis\Index.cshtml" />
     <Content Include="Views\SpProduct\Apricot.cshtml" />
@@ -309,6 +304,7 @@
     <Content Include="Views\Home\About.Mobile.cshtml" />
     <Content Include="Views\Shared\_navigation.cshtml" />
     <Content Include="Views\Shared\_navigation.Mobile.cshtml" />
+    <Content Include="Views\Shared\_qTemplate2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />

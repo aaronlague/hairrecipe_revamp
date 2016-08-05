@@ -31,7 +31,7 @@ namespace hairrecipe
             routes.MapRoute(
                 name: "Diagnosis",
                 url: "{controller}/{action}/{question}/{page}",
-                defaults: new { controller = "Diagnosis", action = "Index", question = "", page = "" }
+                defaults: new { controller = "Diagnosis", action = "Index", question = UrlParameter.Optional, page = UrlParameter.Optional }
             );
 
         }

@@ -4,4 +4,35 @@
 }
 
 <h2>Diagnosis Index</h2>
-@Html.Partial("_q", "");
+
+@*<p>Question: @ViewBag.question</p>
+<p>Page: @ViewBag.page </p>*@
+<p>@ViewBag.question</p>
+@{
+    
+    @*<p>@(ViewContext.RouteData.Values["Controller"].ToString());</p>
+    <p>@(ViewContext.RouteData.Values["Action"].ToString());</p>
+    <p>@(ViewContext.RouteData.Values["question"].ToString());</p>*@
+    
+    
+    
+    string caseSwitch = ViewContext.RouteData.Values["question"].ToString();
+    switch (caseSwitch)
+            
+    {
+        case "q1":
+            @Html.Partial("_qTemplate1", "");
+            break;
+        case "q2":
+            @Html.Partial("_qTemplate2", "");
+            break;
+        case "q3":
+            @Html.Partial("_qTemplate1", "");
+            break;
+        default:
+            @Html.Partial("_qTemplate2", "");
+            Console.WriteLine("Default case");
+            break;
+    }
+    
+}
