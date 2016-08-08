@@ -53,10 +53,6 @@
       <HintPath>..\packages\AttributeRouting.3.5.6\lib\net40\AttributeRouting.Web.Mvc.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="FiftyOne.Foundation, Version=3.2.9.1, Culture=neutral, PublicKeyToken=e0b3a8da0bbce49c, processorArchitecture=MSIL">
-      <HintPath>..\packages\51Degrees.mobi.3.2.9.1\lib\NET40\FiftyOne.Foundation.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -160,6 +156,7 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
+    <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -169,7 +166,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\custom.css" />
+    <Content Include="Content\desktop-styles.css" />
+    <Content Include="Content\mobile-styles.css" />
+    <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -237,8 +236,6 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
-    <Content Include="App_Data\51Degrees.dat" />
-    <Content Include="51Degrees.config" />
     <Content Include="Scripts\bootstrap-off-canvas-nav.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -300,14 +297,21 @@
     <Content Include="Views\SpProduct\Apricot.cshtml" />
     <Content Include="Views\SpProduct\Kiwi.cshtml" />
     <Content Include="Views\SpProduct\Mint.cshtml" />
-    <Content Include="Views\Home\Index.Mobile.cshtml" />
     <Content Include="Views\Home\About.Mobile.cshtml" />
     <Content Include="Views\Shared\_navigation.cshtml" />
     <Content Include="Views\Shared\_navigation.Mobile.cshtml" />
     <Content Include="Views\Shared\_qTemplate2.cshtml" />
+    <Content Include="Views\Shared\_diagnosisLanding.cshtml" />
+    <Content Include="Views\Shared\_pagePartial.cshtml" />
+    <Content Include="Views\Shared\q1\abcd.cshtml" />
+    <Content Include="Views\Shared\q2\a.cshtml" />
+    <Content Include="Views\Shared\q2\b.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Shared\q3\" />
+    <Folder Include="Views\Shared\q4\" />
+    <Folder Include="Views\Shared\q5\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

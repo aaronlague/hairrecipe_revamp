@@ -1,4 +1,5 @@
 ﻿using AttributeRouting.Web.Mvc;
+using hairrecipe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,18 +15,12 @@ namespace hairrecipe.Controllers
         [Route("Diagnosis")]
         public ActionResult Index(string question, string page)
         {
-            if (Request.Browser.IsMobileDevice)
+            var model = new DiagnosisViewModel
             {
-                return RedirectToAction("Index", "SpDiagnosis");
-
-            }
-            else
-            {
-                ViewBag.question = Request.QueryString["question"];
-                ViewBag.page = Request.QueryString["page"];
-                ViewBag.text = "test";
-                return View();
-            }
+                QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
+            };
+            
+            return View(model);
         }
 
     }

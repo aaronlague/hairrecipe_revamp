@@ -1,0 +1,28 @@
+﻿.navbar-default {
+    background-color: transparent;
+    border-color: none;
+}
+
+.navbar {
+    border: none;
+    margin-bottom: 0px;
+}
+
+.navbar-default .navbar-toggle {
+    border:none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color:transparent;
+}
+
+@media (max-width: 767px) {
+    body.out nav .navbar-collapse {
+        box-shadow: none;
+    }
+
+    body.out nav .navbar-toggle {
+        background-color: #ddd;
+    }
+}
+ 

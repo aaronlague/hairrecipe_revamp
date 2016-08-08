@@ -1,38 +1,13 @@
-﻿@{
+﻿@model hairrecipe.Models.DiagnosisViewModel
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Diagnosis Index</h2>
-
-@*<p>Question: @ViewBag.question</p>
-<p>Page: @ViewBag.page </p>*@
 <p>@ViewBag.question</p>
 @{
-    
-    @*<p>@(ViewContext.RouteData.Values["Controller"].ToString());</p>
-    <p>@(ViewContext.RouteData.Values["Action"].ToString());</p>
-    <p>@(ViewContext.RouteData.Values["question"].ToString());</p>*@
-    
-    
-    
-    string caseSwitch = ViewContext.RouteData.Values["question"].ToString();
-    switch (caseSwitch)
-            
-    {
-        case "q1":
-            @Html.Partial("_qTemplate1", "");
-            break;
-        case "q2":
-            @Html.Partial("_qTemplate2", "");
-            break;
-        case "q3":
-            @Html.Partial("_qTemplate1", "");
-            break;
-        default:
-            @Html.Partial("_qTemplate2", "");
-            Console.WriteLine("Default case");
-            break;
-    }
+       
+    <div id="Details">
+        @Html.Partial(Model.QuestionsPartial)  
+    </div>
     
 }

@@ -28,10 +28,14 @@ namespace hairrecipe
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/site.css",
+            bundles.Add(new StyleBundle("~/Content/global-css").Include("~/Content/site.css",
                 "~/Content/bootstrap.css",
-                "~/Content/custom.css",
-                "~/Content/bootstrap-off-canvas-nav.css"));
+                "~/Content/global-styles.css"));
+
+            bundles.Add(new StyleBundle("~/Content/desktop-css").Include("~/Content/desktop-styles.css"));
+
+            bundles.Add(new StyleBundle("~/Content/mobile-css").Include("~/Content/bootstrap-off-canvas-nav.css",
+                "~/Content/mobile-styles.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
