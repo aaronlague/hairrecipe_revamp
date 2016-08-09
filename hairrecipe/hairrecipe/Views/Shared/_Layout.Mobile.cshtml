@@ -1,5 +1,7 @@
 ﻿@{
     ViewBag.Title = "Mobile";
+    string checkController = @ViewContext.RouteData.Values["Controller"].ToString();
+    string checkAction = @ViewContext.RouteData.Values["ACtion"].ToString();
 }
 <!DOCTYPE html>
 <html>
@@ -11,22 +13,24 @@
     @Styles.Render("~/Content/mobile-css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body class="off-canvas-nav-right">
-
+<body>
     @Html.Partial("_navigation.Mobile", "")
 
+    @if (checkController == "sp" && checkAction == "Index")
+    {
+        @Html.Partial("_slider", "")
+    }
+    
     <div class="container">
-@*        <div class="page-header">
-            <h1>Mobile</h1>
-        </div>*@
         <div class="row">
             <div class="col-md-6">
                 @RenderBody()
             </div>
         </div>
-        <div class="page-footer">
-            <h1>Footer</h1>
-        </div>
+        
+    </div>
+    <div class="page-footer">
+        <img src="~/Content/images/sp/_footer-placeholder.jpg" class="img-responsive" />
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
