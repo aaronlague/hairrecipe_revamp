@@ -17,12 +17,19 @@ namespace hairrecipe.Controllers
         [Route("Diagnosis/{question?}/{page?}")]
         public ActionResult Index(string question, string page)
         {
-            var model = new DiagnosisViewModel
+            if (Request.Browser.IsMobileDevice)
             {
-                QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
-            };
-            
-            return View(model);
+                return RedirectToAction("Index", "SpDiagnosis");
+            }
+            else
+            {
+                var model = new DiagnosisViewModel
+                {
+                    QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
+                };
+
+                return View(model);
+            }
         }
 
     }

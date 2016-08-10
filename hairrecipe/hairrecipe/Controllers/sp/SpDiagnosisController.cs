@@ -1,4 +1,6 @@
-﻿using AttributeRouting.Web.Mvc;
+﻿using AttributeRouting;
+using AttributeRouting.Web.Mvc;
+using hairrecipe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +9,13 @@ using System.Web.Mvc;
 
 namespace hairrecipe.Controllers.sp
 {
+    //[RoutePrefix("SpDiagnosis")]
     public class SpDiagnosisController : Controller
     {
         //
         // GET: /SpDiagnosis/
-        [Route("/sp/diagnosis")]
-        public ActionResult Index()
+        [Route("sp/diagnosis/{question?}/{page?}")]
+        public ActionResult Index(string question, string page)
         {
             if (!Request.Browser.IsMobileDevice)
             {
@@ -21,8 +24,12 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
+                var model = new DiagnosisViewModel
+                {
+                    QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
+                };
 
-                return View();
+                return View(model);
             }
         }
 

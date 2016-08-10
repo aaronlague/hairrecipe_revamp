@@ -1,6 +1,13 @@
-﻿@{
+﻿@model hairrecipe.Models.DiagnosisViewModel
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
 
 <h2>Diagnosis Mobile Index</h2>
+
+@{     
+    <div id="Details">
+        @Html.Partial(Model.QuestionsPartial)  
+    </div>  
+}

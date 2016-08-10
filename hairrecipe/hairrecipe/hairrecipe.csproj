@@ -308,6 +308,9 @@
     <Content Include="Views\Shared\q2\a.cshtml" />
     <Content Include="Views\Shared\q2\b.cshtml" />
     <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\q1\abcd.Mobile.cshtml" />
+    <Content Include="Views\Shared\q2\a.Mobile.cshtml" />
+    <Content Include="Views\Shared\q2\b.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
