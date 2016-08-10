@@ -157,6 +157,7 @@
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
+    <Compile Include="Models\ProductListingViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -241,6 +242,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\jasny-bootstrap.css.map" />
+    <Content Include="Content\data\ProductList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
     <Content Include="Scripts\jasny-bootstrap.min.js" />
@@ -311,6 +313,8 @@
     <Content Include="Views\Shared\q1\abcd.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\a.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\b.Mobile.cshtml" />
+    <Content Include="Views\Shared\_ProductListingBlockSp.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,9 +1,11 @@
 ﻿using AttributeRouting.Web.Mvc;
+using hairrecipe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 
 namespace hairrecipe.Controllers.sp
 {
@@ -21,7 +23,12 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                return View();
+                string file = Server.MapPath("~/Content/data/ProductList.json");
+                string Json = System.IO.File.ReadAllText(file);
+                JavaScriptSerializer productObj = new JavaScriptSerializer();
+                var productList = productObj.Deserialize<List<ProductListingViewModel>>(Json);
+
+                return View(productList);
             }
         }
 

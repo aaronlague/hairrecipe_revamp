@@ -1,0 +1,25 @@
+[  
+{  
+    "ProductId": 1,  
+    "ProductName": "Mint",  
+    "ProductImage": "http://placehold.it/550x550?text=Mint",  
+    "ProductIntroText": "Mint text"  
+},  
+{  
+    "ProductId": 2,  
+    "ProductName": "Apricot",  
+    "ProductImage": "http://placehold.it/550x550?text=Apricot",  
+    "ProductIntroText": "Apricot text"  
+},
+{  
+    "ProductId": 3,  
+    "ProductName": "Kiwi",  
+    "ProductImage": "http://placehold.it/550x550?text=Kiwi",  
+    "ProductIntroText": "Kiwi text"  
+},
+{  
+    "ProductId": 4,  
+    "ProductName": "Booster",  
+    "ProductImage": "http://placehold.it/550x550?text=Booster",  
+    "ProductIntroText": "Booster text"  
+}]
