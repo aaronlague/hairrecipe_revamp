@@ -314,13 +314,33 @@
     <Content Include="Views\Shared\q2\a.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\b.Mobile.cshtml" />
     <Content Include="Views\Shared\_ProductListingBlockSp.cshtml" />
-    <Content Include="Views\Home\Test.cshtml" />
+    <Content Include="Views\Shared\q3\a1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q3\a2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q3\b1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q3\b2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\a1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\a2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\a3.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\a4.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\b1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\b2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\b3.Mobile.cshtml" />
+    <Content Include="Views\Shared\q4\b4.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\a1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\a2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\a3.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\a4.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\b1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\b2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\b3.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\b4.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\c4.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\c1.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\c2.Mobile.cshtml" />
+    <Content Include="Views\Shared\q5\c3.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Shared\q3\" />
-    <Folder Include="Views\Shared\q4\" />
-    <Folder Include="Views\Shared\q5\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
