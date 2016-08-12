@@ -8,7 +8,9 @@
     
     <div class="container">
         <div class="row">
-            <h1>Products</h1>
+            <div class="col-md-12">
+                <h1>Products</h1>
+            </div>
         </div>
     </div>
 
@@ -18,7 +20,7 @@
         <div class="row">
             <div class="col-md-6">
                 @foreach (var item in Model) {
-                    @Html.Partial("_ProductListingBlockSp", item)    
+                    @Html.Partial("_ProductListingBlockSp", item)
                 }
             </div>
         </div>

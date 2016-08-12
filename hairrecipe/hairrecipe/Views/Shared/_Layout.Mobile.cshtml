@@ -1,5 +1,4 @@
 ﻿@{
-    ViewBag.Title = "Mobile";
     string checkController = @ViewContext.RouteData.Values["Controller"].ToString();
     string checkAction = @ViewContext.RouteData.Values["ACtion"].ToString();
 }
@@ -18,17 +17,32 @@
 
     @if (checkController == "sp" && checkAction == "Index")
     {
-        @Html.Partial("_slider", "")
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_slider", "")
+            </div>
+        </div>
     }
     
     <div class="main">
         @RenderBody()
     </div>
     <div class="page-footer">
-        <img src="~/Content/images/sp/_footer-placeholder.jpg" class="img-responsive" />
+        <div class="container">
+            <div class="row">
+                @Html.Partial("_specialInfo", "")
+            </div>
+        </div>
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script>
+        $(document).ready(function () {
+            $('#myCarousel').carousel({
+                interval: false
+            })
+        })
+    </script>
 </body>
 </html>

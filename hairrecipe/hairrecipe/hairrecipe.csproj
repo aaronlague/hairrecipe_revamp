@@ -168,7 +168,25 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\desktop-styles.css" />
-    <Content Include="Content\images\sp\_footer-placeholder.jpg" />
+    <Content Include="Content\images\sp\navigation\sp_chevron-left.png" />
+    <Content Include="Content\images\sp\navigation\sp_chevron-right.png" />
+    <Content Include="Content\images\sp\navigation\sp_hamburger.png" />
+    <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
+    <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
+    <Content Include="Content\images\sp\slider\sp_slider-1.jpg" />
+    <Content Include="Content\images\sp\slider\sp_slider-2.jpg" />
+    <Content Include="Content\images\sp\slider\sp_slider-3.jpg" />
+    <Content Include="Content\images\sp\slider\sp_slider-top.jpg" />
+    <Content Include="Content\images\sp\sp_footer-bg.jpg" />
+    <Content Include="Content\images\sp\sp_footer-logo.png" />
+    <Content Include="Content\images\sp\sp_footer-social-fb.png" />
+    <Content Include="Content\images\sp\sp_footer-social-line.png" />
+    <Content Include="Content\images\sp\sp_footer-social-tw.png" />
+    <Content Include="Content\images\sp\sp_logo.png" />
+    <Content Include="Content\images\sp\sp_product-stories-btn.png" />
+    <Content Include="Content\images\sp\sp_special-info-amazon.png" />
+    <Content Include="Content\images\sp\sp_special-info-lohaco.png" />
+    <Content Include="Content\images\sp\sp_to-shop-btn.png" />
     <Content Include="Content\mobile-styles.css" />
     <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
@@ -309,7 +327,7 @@
     <Content Include="Views\Shared\q1\abcd.cshtml" />
     <Content Include="Views\Shared\q2\a.cshtml" />
     <Content Include="Views\Shared\q2\b.cshtml" />
-    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\_slider.Mobile.cshtml" />
     <Content Include="Views\Shared\q1\abcd.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\a.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\b.Mobile.cshtml" />
@@ -338,6 +356,7 @@
     <Content Include="Views\Shared\q5\c1.Mobile.cshtml" />
     <Content Include="Views\Shared\q5\c2.Mobile.cshtml" />
     <Content Include="Views\Shared\q5\c3.Mobile.cshtml" />
+    <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
