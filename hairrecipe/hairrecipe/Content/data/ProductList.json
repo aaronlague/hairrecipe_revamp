@@ -1,29 +1,33 @@
 [  
 {  
     "ProductId": 1,  
-    "ProductName": "Mint",  
-    "ProductImage": "http://placehold.it/550x550?text=Mint",  
-    "ProductIntroText": "Mint text",
+    "ProductName": "Mint Blend Cleansing Recipe",  
+    "ProductImage": "sp_mint-thumbnail.png",  
+    "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで酸味のあるストロベリーと爽やかなミントで",
+	"ProductIntroText2": "髪と地肌にさっぱりディープクレンジング。",
 	"ProductLink": "/product/mint"
 },  
 {  
     "ProductId": 2,  
-    "ProductName": "Apricot",  
-    "ProductImage": "http://placehold.it/550x550?text=Apricot",  
-    "ProductIntroText": "Apricot text",
+    "ProductName": "Honey Apricot Enrich Moisture Recipe",  
+    "ProductImage": "sp_apricot-thumbnail.png",
+    "ProductIntroText1": "華やかな味わいのアプリコットにとろけるハニー、",
+	"ProductIntroText2": "髪に豊かなつやとうるおいを。",
 	"ProductLink": "/product/apricot"
 },
 {  
     "ProductId": 3,  
-    "ProductName": "Kiwi",  
-    "ProductImage": "http://placehold.it/550x550?text=Kiwi",  
-    "ProductIntroText": "Kiwi text",
+    "ProductName": "Kiwi Empower Volume Recipe",  
+    "ProductImage": "sp_kiwi-thumbnail.png",  
+    "ProductIntroText1": "フルーティなキウイと爽やかないちじくで、",
+	"ProductIntroText2": "髪にたっぷりのハリとコシを。",
 	"ProductLink": "/product/kiwi"
 },
 {  
     "ProductId": 4,  
-    "ProductName": "Booster",  
-    "ProductImage": "http://placehold.it/550x550?text=Booster",  
-    "ProductIntroText": "Booster text",
+    "ProductName": "Booster Oil Treatment",  
+    "ProductImage": "sp_booster-thumbnail.png",
+    "ProductIntroText1": "髪にたっぷりのハリとコシを。",
+	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
 	"ProductLink": "/product/booster"
 }]

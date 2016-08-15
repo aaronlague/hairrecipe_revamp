@@ -1,12 +1,13 @@
 ﻿@{
     string checkController = @ViewContext.RouteData.Values["Controller"].ToString();
-    string checkAction = @ViewContext.RouteData.Values["ACtion"].ToString();
+    string checkAction = @ViewContext.RouteData.Values["Action"].ToString();
 }
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="@ViewBag.Description" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/global-css")
     @Styles.Render("~/Content/mobile-css")
@@ -15,6 +16,8 @@
     {
         @RenderSection("customStyles", required: false)
     }
+    <link rel="canonical" href="@ViewBag.Conanical" />
+    <link rel="alternate" media="handheld" href="@ViewBag.Alternate" />
 </head>
 <body>
     @Html.Partial("_navigation.Mobile", "")

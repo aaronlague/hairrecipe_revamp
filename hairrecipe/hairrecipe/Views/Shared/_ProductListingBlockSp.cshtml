@@ -1,8 +1,8 @@
 ﻿@model hairrecipe.Models.ProductListingViewModel
-<div class="product-item" style="margin: 0 auto; text-align:center">
+<div class="product-item">
     <h1>@Model.ProductName</h1> 
-    <img src="@Model.ProductImage" class="img-responsive"/>
-    <p style="margin:10px 10px">@Model.ProductIntroText</p>
-    <a href="@Model.ProductLink" class="btn btn-default">To Shop</a>
+    <img src="/Content/images/sp/@Model.ProductImage" class="product-thumbnail"/>
+    <p class="product-intro-text">@Model.ProductIntroText1<br />@Model.ProductIntroText2</p>
+    <a href="@Model.ProductLink" class="btn to-shop-btn">To Shop</a>
 </div>
         
