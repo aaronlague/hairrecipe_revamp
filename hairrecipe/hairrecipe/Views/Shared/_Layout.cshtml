@@ -7,6 +7,10 @@
     @Styles.Render("~/Content/global-css")
     @Styles.Render("~/Content/desktop-css")
     @Scripts.Render("~/bundles/modernizr")
+    @if (IsSectionDefined("customStyles"))
+    {
+        @RenderSection("customStyles", required: false)
+    }
 </head>
 <body>
     @Html.Partial("_navigation", "")
