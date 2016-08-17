@@ -373,21 +373,18 @@
     <Content Include="Views\Shared\q5\c2.Mobile.cshtml" />
     <Content Include="Views\Shared\q5\c3.Mobile.cshtml" />
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
-<<<<<<< Updated upstream
     <Content Include="Views\SpProduct\Product-line.cshtml" />
     <Content Include="Views\Shared\_productList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Helpers\" />
-=======
     <Content Include="Views\Sp\sitemap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\js\" />
     <Folder Include="Content\pc-css\" />
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
