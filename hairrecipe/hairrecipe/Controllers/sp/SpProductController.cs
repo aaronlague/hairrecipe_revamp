@@ -1,9 +1,18 @@
 ﻿using AttributeRouting.Web.Mvc;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using hairrecipe.Models;
+using System.IO;
+using Newtonsoft.Json;
+using System.Web.Script.Serialization;
+using hairrecipe.data;
+using hairrecipe.data.Entities.Products;
+using hairrecipe.data.Services;
+
 
 namespace hairrecipe.Controllers.sp
 {
@@ -25,60 +34,20 @@ namespace hairrecipe.Controllers.sp
             }
         }
 
+
         [Route("/sp/product/Booster")]
-        public ActionResult Booster()
-        {
-            if (!Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Booster", "Product");
-
-            }
-            else
-            {
-                return View();
-            }
-        }
-
         [Route("/sp/product/Apricot")]
-        public ActionResult Apricot()
-        {
-            if (!Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Apricot", "Product");
-
-            }
-            else
-            {
-                return View();
-            }
-        }
-
         [Route("/sp/product/Kiwi")]
-        public ActionResult Kiwi()
-        {
-            if (!Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Kiwi", "Product");
-
-            }
-            else
-            {
-                return View();
-            }
-        }
-
         [Route("/sp/product/Mint")]
-        public ActionResult Mint()
+        public ActionResult ProductLine()
         {
-            if (!Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Mint", "Product");
+            string url = HttpContext.Request.Url.AbsolutePath;
+            string line = url.Split('/').Last();
+            string filepath = Server.MapPath("~/Content/data/Mint.json");
+            var productList = ProductService.GetAllProducts(filepath);
 
-            }
-            else
-            {
-                return View();
-            }
+            return View("Product-line", productList);
         }
+
     }
 }
