@@ -1,0 +1,29 @@
+﻿.banner {
+    position:relative;
+}
+
+.banner > h1 {
+    color:white;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-left:-150px;
+    text-transform:uppercase;
+    font-size:8vw;
+}
+h2 {
+   font-size:1.4em;
+   margin-top:40px;
+   margin-bottom:20px;
+}
+
+
+p{
+   font-size:1.1em;
+}
+
+.about-main {
+    color: #87847d;
+    width: 86%;
+    margin-bottom:20px;
+}
