@@ -2,9 +2,12 @@
 
 .product-section{
     position : relative;
+    overflow: hidden;
 }
 .product-section .product-item{
     position : absolute;
+    top : 0;
+    z-index : -1;
 }
 .product-section .full-length{
     display : block;
@@ -14,4 +17,35 @@
     text-align : center;
 }
 
+
+.en-title{
+    margin-top : 20%;
+}
+.content-area{
+    margin-top :116%;
+}
+.content-area span,
+.content-area p{
+    margin-top :3%;
+}
+
+.additives ul.columns{
+    background : url('/Content/images/sp/product/chalkboard.jpg');
+    color : #fff;
+    width : 70%;
+    margin : 5% auto 0;
+    padding : 0;
+    overflow : hidden;
+}
+.additives ul.columns .column{
+    float : left;
+    width: 50%;
+}
+.additives ul li{
+    list-style : none;
+}
+
+.phrase-title{
+    border-bottom : 1px solid #fff;
+}
 /* Mint */
