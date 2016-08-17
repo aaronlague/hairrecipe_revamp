@@ -1,6 +1,6 @@
 ﻿@import url("//hello.myfonts.net/count/31d781");
 @font-face {font-family: 'Koburina Gothic W3 JIS2004';src: url('../fonts/31D781_0_0.eot');src: url('../fonts/31D781_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_0_0.woff2') format('woff2'),url('../fonts/31D781_0_0.woff') format('woff'),url('../fonts/31D781_0_0.ttf') format('truetype');}  
-@font-face {font-family: 'LubalinGraph-Book';src: url('../fonts/31D781_1_0.eot');src: url('../fonts/31D781_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_1_0.woff2') format('woff2'),url('../fonts/31D781_1_0.woff') format('woff'),url('../fonts/31D781_1_0.ttf') format('truetype');}
+@font-face {font-family: 'LubalinGraph-Book';src: url('../fonts/31D781_1_0.eot');src: url('Content/fonts/31D781_1_0.eot?#iefix') format('embedded-opentype'),url('Content/fonts/31D781_1_0.woff2') format('woff2'),url('Content/fonts/31D781_1_0.woff') format('woff'),url('Content/webfonts/31D781_1_0.ttf') format('truetype');}
 
 h1 {
 	/*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
