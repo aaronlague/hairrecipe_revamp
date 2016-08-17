@@ -1,13 +1,36 @@
-﻿h2 {
+﻿.contact-banner {
+    background-color: gold;
+    /*height: 400px;*/
+    position: relative;
+}
+
+.contact-banner .inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    padding: .8em 1.2em;
+    color: white;
+    /*background-color: darkcyan;*/
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+h2 {
     font-size: 1.4em;
 }
 
 h2.page-title {
-    position: absolute;
-    top: 112px;
-    left: 102px;
+    /*position: absolute;*/
+    /*top: 137px;
+    left: 99px;*/
     color: #fff;
-    font-size: 2em;
+    font-size: 2.8em;
 }
 
 p{
@@ -17,6 +40,51 @@ p{
 .contact-main {
     color: #87847d;
     width: 86%;
-    margin-top: 40px;
-    margin-bottom:20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.first-container {
+    background:#f9f9f9;
+    margin-top: -1px;
+}
+
+.second-container {
+    background:#f8f8f8;
+}
+
+.second-container .container {
+    text-align:center;
+    font-size: 1.2em;
+}
+
+.second-container .contact-main {
+    padding-bottom:50px;    
+}
+
+.second-container .container p.number {
+    font-size: 2em;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    h2.page-title {
+        font-size: 2.3em;
+        top: 112px;
+        left: 87px;
+    }
+}
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    h2.page-title {
+        top: 137px;
+        left: 103px;
+        font-size: 2.7em;
+    }
+
 }
