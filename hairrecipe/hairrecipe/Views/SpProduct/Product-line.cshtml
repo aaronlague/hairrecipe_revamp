@@ -1,8 +1,22 @@
-﻿@model IEnumerable<hairrecipe.data.Entities.Products.Product>
+﻿@model hairrecipe.data.Entities.Products.ProductLine
 
 @{
-    ViewBag.Title = "Product-line";
+    ViewBag.Title = Model.MetaTitle;
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
 
-@{Html.RenderPartial("_productList");}
+@section customStyles
+{
+    <link href="~/Content/sp-css/product-line.css" rel="stylesheet" />
+}
+
+
+<div id="@Model.GroupKeyword" class="view">
+    <img class="group-banner" src="~/Content/images/sp/product/@Model.GroupKeyword/banner.jpg" />
+    @if (!string.IsNullOrEmpty(Model.BannerText)) { 
+        <h1 class="bannerTxt">@Model.BannerText</h1>
+    }
+    @foreach (var products in Model.Products) {
+        @Html.Partial("_productList", products);
+    }
+</div>

@@ -43,10 +43,11 @@ namespace hairrecipe.Controllers.sp
         {
             string url = HttpContext.Request.Url.AbsolutePath;
             string line = url.Split('/').Last();
+            ViewData["group-title"] = line;
             string filepath = Server.MapPath("~/Content/data/Mint.json");
-            var productList = ProductService.GetAllProducts(filepath);
+            var productLine = ProductService.GetLineDetails(filepath);
 
-            return View("Product-line", productList);
+            return View("Product-line", productLine);
         }
 
     }

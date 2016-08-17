@@ -13,15 +13,14 @@ namespace hairrecipe.data.Services
     {
 
 
-        public static IList<Product> GetAllProducts(string filePath)
+        public static ProductLine GetLineDetails(string filePath)
        {
-
             //get the Json filepath  
             //deserialize JSON from file  
             string Json = System.IO.File.ReadAllText(filePath);
             JavaScriptSerializer jsonSerializer = new JavaScriptSerializer();
-            var products = jsonSerializer.Deserialize<List<Product>>(Json);  
-            return products;
+            var productLine = jsonSerializer.Deserialize<ProductLine>(Json);
+            return productLine;
         }
 
     }

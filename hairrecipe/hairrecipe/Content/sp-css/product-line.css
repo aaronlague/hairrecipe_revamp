@@ -1,0 +1,17 @@
+﻿/* common */
+
+.product-section{
+    position : relative;
+}
+.product-section .product-item{
+    position : absolute;
+}
+.product-section .full-length{
+    display : block;
+    width : 100%;
+}
+.product-section .center{
+    text-align : center;
+}
+
+/* Mint */

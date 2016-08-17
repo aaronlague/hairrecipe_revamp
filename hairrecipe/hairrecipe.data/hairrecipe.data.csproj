@@ -50,6 +50,7 @@
     <Compile Include="Entities\Products\Column.cs" />
     <Compile Include="Entities\Products\Phrase.cs" />
     <Compile Include="Entities\Products\Product.cs" />
+    <Compile Include="Entities\Products\ProductLine.cs" />
     <Compile Include="Helpers\DataExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ProductService.cs" />
