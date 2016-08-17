@@ -27,7 +27,7 @@ namespace hairrecipe.Controllers
         {
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Booster", "SpProduct");
+                return RedirectToAction("Apricot", "SpProduct");
 
             }
             else

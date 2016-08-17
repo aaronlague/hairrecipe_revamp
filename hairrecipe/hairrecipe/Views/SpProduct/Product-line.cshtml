@@ -1,0 +1,8 @@
+﻿@model IEnumerable<hairrecipe.data.Entities.Products.Product>
+
+@{
+    ViewBag.Title = "Product-line";
+    Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+}
+
+@{Html.RenderPartial("_productList");}

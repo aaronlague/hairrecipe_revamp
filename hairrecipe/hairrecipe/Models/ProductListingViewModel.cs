@@ -14,4 +14,5 @@ namespace hairrecipe.Models
         public string ProductIntroText2 { get; set; }
         public string ProductLink { get; set;  }
     }
+
 }

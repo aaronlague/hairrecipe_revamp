@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Web
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hairrecipe", "hairrecipe\hairrecipe.csproj", "{6D0DDB08-52E4-4223-B5DA-19CFFB2F02C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{71D2FFBE-1334-49E5-9053-ECB0204ACB4B}"
@@ -9,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{71D2FF
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hairrecipe.data", "hairrecipe.data\hairrecipe.data.csproj", "{FBFBB725-AE28-473B-A32C-20A05C67DDDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,10 @@ Global
 		{6D0DDB08-52E4-4223-B5DA-19CFFB2F02C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D0DDB08-52E4-4223-B5DA-19CFFB2F02C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D0DDB08-52E4-4223-B5DA-19CFFB2F02C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFBB725-AE28-473B-A32C-20A05C67DDDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFBB725-AE28-473B-A32C-20A05C67DDDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFBB725-AE28-473B-A32C-20A05C67DDDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFBB725-AE28-473B-A32C-20A05C67DDDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

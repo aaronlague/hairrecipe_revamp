@@ -1,0 +1,16 @@
+﻿@model IEnumerable<hairrecipe.data.Entities.Products.Product>
+
+@foreach (var item in Model) {
+
+<div id="" class="">
+    <img class="product-item" src="" alt="" />
+    <div class="float-area">
+            <span class="en-title">@Html.DisplayFor(modelItem => item.EnTitle)</span>
+            <span class="jp-title-1" @Html.DisplayFor(modelItem => item.JpTitle1)></span>
+            <span class="jp-title-2">[@Html.DisplayFor(modelItem => item.JpTitle2)]</span>
+            <p class="description">@Html.DisplayFor(modelItem => item.Description)</p>
+            <span>How to Use</span>
+    </div>
+</div>
+
+}

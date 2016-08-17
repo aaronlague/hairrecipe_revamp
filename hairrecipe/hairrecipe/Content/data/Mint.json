@@ -1,0 +1,75 @@
+[
+{
+    name:'Mint-Blend',
+    line:'Mint',
+    enTitle:'Mint Blend Cleansing Recipe',
+    jpTitle1:'キウイ エンパワー ボリューム レシピ',
+    jpTitle2:'シャンプー',
+    size:300,
+    description:'地肌と髪の根元から洗い上げる 独自のエンパワーボリューム処方を採用。地肌を健やかに保ち、根元から立ち上がるふんわり髪へ。',
+    howtouse:'濡れた頭皮と髪をやさしくマッサージし、きれいに洗い流します。',
+    sku:'012345678',
+    isActive : true,
+    hasReview : true,
+    hasBIN : true,
+    columns :[ 
+        {        
+            header:'添加',
+            phrases:[
+              { text : 'キウイ、いちじくのフレグランスブレンド'},
+              { text : '天然由来成分入りのクレンジングジュース'},
+              { text : '新鮮さを保つ成分を適量配合'}
+            ]
+        },
+        {        
+            header:'無添加',
+            phrases:[
+              { text : 'ノンシリコン'},
+              { text : 'ノンパラベン'},
+              { text : '鉱物油フリー'}
+            ]
+        }                
+    ]
+},
+{
+    name:'Mint-Blend-2',
+    line:'Mint',
+    enTitle:'Mint Blend Cleansing Recipe',
+    jpTitle1:'キウイ エンパワー ボリューム レシピ',
+    jpTitle2:'シャンプー',
+    size:300,
+    description:'地肌と髪の根元から洗い上げる 独自のエンパワーボリューム処方を採用。地肌を健やかに保ち、根元から立ち上がるふんわり髪へ。',
+    howtouse:'濡れた頭皮と髪をやさしくマッサージし、きれいに洗い流します。',
+    sku:'012345678',
+    isActive : true,
+    hasReview : true,
+    hasBIN : true,
+    columns :[ 
+        {        
+            header:'添加',
+            phrases:[
+              { text : 'キウイ、いちじくのフレグランスブレンド'},
+              { text : '天然由来成分入りのクレンジングジュース'},
+              { text : '新鮮さを保つ成分を適量配合'}
+            ]
+        },
+        {        
+            header:'無添加',
+            phrases:[
+              { text : 'ノンシリコン'},
+              { text : 'ノンパラベン'},
+              { text : '鉱物油フリー'}
+            ]
+        }                
+    ]
+}
+]
+
+
+
+
+
+
+
+
+
