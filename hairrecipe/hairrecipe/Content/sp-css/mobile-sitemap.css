@@ -1,0 +1,70 @@
+﻿.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    padding: .8em 1.2em;
+    color: white;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+h2.page-title {
+    color: #fff;
+    font-size: 2.8em;
+}
+
+
+.sitemap-main {
+    color: #87847d;
+    background: red;
+    margin-top: -1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sitemap-main ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.sitemap-main ul li {
+    background: url(../images/sp/sitemap/arrow.png) right 10px no-repeat;
+    padding:20px 0;
+    border-bottom:1px solid #dedede;
+}
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    h2.page-title {
+        font-size: 2.3em;
+        top: 112px;
+        left: 87px;
+    }
+}
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    h2.page-title {
+        top: 137px;
+        left: 103px;
+        font-size: 2.7em;
+    }
+
+}
