@@ -1,0 +1,114 @@
+﻿.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    padding: .8em 1.2em;
+    color: white;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+h2.page-title {
+    color: #fff;
+    font-size: 2.8em;
+}
+
+
+.sitemap-main {
+    color: #87847d;
+    margin-top: -1px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sitemap-main ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.sitemap-main ul li {
+    background: url(../images/sp/sitemap/arrow.png) right 20px center no-repeat;
+    border-bottom:1px solid #dedede;
+    height: 140px;
+}
+
+.sitemap-main ul li a {    
+    display: inline-block;
+    width: 100%;
+    /*font-family: 'LubalinGraph-Book';*/
+    font-size: 28px;
+    color: #87847d;
+    height: 140px;
+    padding: 49px 45px 0px 20px;
+
+}
+
+.koburina {
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.lubalin {
+    font-family: 'LubalinGraph-Book';
+}
+
+.sitemap-main ul li a.long {    
+    padding: 30px 45px 0 20px;
+
+}
+
+/*iPhone 5*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    h2.page-title {
+        font-size: 2.3em;
+        top: 112px;
+        left: 87px;
+    }
+    .sitemap-main ul li {        
+        height: 100px;
+    }
+    .sitemap-main ul li a {
+        height: 100px;
+    }
+    .sitemap-main ul li a {    
+        font-size: 20px;
+        padding: 35px 45px 0px 20px;
+    }
+    .sitemap-main ul li a.long {    
+        padding: 20px 45px 0 20px;
+
+    }
+}
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    h2.page-title {
+        top: 137px;
+        left: 103px;
+        font-size: 2.7em;
+    }
+    .sitemap-main ul li a {    
+        font-size: 25px;
+    }
+    .sitemap-main ul li a.long {    
+        padding: 15px 45px 0 20px;
+
+    }
+}
