@@ -2,15 +2,45 @@
 @font-face {font-family: 'Koburina Gothic W3 JIS2004';src: url('../fonts/31D781_0_0.eot');src: url('../fonts/31D781_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_0_0.woff2') format('woff2'),url('../fonts/31D781_0_0.woff') format('woff'),url('../fonts/31D781_0_0.ttf') format('truetype');}  
 @font-face {font-family: 'LubalinGraph-Book';src: url('../fonts/31D781_1_0.eot');src: url('../fonts/31D781_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_1_0.woff2') format('woff2'),url('../fonts/31D781_1_0.woff') format('woff'),url('../fonts/31D781_1_0.ttf') format('truetype');}
 
+body {
+    color: #87847d;
+}
+
 h1 {
 	/*font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
 }
 
-h1 h2 p {
+h1, h2, p {
     font-family:Koburina Gothic W3 JIS2004;
     font-weight:normal;
     font-style:normal;
 }
+
+
+/*Background Style*/
+
+.wood-smooth{
+    background : url("/Content/images/sp/bg/wood-smooth.jpg");
+}
+.wood-rough{
+    background : url("/Content/images/sp/bg/wood-rough.jpg");
+}
+
+.wall{
+    background: url("/Content/images/sp/bg/wall-1.jpg");
+}
+
+.stitch-b{
+    background : url("/Content/images/sp/bg/stitch-b.jpg");
+}
+.stitch-m{
+    background : url("/Content/images/sp/bg/stitch-m.jpg");
+}
+.stitch-s{
+    background : url("/Content/images/sp/bg/stitch-s.jpg");
+}
+
+
 
 .to-shop-btn, .to-shop-btn:active {
     background: url(/Content/images/sp/sp_to-shop-btn.png) center top;
