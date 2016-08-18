@@ -7,13 +7,14 @@
     products : [
         {
             name:'cleansing',
-            line:'Mint',
+            backgroundClass : 'wall',
+            line:'Mint ',
             enTitle:'Mint Blend <br/>Cleansing <br/>Recipe',
             jpTitle1:'ミントブレンド',
             jpTitle2:'クレンジングシャンプー',
             size:300,
             description:'髪と地肌を適度に刺激しながら優しく洗い、<br/>毛穴のつまりや汚れを取り除く <br/>ディープクレンジングシャンプーです。 <br/> 週1～2回シャンプーの代わりに。',
-            howtouse:'濡れた頭皮と髪をやさしくマッサージし、きれいに洗い流します。',
+            howtouse:'ハニー アプリコット エンリッチ モイスチャー <br/>レシピ シャンプーとキウイ エンパワー ボリューム <br/>レシピ シャンプーの代わりに週1～2回使用します。<br/>濡れた地肌と髪をやさしくマッサージし、<br/>きれいに洗い流します。',
             sku:'012345678',
             isActive : true,
             hasReview : true,

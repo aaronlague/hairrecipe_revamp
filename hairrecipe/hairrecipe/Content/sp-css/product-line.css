@@ -2,9 +2,13 @@
 
 .product-section{
     position : relative;
+    overflow: hidden;
+    z-index : -2;
 }
 .product-section .product-item{
     position : absolute;
+    top : 0;
+    z-index : -1;
 }
 .product-section .full-length{
     display : block;
@@ -14,4 +18,103 @@
     text-align : center;
 }
 
+
+.en-title{
+    margin-top: 13%;
+    font-family: 'LubalinGraph-Book';
+    font-size: 2.5em;
+    line-height: 112%;
+    display : block;
+}
+@media only screen and (max-device-width: 320px) {.en-title{font-size: 2em;}}
+@media only screen and (max-device-width: 375px) {.en-title{font-size: 2.5em;}}
+.content-area{
+    margin-top :116%;
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+.content-area span,
+.content-area p{
+    margin-top :1%;
+}
+
+.jp-title-1,
+.jp-title-2{
+    font-size: 1.3em;
+}
+.size{
+    font-family: 'LubalinGraph-Book';
+    font-size: 1.3em;
+}
+p.description{
+    margin-top :3%;
+}
+@media only screen and (max-device-width: 320px) {p.description{font-size: 0.9em;}}
+.additives ul li{   
+    list-style : none;    
+}
+.additives ul.columns{
+    background : url('/Content/images/sp/product/chalkboard.jpg');
+    color : #fff;
+    width : 75%;
+    margin : 5% auto 0;
+    padding : 0;
+    overflow : hidden;
+    display: block;
+}
+.additives ul.columns li.column{
+    float : left;
+    width: 50%;
+    padding: 0 0 12%;
+}
+
+.additives ul li.column:nth-child(2) {
+    border-left : 1px solid #fff;
+}
+
+.additives ul.multi li.column:nth-child(1) {
+    width: 55%;
+}
+.additives ul.multi li.column:nth-child(2) {
+    width: 45%;
+}
+
+ul.phrases{
+    padding : 0;
+}
+li.phrase-title{
+    text-align: left;
+    border-bottom : 1px solid #fff;
+    padding: 5% 10%;
+    line-height : 150%;
+    height : 18%;
+}
+li.phrase{
+    padding: 6% 10%;
+    text-align: left;
+    font-size: 0.8em;
+    letter-spacing: 3.5px;
+}
+@media only screen and (max-device-width: 320px) {li.phrase{letter-spacing: 2px;}}
+
+
+span.howtouse-hdr{
+    display : block;   
+    margin-top : 5%;
+}
+
+
+.separator {
+    border-bottom : 1px solid #87847d;
+    margin: 1% auto 3%;
+    width : 75%;
+}
+
+
+@media only screen and (max-device-width: 320px) {p.howtouse{font-size: 0.8em;}}
+
 /* Mint */
+
+#mint ul.phrases{    
+    height : 220px;
+
+}
