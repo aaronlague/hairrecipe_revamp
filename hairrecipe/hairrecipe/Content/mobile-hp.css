@@ -21,9 +21,41 @@
     color: #000;
 }
 
+.section-heading {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    text-align:center;
+    text-transform: uppercase;
+    margin-bottom:0;
+    font-size: 68px;
+}
+
+.custom-section-heading {
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    text-align:center;
+    font-size: 68px;
+    line-height: 68px;
+    margin-bottom:0;
+    padding-top:65px;
+}
+
+.spoon-h {
+    margin: 0 auto;
+    text-align:center;
+}
+
+.spoon-h img {
+    width: auto;
+}
+
 .product-item {
     margin: 0 auto;
     text-align:center;
+}
+
+.product-item .product-name {
+    font-family: 'LubalinGraph-Book';
+    font-size:40px;
+    margin: 50px 0 20px 0;
 }
 
 .product-thumbnail {
@@ -32,14 +64,37 @@
 }
 
 .product-intro-text {
-    font-size: 14px;
+    font-size: 24px;
     line-height: 22px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #87847d;
 }
 
+.life-splash {
+    padding-bottom: 110px;
+    margin-top: 25px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    .section-heading {
+        font-size:30px;
+    }
+
+    .spoon-h {
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .spoon-h img {
+        width: 45%;
+    }
+
+    .product-item .product-name {
+        font-family: 'LubalinGraph-Book';
+        font-size: 28px;
+    }
 
     .product-thumbnail {
         margin: 0 auto;
@@ -58,13 +113,41 @@
         font-size: 11px;
         line-height: 30px;
     }
+
+    .product-intro-text {
+        font-size: 14px;
+    }
+
+    .custom-section-heading {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
 
+    .section-heading {
+        font-size:30px;
+    }
+
+    .spoon-h {
+        margin: 0 auto;
+        text-align:center;
+    }
+
+    .spoon-h img {
+        width: 45%;
+    }
+
+    .product-item .product-name {
+        font-family: 'LubalinGraph-Book';
+        font-size: 23px;
+    }
+
     .product-thumbnail {
         margin: 0 auto;
-        width: 100%;
+        width: 70%;
     }
 
     .slide-headline {
@@ -74,5 +157,14 @@
     .slide-headline ~ p {
         font-size: 13px;
         line-height: 30px;
+    }
+    
+    .product-intro-text {
+        font-size: 14px;
+    }
+
+    .custom-section-heading {
+        font-size: 30px;
+        line-height: 33px;
     }
 }

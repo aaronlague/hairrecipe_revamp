@@ -11,25 +11,42 @@
 }
 
 <div class="content">
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Products</h1>
+    <div class="content-wrapper wall-hp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="section-heading">Products</h1>
+                    <div class="spoon-h">
+                        <img src="~/Content/images/sp/home/sp_hp-spoon.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="~/Content/images/sp/home/sp_product-img-heading.png" />
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    @foreach (var item in Model) {
+                        @Html.Partial("_homeProductListing", item)
+                    }
+                    @{ Html.RenderPartial("_FootBannerSp", "");  }
+                </div>
             </div>
         </div>
     </div>
 
-    <img src="~/Content/images/sp/sp_product-img-heading.png" />
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                @foreach (var item in Model) {
-                    @Html.Partial("_ProductListingBlockSp", item)
-                }
-            </div>
+    <div class="content-wrapper wood-hp">
+        <p class="custom-section-heading">LIFE<br />
+            with<br />
+            HAIR RECIPE
+        </p>
+        <div class="spoon-h">
+            <img src="~/Content/images/sp/home/sp_hp-spoon-wood.png" />
+        </div>
+        <div class="life-splash">
+            <img src="~/Content/images/sp/home/sp_life-with-hairrecipe.jpg" />
         </div>
     </div>
-
 </div>

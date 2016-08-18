@@ -25,9 +25,15 @@ h1, h2, p {
 .wood-rough{
     background : url("/Content/images/sp/bg/wood-rough.jpg");
 }
-
-.wall{
+.wood-hp{
+    background : url("/Content/images/sp/bg/wood-hp.jpg");
+}
+.wall {
     background: url("/Content/images/sp/bg/wall-1.jpg");
+}
+
+.wall-hp{
+    background: url("/Content/images/sp/bg/wall-hp.jpg");
 }
 
 .stitch-b{
