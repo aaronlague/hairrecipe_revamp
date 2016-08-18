@@ -49,7 +49,7 @@ h1, h2, p {
 }
 
 
-.to-shop-btn, .to-shop-btn:active {
+.to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
     background-color: #fff;
     border: 2px solid #87847d;
     font-family: 'LubalinGraph-Book';
@@ -64,7 +64,7 @@ h1, h2, p {
     color: #87847d;
 }
 
-.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus,  .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-read-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-read-btn.focus {
     color: #87847d;
     text-decoration: none;
 }
@@ -489,7 +489,7 @@ and (max-device-width : 568px) {
         top:5px;
     }
 
-    .to-shop-btn, .to-shop-btn:active {
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
         width: 61%;
         height: 50px;
         border-radius: 0;
@@ -502,7 +502,7 @@ and (max-device-width : 568px) {
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
@@ -643,7 +643,7 @@ and (max-device-width : 667px) {
         top:5px;
     }
 
-    .to-shop-btn, .to-shop-btn:active {
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
         width: 61%;
         height: 50px;
         border-radius: 0;
@@ -656,7 +656,7 @@ and (max-device-width : 667px) {
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
