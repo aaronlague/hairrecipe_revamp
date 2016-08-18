@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
 
@@ -20,5 +21,5 @@
         @Html.Partial("_productListSp", products);
     }
     
-    @{ Html.RenderPartial("_FootBannerSp", "stitch-s");  }
+    @{ Html.RenderPartial("_FootBannerSp", @Model.FooterBannerBackground);  }
 </div>

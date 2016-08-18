@@ -29,7 +29,6 @@
 @media only screen and (max-device-width: 320px) {.en-title{font-size: 2em;}}
 @media only screen and (max-device-width: 375px) {.en-title{font-size: 2.5em;}}
 .content-area{
-    margin-top :116%;
     font-family: 'Koburina Gothic W3 JIS2004';
 }
 .content-area span,
@@ -38,7 +37,8 @@
 }
 
 .jp-title-1,
-.jp-title-2{
+.jp-title-2,
+.jp-title-3{
     font-size: 1.3em;
 }
 .size{
@@ -109,12 +109,79 @@ span.howtouse-hdr{
     width : 75%;
 }
 
+ul.actions {
+    padding : 0;
+    margin: 6% 0 15%;
+}
+
+ul.actions li{
+    list-style : none;  
+    width : 100%;
+    margin: 5% 0;
+}
+
+ul.actions li a{
+    display : block;
+    margin: 0 auto;
+}
+
 
 @media only screen and (max-device-width: 320px) {p.howtouse{font-size: 0.8em;}}
 
 /* Mint */
-
 #mint ul.phrases{    
     height : 220px;
+}
 
+#mint #cleansing .content-area {
+    margin-top: 116%;
+}
+
+/* Apricot */
+#apricot ul.phrases{    
+    height : 220px;
+}
+#apricot #shampoo .content-area {
+    margin-top: 135%;
+}
+#apricot #treatment .content-area {
+    margin-top: 195%;
+}
+#apricot #mask .content-area {
+    margin-top: 135%;
+}
+
+#apricot #shampoo-refill .content-area {
+    margin-top: 108%;
+}
+#apricot #treatment-refill .content-area {
+    margin-top: 108%;
+}
+#apricot #pack-refill .content-area {
+    margin-top: 70%;
+}
+
+
+/* Kiwi */
+#kiwi ul.phrases{    
+    height : 220px;
+}
+#kiwi #shampoo .content-area {
+    margin-top: 135%;
+}
+#kiwi #treatment .content-area {
+    margin-top: 195%;
+}
+#kiwi #scalp .content-area {
+    margin-top: 120%;
+}
+
+#kiwi #shampoo-refill .content-area {
+    margin-top: 108%;
+}
+#kiwi #treatment-refill .content-area {
+    margin-top: 108%;
+}
+#kiwi #pack-refill .content-area {
+    margin-top: 70%;
 }

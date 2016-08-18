@@ -377,6 +377,8 @@
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
     <Content Include="Views\Shared\_productList.cshtml" />
+    <Content Include="Views\Shared\_FootBannerSp.cshtml" />
+    <Content Include="Views\Shared\_productListSp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
