@@ -34,14 +34,15 @@ h2.page-title {
 }
 
 p{
-   font-size:1.1em;
+   font-size:1.1em;   
 }
 
 .contact-main {
     color: #87847d;
     width: 86%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'koburina Gothic';
 }
 
 .first-container {
@@ -64,6 +65,18 @@ p{
 
 .second-container .container p.number {
     font-size: 2em;
+    font-family: 'LubalinGraph-Book';
+}
+
+.to-link-btn {
+    border:1px solid #87847d;
+    border-radius: 0;
+    position: relative;
+    font-size: 26px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    color: #87847d;
 }
 
 @media only screen 
@@ -73,6 +86,16 @@ and (max-device-width : 568px) {
         font-size: 2.3em;
         top: 112px;
         left: 87px;
+    }
+    .to-link-btn {
+        width: 180px;
+        height: 50px;
+        border-radius: 0;
+        position: relative;
+        font-size: 12px;
+        padding-top: 15px;
+        text-transform: uppercase;
+        padding-left: 16px;
     }
 }
 
@@ -85,6 +108,16 @@ and (max-device-width : 667px) {
         top: 137px;
         left: 103px;
         font-size: 2.7em;
+    }
+    .to-link-btn {
+        width: 180px;
+        height: 50px;
+        border-radius: 0;
+        position: relative;
+        font-size: 12px;
+        padding-top: 15px;
+        text-transform: uppercase;
+        padding-left: 13px;
     }
 
 }

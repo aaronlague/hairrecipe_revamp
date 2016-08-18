@@ -60,6 +60,20 @@ namespace hairrecipe.Controllers.sp
             }
         }
 
+        [Route("sp/sitemap")]
+        public ActionResult Sitemap()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("Sitemap", "Home");
+
+            }
+            else
+            {
+                return View();
+            }
+        }
+
         [Route("sp/faq")]
         public ActionResult Faq()
         {
