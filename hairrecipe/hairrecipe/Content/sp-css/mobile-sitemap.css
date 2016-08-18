@@ -27,7 +27,6 @@ h2.page-title {
 
 .sitemap-main {
     color: #87847d;
-    background: red;
     margin-top: -1px;
     padding-left: 0px;
     padding-right: 0px;
@@ -40,11 +39,36 @@ h2.page-title {
 }
 
 .sitemap-main ul li {
-    background: url(../images/sp/sitemap/arrow.png) right 10px no-repeat;
-    padding:20px 0;
+    background: url(../images/sp/sitemap/arrow.png) right 20px center no-repeat;
     border-bottom:1px solid #dedede;
+    height: 140px;
 }
 
+.sitemap-main ul li a {    
+    display: inline-block;
+    width: 100%;
+    /*font-family: 'LubalinGraph-Book';*/
+    font-size: 28px;
+    color: #87847d;
+    height: 140px;
+    padding: 49px 45px 0px 20px;
+
+}
+
+.koburina {
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.lubalin {
+    font-family: 'LubalinGraph-Book';
+}
+
+.sitemap-main ul li a.long {    
+    padding: 30px 45px 0 20px;
+
+}
+
+/*iPhone 5*/
 
 @media only screen 
 and (min-device-width : 320px) 
@@ -53,6 +77,20 @@ and (max-device-width : 568px) {
         font-size: 2.3em;
         top: 112px;
         left: 87px;
+    }
+    .sitemap-main ul li {        
+        height: 100px;
+    }
+    .sitemap-main ul li a {
+        height: 100px;
+    }
+    .sitemap-main ul li a {    
+        font-size: 20px;
+        padding: 35px 45px 0px 20px;
+    }
+    .sitemap-main ul li a.long {    
+        padding: 20px 45px 0 20px;
+
     }
 }
 
@@ -66,5 +104,11 @@ and (max-device-width : 667px) {
         left: 103px;
         font-size: 2.7em;
     }
+    .sitemap-main ul li a {    
+        font-size: 25px;
+    }
+    .sitemap-main ul li a.long {    
+        padding: 15px 45px 0 20px;
 
+    }
 }
