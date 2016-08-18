@@ -17,6 +17,8 @@
         <h1 class="bannerTxt">@Model.BannerText</h1>
     }
     @foreach (var products in Model.Products) {
-        @Html.Partial("_productList", products);
+        @Html.Partial("_productListSp", products);
     }
+    
+    @{ Html.RenderPartial("_FootBannerSp", "stitch-s");  }
 </div>

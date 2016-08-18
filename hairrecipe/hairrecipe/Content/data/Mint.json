@@ -7,7 +7,8 @@
     products : [
         {
             name:'cleansing',
-            line:'Mint',
+            backgroundClass : 'wall',
+            line:'Mint ',
             enTitle:'Mint Blend <br/>Cleansing <br/>Recipe',
             jpTitle1:'ミントブレンド',
             jpTitle2:'クレンジングシャンプー',
