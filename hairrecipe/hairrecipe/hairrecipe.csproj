@@ -194,10 +194,12 @@
     <Content Include="Content\images\sp\sp_product-img-heading.png" />
     <Content Include="Content\images\sp\sp_product-stories-btn.png" />
     <Content Include="Content\images\sp\sp_reco-recipe-thumbnail.png" />
+    <Content Include="Content\images\sp\sp_shopping-cart-icon-sm.png" />
     <Content Include="Content\images\sp\sp_special-info-amazon.png" />
     <Content Include="Content\images\sp\sp_special-info-lohaco.png" />
     <Content Include="Content\images\sp\sp_to-shop-btn.png" />
     <Content Include="Content\images\sp_product-stories-btn.png" />
+    <Content Include="Content\images\sp\sp_shopping-cart-icon.png" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\mobile-hp.css" />
     <Content Include="Content\mobile-styles.css" />
