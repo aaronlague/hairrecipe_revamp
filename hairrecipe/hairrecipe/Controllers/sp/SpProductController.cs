@@ -44,7 +44,7 @@ namespace hairrecipe.Controllers.sp
             string url = HttpContext.Request.Url.AbsolutePath;
             string line = url.Split('/').Last();
             ViewData["group-title"] = line;
-            string filepath = Server.MapPath("~/Content/data/Mint.json");
+            string filepath = Server.MapPath("~/Content/data/" + line + ".json");
             var productLine = ProductService.GetLineDetails(filepath);
 
             return View("Product-line", productLine);
