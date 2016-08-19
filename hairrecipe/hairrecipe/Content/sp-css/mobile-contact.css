@@ -6,7 +6,7 @@
 
 .contact-banner .inner {
     position: absolute;
-    top: 60%;
+    top: 62%;
     left: 50%;
     
     padding: .8em 1.2em;
@@ -22,7 +22,7 @@
 }
 
 h2 {
-    font-size: 1.4em;
+    font-size: 29px;
 }
 
 h2.page-title {
@@ -30,11 +30,11 @@ h2.page-title {
     /*top: 137px;
     left: 99px;*/
     color: #fff;
-    font-size: 2.8em;
+    font-size: 4.8em;
 }
 
 p{
-   font-size:1.1em;   
+   font-size:22px;   
 }
 
 .contact-main {
@@ -46,12 +46,13 @@ p{
 }
 
 .first-container {
-    background:#f9f9f9;
+    background: url(/Content/images/sp/contact/bg1.jpg) center center;
     margin-top: -1px;
+
 }
 
 .second-container {
-    background:#f8f8f8;
+    background: url(/Content/images/sp/contact/bg2.jpg) center center;
 }
 
 .second-container .container {
@@ -64,7 +65,7 @@ p{
 }
 
 .second-container .container p.number {
-    font-size: 2em;
+    font-size: 60px;
     font-family: 'LubalinGraph-Book';
 }
 
@@ -75,17 +76,25 @@ p{
     font-size: 26px;
     padding-top: 30px;
     text-transform: uppercase;
-    padding-left: 50px;
+    padding-left: 18px;
     color: #87847d;
+    width: 360px;
+    height: 100px;
 }
 
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
+    h2 {
+        font-size: 21px;
+    }
     h2.page-title {
         font-size: 2.3em;
         top: 112px;
         left: 87px;
+    }
+    p {
+        font-size: 15px;
     }
     .to-link-btn {
         width: 180px;
@@ -96,6 +105,9 @@ and (max-device-width : 568px) {
         padding-top: 15px;
         text-transform: uppercase;
         padding-left: 16px;
+    }
+    .second-container .container p.number {
+        font-size: 30px;
     }
 }
 
