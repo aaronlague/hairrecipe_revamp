@@ -41,41 +41,49 @@ h1, h2, p {
 }
 
 
+.to-shop-btn:before {
+    content:url(/Content/images/sp/sp_shopping-cart-icon.png);
+    position:relative;
+    left: -8px;
+    top:8px;
+}
 
-.to-shop-btn, .to-shop-btn:active {
-    background: url(/Content/images/sp/sp_to-shop-btn.png) center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 360px;
+
+.to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
+    background-color: #fff;
+    border: 2px solid #87847d;
+    font-family: 'LubalinGraph-Book';
+    width: 68.6%;
     height: 100px;
     border-radius: 0;
 
     position: relative;
     font-size: 26px;
-    padding-top: 30px;
+    padding-top: 20px;
     text-transform: uppercase;
-    padding-left: 50px;
     color: #87847d;
 }
 
-.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus,  .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-read-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-read-btn.focus {
     color: #87847d;
     text-decoration: none;
 }
 
 .product-stories-btn, .product-stories-btn:active {
-    background: transparent url(/Content/images/sp/sp_product-stories-btn.png) center top;
+    /*background: transparent url(/Content/images/sp/sp_product-stories-btn.png) center top;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 360px;
+    background-size: cover;*/
+    width: 68%;
     height: 100px;
     border-radius: 0;
-
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
     position: relative;
     font-size: 26px;
     padding-top: 30px;
     text-transform: uppercase;
     color: #fff;
+    font-family: 'LubalinGraph-Book';
 }
 
 .product-stories-btn:hover, .product-stories-btn:focus, .product-stories-btn.focus {
@@ -145,6 +153,8 @@ h1, h2, p {
 }
 
 .navmenu-default .navmenu-nav > li > a, .navbar-default .navbar-offcanvas .navmenu-nav > li > a {
+    font-family: 'LubalinGraph-Book';
+    text-transform: uppercase;
     color: #fff;
     font-size: 36px;
     margin-left:20px;
@@ -263,6 +273,17 @@ h1, h2, p {
     clear:both;
     margin-top: 45px;
     margin-bottom: 10px;
+}
+
+
+.footer-banner{
+    overflow : hidden;
+}
+
+.footer-banner img {
+     display: block;
+     margin: 15% auto;
+     width: 70%;
 }
 
 .page-footer {
@@ -386,14 +407,14 @@ and (max-device-width : 568px) {
     .carousel-indicators .active {
         margin: 10px 10px;
         background-color: #fff;
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
     }
 
     .carousel-indicators li {
         margin: 10px 10px;
-        width: 12px;
-        height: 12px;
+        width: 8px;
+        height: 8px;
     }
 
     .carousel-caption {
@@ -461,31 +482,40 @@ and (max-device-width : 568px) {
         font-size: 13px;
     }
 
-    .to-shop-btn, .to-shop-btn:active {
-        width: 180px;
+    .to-shop-btn:before {
+        content:url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
+        position:relative;
+        left: -5px;
+        top:5px;
+    }
+
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
+        width: 61%;
         height: 50px;
         border-radius: 0;
         position: relative;
         font-size: 12px;
-        padding-top: 15px;
         text-transform: uppercase;
-        padding-left: 25px;
+        border: 1px solid #87847d;
+        padding-top: 10px;
+        padding-left: 15px;
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
 
     .product-stories-btn, .product-stories-btn:active {
-        width: 180px;
+        width: 61%;
         height: 50px;
         border-radius: 0;
         position: relative;
         font-size: 12px;
         padding-top: 15px;
         text-transform: uppercase;
+        border: 1px solid #fff;
     }
 
     .product-stories-btn:hover, .product-stories-btn:focus, .product-stories-btn.focus {
@@ -606,31 +636,40 @@ and (max-device-width : 667px) {
         font-size: 13px;
     }
 
-    .to-shop-btn, .to-shop-btn:active {
-        width: 180px;
+    .to-shop-btn:before {
+        content:url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
+        position:relative;
+        left: -5px;
+        top:5px;
+    }
+
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
+        width: 61%;
         height: 50px;
         border-radius: 0;
         position: relative;
         font-size: 12px;
-        padding-top: 15px;
         text-transform: uppercase;
-        padding-left: 25px;
+        border: 1px solid #87847d;
+        padding-top: 10px;
+        padding-left: 15px;
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
 
     .product-stories-btn, .product-stories-btn:active {
-        width: 180px;
+        width: 61%;
         height: 50px;
         border-radius: 0;
         position: relative;
         font-size: 12px;
         padding-top: 15px;
         text-transform: uppercase;
+        border: 1px solid #fff;
     }
 
     .product-stories-btn:hover, .product-stories-btn:focus, .product-stories-btn.focus {

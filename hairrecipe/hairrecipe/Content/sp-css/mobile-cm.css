@@ -96,7 +96,7 @@ ul {
     height: auto;
 }
 
-.cm-lineup-one h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+.cm-lineup-one h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 .cm-one h2, .cm-two h2, .cm-three h2, .cm-four h2, .cm-five h2, .cm-six h2 {
     font-family:LubalinGraph-Book;
     padding-top:50px;
 }
