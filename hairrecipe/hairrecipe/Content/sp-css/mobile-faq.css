@@ -75,6 +75,11 @@ h2.page-title {
     background: none !important;
 }
 
+.answer a {
+    color:#87847d;
+}
+
+
 .question {
     padding-right:81px;
 }
@@ -86,6 +91,7 @@ h2.page-title {
 .bg {
     background: url(../images/sp/faq/bg2.jpg) right 20px center repeat;
 }
+
 
 /*iPhone 5*/
 
