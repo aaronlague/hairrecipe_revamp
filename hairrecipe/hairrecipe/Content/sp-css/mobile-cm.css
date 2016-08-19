@@ -1,0 +1,102 @@
+﻿.banner {
+    position:relative;
+}
+.banner > h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -150px;
+    text-transform: uppercase;
+    font-size: 8vw;
+}
+
+.cm-main {
+
+}
+
+.cm-anc {
+    background: url(/Content/images/sp/cm/cm-02.jpg) no-repeat;
+    height:295px;
+    background-size:contain;
+}
+
+.cm-nav {
+    padding: 20% 10% 10% 17%;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cm-anc ul li {
+    list-style:none;
+    margin-top:20px;
+    width:100%;
+}
+
+.cm-anc li a {
+    color:inherit;
+    font-size:1.4em;
+}
+
+.cm-anc li a:after {
+    content: "";
+    float:right;
+    background: url(/Content/images/sp/cm/cm-li.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 50%;
+    margin: 11px 0px 1px -43px;
+    
+}
+
+.cm-one, .cm-two, .cm-three, .cm-four, .cm-five, .cm-six {
+    position:relative;
+    padding: 0 10% 10% 10%;
+}
+
+
+
+.cm-lineup-one {
+    background: url(/Content/images/sp/cm/cm-21.jpg) no-repeat;
+    height:750px;
+    background-size:contain;
+}
+
+.cm-lineup-two {
+    background: url(/Content/images/sp/cm/cm-22.jpg) no-repeat;
+    height:750px;
+    background-size:contain;
+}
+
+.cm-lineup-three {
+    background: url(/Content/images/sp/cm/cm-23.jpg) no-repeat;
+    height:750px;
+    background-size:contain;
+}
+
+.cm-lineup-four {
+    background: url(/Content/images/sp/cm/cm-24.jpg) no-repeat;
+    height:750px;
+    background-size:contain;
+}
+
+.cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four {
+    position:relative;
+    padding: 0 10% 10% 10%;
+
+}
+
+.cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cm-lineup-one h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+    font-family:LubalinGraph-Book;
+    padding-top:50px;
+}
