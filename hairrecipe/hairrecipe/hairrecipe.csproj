@@ -401,6 +401,12 @@
     <Content Include="Views\Shared\_productList.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
+    <Content Include="Views\Sp\reco_recipe.cshtml" />
+    <Content Include="Views\Sp\kodawari.cshtml" />
+    <Content Include="Views\Home\kodawari.cshtml" />
+    <Content Include="Views\Home\reco_recipe.cshtml" />
+    <Content Include="Views\Sp\info.cshtml" />
+    <Content Include="Views\Home\info.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

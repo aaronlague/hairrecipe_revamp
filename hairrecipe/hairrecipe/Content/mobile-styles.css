@@ -16,6 +16,14 @@ h1, h2, p {
     font-style:normal;
 }
 
+a {
+    color: #87847d;
+}
+
+a:hover, a:focus {
+    color: #87847d;
+    text-decoration: none;
+}
 
 /*Background Style*/
 
@@ -238,6 +246,11 @@ h1, h2, p {
   transform: rotate(0);
 }
 
+.navmenu-default .navmenu-nav > li > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-default .navmenu-nav > li > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
 .glyphicon-chevron-right:before {
     content: "";
 }
@@ -333,6 +346,7 @@ h1, h2, p {
 
         .page-footer .special-info img {
             width: auto;
+            margin-bottom: 20px;
         }
 
         .page-footer .special-info .footer-links-container {
