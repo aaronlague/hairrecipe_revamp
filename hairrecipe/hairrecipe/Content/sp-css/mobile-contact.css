@@ -70,6 +70,7 @@ p{
 }
 
 .to-link-btn {
+    background:#fff;
     border:1px solid #87847d;
     border-radius: 0;
     position: relative;
