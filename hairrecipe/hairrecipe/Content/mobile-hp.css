@@ -1,4 +1,8 @@
-﻿.slide-text-content.top{
+﻿.content-wrapper {
+    overflow: hidden;
+}
+
+.slide-text-content.top{
     position: absolute;
     top: 24%;
     left: 13%;
@@ -27,6 +31,10 @@
     text-transform: uppercase;
     margin-bottom:0;
     font-size: 68px;
+}
+
+.section-heading.news {
+    margin-top:60px;
 }
 
 .custom-section-heading {
@@ -76,6 +84,66 @@
     margin-top: 25px;
 }
 
+
+.news-splash, .cm-splash {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.news-splash img, .cm-splash img{
+    width: auto;
+}
+
+.news-copy {
+    margin: 0 auto;
+    width: 73%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.news-content-wrapper {
+    margin: 0 auto;
+    width: 73%;
+}
+
+.news-copy .news-date, .news-copy .text {
+    font-size: 26px;
+}
+
+    .news-copy .news-date {
+        font-family: 'LubalinGraph-Book';
+    }
+
+
+.news-content .news {
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+.news-content .news img {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+.news-content .news .text {
+    font-size: 26px;
+    line-height: 32px;
+}
+
+    .news-content .news .text span.date {
+        font-family: 'LubalinGraph-Book';
+    }
+
+.centered-btn {
+    text-align:center;
+}
+
+.generic-btn {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
     .section-heading {
@@ -98,7 +166,7 @@
 
     .product-thumbnail {
         margin: 0 auto;
-        width: 100%;
+        width: 70%;
     }
 
     .slide-text-content.top{
@@ -115,12 +183,46 @@
     }
 
     .product-intro-text {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .custom-section-heading {
         font-size: 30px;
         line-height: 33px;
+    }
+
+    .news-splash, .cm-splash {
+        width: 71%;
+    }
+
+    .news-splash img, .cm-splash img{
+        width: 100%;
+    }
+
+    .news-copy {
+        /*letter-spacing: -1px;*/
+    }
+
+    .news-copy .text, .news-copy .news-date {
+        font-size: 11px;
+    }
+
+    .news-content .news .text {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .news-content .news img {
+        width:50%;
+    }
+
+    .generic-btn {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .news-content .news {
+        margin-bottom: 40px;
     }
 
 }
@@ -164,7 +266,37 @@
     }
 
     .custom-section-heading {
-        font-size: 30px;
+        font-size: 36px;
         line-height: 33px;
+    }
+
+    .news-splash, .cm-splash {
+        width: 71%;
+    }
+
+    .news-splash img, .cm-splash img{
+        width: 100%;
+    }
+
+    .news-copy .text, .news-copy .news-date {
+        font-size: 13px;
+    }
+
+    .news-content .news .text {
+        font-size: 13px;
+        line-height:18px;
+    }
+
+    .news-content .news img {
+        width:50%;
+    }
+
+    .generic-btn {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .news-content .news {
+        margin-bottom: 40px;
     }
 }
