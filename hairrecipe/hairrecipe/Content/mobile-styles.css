@@ -16,6 +16,14 @@ h1, h2, p {
     font-style:normal;
 }
 
+a {
+    color: #87847d;
+}
+
+a:hover, a:focus {
+    color: #87847d;
+    text-decoration: none;
+}
 
 /*Background Style*/
 
@@ -25,9 +33,18 @@ h1, h2, p {
 .wood-rough{
     background : url("/Content/images/sp/bg/wood-rough.jpg");
 }
-
-.wall{
+.wood-hp{
+    background : url("/Content/images/sp/bg/wood-hp.jpg");
+}
+.wood-b-hp{
+    background : url("/Content/images/sp/bg/wood-hp-2.jpg");
+}
+.wall {
     background: url("/Content/images/sp/bg/wall-1.jpg");
+}
+
+.wall-hp{
+    background: url("/Content/images/sp/bg/wall-hp.jpg");
 }
 
 .stitch-b{
@@ -40,6 +57,10 @@ h1, h2, p {
     background : url("/Content/images/sp/bg/stitch-s.jpg");
 }
 
+.stitch-hp {
+    background : url("/Content/images/sp/bg/stitch-hp.jpg");
+}
+
 
 .to-shop-btn:before {
     content:url(/Content/images/sp/sp_shopping-cart-icon.png);
@@ -49,22 +70,26 @@ h1, h2, p {
 }
 
 
-.to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
+.to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
     background-color: #fff;
     border: 2px solid #87847d;
     font-family: 'LubalinGraph-Book';
-    width: 68.6%;
+    width: 50.6%;
     height: 100px;
     border-radius: 0;
 
     position: relative;
     font-size: 26px;
-    padding-top: 20px;
+    padding-top: 24px;
     text-transform: uppercase;
     color: #87847d;
 }
 
-.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus,  .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-read-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-read-btn.focus {
+.item .to-shop-btn {
+    width: 68%;
+}
+
+.to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus,  .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-read-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-read-btn.focus, .generic-btn:hover, .generic-btn:focus, .generic-btn.focus {
     color: #87847d;
     text-decoration: none;
 }
@@ -73,7 +98,7 @@ h1, h2, p {
     /*background: transparent url(/Content/images/sp/sp_product-stories-btn.png) center top;
     background-repeat: no-repeat;
     background-size: cover;*/
-    width: 68%;
+    width: 50.6%;
     height: 100px;
     border-radius: 0;
     border: 2px solid #fff;
@@ -85,6 +110,11 @@ h1, h2, p {
     color: #fff;
     font-family: 'LubalinGraph-Book';
 }
+
+.item .product-stories-btn {
+    width: 68%;
+}
+
 
 .product-stories-btn:hover, .product-stories-btn:focus, .product-stories-btn.focus {
     color: #87847d;
@@ -216,6 +246,11 @@ h1, h2, p {
   transform: rotate(0);
 }
 
+.navmenu-default .navmenu-nav > li > a:hover, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:hover, .navmenu-default .navmenu-nav > li > a:focus, .navbar-default .navbar-offcanvas .navmenu-nav > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
 .glyphicon-chevron-right:before {
     content: "";
 }
@@ -311,6 +346,7 @@ h1, h2, p {
 
         .page-footer .special-info img {
             width: auto;
+            margin-bottom: 20px;
         }
 
         .page-footer .special-info .footer-links-container {
@@ -489,8 +525,8 @@ and (max-device-width : 568px) {
         top:5px;
     }
 
-    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
-        width: 61%;
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
+        width: 50%;
         height: 50px;
         border-radius: 0;
         position: relative;
@@ -502,13 +538,13 @@ and (max-device-width : 568px) {
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus, .generic-btn:hover, .generic-btn:focus, .generic-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
 
     .product-stories-btn, .product-stories-btn:active {
-        width: 61%;
+        width: 50%;
         height: 50px;
         border-radius: 0;
         position: relative;
@@ -643,26 +679,26 @@ and (max-device-width : 667px) {
         top:5px;
     }
 
-    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active {
-        width: 61%;
+    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
+        width: 50%;
         height: 50px;
         border-radius: 0;
         position: relative;
         font-size: 12px;
         text-transform: uppercase;
         border: 1px solid #87847d;
-        padding-top: 10px;
+        padding-top: 13px;
         padding-left: 15px;
         
     }
 
-    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus {
+    .to-shop-btn:hover, .to-shop-btn:focus, .to-shop-btn.focus, .to-read-btn:hover, .to-read-btn:focus, .to-read-btn.focus, .to-write-btn:hover, .to-write-btn:focus, .to-write-btn.focus, .to-rate-btn:hover, .to-rate-btn:focus, .to-rate-btn.focus, .generic-btn:hover, .generic-btn:focus, .generic-btn.focus {
         color: #87847d;
         text-decoration: none;
     }
 
     .product-stories-btn, .product-stories-btn:active {
-        width: 61%;
+        width: 50%;
         height: 50px;
         border-radius: 0;
         position: relative;

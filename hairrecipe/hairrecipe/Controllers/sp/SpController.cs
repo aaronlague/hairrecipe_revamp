@@ -103,5 +103,50 @@ namespace hairrecipe.Controllers.sp
                 return View();
             }
         }
+
+        [Route("sp/reco_recipe")]
+        public ActionResult reco_recipe()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("reco_recipe", "Home");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
+
+        [Route("sp/kodawari")]
+        public ActionResult kodawari()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("kodawari", "Home");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
+
+        [Route("sp/info")]
+        public ActionResult info()
+        {
+            if (!Request.Browser.IsMobileDevice)
+            {
+                return RedirectToAction("info", "Home");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
     }
 }

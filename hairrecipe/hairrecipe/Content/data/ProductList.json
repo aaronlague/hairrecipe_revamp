@@ -1,15 +1,15 @@
 [  
 {  
     "ProductId": 1,  
-    "ProductName": "Mint Blend Cleansing Recipe",  
+    "ProductName": "Mint Blend Cleansing<br />Recipe",  
     "ProductImage": "sp_mint-thumbnail.png",  
-    "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで酸味のあるストロベリーと爽やかなミントで",
+    "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで",
 	"ProductIntroText2": "髪と地肌にさっぱりディープクレンジング。",
 	"ProductLink": "/product/mint"
 },  
 {  
     "ProductId": 2,  
-    "ProductName": "Honey Apricot Enrich Moisture Recipe",  
+    "ProductName": "Honey Apricot Enrich Moisture<br />Recipe",  
     "ProductImage": "sp_apricot-thumbnail.png",
     "ProductIntroText1": "華やかな味わいのアプリコットにとろけるハニー、",
 	"ProductIntroText2": "髪に豊かなつやとうるおいを。",
@@ -17,7 +17,7 @@
 },
 {  
     "ProductId": 3,  
-    "ProductName": "Kiwi Empower Volume Recipe",  
+    "ProductName": "Kiwi Empower Volume<br />Recipe",  
     "ProductImage": "sp_kiwi-thumbnail.png",  
     "ProductIntroText1": "フルーティなキウイと爽やかないちじくで、",
 	"ProductIntroText2": "髪にたっぷりのハリとコシを。",
