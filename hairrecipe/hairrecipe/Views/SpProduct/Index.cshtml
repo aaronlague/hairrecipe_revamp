@@ -2,5 +2,23 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
-
-<h2>Products landing page</h2>
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-product-stories.css" rel="stylesheet" />
+}
+<div class="content product-stories">
+    <div class="banner">
+        <img src="~/Content/images/sp/product/landing/sp_product-stories-header.jpg" />
+        <h1>Product Stories</h1>
+    </div>
+    <div class="product-stories-top">
+        <p class="title">レシピの５つの<br />こだわりポイント</p>
+        <ol>
+            <li>テクノロジー</li>
+            <li>素材</li>
+            <li>香り</li>
+            <li>ソレー効果</li>
+            <li>泡立ち</li>
+        </ol>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+﻿.content.product-stories {
+    font-size:14px; /*base font*/
+}
+
+.banner > h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4.857em;
+    margin: 0 auto;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.product-stories-top {
+    background: url(/Content/images/sp/product/landing/sp_product-stories-top.jpg);
+    background-repeat:no-repeat;
+    background-position:top center;
+}
+
+    .product-stories-top .title {
+        text-align: center;
+        font-size: 4em;
+        padding: 90px 0;
+    }
+
+    .product-stories-top ol {
+        width: 45%;
+        font-size: 25px;
+        margin: 0 auto;
+    }
+
+        .product-stories-top ol li {
+            padding: 40px 0;
+        }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    .banner > h1 {
+        font-size: 2.857em;
+        top:36%;
+    }
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .banner > h1 {
+        font-size: 2.857em;
+        top:36%;
+    }
+}

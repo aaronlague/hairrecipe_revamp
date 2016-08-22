@@ -191,8 +191,6 @@
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
-    <Content Include="Content\images\sp\product\landing\sp_product-stories-header.jpg" />
-    <Content Include="Content\images\sp\product\landing\sp_product-stories-top.jpg" />
     <Content Include="Content\images\sp\product\mint\banner.jpg" />
     <Content Include="Content\images\sp\product\mint\cleansing.png" />
     <Content Include="Content\images\sp\sitemap\1.jpg" />
@@ -408,12 +406,16 @@
     <Content Include="Views\Shared\_productList.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Sp\reco_recipe.cshtml" />
     <Content Include="Views\Sp\kodawari.cshtml" />
     <Content Include="Views\Home\kodawari.cshtml" />
     <Content Include="Views\Home\reco_recipe.cshtml" />
     <Content Include="Views\Sp\info.cshtml" />
     <Content Include="Views\Home\info.cshtml" />
+=======
+    <Content Include="Views\Shared\_setSp.cshtml" />
+>>>>>>> feature/PG-267
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
