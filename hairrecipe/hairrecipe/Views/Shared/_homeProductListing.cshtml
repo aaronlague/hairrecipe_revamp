@@ -5,7 +5,7 @@
 
 <div class="product-item">
     <p class="product-name">@Html.Raw(Model.ProductName)</p> 
-    <img src="/Content/images/sp/home/@Model.ProductImage" class="product-thumbnail"/>
+    <img data-original="/Content/images/sp/home/@Model.ProductImage" class="product-thumbnail lazy"/>
     <p class="product-intro-text">@Model.ProductIntroText1<br />@Model.ProductIntroText2</p>
     <a href="@uri/@Model.ProductLink"  class="btn to-shop-btn">To Shop</a>
 </div>
