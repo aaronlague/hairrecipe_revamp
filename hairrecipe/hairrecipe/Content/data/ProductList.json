@@ -5,7 +5,7 @@
     "ProductImage": "sp_mint-thumbnail.png",  
     "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで",
 	"ProductIntroText2": "髪と地肌にさっぱりディープクレンジング。",
-	"ProductLink": "/product/mint"
+	"ProductLink": "product/mint"
 },  
 {  
     "ProductId": 2,  
@@ -13,7 +13,7 @@
     "ProductImage": "sp_apricot-thumbnail.png",
     "ProductIntroText1": "華やかな味わいのアプリコットにとろけるハニー、",
 	"ProductIntroText2": "髪に豊かなつやとうるおいを。",
-	"ProductLink": "/product/apricot"
+	"ProductLink": "product/apricot"
 },
 {  
     "ProductId": 3,  
@@ -21,7 +21,7 @@
     "ProductImage": "sp_kiwi-thumbnail.png",  
     "ProductIntroText1": "フルーティなキウイと爽やかないちじくで、",
 	"ProductIntroText2": "髪にたっぷりのハリとコシを。",
-	"ProductLink": "/product/kiwi"
+	"ProductLink": "product/kiwi"
 },
 {  
     "ProductId": 4,  
@@ -29,5 +29,5 @@
     "ProductImage": "sp_booster-thumbnail.png",
     "ProductIntroText1": "髪にたっぷりのハリとコシを。",
 	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
-	"ProductLink": "/product/booster"
+	"ProductLink": "product/booster"
 }]

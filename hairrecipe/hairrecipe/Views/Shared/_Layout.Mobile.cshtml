@@ -42,15 +42,24 @@
             </div>
         </div>
     </div>
+    
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+    <script src="~/Scripts/carousel-swipe.js"></script>
+    <script src="~/Scripts/jquery.lazyload.js"></script>
     <script>
         $(document).ready(function () {
             $('#myCarousel').carousel({
-                interval: false
-            })
-        })
+                interval: false,
+                swipe: 30
+            });
+
+            $("img.lazy").lazyload({
+                effect: "fadeIn",
+                threshold: 200
+            });
+        });
     </script>
     <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?3DdNOn6UIFc%3D" charset="utf-8"></script>
 </body>

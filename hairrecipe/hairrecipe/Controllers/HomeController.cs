@@ -105,7 +105,7 @@ namespace hairrecipe.Controllers
         [Route("kodawari")]
         public ActionResult kodawari()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (Request.Browser.IsMobileDevice)
             {
                 return RedirectToAction("kodawari", "Sp");
 
@@ -120,7 +120,7 @@ namespace hairrecipe.Controllers
         [Route("info")]
         public ActionResult info()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (Request.Browser.IsMobileDevice)
             {
                 return RedirectToAction("info", "Sp");
 
