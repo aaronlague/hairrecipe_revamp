@@ -16,5 +16,7 @@ namespace hairrecipe.data.Entities.Products
         public string BannerText { get; set; }
         public string FooterBannerBackground { get; set; }
         public IList<Product> Products { get; set; }
+        public IList<CustomContent> CustomContent { get; set; }
+        public IList<ComboSet> ComboSets { get; set; }
     }
 }

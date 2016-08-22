@@ -1,0 +1,247 @@
+{
+    groupName : 'Booster',
+    groupkeyword : 'booster',
+    bannerText : '',
+    metaTitle : 'Booster',
+    metaDescription : 'sample',
+    footerBannerBackground : 'stitch-b',
+    products : [
+        {
+            name:'grape',
+            backgroundClass : 'wall',
+            line:'Booster',
+            enTitle:'Booster Oil Recipe',
+            jpTitle1:'グレープ シード<br/>ブースター オイル レシピ',
+            jpTitle2:'うるおいレシピ',
+            jpTitle3:'',
+            size:30,
+            description:'保湿効果の高いグレープシードオイルで、<br/>イキイキと美しい髪に。 ',
+            howtouse:'',
+            sku:'012345678',
+            isActive : true,
+            hasReview : true,
+            hasBIN : true,
+            columns :[ 
+                {        
+                    header:'香り',
+                    phrases:[
+                      { text : 'しぼりたての果実を思わせるジューシーで甘酸っぱい、爽やかな香りがほのかに漂います。'}
+                    ]
+                }
+            ]
+        },
+        {
+            name:'seed',
+            backgroundClass : 'stitch-s',
+            line:'Booster',
+            enTitle:'',
+            jpTitle1:'サンフラワー シード<br/>ブースター オイル レシピ',
+            jpTitle2:'つやレシピ',
+            jpTitle3:'',
+            size:30,
+            description:'オメガ6※１とオメガ9※２が豊富な<br/>サンフラワーシードオイルで、指通りのよい輝く髪に。<br/>※1:リノール酸 ※2:オレイン酸',
+            howtouse:'',
+            sku:'012345678',
+            isActive : true,
+            hasReview : true,
+            hasBIN : true,
+            columns :[ 
+                {        
+                    header:'香り',
+                    phrases:[
+                      { text : '太陽をたっぷり浴びた果実や花の香りを贅沢にブレンド。アロマのような心地よい香りが楽しめます。'}
+                    ]
+                }                
+            ]
+        }      
+    ],
+    customContent : [
+        { htmlSection : '
+            <div class="point">
+                <img src="/Content/images/sp/product/booster/oil_spoon.jpg">
+                <div class="float">
+                    <p class="heading">
+                        新発想。<br/>
+                        あなたの手で、なりたい髪に<br/>
+                        仕上げるレシピ。
+                    </p>
+                    <p class="bodyText">
+                        トリートメントにひと味きかせてあなたがなりたい髪へ仕上げるブースターオイル。
+                        <br/><br/>
+                        自然の恵みがつまったオイルを<br/>
+                        トリートメントにまぜるだけ。
+                        <br/><br/>
+                        とろとろ濃厚なソースとなって、なりたい髪へ仕上げる、<br/>
+                        あなただけのレシピをつくって<br/>
+                        みませんか？
+                    </p>
+                </div>
+            </div>
+        '},
+        { htmlSection : 
+        '
+            <div class="point-mazeru point-section  wood-smooth">
+                <img class="pointer-img" src="/Content/images/sp/product/booster/point-mazeru.jpg">
+                <div class="text-content">
+                    <p class="hilight">“まぜるオイル”だからできる トリートメント力 </p>
+                    <p>たとえば、トマトをオイルと一緒にとると、リコピンの吸収が高まり美味しさがアップします。</p>
+                    <p>その相乗効果をもたらすプロセスを、ヘアケアにも応用。</p>
+                    <p>大きなコンディショニング粒子を含むブースターオイルと細かなコンディショニング粒子を含むトリートメントを混ぜることで大小のコンディショニング成分が瞬時に混ざり合い、髪の保湿力や水分バリア機能をアップ。</p>
+                    <p>“まぜる“ことでトリートメントとオイルそれぞれの効果を引き出すことができます。</p>
+                </div>
+                <div class="box-text">
+                    <p class="hilight">料理でのまぜる効果って？ </p>
+                    <p>レシピの中に適切な量のオイルをまぜることで、レシピのおいしさ（風味・香り・味）を引き出し、口にしたときの感触・食感を高め、食べたときの満足度、幸せ感を高めます。</p>
+                    <p>木下あおいさん<br/>管理栄養士/インナービューティープランナー</p>
+                </div>
+            </div>
+        ' },
+        { htmlSection : 
+        '
+            <div class="point-seed point-section wall">
+                <img class="pointer-img" src="/Content/images/sp/product/booster/point-seed.jpg">
+                <div class="text-content">
+                    <p class="hilight">注目の「種」の力を配合</p>
+                    <p>健康や美容に気を使う人たちから注目を集めている食材のひとつが「種」。</p>
+                    <p>ヘアレシピは、栄養価の高いリノール酸を多く含む「グレープシードオイル」と、リノール酸に加えてオレイン酸を含み、ビタミンA、C、D、Eが豊富な「サンフラワーオイル」を取り入れました。</p>
+                </div>
+                <div class="box-text">
+                    <p class="hilight">なぜ「種」がいいの？ </p>
+                    <p>「地球上に約20万種の植物が生息していると言われており、芽吹くための、植物本来の生命の力が濃縮されている種。強固な種から発芽する、その神秘的な力強さと豊富な栄養素を求めて、古来より多くの人々が食べてきました。まさに今日までの人類を作り上げた、最古のパワーフードと言えるでしょう」</p>
+                    <p>日本グラノーラ協会 会長 草彅洋平さん</p>
+                </div>
+            </div>
+        ' },
+        { htmlSection : 
+        '
+            <div class="point-recipe point-section  wood-smooth">
+                <img class="pointer-img" src="/Content/images/sp/product/booster/point-recipe.jpg">
+                <div class="text-content">
+                    <p class="hilight">自分だけの香りのレシピを<br/>楽しむ至福</p>
+                    <p>ブースターオイルの香りの役割はフランス料理でいうところのソースをイメージしています。<br/>
+                    たとえば、フォアグラにアプリコットソースを合わせることは、その味わい深さを高め、個性的な側面を引き出します。<br/>
+                    ブースターオイルの香りも同じです。トリートメントにまぜることで、その特徴的な香りが、いつものトリートメントの香りにひと味違うツイストをプラス。<br/>
+                    組み合わせるアイテムやまぜる量によってもまた異なる、香りのカスタマイズ体験で、いつものヘアケアが心が高揚する充実のひとときに変わります。
+                    </p>
+                </div>
+            </div>
+        ' },
+        { htmlSection : 
+        '
+            <div class="video wood-smooth wall">
+                <p class="title">ブースターオイルの使い方</p>
+                <img class="" src="/Content/images/sp/product/booster/howtouse_vid.jpg">
+                <div class="text-content">
+                    <p class="hilight">ステップ1　かける</p>
+                    <p>トリートメント（1〜2プッシュ）に、オイル（3〜5プッシュ）をかけます。 </p>
+                    <p class="hilight">ステップ２　まぜる</p>
+                    <p>トリートメントがとろとろした感触に変わるまで、よくまぜます。 </p>
+                    <p class="hilight">ステップ3　なじませ洗い流す</p>
+                    <p>毛先から髪全体によくなじませて少し置き、やさしく洗い流します。</p>
+                    <p>オイルは洗い流さないトリートメントとして直接髪にお使いいただくこともできます。</p>
+                    <p>・保湿力を高めたいとき：グレープ シード ブースター オイル レシピ </p>
+                    <p>・髪に輝きが欲しいとき：サンフラワー シード ブースター オイル レシピ</p>
+                </div>
+            </div>
+        ' },
+        { htmlSection : 
+        '
+            <div class="oil-spoon stitch-s">
+                <img class="" src="/Content/images/sp/product/booster/oil_spoon_seed.png">
+                <div class="text-content">
+                    <p>気分に合わせてなりたい髪を叶える、あなたが仕上げるレシピ</p>
+                    <p>トリートメントとブースター オイル（洗い流さないトリートメント）を選び、お好みの量をまぜることであなただけのレシピが完成。今の気分に合わせて仕上げるあなたのレシピは？</p>
+                </div>
+                <img class="" src="/Content/images/sp/product/booster/oil_spoon_grape.png">
+            </div>
+        ' }        
+    ],
+    comboSets : [
+        {
+            title : 'うっとりしたいとき',
+            backgroundClass : 'wall',
+            description : '豊かで甘いハニーアプリコットの香りのトリートメントに、 ストロベリージンジャーが香るブースターオイルをまぜると、ジューシーな爽やかさがプラス。',
+            image : '/Content/images/sp/product/booster/set_01.png',
+            productSets : [
+                {
+                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
+                    jpTitle2 : 'トリートメント',
+                    SKU : '12345678789'
+                },
+                {
+                    jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ',
+                    jpTitle2 : '洗い流さないトリートメント',
+                    SKU : '12345678789'
+                }                
+            ]            
+        },
+        {
+            title : 'リラックスしたいとき',
+            backgroundClass : 'wood-smooth',
+            description : '豊かで甘いハニーアプリコットの香りのトリートメントに、サニーシトラスが香るブースターオイルをまぜると、気持ちが和らぐ爽やかな甘さが楽しめます。',
+            image : '/Content/images/sp/product/booster/set_02.png',
+            productSets : [
+                {
+                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
+                    jpTitle2 : 'トリートメント',
+                    SKU : '12345678789'
+                },
+                {
+                    jpTitle1 : 'サンフラワー シード<br/>ブースター オイル レシピ',
+                    jpTitle2 : '洗い流さないトリートメント',
+                    SKU : '12345678789'
+                }                
+            ]            
+        },
+        {
+            title : '元気を出したいとき',
+            backgroundClass : 'stitch-s',
+            description : '爽やかなシトラスの香りのトリートメントと、酸味のある香りのストロベリージンジャーのブースターオイルをまぜると、甘味のあるフレッシュなフレーバーに。',
+            image : '/Content/images/sp/product/booster/set_03.png',
+            productSets : [
+                {
+                    jpTitle1 : 'キウイ エンパワー ボリューム レシピ ',
+                    jpTitle2 : 'トリートメント',
+                    SKU : '12345678789'
+                },
+                {
+                    jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ ',
+                    jpTitle2 : '洗い流さないトリートメント',
+                    SKU : '12345678789'
+                }                
+            ]            
+        },
+        {
+            title : 'リフレッシュしたいとき',
+            backgroundClass : 'wood-rough',
+            description : 'シトラス系の甘さのトリートメントと、フルーティーなブースターオイルの組み合わせは、爽やかさがより際立った、ほのかに甘いフレーバーに。',
+            image : '/Content/images/sp/product/booster/set_04.png',
+            productSets : [
+                {
+                    jpTitle1 : 'キウイ エンパワー ボリューム レシピ',
+                    jpTitle2 : 'トリートメント',
+                    SKU : '12345678789'
+                },
+                {
+                    jpTitle1 : 'サンフラワー シード <br/>ブースター オイル レシピ  ',
+                    jpTitle2 : '洗い流さないトリートメント',
+                    SKU : '12345678789'
+                }                
+            ]            
+        }        
+    ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
