@@ -21,5 +21,21 @@
         @Html.Partial("_productListSp", products);
     }
     
-    @{ Html.RenderPartial("_FootBannerSp", @Model.FooterBannerBackground);  }
+    @if (Model.CustomContent != null) { 
+        foreach (var customContent in Model.CustomContent)
+        {
+            @Html.Raw(customContent.HtmlSection.ToString());
+        }
+    }
+
+    @if (Model.ComboSets != null)
+    {
+        foreach (var ComboSet in Model.ComboSets)
+        {
+            @Html.Partial("_setSp", ComboSet);
+        }        
+    }
+
+@{ Html.RenderPartial("_FootBannerSp", @Model.FooterBannerBackground);  }
+
 </div>

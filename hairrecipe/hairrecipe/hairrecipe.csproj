@@ -406,6 +406,7 @@
     <Content Include="Views\Shared\_productList.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
+	<Content Include="Views\Shared\_setSp.cshtml" />
     <Content Include="Views\Sp\reco_recipe.cshtml" />
     <Content Include="Views\Sp\kodawari.cshtml" />
     <Content Include="Views\Home\kodawari.cshtml" />

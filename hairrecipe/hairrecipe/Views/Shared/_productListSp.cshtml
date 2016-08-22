@@ -25,7 +25,7 @@
         <p class="description  full-length center">@Html.Raw(@Model.Description)</p>
     }
     @if (Model.Columns.Count > 0) {
-        <div class="additives full-length center">
+        <div class="additives  center">
             <ul class="columns @Html.Raw(Model.Columns.Count > 1 ? "multi" : "solo")">
                 @foreach (var column in Model.Columns)
                 {

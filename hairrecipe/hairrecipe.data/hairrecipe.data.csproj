@@ -48,9 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entities\Products\Column.cs" />
+    <Compile Include="Entities\Products\CustomContent.cs" />
     <Compile Include="Entities\Products\Phrase.cs" />
     <Compile Include="Entities\Products\Product.cs" />
     <Compile Include="Entities\Products\ProductLine.cs" />
+    <Compile Include="Entities\Products\ComboSet.cs" />
+    <Compile Include="Entities\Products\ProductSet.cs" />
     <Compile Include="Helpers\DataExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ProductService.cs" />
