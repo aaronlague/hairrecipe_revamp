@@ -37,6 +37,7 @@
 
 .content-area{
     font-family: 'Koburina Gothic W3 JIS2004';
+    position: relative;
 }
 .content-area span,
 .content-area p{
@@ -106,20 +107,25 @@ li.phrase-title{
     border-bottom : 1px solid #fff;
     padding: 5% 10%;
     line-height : 150%;    
+    font-size: 1.2em;
 }
 .additives ul.multi li.column:nth-child(2) ul li.phrase-title {
-    padding: 5% 10% 6%;
+    padding: 5% 10% 5.5%;
 }
+@media only screen and (orientation: portrait) and (min-device-width: 360px) and (max-device-width: 750px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6%;}}
+@media only screen and (orientation: landscape) and (min-device-width: 568px) and (max-device-width: 750px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6.4%;}}
+@media only screen and (orientation: landscape) and (min-device-width: 667px) and (max-device-width: 668px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6%;}} /*iphone6 specific*/
 .solo li.phrase-title{
     text-align: center;
     padding: 2% 10%;
-    height : auto;
+    height : auto;    
 }
 li.phrase{
     padding: 6% 10%;
     text-align: left;
-    font-size: 0.8em;
-    letter-spacing: 3.5px;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    line-height : 170%;
 }
 
 
@@ -159,7 +165,7 @@ ul.actions li a{
 /* Mint */
 
 #mint #cleansing .content-area {
-    margin-top: 116%;
+    margin-top: 109%;
 }
 
 /* Apricot */
