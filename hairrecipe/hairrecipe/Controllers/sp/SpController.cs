@@ -85,8 +85,12 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
+                string file = Server.MapPath("~/Content/data/VideoList.json");
+                string Json = System.IO.File.ReadAllText(file);
+                JavaScriptSerializer videoObj = new JavaScriptSerializer();
+                var videoList = videoObj.Deserialize<List<CmViewModel>>(Json);
 
-                return View();
+                return View(videoList);
             }
         }
     }

@@ -157,6 +157,7 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
+    <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -272,8 +273,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\jasny-bootstrap.css.map" />
-    <Content Include="Content\data\ProductList.json" />
     <Content Include="Content\data\Mint.json" />
+    <Content Include="Content\data\VideoList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
     <Content Include="Scripts\jasny-bootstrap.min.js" />
@@ -296,6 +297,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\_ProductListingBlockSp.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -344,7 +348,6 @@
     <Content Include="Views\Shared\q1\abcd.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\a.Mobile.cshtml" />
     <Content Include="Views\Shared\q2\b.Mobile.cshtml" />
-    <Content Include="Views\Shared\_ProductListingBlockSp.cshtml" />
     <Content Include="Views\Shared\q3\a1.Mobile.cshtml" />
     <Content Include="Views\Shared\q3\a2.Mobile.cshtml" />
     <Content Include="Views\Shared\q3\b1.Mobile.cshtml" />
@@ -372,6 +375,7 @@
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
     <Content Include="Views\Shared\_productList.cshtml" />
+    <Content Include="Views\Shared\_videoList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
