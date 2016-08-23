@@ -230,6 +230,7 @@
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
+    <Content Include="Content\sp-css\mobile-diagnosis.css" />
     <Content Include="Content\sp-css\mobile-reco_recipe.css" />
     <Content Include="Content\sp-css\mobile-sitemap.css" />
     <Content Include="Content\sp-css\mobile-contact.css" />
@@ -409,10 +410,10 @@
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
     <Content Include="Views\Shared\_productList.cshtml" />
-	<Content Include="Views\Shared\_videoList.cshtml" />
+    <Content Include="Views\Shared\_videoList.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
-	<Content Include="Views\Shared\_setSp.cshtml" />
+    <Content Include="Views\Shared\_setSp.cshtml" />
     <Content Include="Views\Sp\reco_recipe.cshtml" />
     <Content Include="Views\Sp\kodawari.cshtml" />
     <Content Include="Views\Home\kodawari.cshtml" />
