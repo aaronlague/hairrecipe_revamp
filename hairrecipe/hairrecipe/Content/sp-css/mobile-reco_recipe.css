@@ -1,0 +1,334 @@
+﻿
+/*@media only screen and (max-device-width: 320px) {.reco_recipe-main{font-size: 0.9em;}}
+@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {.reco_recipe-main{font-size: 9px;}}
+@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {.reco_recipe-main{font-size: 18px;}}
+@media only screen and (min-device-width: 415px) and (max-device-width: 480px) {.reco_recipe-main{font-size: 20px;}}
+@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {.reco_recipe-main{font-size: 1em;}}*/
+
+
+body {
+    font-size:14px;
+}
+
+.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+    position: absolute;
+    top: 57%;
+    left: 53%;
+    
+    padding: .8em 1.2em;
+    color: white;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+h2.page-title {
+    color: #fff;
+    font-size: 4.857em;
+    width:500px;
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.section1 {
+    position:relative;
+}
+
+.section1 .inner .linkA, .section1 .inner .linkB,
+.section1 .inner .linkC, .section1 .inner .linkD {
+    /*background: red;*/
+    height: 28%;
+    width: 37%;
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 13%;    
+    padding: 4%;
+    text-align:center;
+}
+
+.section1 .inner .linkA .title, .section1 .inner .linkB .title,
+.section1 .inner .linkC .title, .section1 .inner .linkD .title {
+    font-size: 2.000em;
+    font-family: 'LubalinGraph-Book';
+}
+.section1 .inner .linkA p, .section1 .inner .linkB p,
+.section1 .inner .linkC p, .section1 .inner .linkD p {
+    font-size: 2.571em;
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.section1 .inner .linkA .desc, .section1 .inner .linkB .desc,
+.section1 .inner .linkC .desc, .section1 .inner .linkD .desc {
+    font-size:1.857em;
+}
+
+.section1 .inner .linkB {
+    left: 51.5%;
+}
+
+.section1 .inner .linkC, .section1 .inner .linkD {
+    top: 54.5%;
+}
+
+.section1 .inner .linkD {
+    left: 51.5%;
+}
+
+.section2 {
+    position:relative;
+}
+ 
+.section2 .desc1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 9%;  
+    text-align: center;    
+}
+
+.section2 .desc1 .title {
+    font-size: 2.000em;
+    font-family: 'LubalinGraph-Book';
+    margin-bottom:15px;
+}
+
+.section2 .desc1 p {
+    font-size: 2.5em;
+}
+   
+.section2 .desc2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 42%;  
+    text-align: center;   
+    
+}
+
+.section2 .desc2 .product div {
+    width:32%;
+    display:inline-block;
+    font-size:1.845em;
+    margin-bottom:8%;
+}
+
+.section2 .desc2 p {
+    font-size: 2.5em;
+}
+
+.section2 .shop-btn {
+    margin-top: 5%;
+    margin-bottom: 11%;
+}
+
+.section3 {
+    position:relative;
+}
+ 
+.section3 .desc1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 11%;  
+    padding: 4%;
+    text-align: center;    
+}
+
+.section3 .desc1 .title {
+    font-size: 2.000em;
+    font-family: 'LubalinGraph-Book';
+    margin-bottom:15px;
+}
+
+.section3 .desc1 p {
+    font-size: 2.5em;
+}
+   
+.section3 .desc2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 45.5%;  
+    text-align: center;   
+    
+}
+
+.section3 .desc2 .product div {
+    width:32%;
+    display:inline-block;
+    font-size:1.845em;
+    margin-bottom:6%;
+}
+
+.section3 .desc2 p {
+    font-size: 2.5em;
+}
+
+.section3 .shop-btn {
+    margin-top: 5%;
+    margin-bottom: 11%;
+}
+
+
+.section4 {
+    position:relative;
+}
+ 
+.section4 .desc1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 11%;  
+    padding: 4%;
+    text-align: center;    
+}
+
+.section4 .desc1 .title {
+    font-size: 2.000em;
+    font-family: 'LubalinGraph-Book';
+    margin-bottom:15px;
+}
+
+.section4 .desc1 p {
+    font-size: 2.5em;
+}
+   
+.section4 .desc2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 45.5%;  
+    text-align: center;   
+    
+}
+
+.section4 .desc2 .product div {
+    width:32%;
+    display:inline-block;
+    font-size:1.845em;
+    margin-bottom:6%;
+    vertical-align:top;
+}
+
+.section4 .desc2 p {
+    font-size: 2.5em;
+}
+
+.section4 .shop-btn {
+    margin-top: 5%;
+    margin-bottom: 11%;
+}
+
+.section5 {
+    position:relative;
+}
+ 
+.section5 .desc1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 11%;  
+    padding: 4%;
+    text-align: center;    
+}
+
+.section5 .desc1 .title {
+    font-size: 2.000em;
+    font-family: 'LubalinGraph-Book';
+    margin-bottom:15px;
+}
+
+.section5 .desc1 p {
+    font-size: 2.5em;
+}
+   
+.section5 .desc2 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 39.5%;  
+    text-align: center;   
+    
+}
+
+.section5 .desc2 .product div {
+    width:32%;
+    display:inline-block;
+    font-size:1.845em;
+    margin-bottom:6%;
+    vertical-align:top;
+}
+
+.section5 .desc2 p {
+    font-size: 2.5em;
+}
+
+.section5 .shop-btn {
+    margin-top: 5%;
+    margin-bottom: 11%;
+}
+
+.section5 .desc3 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    bottom: 5%;      
+}
+
+.section5 .desc3 p {
+    font-size: 2.5em;   
+}
+
+
+
+
+/*iPhone 5*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    body {
+        font-size: 6px;
+    }
+    h2.page-title {
+        width: 268px;
+    }
+    .section2 .shop-btn {
+        margin-top: 2%;
+        margin-bottom: 6%;
+    }
+}
+
+
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    body {
+        font-size: 8px;
+    }
+
+    h2.page-title {
+        width: 260px;       
+    }
+
+    .section2 .shop-btn {
+        margin-top: 4%;
+        margin-bottom: 8%;
+    }
+
+    
+}
+
