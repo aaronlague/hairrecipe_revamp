@@ -1,9 +1,21 @@
-﻿
-<div class="footer-banner @Model" >
-    <a href="/diagnosis">
-        <img class="lazy" data-original="/Content/images/sp/sp_diagnosis-thumbnail.png" alt="あなたの髪、うるおっている？ジューシー度チェック" />
-    </a>
-    <a href="/reco_recipe/">
-        <img class="lazy" data-original="/Content/images/sp/sp_reco-recipe-thumbnail.png" alt="YOUR RECIPE なりたい髪を選んで" />
-    </a>
+﻿<!-- 
+    Format for the array parameter
+
+    format
+        { "string", "null", "null" }, <-- dedicated for the background
+	    {"link;string", "path;string", "alt;string"}
+    sample 
+        { "wood-class", "", "" },
+	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
+-->
+<div class="footer-banner @Model[0, 0] ">
+    @for (int i = 1; i < (Model.Length / 3); i++)
+    {
+        string link = Model[i, 0];
+        string img = Model[i, 1];
+        string alt = Model[i, 2];
+        <a href="@link">
+            <img class="lazy" data-original="/Content/images/sp/@img" alt="@alt" />
+        </a>
+    }
 </div>
