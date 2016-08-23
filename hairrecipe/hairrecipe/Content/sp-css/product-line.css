@@ -1,8 +1,10 @@
-﻿@media only screen and (max-device-width: 320px) {.view{font-size: 0.9em;}}
-@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {.view{font-size: 1em;}}
-@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {.view{font-size: 1.1em;}}
-@media only screen and (min-device-width: 415px) and (max-device-width: 480px) {.view{font-size: 1.5em;}}
-@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {.view{font-size: 1.8em;}}
+﻿@media only screen and (orientation: portrait) and (max-device-width: 320px) {.view{font-size: 0.9em;}}
+@media only screen and (orientation: portrait) and (min-device-width: 321px) and (max-device-width: 375px) {.view{font-size: 1em;}}
+@media only screen and (orientation: portrait) and (min-device-width: 376px) and (max-device-width: 414px) {.view{font-size: 1.1em;}}
+@media only screen and (orientation: portrait) and (min-device-width: 415px) and (max-device-width: 480px) {.view{font-size: 1.5em;}}
+@media only screen and (orientation: portrait) and (min-device-width: 481px) and (max-device-width: 750px) {.view{font-size: 1.8em;}}
+@media only screen and (orientation: landscape) and (min-device-width: 568px) and (max-device-width: 666px) {.view{font-size: 1.5em;}}
+@media only screen and (orientation: landscape) and (min-device-width: 667px) and (max-device-width: 750px) {.view{font-size: 1.8em;}}
 
 
 /* common */
@@ -10,12 +12,12 @@
 .product-section{
     position : relative;
     overflow: hidden;
-    z-index : -2;
+   /* z-index : -2;*/
 }
 .product-section .product-item{
     position : absolute;
     top : 0;
-    z-index : -1;
+    /*z-index : -1;*/
 }
 .product-section .full-length{
     display : block;
@@ -27,13 +29,15 @@
 .en-title{
     margin-top: 13%;
     font-family: 'LubalinGraph-Book';
-    font-size: 2.5em;
+    font-size: 2.4em;
     line-height: 112%;
     display : block;
+    position : relative;
 }
 
 .content-area{
     font-family: 'Koburina Gothic W3 JIS2004';
+    position: relative;
 }
 .content-area span,
 .content-area p{
@@ -43,14 +47,19 @@
 .jp-title-1,
 .jp-title-2,
 .jp-title-3{
-    font-size: 1.3em;
+    font-size: 1.1em;
+    letter-spacing : 0.2em;
+    position : relative;
 }
 .size{
     font-family: 'LubalinGraph-Book';
     font-size: 1.3em;
 }
 p.description{
-    margin-top :3%;
+    font-size : 0.8em;
+    margin :4% auto 6%;
+    line-height : 170%;
+    letter-spacing : 0.1em;
 }
 .additives{   
     width : 75%;
@@ -98,26 +107,36 @@ li.phrase-title{
     border-bottom : 1px solid #fff;
     padding: 5% 10%;
     line-height : 150%;    
+    font-size: 1.2em;
 }
 .additives ul.multi li.column:nth-child(2) ul li.phrase-title {
-    padding: 5% 10% 6%;
+    padding: 5% 10% 5.5%;
 }
+@media only screen and (orientation: portrait) and (min-device-width: 360px) and (max-device-width: 750px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6%;}}
+@media only screen and (orientation: landscape) and (min-device-width: 568px) and (max-device-width: 750px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6.4%;}}
+@media only screen and (orientation: landscape) and (min-device-width: 667px) and (max-device-width: 668px) {.additives ul.multi li.column:nth-child(2) ul li.phrase-title {padding: 5% 10% 6%;}} /*iphone6 specific*/
 .solo li.phrase-title{
     text-align: center;
     padding: 2% 10%;
-    height : auto;
+    height : auto;    
 }
 li.phrase{
     padding: 6% 10%;
     text-align: left;
-    font-size: 0.8em;
-    letter-spacing: 3.5px;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
+    line-height : 170%;
 }
 
 
 span.howtouse-hdr{
     display : block;   
-    margin-top : 5%;
+    margin-top : 8%;
+}
+
+.howtouse{
+    font-size : 0.9em;
+    letter-spacing: 0.5px;
 }
 
 .separator {
@@ -146,7 +165,7 @@ ul.actions li a{
 /* Mint */
 
 #mint #cleansing .content-area {
-    margin-top: 116%;
+    margin-top: 109%;
 }
 
 /* Apricot */
@@ -175,10 +194,10 @@ ul.actions li a{
 /* Kiwi */
 
 #kiwi #shampoo .content-area {
-    margin-top: 135%;
+    margin-top: 138%;
 }
 #kiwi #treatment .content-area {
-    margin-top: 195%;
+    margin-top: 188%;
 }
 #kiwi #scalp .content-area {
     margin-top: 120%;

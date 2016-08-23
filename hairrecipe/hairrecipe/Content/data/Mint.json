@@ -2,8 +2,8 @@
     groupName : 'Mint',
     groupkeyword : 'mint',
     bannerText : '',
-    metaTitle : 'Mint Page',
-    metaDescription : 'Mint details',
+    metaTitle : 'ミントブレンド クレンジング レシピ｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
+    metaDescription : 'いちごとミント、フレッシュジンジャーのフレグランスブレンド『ミントブレンドクレンジングレシピ』のご紹介。酸味のあるストロベリーと爽やかなミントで、髪と地肌にさっぱりディープクレンジング。',
     footerBannerBackground : 'stitch-s',
     products : [
         {
@@ -12,11 +12,11 @@
             line:'Mint',
             enTitle:'Mint Blend <br/>Cleansing <br/>Recipe',
             jpTitle1:'ミントブレンド',
-            jpTitle2:'クレンジングシャンプー',
+            jpTitle2:'[クレンジングシャンプー]',
             jpTitle3:'',
-            size:300,
-            description:'髪と地肌を適度に刺激しながら優しく洗い、<br/>毛穴のつまりや汚れを取り除く <br/>ディープクレンジングシャンプーです。 <br/> 週1～2回シャンプーの代わりに。',
-            howtouse:'ハニー アプリコット エンリッチ モイスチャー <br/>レシピ シャンプーとキウイ エンパワー ボリューム <br/>レシピ シャンプーの代わりに週1～2回使用します。<br/>濡れた地肌と髪をやさしくマッサージし、<br/>きれいに洗い流します。',
+            size:'300ml',
+            description:'髪と地肌を適度に刺激しながら優しく洗い、<br/>毛穴のつまりや汚れを取り除く<br/>ディープクレンジングシャンプーです。<br/>週1～2回シャンプーの代わりに。',
+            howtouse:'ハニー アプリコット エンリッチ モイスチャー<br/>レシピ シャンプーとキウイ エンパワー ボリューム <br/>レシピ シャンプーの代わりに週1～2回使用します。<br/>濡れた地肌と髪をやさしくマッサージし、<br/>きれいに洗い流します。',
             sku:'012345678',
             isActive : true,
             hasReview : true,
@@ -25,8 +25,8 @@
                 {        
                     header:'添加',
                     phrases:[
-                      { text : 'キウイ、いちじくのフレグランスブレンド'},
-                      { text : '天然由来成分入りのクレンジングジュース'},
+                      { text : 'ストロベリー、ペパーミントのフレグランスブレンド'},
+                      { text : '天然由来成分入りのクレンジングシャンプー'},
                       { text : '新鮮さを保つ成分を適量配合'}
                     ]
                 },
