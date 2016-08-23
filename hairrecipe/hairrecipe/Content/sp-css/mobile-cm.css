@@ -155,7 +155,9 @@ ul {
        font-size: 1em;
    }
 
-   .cm-lineup-one, cm-lineup-one, cm-lineup-one, cm-lineup-one
+   .to-read-btn {
+       font-size:11px;
+   }
 }
 
 
