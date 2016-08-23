@@ -16,7 +16,7 @@ body {
 }
 
 .contact-banner .inner {
-    position: absolute;
+    position: relative;
     top: 57%;
     left: 53%;
     
@@ -31,11 +31,21 @@ body {
     
 }
 
-h2.page-title {
-    color: #fff;
+.page-title {
+    /*color: #fff;
     font-size: 4.857em;
-    width:500px;
     font-family: 'Koburina Gothic W3 JIS2004';
+    background:red;
+    position: absolute;*/
+    color: #fff;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 52%;
+    text-align: center;
+    font-size: 4.857em;
+    font-family: 'Koburina Gothic W3 JIS2004';
+    /*background:red;*/
 }
 
 .section1 {
@@ -301,7 +311,7 @@ and (max-device-width : 568px) {
         font-size: 6px;
     }
     h2.page-title {
-        width: 268px;
+        /*width: 215px;*/
     }
     .section2 .shop-btn {
         margin-top: 2%;
@@ -332,7 +342,7 @@ and (max-device-width : 667px) {
     }
 
     h2.page-title {
-        width: 260px;       
+        /*width: 260px;*/       
     }
 
     .section2 .shop-btn {
