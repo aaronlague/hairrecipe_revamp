@@ -31,6 +31,7 @@ body {
     
 }
 
+
 .page-title {
     /*color: #fff;
     font-size: 4.857em;
@@ -46,6 +47,12 @@ body {
     font-size: 4.857em;
     font-family: 'Koburina Gothic W3 JIS2004';
     /*background:red;*/
+}
+
+.reco_recipe-main {
+    /*color: #87847d;
+    width: 86%;
+    margin-bottom:20px;*/
 }
 
 .section1 {
