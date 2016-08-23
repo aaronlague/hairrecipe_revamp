@@ -34,6 +34,7 @@
         width: 45%;
         font-size: 1.786em;
         margin: 0 auto;
+        padding-bottom: 50%;
     }
 
         .product-stories-top ol li {
@@ -84,6 +85,124 @@
         font-size: 1.857em;
     }
 
+.product-lineup-container .lineup-1 {
+    background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-1.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+    text-align: center;
+}
+
+    .product-lineup-container .lineup-1 .copy {
+        position: relative;
+        padding-bottom: 80%;
+        padding-top: 35%;
+    }
+
+        .product-lineup-container .lineup-1 .copy h1 {
+            font-size: 2.000em;
+            margin-bottom: 20px;
+        }
+
+         .product-lineup-container .lineup-1 .copy p {
+            font-size: 2.571em;
+        }
+
+    .product-lineup-container .lineup-1 .btn {
+        width: 65%;
+        margin-bottom: 8%;
+        padding-top: 14px;
+    }
+
+.product-lineup-container .lineup-2 {
+    background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-2.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+    text-align: center;
+}
+
+    .product-lineup-container .lineup-2 .copy {
+            position: relative;
+            padding-bottom: 79%;
+            padding-top: 10%;
+        }
+
+        .product-lineup-container .lineup-2 .copy h1 {
+            font-size: 2.000em;
+            margin-bottom: 20px;
+        }
+
+         .product-lineup-container .lineup-2 .copy p {
+            font-size: 2.571em;
+        }
+
+    .product-lineup-container .lineup-2 .btn {
+        width: 65%;
+        margin-bottom: 8%;
+        padding-top: 14px;
+    }
+
+.product-lineup-container .lineup-3 {
+    background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-3.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+    text-align: center;
+}
+
+    .product-lineup-container .lineup-3 .copy {
+            position: relative;
+            padding-bottom: 70%;
+            padding-top: 35%;
+        }
+
+        .product-lineup-container .lineup-3 .copy h1 {
+            font-size: 2.000em;
+            margin-bottom: 20px;
+        }
+
+         .product-lineup-container .lineup-3 .copy p {
+            font-size: 2.571em;
+        }
+
+    .product-lineup-container .lineup-3 .btn {
+        width: 65%;
+        margin-bottom: 8%;
+        padding-top: 14px;
+    }
+
+.product-lineup-container .lineup-4 {
+    background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-4.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+    text-align: center;
+}
+
+    .product-lineup-container .lineup-4 .copy {
+            position: relative;
+            padding-bottom: 65%;
+            padding-top: 35%;
+        }
+
+        .product-lineup-container .lineup-4 .copy h1 {
+            font-size: 2.000em;
+            margin-bottom: 20px;
+        }
+
+         .product-lineup-container .lineup-4 .copy p {
+            font-size: 2.571em;
+        }
+
+         .product-lineup-container .lineup-4 .copy p.second-copy {
+            font-size: 1.571em;
+        }
+    .product-lineup-container .lineup-4 .btn {
+        width: 65%;
+        margin-bottom: 8%;
+        padding-top: 28px;
+    }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
@@ -93,6 +212,79 @@
 
     .banner > h1 {
         top:36%;
+    }
+
+    .product-stories-top {
+        background: url(/Content/images/sp/product/landing/sp_product-stories-top.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        height: auto;
+    }
+
+        .product-stories-top .title {
+            font-size: 3.5em;
+        }
+
+        .product-stories-top ol li {
+            padding: 15px 0;
+            background-size: 20%;
+            background-position-y: 20px;
+        }
+
+    .product-stories-content .product-story {
+        width: 70%
+    }
+
+        .product-stories-content .product-story img {
+            width: 100%
+        }
+
+    .product-stories-top ol {
+        padding-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-1 .copy {
+        padding-bottom: 67%;
+    }
+
+    .product-lineup-container .lineup-1 .btn {
+        padding-top: 7px;
+        margin-bottom: 9%;
+    }
+
+    .product-lineup-container .lineup-2 .copy {
+        padding-bottom: 63%;
+        padding-top: 5%;
+    }
+
+    .product-lineup-container .lineup-2 .btn {
+        padding-top: 7px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-3 .copy {
+        padding-bottom: 59%;
+        padding-top: 33%;
+    }
+
+    .product-lineup-container .lineup-3 .btn {
+        padding-top: 7px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-4 .copy {
+        padding-bottom: 52%;
+        padding-top: 33%;
+    }
+
+    .product-lineup-container .lineup-4 .btn {
+        padding-top: 14px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-4 .copy p {
+        font-size: 2.2em;
     }
 }
 
@@ -104,5 +296,73 @@
 
     .banner > h1 {
         top:36%;
+    }
+
+    .product-stories-top {
+        background: url(/Content/images/sp/product/landing/sp_product-stories-top.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        height: auto;
+    }
+
+        .product-stories-top .title {
+            font-size: 3.5em;
+        }
+
+        .product-stories-top ol li {
+            padding: 15px 0;
+            background-size: 20%;
+            background-position-y: 20px;
+        }
+
+    .product-stories-content .product-story {
+        width: 70%
+    }
+
+        .product-stories-content .product-story img {
+            width: 100%
+        }
+
+    .product-stories-top ol {
+        padding-bottom: 30%;
+    }
+
+    .product-lineup-container .lineup-1 .copy {
+        padding-bottom: 70%;
+    }
+
+    .product-lineup-container .lineup-1 .btn {
+        padding-top: 7px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-2 .copy {
+        padding-bottom: 70%;
+    }
+
+    .product-lineup-container .lineup-2 .btn {
+        padding-top: 7px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-3 .copy {
+        padding-bottom: 65%;
+        padding-top: 33%;
+    }
+
+    .product-lineup-container .lineup-3 .btn {
+        padding-top: 7px;
+        margin-bottom: 10%;
+    }
+
+    .product-lineup-container .lineup-4 .copy {
+        padding-bottom: 60%;
+        padding-top: 33%;
+    }
+
+    .product-lineup-container .lineup-4 .btn {
+        padding-top: 14px;
+        margin-bottom: 10%;
     }
 }

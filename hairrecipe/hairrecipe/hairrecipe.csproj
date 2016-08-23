@@ -193,6 +193,10 @@
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-1.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-2.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-3.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-4.jpg" />
     <Content Include="Content\images\sp\product\landing\sp_product-stories-header.jpg" />
     <Content Include="Content\images\sp\product\landing\sp_product-stories-top.jpg" />
     <Content Include="Content\images\sp\product\landing\sp_story-thumb-1.jpg" />
@@ -238,6 +242,7 @@
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
+    <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-sitemap.css" />
     <Content Include="Content\sp-css\mobile-contact.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -423,6 +428,7 @@
     <Content Include="Views\Sp\info.cshtml" />
     <Content Include="Views\Home\info.cshtml" />
     <Content Include="Views\Shared\_productStories.cshtml" />
+    <Content Include="Views\Shared\_productLineup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

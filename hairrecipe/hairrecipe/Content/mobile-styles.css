@@ -323,7 +323,7 @@ a:hover, a:focus {
 
 .page-footer {
     background: transparent url(/Content/images/sp/sp_footer-bg.jpg) center top;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
     .page-footer .special-info {
