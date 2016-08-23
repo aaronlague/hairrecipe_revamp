@@ -1,0 +1,67 @@
+[  
+{  
+    "CMProductId": 1,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-05.jpg",  
+    "VideoId": "sH3jJpgfDS4",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "wood-rough cm-one",
+	"CMsectionId": "cm1"
+},  
+{  
+    "CMProductId": 2,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-09.jpg",  
+    "VideoId": "YEtq5OLYILM",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "wood-smooth cm-two",
+	"CMsectionId": "cm2"
+},  
+{  
+    "CMProductId": 3,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-12.jpg",  
+    "VideoId": "UD7-Kw9nOVo",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "stitch-b cm-three",
+	"CMsectionId": "cm3"
+},
+{  
+    "CMProductId": 4,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-14.jpg",  
+    "VideoId": "6ZwNkIE9VPo",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "stitch-m cm-four",
+	"CMsectionId": "cm4"
+},
+{  
+    "CMProductId": 5,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-16.jpg",  
+    "VideoId": "zu7Nshp3Nvc",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "stitch-s cm-five",
+	"CMsectionId": "cm5"
+},
+{  
+    "CMProductId": 6,
+	"CMProductName1": "TVCM",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductImage": "cm-18.jpg",  
+    "VideoId": "nWkukhmgfBw",
+	"ShopLink": "#",
+	"CMProductLink": "../#products",
+	"CMsectionClass": "wood-smooth cm-six",
+	"CMsectionId": "cm6"
+}]

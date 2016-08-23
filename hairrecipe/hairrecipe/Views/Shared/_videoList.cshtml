@@ -1,0 +1,9 @@
+﻿@model hairrecipe.Models.CmViewModel
+<div class="col-md-6 @Model.CMsectionClass text-center" id="@Model.CMsectionId">
+    <h2>@Model.CMProductName1</h2>
+    <h3>@Model.CMProductName2</h3>
+    <div class="embed-responsive embed-responsive-16by9"><img class="play_vid lazy" data-original="~/Content/images/sp/cm/@Model.CMProductImage" data-video="http://www.youtube.com/embed/@Model.VideoId"></div>
+    <a href="@Model.CMProductLink" class="btn to-read-btn">動画で紹介されている<br /> 製品をチェック！</a>
+    <a href="@Model.ShopLink" class="btn to-shop-btn">To Shop</a>
+</div>
+        
