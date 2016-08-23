@@ -12,10 +12,10 @@
         <span class="jp-title-1 full-length center"> @Html.Raw(@Model.JpTitle1)</span>
     }
     @if (!string.IsNullOrEmpty(Model.JpTitle2)) {
-        <span class="jp-title-2  full-length center">[@Html.Raw(@Model.JpTitle2)]</span>
+        <span class="jp-title-2  full-length center">@Html.Raw(@Model.JpTitle2)</span>
     }
-    @if (Model.Size > 0) {
-        <span class="size  full-length center">@Html.Raw(@Model.Size)ml</span>
+    @if (!string.IsNullOrEmpty(Model.Size) ) {
+        <span class="size  full-length center">@Html.Raw(@Model.Size)</span>
     }
     @if (!string.IsNullOrEmpty(Model.JpTitle3))
     {
