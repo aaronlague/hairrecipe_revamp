@@ -1,6 +1,265 @@
 ﻿@{
-    ViewBag.Title = "reco_recipe";
+    ViewBag.Title = "YOUR RECIPE｜HAIR RECIPE（ヘアレシピ) | P&G";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+    ViewBag.Description = "HAIR RECIPE（ヘアレシピ)人気のおすすめシャンプー、トリートメント等レシピの組み合わせをご紹介。しっとり髪、ふんわり髪、まとまり髪、軽やか髪の4タイプ別に、オススメのシャンプー、トリートメント、オイル、ヘアマスクの効果的な組み合わせが分かります。";
 }
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-reco_recipe.css" rel="stylesheet" />
+}
+<div class="contact-banner">
+    <img src="~/Content/images/sp/reco/1.jpg" />
+    <div class="inner">
+        <h2 class="page-title">YOUR RECIPE</h2>
+    </div>
+</div>
 
-<h2>reco_recipe</h2>
+<div class="content">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="reco_recipe-main">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="section1">
+                    <img src="~/Content/images/sp/reco/2.jpg" />
+                    <div class="inner">
+                        <a href="#A" class="linkA">
+                            <span class="title">RECIPE 1</span><br />
+                            <p>しっとり髪</p>
+                            <span class="desc">になりたい！</span>
+                        </a>       
+                        <a href="#B" class="linkB">
+                            <span class="title">RECIPE 2</span><br />
+                             <p>ふんわり髪</p>
+                            <span class="desc">になりたい！</span>
+                        </a> 
+                        <a href="#C" class="linkC">
+                            <span class="title">RECIPE 3</span><br />
+                            <p>まとまり髪</p>
+                            <span class="desc">になりたい！</span>
+                        </a>
+                        <a href="#D" class="linkD">
+                            <span class="title">RECIPE 4</span><br />
+                            <p>軽やか髪</p>
+                            <span class="desc">になりたい！</span>
+                        </a>               
+                    </div>
+                </div>
+                <div id="A" class="section2">
+                    <img src="~/Content/images/sp/reco/3.jpg" />
+                    <div class="inner">
+                        <div class="desc1">
+                            <div class="title">YOUR RECIPE 1</div>
+                            <p>
+                                地肌のすっきり感＋とてもしっとり <br />
+                                仕上がりを欲張りたい髪に
+                            </p>
+                        </div>
+                        
+                        <div class="desc2">        
+                            <div class="product">
+                                <div>クレンジング<br />シャンプー</div>
+                                <div>トリート <br />メント</div>
+                                <div>ヘアフード<br />マスク</div>
+                            </div>                   
+                            <p>
+                                週1〜2回シャンプーのかわりに<br />
+                                ミントブレンド クレンジング レシピ<br />
+                                [クレンジングシャンプー]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                ハニー アプリコット<br />
+                                エンリッチ モイスチャー<br />
+                                [トリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                ハニー アプリコット<br />
+                                エンリッチ モイスチャー<br />
+                                [洗い流すトリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="B" class="section3">
+                    <img src="~/Content/images/sp/reco/4.jpg" />
+                    <div class="inner">
+                        <div class="desc1">
+                            <div class="title">YOUR RECIPE 2</div>
+                            <p>
+                                地肌すっきり、髪ふんわり、ハリ<br />
+                                感UPの贅沢３ステップ
+                            </p>
+                        </div>
+
+                        <div class="desc2">
+                            <div class="product">
+                                <div>クレンジング<br />シャンプー</div>
+                                <div>トリート <br />メント</div>
+                                <div>スカルプフィード<br />エッセンス</div>
+                            </div>
+                            <p>
+                                週1〜2回シャンプーのかわりに<br />
+                                ミントブレンド クレンジング レシピ<br />
+                                [クレンジングシャンプー]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                キウイ エンパワーボリューム レシピ<br />
+                                [トリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                キウイ エンパワー ボリューム レシピ<br />
+                                スカルプ フィード エッセンス<br />
+                                [洗い流さないトリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="C" class="section4">
+                    <img src="~/Content/images/sp/reco/5.jpg" />
+                    <div class="inner">
+                        <div class="desc1">
+                            <div class="title">YOUR RECIPE 3</div>
+                            <p>
+                                しっとり、しなやかなまとまり髪<br />
+                                に うるおいプラスでイキイキとし<br />
+                                た美しさ
+                            </p>
+                        </div>
+
+                        <div class="desc2">
+                            <div class="product">
+                                <div>シャンプー</div>
+                                <div>トリート<br />メント</div>
+                                <div>洗い流さない<br />トリートメント</div>
+                            </div>
+                            <p>
+                                ハニー アプリコット<br />
+                                エンリッチ モイスチャー レシピ<br />
+                                ［シャンプー］
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                ハニー アプリコット<br />
+                                エンリッチ モイスチャー<br />
+                                [トリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                グレープ シード<br />
+                                ブースター オイル レシピ<br />
+                                [洗い流さないトリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="D" class="section5">
+                    <img src="~/Content/images/sp/reco/6.jpg" />
+                    <div class="inner">
+                        <div class="desc1">
+                            <div class="title">YOUR RECIPE 4</div>
+                            <p>
+                                軽やかに、ふんわり弾む髪に<br />
+                                健やかなうるおいもプラス
+                            </p>
+                        </div>
+
+                        <div class="desc2">
+                            <div class="product">
+                                <div>シャンプー</div>
+                                <div>トリート<br />メント</div>
+                                <div>洗い流さない<br />トリートメント</div>
+                            </div>
+                            <p>
+                                キウイ エンパワー ボリューム レシピ<br />
+                                ［シャンプー］
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                キウイ エンパワー ボリューム レシピ<br />
+                                [トリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>
+                            <p>
+                                サンフラワー シード<br />
+                                ブースター オイル レシピ<br />
+                                [洗い流さないトリートメント]
+                            </p>
+                            <div class="shop-btn">
+                                <a href="#" class="btn to-shop-btn">
+                                    To Shop
+                                </a>
+                            </div>                            
+                        </div>
+                        <div class="desc3">
+                            <p>
+                                あなた好みのレシピを <br />
+                                自分で作ってみて。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                @{ Html.RenderPartial("_FootBannerSp", "stitch-b");  }
+            </div>
+        </div>
+
+            </div>
+        </div>
