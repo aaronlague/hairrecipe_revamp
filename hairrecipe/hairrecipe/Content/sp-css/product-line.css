@@ -96,7 +96,7 @@ p.description{
 
 .additives ul.solo li.column {
     width: 100%;
-    padding: 0 0 12%;
+    padding: 0;
     display : table;
 }
 ul.phrases{
@@ -218,7 +218,7 @@ ul.actions li a{
 
 #booster #grape .content-area,
 #booster #seed .content-area {
-    margin-top: 115%;
+    margin-top: 118%;
 }
 
 #booster .point{
@@ -231,7 +231,7 @@ ul.actions li a{
     position : absolute;
     top : 0;
     width : 100%;
-    padding : 7% 0 0 8%;
+    padding : 7% 0 0 10%;
     font-size : 1em;
 }
 #booster .point .float .heading{
@@ -239,7 +239,7 @@ ul.actions li a{
     width : 80%;
 }
 #booster .point .float .bodyText{
-    font-size : 0.8em;
+    font-size : 0.9em;
     width : 58%;
 }
 
@@ -272,20 +272,21 @@ ul.actions li a{
     overflow : auto;
     padding : 5% 0;
 }
-#booster .video img{
-    padding : 4% 0;
+#booster .video .placeholder{
+    text-align : center;
 }
 #booster .video p{
+    font-size : 0.8em;
     width : 70%;
     display : block;
-    margin : 2% auto;
+    margin : 5% auto;
 }
 #booster .video p.title{
-    font-size : 1.3em;
+    font-size : 1.1em;
 }
 #booster .video p.hilight{
     font-weight : 700;
-    font-size : 1.2em;
+    font-size : 0.9em;
 }
 #booster .video img {
     width : 70%;
@@ -295,11 +296,26 @@ ul.actions li a{
 #booster .oil-spoon{
     overflow : auto;
 }
+#booster .oil-spoon .text-content{
+    margin : -5% auto;
+}
 #booster .oil-spoon p{
     width : 80%;
     display : block;
-    margin : 2% auto;
+    margin : 3% auto;
 }
+
+#booster .oil-spoon p.title{
+    font-size : 1.1em;
+    letter-spacing : 0.2em;
+}
+#booster .oil-spoon p.content{
+    font-size : 0.8em;
+    line-height : 150%;
+    letter-spacing : 0.2em;
+}
+
+
 #booster .comboSection {
     padding : 5% 0;
 }
@@ -312,9 +328,13 @@ ul.actions li a{
     width : 80%;
     display : block;
     margin : 2% auto;
+    font-size : 0.9em;
+    letter-spacing : 0.1em;
+    line-height : 180%;
 }
 #booster .comboSection p.title{
-    font-size : 1.5em;
+    font-size : 1.2em;
+    letter-spacing : 0.2em;
 }
 #booster .comboSection  ul{
     list-style : none;
@@ -324,6 +344,9 @@ ul.actions li a{
 #booster .comboSection  ul li{
     text-align : center;
     margin : 5% 0;
+}
+#booster .comboSection  ul li p{
+    margin : 0 auto;
 }
 #booster .comboSection  ul li a{
     margin : 2%  0;
