@@ -1,6 +1,73 @@
-﻿@{
-    ViewBag.Title = "Cm";
+﻿@model IEnumerable<hairrecipe.Models.CmViewModel>
+@{
+    ViewBag.Title = "CM";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
 
-<h2>Cm</h2>
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-cm.css" rel="stylesheet" />
+}
+
+<div class="content wall">
+    <div class="banner">
+        <img src="~/Content/images/sp/cm/sp_cm-img-heading.jpg" />
+        <h1>CM & MOVIE</h1>
+    </div>
+    <div class="container cm-main">
+        <div class="row">
+            <div class="col-md-6 cm-anc">
+                <ul class="cm-nav">
+                    <li><a href="#cm1">TVCM</a></li>
+                    <li><a href="#cm4">ブースターオイル使い方</a></li>
+                    <li><a href="#cm5">WEB限定ムービー</a></li>
+                </ul>
+            </div>
+            @foreach (var item in Model)
+            {
+                @Html.Partial("_videoList", item);
+            }
+            
+            <div class="cm-lineup-one text-center">
+                <div class="inner">
+                    <h2>HAIR RECIPE LINEUP</h2>
+                    <h3>つやとうるおいの <br />アプリコットハニー</h3>
+                    <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-01.png" />
+                    <a href="#" class="btn to-read-btn">キウイ エンパワー<br /> ボリューム レシピ</a>
+                </div>
+            </div>
+            <div class="cm-lineup-two text-center">
+                <div class="inner">
+                    <h2>HAIR RECIPE LINEUP</h2>
+                    <h3>ふんわりうるおいの <br />キウイいちじく</h3>
+                    <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-02.png" />
+                    <a href="#" class="btn to-read-btn">キウイ エンパワー<br /> ボリューム レシピ</a>
+                </div>
+            </div>
+            <div class="cm-lineup-three text-center">
+                <div class="inner">
+                    <h2>HAIR RECIPE LINEUP</h2>
+                    <h3>地肌クレンジングのいちごミント</h3>
+                    <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-03.png" />
+                    <a href="#" class="btn to-read-btn">キウイ エンパワー<br /> ボリューム レシピ</a>
+                </div>
+            </div>
+            <div class="cm-lineup-four text-center">
+                <div class="inner">
+                    <h2>HAIR RECIPE LINEUP</h2>
+                    <h3>うるおいアップのグレープシード<br />ブースター オイル<br />つやアップのサンフラワーシード<br />ブースター オイル </h3>
+                    <p>トリートメントとまぜて効果アップ！ <br />洗い流さないトリートメントとしても使える！</p>
+                    <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-04.png" />
+                    <a href="#" class="btn to-read-btn">キウイ エンパワー<br /> ボリューム レシピ</a>
+                </div>
+            </div>
+            <div class="cm-lineup-five stitch-s text-center">
+                <div class="inner">
+                    <img class="img-fluid lazy" data-original="/Content/images/sp/cm/cm-27.jpg" />
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+</div>

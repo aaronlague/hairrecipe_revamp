@@ -157,6 +157,7 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
+    <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -229,6 +230,7 @@
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
+    <Content Include="Content\sp-css\mobile-reco_recipe.css" />
     <Content Include="Content\sp-css\mobile-sitemap.css" />
     <Content Include="Content\sp-css\mobile-contact.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -300,8 +302,8 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\jasny-bootstrap.css.map" />
-    <Content Include="Content\data\ProductList.json" />
     <Content Include="Content\data\Mint.json" />
+    <Content Include="Content\data\VideoList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
@@ -328,6 +330,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Shared\_ProductListingBlockSp.cshtml">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -404,6 +409,7 @@
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
     <Content Include="Views\Shared\_productList.cshtml" />
+	<Content Include="Views\Shared\_videoList.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
 	<Content Include="Views\Shared\_setSp.cshtml" />

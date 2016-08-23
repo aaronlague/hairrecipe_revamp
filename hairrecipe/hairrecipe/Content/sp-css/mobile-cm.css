@@ -1,0 +1,180 @@
+﻿.banner {
+    position:relative;
+}
+.banner > h1 {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    margin-left: -150px;
+    text-transform: uppercase;
+    font-size: 8vw;
+}
+
+.cm-main {
+
+}
+
+.cm-anc {
+    background: url(/Content/images/sp/cm/cm-02.jpg) no-repeat;
+    background-size:cover;
+}
+
+.cm-nav {
+    padding: 20% 10% 10% 17%;
+}
+
+ul {
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.cm-anc ul li {
+    list-style:none;
+    margin-top:20px;
+    width:100%;
+}
+
+.cm-anc li a {
+    color:inherit;
+    font-size:1.4em;
+}
+
+.cm-anc li a:after {
+    content: "";
+    float:right;
+    background: url(/Content/images/sp/cm/cm-li.png) no-repeat;
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-size: 50%;
+    margin: 11px 0px 1px -43px;
+    
+}
+
+.cm-one, .cm-two, .cm-three, .cm-four, .cm-five, .cm-six {
+    position:relative;
+    padding: 0 10% 10% 10%;
+    margin-bottom: -22px;
+}
+
+.cm-one a.btn.to-read-btn, a.btn.to-shop-btn, .cm-two a.btn.to-read-btn, a.btn.to-shop-btn, .cm-three a.btn.to-read-btn, a.btn.to-shop-btn, .cm-four a.btn.to-read-btn, a.btn.to-shop-btn, .cm-five a.btn.to-read-btn, a.btn.to-shop-btn, .cm-six a.btn.to-read-btn, a.btn.to-shop-btn {
+    margin-bottom: 20px;
+}
+
+.cm-one .embed-responsive, .cm-two .embed-responsive, .cm-three .embed-responsive, .cm-four .embed-responsive, .cm-five .embed-responsive, .cm-six .embed-responsive {
+     margin-bottom: 20px;
+}
+
+
+
+.cm-lineup-one {
+    background: url(/Content/images/sp/cm/cm-21.jpg) no-repeat;
+    background-size:cover;
+}
+
+.cm-lineup-two {
+    background: url(/Content/images/sp/cm/cm-22.jpg) no-repeat;
+    background-size:cover;
+}
+
+.cm-lineup-three {
+    background: url(/Content/images/sp/cm/cm-23.jpg) no-repeat;
+    background-size:cover;
+}
+
+.cm-lineup-four {
+    background: url(/Content/images/sp/cm/cm-24.jpg) no-repeat;
+    background-size:cover;
+}
+
+.cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four {
+    position:relative;
+    padding: 0 10% 10% 10%;
+
+}
+
+.cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cm-one h2, .cm-two h2, .cm-three h2, .cm-four h2, .cm-five h2, .cm-six h2 {
+    font-family:LubalinGraph-Book;
+    padding-top:50px;
+    font-size: 1.4em;
+}
+
+.cm-lineup-one  div.inner, .cm-lineup-three  div.inner, .cm-lineup-four div.inner {
+    padding-top:150px;
+}
+
+.cm-lineup-five div.inner {
+    padding:10%;
+}
+
+.cm-lineup-two div.inner {
+    padding-top:50px;
+}
+
+.cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+    font-family:LubalinGraph-Book;
+    font-size: 1.4em;
+}
+
+.cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
+    font-family:Koburina Gothic W3 JIS2004;
+    font-size: 19px;
+}
+
+.inner a.btn.to-read-btn {
+    width: 70%;
+}
+
+/*screens*/
+
+@media (min-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+   .banner > h1 {
+       left: 62%;
+   }
+
+   .cm-anc li a {
+       font-size: 1.2em;
+   }
+}
+
+@media (max-width: 320px) {
+   .banner > h1 {
+       left: 70%;
+   }
+
+   .cm-anc li a {
+       font-size: 1em;
+   }
+
+   .to-read-btn {
+       font-size:11px;
+   }
+}
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) { 
+
+    .banner > h1 {
+       left: 47%;
+       top: 55%;
+   }
+
+   .cm-anc li a {
+       font-size: 1.4em;
+   }
+
+}
+   
