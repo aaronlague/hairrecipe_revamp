@@ -2,8 +2,8 @@
     groupName : 'Booster',
     groupkeyword : 'booster',
     bannerText : '',
-    metaTitle : 'Booster',
-    metaDescription : 'sample',
+    metaTitle : 'ブースター オイル トリートメント｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
+    metaDescription : 'グレープシード、サンフラワーシードのフレグランスブレンド『ブースター オイル レシピ』のヘアケアラインナップをご紹介。うるおいとつやを豊富にふくんだオイルを、とろとろ濃厚なソースに仕立てて。',
     footerBannerBackground : 'stitch-b',
     products : [
         {
@@ -12,9 +12,9 @@
             line:'Booster',
             enTitle:'Booster Oil Recipe',
             jpTitle1:'グレープ シード<br/>ブースター オイル レシピ',
-            jpTitle2:'うるおいレシピ',
+            jpTitle2:'[うるおいレシピ]',
             jpTitle3:'',
-            size:30,
+            size:'30ml',
             description:'保湿効果の高いグレープシードオイルで、<br/>イキイキと美しい髪に。 ',
             howtouse:'',
             sku:'012345678',
@@ -36,9 +36,9 @@
             line:'Booster',
             enTitle:'',
             jpTitle1:'サンフラワー シード<br/>ブースター オイル レシピ',
-            jpTitle2:'つやレシピ',
+            jpTitle2:'[つやレシピ]',
             jpTitle3:'',
-            size:30,
+            size:'30ml',
             description:'オメガ6※１とオメガ9※２が豊富な<br/>サンフラワーシードオイルで、指通りのよい輝く髪に。<br/>※1:リノール酸 ※2:オレイン酸',
             howtouse:'',
             sku:'012345678',
@@ -102,8 +102,8 @@
                 <img class="pointer-img" src="/Content/images/sp/product/booster/point-seed.jpg">
                 <div class="text-content">
                     <p class="hilight">注目の「種」の力を配合</p>
-                    <p>健康や美容に気を使う人たちから注目を集めている食材のひとつが「種」。</p>
-                    <p>ヘアレシピは、栄養価の高いリノール酸を多く含む「グレープシードオイル」と、リノール酸に加えてオレイン酸を含み、ビタミンA、C、D、Eが豊富な「サンフラワーオイル」を取り入れました。</p>
+                    <p>健康や美容に気を使う人たちから注目を集めている食材のひとつが「種」。<br/>
+                    ヘアレシピは、栄養価の高いリノール酸を多く含む「グレープシードオイル」と、リノール酸に加えてオレイン酸を含み、ビタミンA、C、D、Eが豊富な「サンフラワーオイル」を取り入れました。</p>
                 </div>
                 <div class="box-text">
                     <p class="hilight">なぜ「種」がいいの？ </p>
@@ -128,9 +128,11 @@
         ' },
         { htmlSection : 
         '
-            <div class="video wood-smooth wall">
+            <div class="video wood-smooth stitch-s">
                 <p class="title">ブースターオイルの使い方</p>
-                <img class="" src="/Content/images/sp/product/booster/howtouse_vid.jpg">
+                <div class="placeholder">
+                    <iframe  src="https://www.youtube.com/embed/6ZwNkIE9VPo" frameborder="0" ></iframe>
+                </div>
                 <div class="text-content">
                     <p class="hilight">ステップ1　かける</p>
                     <p>トリートメント（1〜2プッシュ）に、オイル（3〜5プッシュ）をかけます。 </p>
@@ -149,8 +151,8 @@
             <div class="oil-spoon stitch-s">
                 <img class="" src="/Content/images/sp/product/booster/oil_spoon_seed.png">
                 <div class="text-content">
-                    <p>気分に合わせてなりたい髪を叶える、あなたが仕上げるレシピ</p>
-                    <p>トリートメントとブースター オイル（洗い流さないトリートメント）を選び、お好みの量をまぜることであなただけのレシピが完成。今の気分に合わせて仕上げるあなたのレシピは？</p>
+                    <p class="title">気分に合わせてなりたい髪を叶える、あなたが仕上げるレシピ</p>
+                    <p class="content">トリートメントとブースター オイル（洗い流さないトリートメント）を選び、お好みの量をまぜることであなただけのレシピが完成。今の気分に合わせて仕上げるあなたのレシピは？</p>
                 </div>
                 <img class="" src="/Content/images/sp/product/booster/oil_spoon_grape.png">
             </div>
@@ -195,7 +197,7 @@
         },
         {
             title : '元気を出したいとき',
-            backgroundClass : 'stitch-s',
+            backgroundClass : 'stitch-m',
             description : '爽やかなシトラスの香りのトリートメントと、酸味のある香りのストロベリージンジャーのブースターオイルをまぜると、甘味のあるフレッシュなフレーバーに。',
             image : '/Content/images/sp/product/booster/set_03.png',
             productSets : [

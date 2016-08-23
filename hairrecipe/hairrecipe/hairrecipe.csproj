@@ -305,6 +305,10 @@
     <Content Include="Content\jasny-bootstrap.css.map" />
     <Content Include="Content\data\Mint.json" />
     <Content Include="Content\data\VideoList.json" />
+    <Content Include="Content\data\Apricot.json" />
+    <Content Include="Content\data\Booster.json" />
+    <Content Include="Content\data\kiwi.json" />
+    <Content Include="Content\data\ProductList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
