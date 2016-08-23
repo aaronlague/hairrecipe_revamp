@@ -66,6 +66,13 @@ h2.page-title {
     clear:both;
 }
 
+[data-toggle="collapse"] {
+    border-bottom:1px solid #ebebeb;
+}
+
+[aria-expanded="true"] {
+    border-bottom:0;
+}
 
 [aria-expanded="true"] .col2 {
     background: url(../images/sp/faq/arrow-up.png) right 20px center no-repeat;
