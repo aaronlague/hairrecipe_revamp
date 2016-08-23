@@ -68,6 +68,7 @@ h2.page-title {
 
 [data-toggle="collapse"] {
     border-bottom:1px solid #ebebeb;
+    cursor: pointer;
 }
 
 [aria-expanded="true"] {
