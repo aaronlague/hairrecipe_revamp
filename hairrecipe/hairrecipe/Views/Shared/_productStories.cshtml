@@ -1,0 +1,15 @@
+﻿@model hairrecipe.Models.StoriesListing
+@{
+    string uri = Request.Url.AbsolutePath;
+}
+
+<div class="product-story-container @Html.Raw(Model.StoryBg)">
+    <div class="product-story">
+        <img class="lazy" data-original="/Content/images/sp/product/landing/@Html.Raw(Model.StoryThumb)" />
+        <p class="story-title"><span class="count">@Html.Raw(Model.StoryId).</span>@Html.Raw(Model.StoryTitle)</p>
+        <p class="story-text">@Html.Raw(Model.StoryText)</p>
+    </div>
+</div>
+
+
+

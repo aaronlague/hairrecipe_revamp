@@ -30,7 +30,12 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                return View();
+                string file = Server.MapPath("~/Content/data/StoriesList.json");
+                string Json = System.IO.File.ReadAllText(file);
+                JavaScriptSerializer storiesObj = new JavaScriptSerializer();
+                var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
+
+                return View(storyList);
             }
         }
 

@@ -18,35 +18,91 @@
     background: url(/Content/images/sp/product/landing/sp_product-stories-top.jpg);
     background-repeat:no-repeat;
     background-position:top center;
+    background-size:contain;
+    background-size: 100% 100%;
+    height: 1092px;
 }
 
     .product-stories-top .title {
         text-align: center;
         font-size: 4em;
-        padding: 90px 0;
+        padding: 90px 0 25px 0;
+        /*padding: 90px 0;*/
     }
 
     .product-stories-top ol {
         width: 45%;
-        font-size: 25px;
+        font-size: 1.786em;
         margin: 0 auto;
     }
 
         .product-stories-top ol li {
-            padding: 40px 0;
+            padding: 25px 0;
+            background: url(/Content/images/sp/bg/sp_list-bg.png);
+            background-repeat: no-repeat;
+            background-position-x: right;
+            background-position-y: 30px;
+            font-family: 'LubalinGraph-Book';
         }
+
+            .product-stories-top ol li a {
+                font-family:Koburina Gothic W3 JIS2004;
+            }
+
+.product-stories-content {
+    margin: 0 auto;
+}
+
+.product-stories-content .product-story {
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+.product-stories-content .product-story img {
+    width: auto;
+}
+
+
+
+    .product-stories-content .product-story .story-title {
+        font-size: 2.571em;
+        padding: 21px 0 21px 0;
+        padding-left: 40px;
+        
+    }
+
+    .product-stories-content .product-story .count {
+        float: left;
+        font-family: 'LubalinGraph-Book';
+        margin-left: -45px;
+        margin-right: 15px;
+    }
+
+    .product-stories-content .product-story .story-text {
+        font-size: 1.857em;
+    }
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    .content.product-stories {
+        font-size:7px; /*base font*/
+    }
+
     .banner > h1 {
-        font-size: 2.857em;
         top:36%;
     }
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .content.product-stories {
+        font-size:7px; /*base font*/
+    }
+
     .banner > h1 {
-        font-size: 2.857em;
         top:36%;
     }
 }

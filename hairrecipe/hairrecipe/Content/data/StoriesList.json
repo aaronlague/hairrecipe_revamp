@@ -1,0 +1,37 @@
+﻿[  
+{  
+    "StoryId": 1,  
+    "StoryThumb": "sp_story-thumb-1.jpg",  
+    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryText": "ナチュラルフードから発想を得た素材を、精度<br />の高いテクノロジーでブレンド。髪のためのオ<br />リジナルレシピを完成しました。",
+	"StoryBg" : "wood-smooth"
+},
+{  
+    "StoryId": 2,  
+    "StoryThumb": "sp_story-thumb-2.jpg",  
+    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryText": "ナチュラルフードから発想を得た素材を、精度<br />の高いテクノロジーでブレンド。髪のためのオ<br />リジナルレシピを完成しました。",
+	"StoryBg" : "stitch-m"
+},
+{  
+    "StoryId": 3,  
+    "StoryThumb": "sp_story-thumb-3.jpg",  
+    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryText": "ナチュラルフードから発想を得た素材を、精度<br />の高いテクノロジーでブレンド。髪のためのオ<br />リジナルレシピを完成しました。",
+	"StoryBg" : "wood-rough"
+},
+{  
+    "StoryId": 4,  
+    "StoryThumb": "sp_story-thumb-4.jpg",  
+    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryText": "ナチュラルフードから発想を得た素材を、精度<br />の高いテクノロジーでブレンド。髪のためのオ<br />リジナルレシピを完成しました。",
+	"StoryBg" : "stitch-s"
+},
+{  
+    "StoryId": 5,  
+    "StoryThumb": "sp_story-thumb-5.jpg",  
+    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryText": "ナチュラルフードから発想を得た素材を、精度<br />の高いテクノロジーでブレンド。髪のためのオ<br />リジナルレシピを完成しました。",
+	"StoryBg" : "stitch-b"
+}
+]

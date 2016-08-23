@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<hairrecipe.Models.StoriesListing>
+@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
@@ -14,11 +15,16 @@
     <div class="product-stories-top">
         <p class="title">レシピの５つの<br />こだわりポイント</p>
         <ol>
-            <li>テクノロジー</li>
-            <li>素材</li>
-            <li>香り</li>
-            <li>ソレー効果</li>
-            <li>泡立ち</li>
+            <li><a href="">テクノロジー</a></li>
+            <li><a href="">素材</a></li>
+            <li><a href="">香り</a></li>
+            <li><a href="">ソレー効果</a></li>
+            <li><a href="">泡立ち</a></li>
         </ol>
+    </div>
+    <div class="product-stories-content">
+        @foreach (var item in Model) {      
+            @Html.Partial("_ProductStories", item)
+        }
     </div>
 </div>
