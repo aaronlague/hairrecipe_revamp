@@ -349,6 +349,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\singleInstanceYTvideo.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Views\Shared\_ProductListingBlockSp.cshtml">
       <SubType>Code</SubType>

@@ -3,7 +3,7 @@
     "ProductId": 1,  
     "ProductName": "Mint Blend Cleansing<br />Recipe",  
     "ProductImage": "sp_mint-thumbnail.png",  
-    "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで",
+    "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで、",
 	"ProductIntroText2": "髪と地肌にさっぱりディープクレンジング。",
 	"ProductLink": "product/mint"
 },  
@@ -27,7 +27,7 @@
     "ProductId": 4,  
     "ProductName": "Booster Oil Treatment",  
     "ProductImage": "sp_booster-thumbnail.png",
-    "ProductIntroText1": "髪にたっぷりのハリとコシを。",
+    "ProductIntroText1": "うるおいとつやを豊富にふくんだオイルを",
 	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
 	"ProductLink": "product/booster"
 }]
