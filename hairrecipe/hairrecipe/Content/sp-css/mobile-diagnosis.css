@@ -1,0 +1,95 @@
+﻿
+/*@media only screen and (max-device-width: 320px) {.reco_recipe-main{font-size: 0.9em;}}
+@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {.reco_recipe-main{font-size: 9px;}}
+@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {.reco_recipe-main{font-size: 18px;}}
+@media only screen and (min-device-width: 415px) and (max-device-width: 480px) {.reco_recipe-main{font-size: 20px;}}
+@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {.reco_recipe-main{font-size: 1em;}}*/
+
+
+body {
+    font-size:14px;
+}
+
+.diagnosis-main {
+    position: relative;
+}
+
+.diagnosis-main .page-title {
+    color: #87847d;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 32%;
+    text-align: center;    
+    font-family: 'Koburina Gothic W3 JIS2004';
+    /*background:red;*/
+}
+
+.text1 {
+    font-size:1.631em;
+}
+
+.text2 {
+    font-size: 5.375em;
+}
+
+.text3 {
+    font-size:1.625em;
+    margin-bottom:25px;
+}
+
+.generic-btn {
+    padding-top: 31px;
+
+}
+
+/*iPhone 5*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+    body {
+        font-size: 6px;
+    }
+    .generic-btn {
+        padding-top: 14px;
+
+    }
+}
+
+
+/* Landscape iPhone 5 */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    body {
+        font-size: 8px;
+    }
+}
+
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) {
+    body {
+        font-size: 8px;
+    }
+    
+}
+
+
+/* Landscape iPhone 6 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    body {
+        font-size: 10px;
+    }
+}
+
