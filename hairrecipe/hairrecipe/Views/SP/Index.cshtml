@@ -20,7 +20,7 @@
                     <div class="spoon-h">
                         <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
                     </div>
-                </div
+                </div>
             </div>
         </div>
 
@@ -67,19 +67,19 @@
         <div class="spoon-h">
             <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
         </div>
-        <div class="news-splash">
-            <img class="lazy" data-original="/Content/images/sp/sp_diagnosis-thumbnail.png" alt="あなたの髪、うるおっている？ジューシー度チェック" />
-        </div>
-        <div class="news-copy">
-            <p class="news-date">2016.4.21</p>
-            <a href="/info#a">
+        <a href="/info#a">
+            <div class="news-splash">
+                <img class="lazy" data-original="/Content/images/sp/sp_diagnosis-thumbnail.png" alt="あなたの髪、うるおっている？ジューシー度チェック" />
+            </div>
+            <div class="news-copy">
+                <p class="news-date">2016.4.21</p>
                 <p class="text">
                     あなたの髪、うるおっていますか？髪のジュー<br />
                     シー度をチェックするとあなたにピッタリなレ<br />
                     シピをご提案！今すぐチェック！
                 </p>
-            </a>
-        </div>
+            </div>
+        </a>
         <div class="news-content-wrapper">
             <div class="news-content">
 
@@ -121,7 +121,7 @@
             </div>
         </div>
         <div class="centered-btn">
-            <a href="#" class="btn generic-btn">
+            <a href="/news" class="btn generic-btn">
                 Archive
             </a>
         </div>
@@ -133,8 +133,8 @@
             <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
         </div>
         <div class="news-splash">
-            @*<img class="lazy" data-original="/Content/images/sp/home/sp_cm-thumbnail.jpg" />*@
-            <iframe src="https://www.youtube.com/embed/t6Qv4_N7cYg" frameborder="0" allowfullscreen></iframe>
+            <img class="imgplaceholder lazy" data-original="/Content/images/sp/home/sp_cm-thumbnail.jpg" data-video="sH3jJpgfDS4"/>
+            <div class="hide" id="player"></div>
         </div>
         <div class="centered-btn">
             <a href="/cm" class="btn generic-btn">
@@ -143,3 +143,7 @@
         </div>
     </div>
 </div>
+@section scripts
+{
+    <script src="~/Scripts/singleInstanceYTvideo.js"></script>
+}
