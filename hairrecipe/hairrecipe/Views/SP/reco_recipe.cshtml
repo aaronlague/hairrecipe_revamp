@@ -254,7 +254,15 @@
                         </div>
                     </div>
                 </div>
-                @{ Html.RenderPartial("_FootBannerSp", "stitch-b");  }
+                @{ 
+                    string[,] contents = new string[,]
+	                {
+                        { "stitch-b", "", "" },
+	                    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"}
+
+	                };
+                    Html.RenderPartial("_FootBannerSp", contents);  
+                }
             </div>
 
         </div>
