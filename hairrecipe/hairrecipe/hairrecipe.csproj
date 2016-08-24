@@ -159,6 +159,7 @@
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
+    <Compile Include="Models\InfoViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
     <Compile Include="Models\StoriesListing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -324,6 +325,7 @@
     <Content Include="Content\data\kiwi.json" />
     <Content Include="Content\data\ProductList.json" />
     <Content Include="Content\data\StoriesList.json" />
+    <Content Include="Content\data\InfoList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
@@ -442,6 +444,7 @@
     <Content Include="Views\Home\info.cshtml" />
     <Content Include="Views\Shared\_productStories.cshtml" />
     <Content Include="Views\Shared\_productLineup.cshtml" />
+    <Content Include="Views\Shared\_infoList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

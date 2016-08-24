@@ -1,0 +1,72 @@
+﻿[  
+{  
+    "InfoId": 1,
+	"InfoImage": "info-02.jpg",  
+    "InfoTitle": "新コンテンツ",  
+    "InfoDate": "2016.04.21",
+	"InfoNews": "あなたの髪、うるおっていますか？髪のジューシー度をチェッ…",
+	"InfoClass": "wall",
+	"InfoLink": "/diagnosis/"
+},
+
+{  
+    "InfoId": 2,
+	"InfoImage": "info-03.jpg",  
+    "InfoTitle": "冬季限定",  
+    "InfoDate": "2016.11.21",
+	"InfoNews": "新メニュー、アップルジンジャー濃密保湿あたたかレシピ登場…",
+	"InfoClass": "wood-smooth",
+	"InfoLink": ""
+},
+
+{  
+    "InfoId": 3,
+	"InfoImage": "info-04.jpg",  
+    "InfoTitle": "夏季限定",  
+    "InfoDate": "2015.06.18",
+	"InfoNews": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジ…",
+	"InfoClass": "stitch-b",
+	"InfoLink": "/powercharge/"
+},
+
+{  
+    "InfoId": 4,
+	"InfoImage": "info-05.jpg",  
+    "InfoTitle": "新登場",  
+    "InfoDate": "2015.06.18",
+	"InfoNews": "ついに登場！シャンプー＆トリートメントのお得な詰替用…",
+	"InfoClass": "wood-rough",
+	"InfoLink": "BIN"
+},
+
+{  
+    "InfoId": 5,
+	"InfoImage": "info-06.jpg",  
+    "InfoTitle": "新発売",  
+    "InfoDate": "2015.04.06",
+	"InfoNews": "新メニューが登場！トリートメントに“まぜる”ごちそうオイル…",
+	"InfoClass": "stitch-m",
+	"InfoLink": "/product/booster.html"
+},
+
+{  
+    "InfoId": 6,
+	"InfoImage": "info-07.jpg",  
+    "InfoTitle": "限定コラボ",  
+    "InfoDate": "2015.03.10",
+	"InfoNews": "グラノーラ専門店<span>GANORI</span>とヘアレシピがコラボ！「ヘアレシピ…",
+	"InfoClass": "wood-smooth",
+	"InfoLink": "/ganori/"
+},
+
+{  
+    "InfoId": 7,
+	"InfoImage": "info-08.jpg",  
+    "InfoTitle": "イベント",  
+    "InfoDate": "2014.11.24",
+	"InfoNews": "六本木ヒルズで開催された商品発売のイベントレポートをチェッ…",
+	"InfoClass": "stitch-m",
+	"InfoLink": "/market/after_index.html"
+}
+
+]
