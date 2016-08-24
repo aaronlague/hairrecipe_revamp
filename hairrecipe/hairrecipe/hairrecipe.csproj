@@ -160,6 +160,7 @@
     <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
+    <Compile Include="Models\StoriesListing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\desktop-styles.css" />
+    <Content Include="Content\images\sp\bg\sp_list-bg.png" />
     <Content Include="Content\images\sp\bg\wood-hp-2.jpg" />
     <Content Include="Content\images\sp\home\sp_cm-thumbnail.jpg" />
     <Content Include="Content\images\sp\bg\stitch-b.jpg" />
@@ -192,6 +194,17 @@
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-1.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-2.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-3.jpg" />
+    <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-4.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_product-stories-header.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_product-stories-top.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_story-thumb-1.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_story-thumb-2.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_story-thumb-3.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_story-thumb-4.jpg" />
+    <Content Include="Content\images\sp\product\landing\sp_story-thumb-5.jpg" />
     <Content Include="Content\images\sp\product\mint\banner.jpg" />
     <Content Include="Content\images\sp\product\mint\cleansing.png" />
     <Content Include="Content\images\sp\sitemap\1.jpg" />
@@ -230,6 +243,7 @@
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
+    <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
     <Content Include="Content\sp-css\mobile-reco_recipe.css" />
     <Content Include="Content\sp-css\mobile-sitemap.css" />
@@ -309,6 +323,7 @@
     <Content Include="Content\data\Booster.json" />
     <Content Include="Content\data\kiwi.json" />
     <Content Include="Content\data\ProductList.json" />
+    <Content Include="Content\data\StoriesList.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
@@ -424,6 +439,8 @@
     <Content Include="Views\Home\reco_recipe.cshtml" />
     <Content Include="Views\Sp\info.cshtml" />
     <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Shared\_productStories.cshtml" />
+    <Content Include="Views\Shared\_productLineup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
