@@ -1,12 +1,4 @@
-﻿
-/*@media only screen and (max-device-width: 320px) {.reco_recipe-main{font-size: 0.9em;}}
-@media only screen and (min-device-width: 321px) and (max-device-width: 375px) {.reco_recipe-main{font-size: 9px;}}
-@media only screen and (min-device-width: 376px) and (max-device-width: 414px) {.reco_recipe-main{font-size: 18px;}}
-@media only screen and (min-device-width: 415px) and (max-device-width: 480px) {.reco_recipe-main{font-size: 20px;}}
-@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {.reco_recipe-main{font-size: 1em;}}*/
-
-
-body {
+﻿body {
     font-size:14px;
 }
 
@@ -14,7 +6,7 @@ body {
     position: relative;
 }
 
-.diagnosis-main .page-title {
+.diagnosis-main .page-title, .diagnosis-main .inner {
     color: #87847d;
     width: 100%;
     display: block;
@@ -22,7 +14,10 @@ body {
     top: 32%;
     text-align: center;    
     font-family: 'Koburina Gothic W3 JIS2004';
-    /*background:red;*/
+}
+
+.diagnosis-main .inner {
+    top: 19%;
 }
 
 .text1 {
@@ -41,6 +36,55 @@ body {
 .generic-btn {
     padding-top: 31px;
 
+}
+
+.check, .question {
+    font-size:2.500em;
+    font-family: 'LubalinGraph-Book';
+    margin-bottom: 4%;
+}
+
+.check {   
+    font-family: 'LubalinGraph-Book';
+}
+
+.question {
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.choices .box {
+    background: #fff;
+    border: 1px solid #87847d;
+    width: 37%;
+    display: inline-block;
+    padding: 9.5% 4%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+
+.choices .box .title {
+     font-size:2.500em;
+     font-family: 'LubalinGraph-Book';
+}
+
+.choices .box p {
+    font-size: 1.625em;
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.steps {
+    text-align:center;
+    margin-top:9%;
+}
+
+.steps img {
+    width:80%;
+    margin-right: 3%;
+}
+
+.steps .desc {
+    font-size:1.625em;
+    margin-top: 5%;
 }
 
 /*iPhone 5*/
@@ -76,7 +120,7 @@ and (max-device-width : 568px) {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
     body {
-        font-size: 8px;
+        font-size: 7px;
     }
     
 }
