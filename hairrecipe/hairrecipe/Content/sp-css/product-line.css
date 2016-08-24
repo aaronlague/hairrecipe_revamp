@@ -285,8 +285,9 @@ ul.actions li a{
     font-size : 1.1em;
 }
 #booster .video p.hilight{
-    font-weight : 700;
+    font-family: Koburina Gothic W6 JIS2004;
     font-size : 0.9em;
+    font-weight: 700;
 }
 #booster .video img {
     width : 70%;
