@@ -1,4 +1,5 @@
 ﻿using AttributeRouting.Web.Mvc;
+using Newtonsoft.Json.Linq;
 using hairrecipe.Models;
 using System;
 using System.Collections.Generic;
@@ -6,6 +7,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
+using hairrecipe.data;
+using hairrecipe.data.Entities.Products;
+using hairrecipe.data.Services;
 
 namespace hairrecipe.Controllers.sp
 {
@@ -129,8 +133,12 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
+                string file = Server.MapPath("~/Content/data/StoriesList.json");
+                string Json = System.IO.File.ReadAllText(file);
+                JavaScriptSerializer storiesObj = new JavaScriptSerializer();
+                var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
 
-                return View();
+                return View(storyList);
             }
         }
 

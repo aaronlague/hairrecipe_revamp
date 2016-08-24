@@ -25,17 +25,19 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Index", "Product");
+                //return RedirectToAction("Index", "Product");
+                return RedirectToAction("kodawari", "Home");
 
             }
             else
             {
-                string file = Server.MapPath("~/Content/data/StoriesList.json");
-                string Json = System.IO.File.ReadAllText(file);
-                JavaScriptSerializer storiesObj = new JavaScriptSerializer();
-                var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
+                //string file = Server.MapPath("~/Content/data/StoriesList.json");
+                //string Json = System.IO.File.ReadAllText(file);
+                //JavaScriptSerializer storiesObj = new JavaScriptSerializer();
+                //var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
 
-                return View(storyList);
+                //return View(storyList);
+                return RedirectToAction("kodawari", "Sp");
             }
         }
 

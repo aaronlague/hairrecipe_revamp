@@ -1,6 +1,34 @@
-﻿@{
-    ViewBag.Title = "kodawari";
+﻿@model IEnumerable<hairrecipe.Models.StoriesListing>
+@{
+    ViewBag.Title = "PRODUCT STORIES｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Description = "HAIR RECIPE（ヘアレシピ)のプロダクトストーリー。レシピの5つのこだわりポイントがご覧いただけます。";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
-
-<h2>kodawari</h2>
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-product-stories.css" rel="stylesheet" />
+}
+<div class="content product-stories">
+    <div class="banner">
+        <img src="~/Content/images/sp/product/landing/sp_product-stories-header.jpg" />
+        <h1>Product Stories</h1>
+    </div>
+    <div class="product-stories-top">
+        <p class="title">レシピの５つの<br />こだわりポイント</p>
+        <ol>
+            <li><a href="#story1">テクノロジー</a></li>
+            <li><a href="#story2">素材</a></li>
+            <li><a href="#story3">香り</a></li>
+            <li><a href="#story4">ソレー効果</a></li>
+            <li><a href="#story5">泡立ち</a></li>
+        </ol>
+    </div>
+    <div class="product-stories-content">
+        @foreach (var item in Model) {      
+            @Html.Partial("_ProductStories", item)
+        }
+    </div>
+    <div class="product-lineup-content">
+        @Html.Partial("_ProductLineup")
+    </div>
+</div>
