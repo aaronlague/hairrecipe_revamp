@@ -11,8 +11,12 @@
     font-size: 8vw;
 }
 
-.cm-main {
+.to-read-btn {
+    padding-top:8px;
+}
 
+.single-line {
+    padding-top:14px;
 }
 
 .cm-anc {
