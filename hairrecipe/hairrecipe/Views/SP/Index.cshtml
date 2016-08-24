@@ -20,7 +20,7 @@
                     <div class="spoon-h">
                         <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
                     </div>
-                </div>
+                </div
             </div>
         </div>
 
@@ -32,7 +32,16 @@
                     @foreach (var item in Model) {
                         @Html.Partial("_homeProductListing", item)
                     }
-                    @{ Html.RenderPartial("_FootBannerSp", "");  }
+                    @{ 
+                        string[,] contents = new string[,]
+	                    {
+                            { "", "", "" },
+	                        {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"},
+	                        {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
+
+	                    };
+                        Html.RenderPartial("_FootBannerSp", contents);  
+                    }
                 </div>
             </div>
         </div>
