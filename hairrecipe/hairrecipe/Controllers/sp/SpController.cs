@@ -157,7 +157,12 @@ namespace hairrecipe.Controllers.sp
             else
             {
 
-                return View();
+                string file = Server.MapPath("~/Content/data/InfoList.json");
+                string Json = System.IO.File.ReadAllText(file);
+                JavaScriptSerializer infoObj = new JavaScriptSerializer();
+                var infoList = infoObj.Deserialize<List<InfoViewModel>>(Json);
+
+                return View(infoList);
             }
         }
     }

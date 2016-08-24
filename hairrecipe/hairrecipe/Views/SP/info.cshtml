@@ -1,6 +1,23 @@
-﻿@{
+﻿@model IEnumerable<hairrecipe.Models.InfoViewModel>
+@{
     ViewBag.Title = "info";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
 
-<h2>info</h2>
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-info.css" rel="stylesheet" />
+}
+
+<div class="content">
+    <div class="banner">
+        <img src="~/Content/images/sp/info/sp_info-img-header.jpg" />
+        <h1>News</h1>
+    </div>
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_infoList", item);
+        }
+    </div>
+</div>
