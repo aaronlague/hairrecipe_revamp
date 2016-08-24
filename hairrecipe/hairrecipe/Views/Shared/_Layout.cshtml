@@ -13,19 +13,9 @@
     }
 </head>
 <body>
-    @Html.Partial("_navigation", "")
-    <div class="container">
-        <div class="page-header">
-            <h1>Header</h1>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                @RenderBody()
-            </div>
-        </div>
-        <div class="page-footer">
-            <h1>Footer</h1>
-        </div>
+    <div class="container-hairrecipe">
+        @Html.Partial("_navigation", "")
+        @RenderBody()
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

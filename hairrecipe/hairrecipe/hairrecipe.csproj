@@ -229,6 +229,7 @@
     <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
+    <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
     <Content Include="Content\sp-css\mobile-reco_recipe.css" />
@@ -353,10 +354,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Product\Booster.cshtml" />
-    <Content Include="Views\Product\Apricot.cshtml" />
-    <Content Include="Views\Product\Kiwi.cshtml" />
-    <Content Include="Views\Product\Mint.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Sp\Index.cshtml" />
     <Content Include="Views\Sp\About.cshtml" />
@@ -424,13 +421,15 @@
     <Content Include="Views\Home\reco_recipe.cshtml" />
     <Content Include="Views\Sp\info.cshtml" />
     <Content Include="Views\Home\info.cshtml" />
+    <Content Include="Views\Product\Product-line.cshtml" />
+    <Content Include="Views\Shared\_ProductBlock.cshtml" />
+    <Content Include="Views\Shared\_ProductRefillBlock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\pc-css\" />
     <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>

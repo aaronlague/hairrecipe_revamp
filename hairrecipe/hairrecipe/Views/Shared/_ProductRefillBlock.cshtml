@@ -1,0 +1,19 @@
+﻿@model hairrecipe.data.Entities.Products.Product
+@using hairrecipe.data.Helpers;
+<li>
+    <img class="product-item" src="~/Content/images/pc/product/@(Model.Line)/@(Model.Name).png" alt="" />
+    <div class="content-area">
+        @if (!string.IsNullOrEmpty(Model.JpTitle1))
+        {
+            <span class="jp-title-1"> @Html.Raw(@Model.JpTitle1.LineBreak("[pc-br]"))</span>
+        }
+        @if (!string.IsNullOrEmpty(Model.JpTitle2))
+        {
+            <span class="jp-title-2">@Html.Raw(@Model.JpTitle2.LineBreak("[pc-br]"))</span>
+        }
+        @if (!string.IsNullOrEmpty(Model.Size))
+        {
+            <span class="size">@Html.Raw(@Model.Size)</span>
+        }
+    </div>
+</li>

@@ -1,0 +1,149 @@
+﻿img{
+    width :auto;
+}
+ul, li{
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+
+.view{
+    width : 1280px;
+    margin : 0 auto;
+}
+.koburina{
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.lubalin{
+    font-family: 'LubalinGraph-Book';
+}
+
+.full-length{
+    width : 100%;
+} 
+
+.center{
+    display : block;
+    margin-left :auto;
+    margin-right :auto;
+    text-align : center;
+}
+
+.sectionColumn{
+    width : 640px;    
+    float : left;
+}
+
+.product-section{
+    overflow : hidden;
+    padding : 165px 0 100px;
+}
+
+ul.body.left  li.sectionColumn{
+    float : left;
+}
+ul.body.right  li.sectionColumn{
+    float : right;
+}
+
+.product-item{
+    display : block;
+    margin : 0 auto;
+}
+
+.en-title{
+    font-size : 38px;
+    padding : 50px 0;
+}
+
+.jp-title-1,
+.jp-title-2,
+.jp-title-3,
+.size{
+    font-size : 20px;    
+    line-height : 150%;
+    letter-spacing : 1px;
+}
+
+.content-area{
+    margin : 39px 0 0;
+    overflow : hidden;
+}
+
+.description{
+    font-size : 13.99px;
+    margin: 15px 0 0;
+    letter-spacing : 1px;
+}
+
+.additives{
+    background-image : url('/Content/images/pc/product/chalkboard.jpg');
+    color : #fff;
+    width: 490px;
+}
+.additives ul.multi{
+    overflow : hidden;
+    display: table-row;
+}
+
+.additives ul.multi li.column{
+    width : 244px;
+    display: table-cell;
+}
+.additives ul.multi li.column:nth-child(2) {
+    border-left: 1px solid #fff;
+}
+
+.additives .phrases li{
+    padding: 22px 32px;
+}
+.additives .phrases li.phrase-title{
+    border-bottom : 1px solid #fff;
+    font-size : 20px;
+}
+.additives .phrases li.phrase{
+    line-height : 150%;
+    letter-spacing : 1px;
+}
+
+.howtouse-hdr{
+    font-size : 20px;
+    margin : 39px 0 0;
+}
+
+.separator{
+    border-bottom : 1px solid #000;
+    margin : 8px 0;
+    width: 490px;
+}
+
+ul.refill{
+    overflow : hidden;
+    margin: 0 auto;
+    display : table;
+    padding : 0 0 70px;
+}
+
+ul.refill li{
+    float : left;
+    width : 330px;
+    display: inline;
+}
+
+ul.refill li span{
+    display : block;
+    text-align : center;
+}
+
+
+/* Booster */
+
+.pc-float-left{
+    float : left;
+    width : 640px;
+}
+
+.point-section{
+    clear : both;
+}

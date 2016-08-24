@@ -11,6 +11,8 @@ namespace hairrecipe.data.Entities.Products
         public string SKU { get; set; }
         public string Name { get; set; }
         public string Line { get; set; }
+        public string DesktopDirection { get; set; }
+        public string Type { get; set; }
         public string EnTitle { get; set; }
         public string JpTitle1 { get; set; }
         public string JpTitle2 { get; set; }

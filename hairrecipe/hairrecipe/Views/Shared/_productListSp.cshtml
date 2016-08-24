@@ -1,31 +1,32 @@
 ﻿@model hairrecipe.data.Entities.Products.Product 
+@using hairrecipe.data.Helpers;
 
 <div id="@Model.Name" class="product-section @(Model.BackgroundClass)" >
     <img class="product-item" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name).png" alt="" />
     @if (!string.IsNullOrEmpty(Model.EnTitle))
     {
-        <span class="en-title  full-length center">@Html.Raw(Model.EnTitle)</span>
+        <span class="en-title  full-length center">@Html.Raw(Model.EnTitle.LineBreak("[sp-br]"))</span>
     }
 
     <div class="content-area">
     @if (!string.IsNullOrEmpty(Model.JpTitle1)) { 
-        <span class="jp-title-1 full-length center"> @Html.Raw(@Model.JpTitle1)</span>
+        <span class="jp-title-1 full-length center"> @Html.Raw(@Model.JpTitle1.LineBreak("[sp-br]"))</span>
     }
     @if (!string.IsNullOrEmpty(Model.JpTitle2)) {
-        <span class="jp-title-2  full-length center">@Html.Raw(@Model.JpTitle2)</span>
+        <span class="jp-title-2  full-length center">@Html.Raw(@Model.JpTitle2.LineBreak("[sp-br]"))</span>
     }
     @if (!string.IsNullOrEmpty(Model.Size) ) {
         <span class="size  full-length center">@Html.Raw(@Model.Size)</span>
     }
     @if (!string.IsNullOrEmpty(Model.JpTitle3))
     {
-        <span class="jp-title-3  full-length center">@Html.Raw(@Model.JpTitle3)</span>
+        <span class="jp-title-3  full-length center">@Html.Raw(@Model.JpTitle3.LineBreak("[sp-br]"))</span>
     }
     @if (!string.IsNullOrEmpty(Model.Description)) { 
-        <p class="description  full-length center">@Html.Raw(@Model.Description)</p>
+        <p class="description  full-length center">@Html.Raw(@Model.Description.LineBreak("[sp-br]"))</p>
     }
     @if (Model.Columns.Count > 0) {
-        <div class="additives  center">
+        <div class="additives ">
             <ul class="columns @Html.Raw(Model.Columns.Count > 1 ? "multi" : "solo")">
                 @foreach (var column in Model.Columns)
                 {
@@ -46,7 +47,7 @@
         {
             <span class="howtouse-hdr full-length center">How to Use</span>
             <div class="separator"></div>
-            <p class="howtouse  full-length center">@Html.Raw(@Model.Howtouse)</p>
+            <p class="howtouse  full-length center">@Html.Raw(@Model.Howtouse.LineBreak("[sp-br]"))</p>
         }
         <ul class="actions">
             @if (Model.HasBIN == true)

@@ -10,12 +10,14 @@
             name:'grape',
             backgroundClass : 'wall',
             line:'Booster',
+            desktopDirection : 'left',
+            type : 'main',
             enTitle:'Booster Oil Recipe',
-            jpTitle1:'グレープ シード<br/>ブースター オイル レシピ',
+            jpTitle1:'グレープ シード[sp-br]ブースター オイル レシピ[pc-br]',
             jpTitle2:'[うるおいレシピ]',
             jpTitle3:'',
             size:'30ml',
-            description:'保湿効果の高いグレープシードオイルで、<br/>イキイキと美しい髪に。 ',
+            description:'保湿効果の高いグレープシードオイルで、[sp-br]イキイキと美しい髪に。 ',
             howtouse:'',
             sku:'012345678',
             isActive : true,
@@ -34,12 +36,14 @@
             name:'seed',
             backgroundClass : 'stitch-s',
             line:'Booster',
+            type : 'main',
+            desktopDirection : 'right',
             enTitle:'',
-            jpTitle1:'サンフラワー シード<br/>ブースター オイル レシピ',
+            jpTitle1:'サンフラワー シード[sp-br]ブースター オイル レシピ',
             jpTitle2:'[つやレシピ]',
             jpTitle3:'',
             size:'30ml',
-            description:'オメガ6※１とオメガ9※２が豊富な<br/>サンフラワーシードオイルで、指通りのよい輝く髪に。<br/>※1:リノール酸 ※2:オレイン酸',
+            description:'オメガ6※１とオメガ9※２が豊富な[sp-br][pc-br]サンフラワーシードオイルで、指通りのよい輝く髪に。[pc-br][sp-br]※1:リノール酸 ※2:オレイン酸',
             howtouse:'',
             sku:'012345678',
             isActive : true,
@@ -81,18 +85,22 @@
         { htmlSection : 
         '
             <div class="point-mazeru point-section  wood-smooth">
-                <img class="pointer-img" src="/Content/images/sp/product/booster/point-mazeru.jpg">
-                <div class="text-content">
-                    <p class="hilight">“まぜるオイル”だからできる トリートメント力 </p>
-                    <p>たとえば、トマトをオイルと一緒にとると、リコピンの吸収が高まり美味しさがアップします。</p>
-                    <p>その相乗効果をもたらすプロセスを、ヘアケアにも応用。</p>
-                    <p>大きなコンディショニング粒子を含むブースターオイルと細かなコンディショニング粒子を含むトリートメントを混ぜることで大小のコンディショニング成分が瞬時に混ざり合い、髪の保湿力や水分バリア機能をアップ。</p>
-                    <p>“まぜる“ことでトリートメントとオイルそれぞれの効果を引き出すことができます。</p>
+                <div class="pc-float-left">
+                    <img class="pointer-img" src="/Content/images/sp/product/booster/point-mazeru.jpg">
                 </div>
-                <div class="box-text">
-                    <p class="hilight">料理でのまぜる効果って？ </p>
-                    <p>レシピの中に適切な量のオイルをまぜることで、レシピのおいしさ（風味・香り・味）を引き出し、口にしたときの感触・食感を高め、食べたときの満足度、幸せ感を高めます。</p>
-                    <p>木下あおいさん<br/>管理栄養士/インナービューティープランナー</p>
+                <div  class="pc-float-left">
+                    <div class="text-content">
+                        <p class="hilight">“まぜるオイル”だからできる トリートメント力 </p>
+                        <p>たとえば、トマトをオイルと一緒にとると、リコピンの吸収が高まり美味しさがアップします。</p>
+                        <p>その相乗効果をもたらすプロセスを、ヘアケアにも応用。</p>
+                        <p>大きなコンディショニング粒子を含むブースターオイルと細かなコンディショニング粒子を含むトリートメントを混ぜることで大小のコンディショニング成分が瞬時に混ざり合い、髪の保湿力や水分バリア機能をアップ。</p>
+                        <p>“まぜる“ことでトリートメントとオイルそれぞれの効果を引き出すことができます。</p>
+                    </div>
+                    <div class="box-text"
+                        <p class="hilight">料理でのまぜる効果って？ </p>
+                        <p>レシピの中に適切な量のオイルをまぜることで、レシピのおいしさ（風味・香り・味）を引き出し、口にしたときの感触・食感を高め、食べたときの満足度、幸せ感を高めます。</p>
+                        <p>木下あおいさん<br/>管理栄養士/インナービューティープランナー</p>
+                    </div>
                 </div>
             </div>
         ' },

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using hairrecipe.data;
+using hairrecipe.data.Entities.Products;
+using hairrecipe.data.Services;
+using AttributeRouting.Web.Mvc;
 
 namespace hairrecipe.Controllers
 {
@@ -23,61 +27,29 @@ namespace hairrecipe.Controllers
             }
         }
 
-        public ActionResult Booster()
-        {
+        [Route("/product/Booster")]
+        [Route("/product/Apricot")]
+        [Route("/product/Kiwi")]
+        [Route("/product/Mint")]
+        public ActionResult ProductLine()       
+        
+{
+            string url = HttpContext.Request.Url.AbsolutePath;
+            string line = url.Split('/').Last();
+
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Apricot", "SpProduct");
+                return RedirectToAction(line, "sp/product");
 
             }
-            else
-            {
-
-                return View();
-            }
+            ViewData["group-title"] = line;
+            string filepath = Server.MapPath("~/Content/data/" + line + ".json");
+            var productLine = ProductService.GetLineDetails(filepath);
+            productLine.ProductListMain = productLine.Products.Where(x => x.Type.Contains("main")).ToList();
+            productLine.ProductListRefill = productLine.Products.Where(x => x.Type.Contains("refill")).ToList();
+            return View("Product-line", productLine);
         }
 
-        public ActionResult Apricot()
-        {
-            if (Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Apricot", "SpProduct");
-
-            }
-            else
-            {
-
-                return View();
-            }
-        }
-
-        public ActionResult Kiwi()
-        {
-            if (Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Kiwi", "SpProduct");
-
-            }
-            else
-            {
-
-                return View();
-            }
-        }
-
-        public ActionResult Mint()
-        {
-            if (Request.Browser.IsMobileDevice)
-            {
-                return RedirectToAction("Mint", "SpProduct");
-
-            }
-            else
-            {
-
-                return View();
-            }
-        }
 
     }
 }
