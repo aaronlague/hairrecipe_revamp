@@ -175,8 +175,13 @@
     <Content Include="Content\images\sp\bg\sp_list-bg.png" />
     <Content Include="Content\images\sp\bg\wood-hp-2.jpg" />
     <Content Include="Content\images\sp\diagnosis\1.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-1-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-1-mid-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-30.png" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-bg-top.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-sns-fb.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-sns-ln.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-sns-tw.jpg" />
     <Content Include="Content\images\sp\diagnosis\step1.png" />
     <Content Include="Content\images\sp\diagnosis\step2.png" />
     <Content Include="Content\images\sp\diagnosis\step3.png" />
@@ -255,6 +260,7 @@
     <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
     <Content Include="Content\sp-css\mobile-reco_recipe.css" />
+    <Content Include="Content\sp-css\mobile-results.css" />
     <Content Include="Content\sp-css\mobile-sitemap.css" />
     <Content Include="Content\sp-css\mobile-contact.css" />
     <Content Include="Content\sp-css\product-line.css" />

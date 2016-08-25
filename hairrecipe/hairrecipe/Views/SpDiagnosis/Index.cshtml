@@ -1,9 +1,15 @@
 ﻿@model hairrecipe.Models.DiagnosisViewModel
 @{
-    ViewBag.Title = "Index";
+    string uri = Request.Url.AbsolutePath;
+}
+@{
+    ViewBag.Title = "Diagnosis";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
-
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-results.css" rel="stylesheet" />
+}
 @{     
     <div id="Details">
 

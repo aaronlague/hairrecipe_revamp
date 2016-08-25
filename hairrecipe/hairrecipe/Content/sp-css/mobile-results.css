@@ -1,0 +1,172 @@
+﻿#Details {
+    font-size:14px; /*base font*/
+}
+    #Details .result-1 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-1-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+#Details .results-page-top {
+    /*background: url(/Content/images/sp/diagnosis/results/sp_results-bg-top.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;*/
+    position:relative;
+    text-align: center;
+    font-family:Koburina Gothic W3 JIS2004;
+    padding-bottom: 6.1%;
+}
+
+.results-page-top .result-title {
+    font-size:2.571em;
+    padding-top: 30%;
+}
+
+.results-page-top .result-percentage {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.results-page-top .result-peercentage img {
+    width: auto;
+}
+
+.results-page-top .result-small-headline {
+    font-size:1.786em;
+}
+
+.results-page-top .result-top-copy {
+    font-size:2.571em;
+}
+
+#Details .results-page-content .cols {
+    width: 100%;
+    font-size: 1.786em;
+    margin-top:75%;
+    overflow: auto;
+}
+
+#Details .results-page-content .cols div {
+    float:left;
+    width:30%;
+}
+
+#Details .results-page-content .cols div:nth-child(1) {
+    width: 40%;
+}
+
+#Details .results-page-content .cols div:nth-child(2) {
+    width: 28%;
+}
+
+#Details .results-page-content .cols div:nth-child(3) {
+    padding-right:0;
+    width:30%;
+}
+
+    #Details .results-page-content .cols div p {
+        text-align:center;
+    }
+
+#Details .results-page-content .content-block {
+    font-size:2.571em;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+    #Details .results-page-content .content-block p {
+        margin-bottom:5%;
+    }
+
+#Details .results-page-bottom {
+    text-align:center;
+    overflow:auto;
+}
+
+    #Details .results-page-bottom img {
+        width:100%;
+    }
+
+    #Details .results-page-bottom .bottom-block {
+        margin-top: -5%;
+        margin-bottom: 5%;
+    }
+
+    #Details .results-page-bottom .bottom-block p {
+        font-size:2.571em;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        clear:both;
+    }
+
+    #Details .results-page-bottom .results-sns p {
+        font-size:2.571em;
+    }
+
+
+    #Details .results-page-bottom .results-sns .sns-cols {
+        width: 60%;
+        overflow: auto;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+        #Details .results-page-bottom .results-sns .sns-cols div {
+            float:left;
+            width: 33%;
+        }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: auto;
+    }
+
+
+#Details .results-page-content.result-1 {
+    /*background: url(/Content/images/sp/diagnosis/results/sp_results-1-mid-bg.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;*/
+    position:relative;
+    font-family:Koburina Gothic W3 JIS2004;
+    overflow:auto;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #Details {
+        font-size:5px; /*base font*/
+    }
+
+    #Details .results-page-bottom img {
+        width: 100%;
+    }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: 70%;
+    }
+
+    #Details .results-page-content .content-block {
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    #Details {
+        font-size:7px; /*base font*/
+    }
+
+    #Details .results-page-bottom img {
+        width: 100%;
+    }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: 70%;
+    }
+
+     #Details .results-page-content .content-block {
+        margin-bottom: 10%;
+    }
+}
