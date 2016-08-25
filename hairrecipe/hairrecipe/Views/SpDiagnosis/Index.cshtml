@@ -1,10 +1,36 @@
 ﻿@model hairrecipe.Models.DiagnosisViewModel
 @{
-    string uri = Request.Url.AbsolutePath;
+    string uri = Request.Url.Segments[3] + Request.Url.Segments[4];
+    string metaTitle;
+    string metaDesc;
+    string fbMetaTitle;
+    
+    switch(uri) {
+
+        case "q1/abcd":
+            metaTitle = "Diagnosis abcd Title";
+            metaDesc = "Diagnosis abcd 1 Desc";
+            fbMetaTitle = "Diagnosis abcd FB Title";
+        break;
+            
+        case "result/1":
+            metaTitle = "Result 1 Title";
+            metaDesc = "Result 1 Desc";
+            fbMetaTitle = "Result 1 FB Title";
+        break;
+        
+        default:
+            metaTitle = "Diagnosis";
+            metaDesc = "Diagnosis Desc";
+            fbMetaTitle = "Diagnosis FB Title";
+        break;
+    }
+    
 }
 @{
-    ViewBag.Title = "Diagnosis";
-    ViewBag.fbTitle = "";
+    ViewBag.Title = metaTitle;
+    ViewBag.Description = metaDesc;
+    ViewBag.fbTitle = fbMetaTitle;
     ViewBag.fbType = "";
     ViewBag.fbUrl = "";
     ViewBag.fbImage = "";
