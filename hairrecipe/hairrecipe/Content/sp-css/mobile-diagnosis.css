@@ -105,6 +105,9 @@
     padding: 9% 4% 4% 4%;
 }
 
+.choices .box p {
+    margin: 0;
+}
 
 /*iPhone 5*/
 
@@ -121,6 +124,9 @@ and (max-device-width : 568px) {
     .choices.big {
         height: 114px;
     }
+    .choices.big .box {
+        padding: 4%;
+    }
 }
 
 
@@ -136,6 +142,7 @@ and (max-device-width : 568px) {
     .choices.big {
         height: 195px;
     }
+    
 }
 
 
@@ -149,6 +156,9 @@ and (max-device-width : 667px) {
     }
     .choices.big {
         height: 135px;
+    }
+    .choices.big .box {
+        padding: 5% 4% 4% 4%;
     }
 }
 
