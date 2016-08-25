@@ -6,9 +6,7 @@
     {
         <div class="en-title full-length"><span class="lubalin center">@Html.Raw(Model.EnTitle.LineBreak("[pc-br]"))</span></div>
     }
-    <ul class="body @Model.DesktopDirection">
-        <li class="sectionColumn">
-            <img class="product-item" src="~/Content/images/pc/product/@(Model.Line)/@(Model.Name).png" alt="" />
+    <div class="body @Model.DesktopDirection">      
             @if (Model.HasReview)
             {
                 <div class="rr-section">
@@ -18,16 +16,13 @@
                             <a class="generic-btn">レビューを読む</a>
                         </li>
                         <li>
-
                             <a class="generic-btn">レビューを書く</a>
                         </li>
                     </ul>
                 </div>
             }
 
-        </li>
-        <li class="sectionColumn">
-            <div class="content-area main-details">
+            <div class="main-details">
                 @if (!string.IsNullOrEmpty(Model.JpTitle1))
                 {
                     <span class="jp-title-1"> @Html.Raw(@Model.JpTitle1.LineBreak("[pc-br]"))</span>
@@ -79,7 +74,7 @@
                 }
             </div>
 
-        </li>
-    </ul>
+        </div>
+    
 
 </div>

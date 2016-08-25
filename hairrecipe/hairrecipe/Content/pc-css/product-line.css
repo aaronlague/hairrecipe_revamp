@@ -29,32 +29,25 @@ ul, li{
     margin-right :auto;
     text-align : center;
 }
-
-.sectionColumn{
-    width : 540px;    
-    float : left;
-}
 .product-section{
     overflow : hidden;
     padding : 55px 0 100px;
+    position : relative;
 }
-ul.body.left{
-    padding-left : 60px;    
+
+.body{
+    width : 640px;
 }
-ul.body.left  li.sectionColumn{
-    float : left;    
-}
-ul.body.right{
-    padding-right : 60px;    
-}
-ul.body.right  li.sectionColumn{
+
+.body.right{
     float : right;
 }
 
-.product-item{
-    display : block;
-    margin : 0 auto;
+.body.left{
+    float : left;
+    margin-left : 150px;
 }
+
 
 .en-title{
     font-size : 38px;
@@ -65,7 +58,7 @@ ul.body.right  li.sectionColumn{
 .jp-title-2,
 .jp-title-3,
 .size{
-    font-size : 20px;    
+    font-size : 16px;    
     line-height : 150%;
     letter-spacing : 1px;
 }
@@ -83,6 +76,10 @@ ul.body.right  li.sectionColumn{
     font-size : 13.99px;
     margin: 15px 0 0;
     letter-spacing : 1px;
+}
+
+.howtouse{
+    width : 490px;
 }
 
 .additives{
@@ -104,15 +101,16 @@ ul.body.right  li.sectionColumn{
 }
 
 .additives .phrases li{
-    padding: 16px 32px;
+    padding: 13px 32px;
 }
 .additives .phrases li.phrase-title{
     border-bottom : 1px solid #fff;
-    font-size : 20px;
+    font-size : 16px;
 }
 .additives .phrases li.phrase{
     line-height : 150%;
     letter-spacing : 1px;
+    font-size : 13px;
 }
 
 .howtouse-hdr{
@@ -125,29 +123,113 @@ ul.body.right  li.sectionColumn{
     margin : 8px 0;
     width: 490px;
 }
-
-ul.refill{
+.refill{
+    height : 748px;
     overflow : hidden;
-    margin: 0 auto;
+}
+.refill ul{
+    margin: 440px auto 0;
     display : table;
-    padding : 0 0 70px;
 }
 
-ul.refill li{
+.refill ul li{
     float : left;
-    width : 330px;
-    display: inline;
+    width : 353px;
+    display: table-cell;
 }
-
-ul.refill li span{
+.refill ul li span{
     display : block;
     text-align : center;
+}
+.refill ul li a{
+    display : block;
+    margin: 0 auto;
+}
+
+.generic-btn.shop{
+    margin-top : 20px;
+}
+.rr-section{
+    text-align : center;
+    width : 390px;
+    position : absolute;
+}
+.rr-section ul li{
+    float : left;
+    margin : 10px 0 0 10px;
 }
 
 .comboSection{
     width : 1280px;
     text-align : center;
 }
+
+
+/* 1st product */
+#apricot #shampoo{
+    background-image : url('/Content/images/pc/product/apricot/shampoo.jpg');    
+    height : 892px;
+}
+    #apricot #shampoo .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#booster #grape{
+    background-image : url('/Content/images/pc/product/booster/grape.jpg');    
+    height : 890px;
+}
+    #booster #grape .rr-section{
+        bottom: 155px;
+        left: 172px;
+    }
+
+/* 2nd product */
+
+#treatment .body.left{
+    margin-top: 150px;
+}
+#apricot #treatment{
+    background-image : url('/Content/images/pc/product/apricot/treatment.jpg');
+    height : 967px;
+}
+    #apricot #treatment .rr-section{
+        bottom: 196px;
+        right: 172px;
+    }
+#booster #seed .body.left{
+    margin-top: 50px;
+}
+#booster #seed{
+    background-image : url('/Content/images/pc/product/booster/seed.jpg');    
+    height : 699px;
+}
+    #booster #seed .rr-section{
+        bottom: 105px;
+        right: 172px;
+    }
+/* 3rd product */
+#apricot #mask{
+    background-image : url('/Content/images/pc/product/apricot/mask.jpg');
+    height : 776px;
+}
+    #apricot #mask .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+
+
+/* Refill product */
+#apricot .refill{
+    background-image : url('/Content/images/pc/product/apricot/filler.jpg');
+}
+
+
+
+
+
+
+
+
 /* Booster */
 #booster .point{
     background-image : url('/Content/images/pc/product/booster/oil_spoon.jpg');
@@ -181,7 +263,6 @@ ul.refill li span{
     line-height: 230%;
     letter-spacing: 0.8px;
 }
-
 #booster .pc-float .hilight{
     font-size : 20px;
     margin-bottom : 30px;
@@ -206,24 +287,9 @@ ul.refill li span{
     margin: 43px 0 0;
     padding : 30px;
 }
-
 #booster .point-section,
 #booster .video{
     clear : both;
-}
-
-#booster .generic-btn.shop{
-    margin-top : 20px;
-}
-#booster .rr-section{
-    text-align : center;
-    width : 390px;
-    margin : 0 auto;
-}
-
-#booster .rr-section ul li{
-    float : left;
-    margin : 10px 0 0 10px;
 }
 #booster .video{
     overflow : hidden;

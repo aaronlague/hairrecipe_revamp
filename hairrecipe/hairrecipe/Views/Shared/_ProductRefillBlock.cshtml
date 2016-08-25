@@ -1,7 +1,6 @@
 ﻿@model hairrecipe.data.Entities.Products.Product
 @using hairrecipe.data.Helpers;
 <li>
-    <img class="product-item" src="~/Content/images/pc/product/@(Model.Line)/@(Model.Name).png" alt="" />
     <div class="content-area">
         @if (!string.IsNullOrEmpty(Model.JpTitle1))
         {
@@ -14,6 +13,10 @@
         @if (!string.IsNullOrEmpty(Model.Size))
         {
             <span class="size">@Html.Raw(@Model.Size)</span>
+        }
+        @if (Model.HasBIN)
+        {
+            <a class="generic-btn shop">To Shop</a>
         }
     </div>
 </li>
