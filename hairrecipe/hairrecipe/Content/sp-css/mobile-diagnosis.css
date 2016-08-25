@@ -164,7 +164,7 @@ and (max-device-width : 667px) {
 }
 
 
-/*iPhone 6*/
+/*note 4*/
 
 @media only screen 
 and (min-device-width : 360px) 
@@ -174,5 +174,20 @@ and (max-device-width : 640px) {
     }
     .choices.big {
         height: 135px;
+    }
+}
+
+/*Landscape note 4*/
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+    body {
+        font-size: 7px;
+    }
+    .choices.big {
+        height: 195px;
     }
 }
