@@ -15,7 +15,7 @@ namespace hairrecipe.Controllers.sp
         //
         // GET: /SpDiagnosis/
         [Route("sp/diagnosis/{question?}/{page?}")]
-        public ActionResult Index(string question, string page)
+        public ActionResult Index(string question, string result, string page)
         {
             if (!Request.Browser.IsMobileDevice)
             {
@@ -26,7 +26,7 @@ namespace hairrecipe.Controllers.sp
             {
                 var model = new DiagnosisViewModel
                 {
-                    QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
+                    QuestionsPartial = ((question != null)) ? question + "/" + page : ((question == "result")) ? "result/" + page : "_diagnosisLanding"
                 };
 
                 return View(model);
