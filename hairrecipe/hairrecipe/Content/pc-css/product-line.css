@@ -115,6 +115,7 @@ ul, li{
 .howtouse{
     width : 490px;
     font-size : 13px;
+    letter-spacing : 1px;
     line-height : 150%;
 }
 .separator{
@@ -178,6 +179,14 @@ ul, li{
     height : 892px;
 }
     #kiwi #shampoo .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#mint #cleansing{
+    background-image : url('/Content/images/pc/product/mint/cleansing.jpg');    
+    height : 892px;
+}
+    #mint #cleansing .rr-section{
         bottom: 125px;
         left: 172px;
     }
