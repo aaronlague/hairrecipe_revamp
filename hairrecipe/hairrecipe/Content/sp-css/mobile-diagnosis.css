@@ -188,6 +188,6 @@ and (orientation: landscape) {
         font-size: 7px;
     }
     .choices.big {
-        height: 210px;
+        height: 160px;
     }
 }
