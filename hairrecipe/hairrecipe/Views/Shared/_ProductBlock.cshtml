@@ -9,9 +9,25 @@
     <ul class="body @Model.DesktopDirection">
         <li class="sectionColumn">
             <img class="product-item" src="~/Content/images/pc/product/@(Model.Line)/@(Model.Name).png" alt="" />
+            @if (Model.HasReview)
+            {
+                <div class="rr-section">
+                    <img src="~/Content/images/pc/temp.rating.jpg" />
+                    <ul>
+                        <li>
+                            <a class="generic-btn">レビューを読む</a>
+                        </li>
+                        <li>
+
+                            <a class="generic-btn">レビューを書く</a>
+                        </li>
+                    </ul>
+                </div>
+            }
+
         </li>
         <li class="sectionColumn">
-            <div class="content-area">
+            <div class="content-area main-details">
                 @if (!string.IsNullOrEmpty(Model.JpTitle1))
                 {
                     <span class="jp-title-1"> @Html.Raw(@Model.JpTitle1.LineBreak("[pc-br]"))</span>
@@ -24,9 +40,13 @@
                 {
                     <span class="size">@Html.Raw(@Model.Size)</span>
                 }
+                
                 @if (!string.IsNullOrEmpty(Model.Description))
                 {
                     <p class="description">@Html.Raw(@Model.Description.LineBreak("[pc-br]"))</p>
+                }
+                @if (Model.HasBIN) { 
+                    <a class="generic-btn shop">To Shop</a>
                 }
             </div>
             <div class="content-area">

@@ -1,4 +1,5 @@
 ﻿@model hairrecipe.data.Entities.Products.ProductLine
+@using hairrecipe.data.Helpers;
 
 @{
     ViewBag.Title = Model.MetaTitle;
@@ -36,14 +37,14 @@
     {
         foreach (var customContent in Model.CustomContent)
         {
-            @Html.Raw(customContent.HtmlSection.ToString());
+            @Html.Raw(customContent.HtmlSection.LineBreak("[pc-br]").ToString().Replace("[sw]","pc"));
         }
     }
     @if (Model.ComboSets != null)
     {
         foreach (var ComboSet in Model.ComboSets)
-        {
-            
+        {            
+            @Html.Partial("_ProductSetBlock", ComboSet);
         }
     }
 

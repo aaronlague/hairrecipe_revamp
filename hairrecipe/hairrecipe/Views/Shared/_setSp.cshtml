@@ -3,7 +3,7 @@
 <div  class="comboSection @Model.BackgroundClass">
     <p class="title">@Html.Raw(Model.Title)</p>
     <p>@Html.Raw(Model.Description)</p>
-    <img src="@Model.Image" />
+    <img src="@Model.Image.Replace("[sw]", "pc")" />
     @if ( Model.ProductSets != null && Model.ProductSets.Count > 0)
     {
     <ul>

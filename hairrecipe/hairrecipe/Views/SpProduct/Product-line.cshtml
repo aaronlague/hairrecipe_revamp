@@ -1,4 +1,5 @@
 ﻿@model hairrecipe.data.Entities.Products.ProductLine
+@using hairrecipe.data.Helpers;
 
 @{
     ViewBag.Title = Model.MetaTitle;
@@ -24,7 +25,7 @@
     @if (Model.CustomContent != null) { 
         foreach (var customContent in Model.CustomContent)
         {
-            @Html.Raw(customContent.HtmlSection.ToString());
+            @Html.Raw(customContent.HtmlSection.ToString().Replace("[sw]", "sp").LineBreak("[pc-br]"));
         }
     }
 

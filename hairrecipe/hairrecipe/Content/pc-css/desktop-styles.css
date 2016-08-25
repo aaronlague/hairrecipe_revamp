@@ -6,3 +6,72 @@
     width : 1280px;
     margin : 0 auto;
 }
+
+/*Background Style*/
+
+.wood-smooth{
+    background : url("/Content/images/sp/bg/wood-smooth.jpg");
+}
+.wood-rough{
+    background : url("/Content/images/sp/bg/wood-rough.jpg");
+}
+.wood-hp{
+    background : url("/Content/images/sp/bg/wood-hp.jpg");
+}
+.wood-b-hp{
+    background : url("/Content/images/sp/bg/wood-hp-2.jpg");
+}
+.wall {
+    background: url("/Content/images/sp/bg/wall-1.jpg");
+}
+
+.wall-hp{
+    background: url("/Content/images/sp/bg/wall-hp.jpg");
+}
+
+.stitch-b{
+    background : url("/Content/images/sp/bg/stitch-b.jpg");
+}
+.stitch-m{
+    background : url("/Content/images/sp/bg/stitch-m.jpg");
+}
+.stitch-s{
+    background : url("/Content/images/sp/bg/stitch-s.jpg");
+}
+
+.stitch-hp {
+    background : url("/Content/images/sp/bg/stitch-hp.jpg");
+}
+
+
+.generic-btn, 
+.generic-btn:hover,
+.generic-btn:active {
+    background-color: #fff;
+    border: 1px solid #87847d;
+    font-family: 'LubalinGraph-Book';
+    width: 180px;
+    height: 50px;
+    border-radius: 0;
+    position: relative;
+    font-size: 14px;
+    padding: 15px 38px;
+    text-transform: uppercase;
+    color: #87847d;
+    display : block;
+    text-decoration : none;
+    cursor : pointer;
+}
+
+.generic-btn.shop{
+    padding-left: 51px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+.generic-btn.shop:before {
+    content: url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
+    position: relative;
+    left: -5px;
+    top: 5px;
+}
