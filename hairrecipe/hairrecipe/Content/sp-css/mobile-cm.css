@@ -21,22 +21,22 @@
 
 .cm-anc {
     background: url(/Content/images/sp/cm/cm-02.jpg) no-repeat;
-    background-size:cover;
+    background-size:100%;
+    margin-bottom:-20px;
 }
 
 .cm-nav {
-    padding: 20% 10% 10% 17%;
+    padding: 10% 10% 18% 17%;
 }
 
 ul {
-    margin-top: 20px;
     margin-left:auto;
     margin-right:auto;
 }
 
 .cm-anc ul li {
     list-style:none;
-    margin-top:20px;
+    margin-top:40px;
     width:100%;
 }
 
@@ -75,22 +75,22 @@ ul {
 
 .cm-lineup-one {
     background: url(/Content/images/sp/cm/cm-21.jpg) no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
 
 .cm-lineup-two {
     background: url(/Content/images/sp/cm/cm-22.jpg) no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
 
 .cm-lineup-three {
     background: url(/Content/images/sp/cm/cm-23.jpg) no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
 
 .cm-lineup-four {
     background: url(/Content/images/sp/cm/cm-24.jpg) no-repeat;
-    background-size:cover;
+    background-size:100%;
 }
 
 .cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four {
@@ -110,8 +110,12 @@ ul {
     font-size: 1.4em;
 }
 
+.cm-one h2 span, .cm-two h2 span, .cm-three h2 span, .cm-four h2 span, .cm-five h2 span, .cm-six h2 span {
+    font-family:Arial;
+}
+
 .cm-lineup-one  div.inner, .cm-lineup-three  div.inner, .cm-lineup-four div.inner {
-    padding-top:150px;
+    padding-top:120px;
 }
 
 .cm-lineup-five div.inner {
@@ -125,11 +129,13 @@ ul {
 .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
     font-family:LubalinGraph-Book;
     font-size: 1.4em;
+    margin-top: 40px;
 }
 
 .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
     font-family:Koburina Gothic W3 JIS2004;
     font-size: 19px;
+    line-height:30px;
 }
 
 .inner a.btn.to-read-btn {
@@ -148,6 +154,24 @@ ul {
    .cm-anc li a {
        font-size: 1.2em;
    }
+
+   .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3{
+       font-size:18px;
+   }
+
+   p {
+       font-size: 11px;
+       line-height:18px;
+   }
+
+   .cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img {
+    max-width: 80%;
+    height: auto;
+    }
+
+   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+       font-size: 1.2em;
+   }
 }
 
 @media (max-width: 320px) {
@@ -161,6 +185,41 @@ ul {
 
    .to-read-btn {
        font-size:11px;
+   }
+
+   .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
+       font-size:15px;
+   }
+
+   p {
+       font-size: 11px;
+       line-height:18px;
+   }
+
+   .cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img {
+    max-width: 75%;
+    height: auto;
+    }
+
+   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+       font-size: 1.1em;
+       margin-top: 10px;
+   }
+
+   .cm-one h2, .cm-two h2, .cm-three h2, .cm-four h2, .cm-five h2, .cm-six h2 {
+       font-size: 1.2em;
+   }
+
+   .cm-anc li a:after {
+       background-size:40%
+   }
+
+   .cm-lineup-four h3 {
+      line-height: 23px;
+   }
+
+   .cm-lineup-four img {
+       margin-top: 7px;
    }
 }
 
@@ -179,6 +238,62 @@ ul {
    .cm-anc li a {
        font-size: 1.4em;
    }
+
+}
+
+/* ----------- Galaxy S5 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+
+    .cm-anc li a {
+        font-size:1.2em;
+    }
+
+    .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
+        font-size: 16px;
+    }
+
+
+    .cm-lineup-two div.inner {
+        padding-top: 10px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .cm-lineup-four div.inner {
+        padding-top: 100px;
+    }
+
+     .cm-lineup-four img {
+         max-width:80%;
+     }
+
+     .banner > h1 {
+         left:65%;
+     }
+}
+
+/* Portrait */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: landscape) {
 
 }
    
