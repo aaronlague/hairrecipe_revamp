@@ -163,3 +163,16 @@ and (max-device-width : 667px) {
     }
 }
 
+
+/*iPhone 6*/
+
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) {
+    body {
+        font-size: 7px;
+    }
+    .choices.big {
+        height: 135px;
+    }
+}
