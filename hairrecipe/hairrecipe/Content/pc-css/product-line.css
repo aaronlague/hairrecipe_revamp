@@ -78,10 +78,6 @@ ul, li{
     letter-spacing : 1px;
 }
 
-.howtouse{
-    width : 490px;
-}
-
 .additives{
     background-image : url('/Content/images/pc/product/chalkboard.jpg');
     color : #fff;
@@ -95,13 +91,14 @@ ul, li{
 .additives ul.multi li.column{
     width : 244px;
     display: table-cell;
+    padding-bottom : 20px;
 }
 .additives ul.multi li.column:nth-child(2) {
     border-left: 1px solid #fff;
 }
 
 .additives .phrases li{
-    padding: 13px 32px;
+    padding: 13px 23px 5px;
 }
 .additives .phrases li.phrase-title{
     border-bottom : 1px solid #fff;
@@ -109,15 +106,17 @@ ul, li{
 }
 .additives .phrases li.phrase{
     line-height : 150%;
-    letter-spacing : 1px;
-    font-size : 13px;
+    font-size : 12px;
 }
-
 .howtouse-hdr{
     font-size : 20px;
     margin : 39px 0 0;
 }
-
+.howtouse{
+    width : 490px;
+    font-size : 13px;
+    line-height : 150%;
+}
 .separator{
     border-bottom : 1px solid #000;
     margin : 8px 0;
@@ -174,6 +173,14 @@ ul, li{
         bottom: 125px;
         left: 172px;
     }
+#kiwi #shampoo{
+    background-image : url('/Content/images/pc/product/kiwi/shampoo.jpg');    
+    height : 892px;
+}
+    #kiwi #shampoo .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
 #booster #grape{
     background-image : url('/Content/images/pc/product/booster/grape.jpg');    
     height : 890px;
@@ -184,8 +191,7 @@ ul, li{
     }
 
 /* 2nd product */
-
-#treatment .body.left{
+#apricot #treatment .body.left{
     margin-top: 150px;
 }
 #apricot #treatment{
@@ -196,6 +202,18 @@ ul, li{
         bottom: 196px;
         right: 172px;
     }
+#kiwi #treatment .body.left{
+    margin-top: 95px;
+}
+#kiwi #treatment{
+    background-image : url('/Content/images/pc/product/kiwi/treatment.jpg');
+    height : 906px;
+}
+    #kiwi #treatment .rr-section{
+        bottom: 196px;
+        right: 172px;
+    }
+
 #booster #seed .body.left{
     margin-top: 50px;
 }
@@ -207,6 +225,7 @@ ul, li{
         bottom: 105px;
         right: 172px;
     }
+
 /* 3rd product */
 #apricot #mask{
     background-image : url('/Content/images/pc/product/apricot/mask.jpg');
@@ -216,19 +235,23 @@ ul, li{
         bottom: 125px;
         left: 172px;
     }
+#kiwi #scalp{
+    background-image : url('/Content/images/pc/product/kiwi/scalp.jpg');
+    height : 776px;
+}
+    #kiwi #scalp .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
 
 
 /* Refill product */
 #apricot .refill{
     background-image : url('/Content/images/pc/product/apricot/filler.jpg');
 }
-
-
-
-
-
-
-
+#kiwi .refill{
+    background-image : url('/Content/images/pc/product/kiwi/refill.jpg');
+}
 
 /* Booster */
 #booster .point{

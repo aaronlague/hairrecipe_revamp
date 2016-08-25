@@ -35,7 +35,7 @@
                             <li class="phrase-title">@column.Header</li>
                             @foreach (var phrase in column.Phrases)
                             {
-                                <li class="phrase">@phrase.Text</li>
+                                <li class="phrase">@Html.Raw(phrase.Text.LineBreak("[sp-br]"))</li>
                             }
                         </ul>
                     </li>
