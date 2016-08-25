@@ -2,6 +2,9 @@
     position:relative;
 }
 
+.content {
+    margin-bottom:-20px;
+}
 .banner > h1 {
     color:white;
     position:absolute;
@@ -13,20 +16,25 @@
     font-family: Koburina Gothic W3 JIS2004;
 }
 h2 {
-   font-size:1.4em;
-   margin-top:40px;
+   font-size:1.35em;
    margin-bottom:20px;
+   margin-top:40px;
 }
 
 
 p{
    font-size:1.1em;
+   margin-bottom:30px;
 }
 
 .about-main {
     color: #87847d;
     width: 86%;
     margin-bottom:20px;
+}
+
+.about-bg {
+    background:url("/Content/images/sp/bg/about-bg.jpg") repeat;
 }
 
 
