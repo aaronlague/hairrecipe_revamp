@@ -425,6 +425,8 @@
     <Content Include="Views\Shared\_ProductBlock.cshtml" />
     <Content Include="Views\Shared\_ProductRefillBlock.cshtml" />
     <Content Include="Views\Shared\_ProductSetBlock.cshtml" />
+    <Content Include="Views\Shared\_FootBannerBlock.cshtml" />
+    <Content Include="Views\Shared\_FooterBlock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

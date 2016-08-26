@@ -20,7 +20,8 @@ namespace hairrecipe
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/bootstrap.js",
-                        "~/Scripts/jasny-bootstrap.js"
+                        "~/Scripts/jasny-bootstrap.js",
+                        "~/Content/js/main.pc.js"
                         ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're

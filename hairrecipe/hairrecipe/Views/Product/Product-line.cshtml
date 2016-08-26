@@ -50,15 +50,7 @@
         }
     }
 
-    @{
-        string[,] contents = new string[,]
-	{
-        { Model.FooterBannerBackground, "", "" },
-	    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"},
-	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
+     @{Html.RenderPartial("_FootBannerBlock");}
 
-	};
-        //Html.RenderPartial("_FootBannerSp", contents);
-    }
 
 </div>

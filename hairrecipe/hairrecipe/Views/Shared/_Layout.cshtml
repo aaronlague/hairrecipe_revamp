@@ -14,8 +14,9 @@
 </head>
 <body>
     <div class="container-hairrecipe">
-        @Html.Partial("_navigation", "")
+        @{Html.RenderPartial("_navigation", "");}
         @RenderBody()
+        @{Html.RenderPartial("_FooterBlock", "");}
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
