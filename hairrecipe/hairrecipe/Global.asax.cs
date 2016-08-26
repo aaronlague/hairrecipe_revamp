@@ -37,6 +37,10 @@ namespace hairrecipe
             {
                 Context.RewritePath("/sp/about");
             }
+            else if (urlRequest.Equals("/sp/diagnosis/q1/abcd.html"))
+            {
+                Context.RewritePath("/sp/diagnosis/q1/abcd");
+            }
 
         }
 

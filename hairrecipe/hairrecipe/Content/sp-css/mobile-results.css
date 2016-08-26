@@ -1,0 +1,374 @@
+﻿#Details {
+    font-size:14px; /*base font*/
+}
+    #Details .result-1 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-1-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+    #Details .result-2 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-2-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+    #Details .result-3 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-3-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-3 .results-page-content .cols div:nth-child(1) {
+            width: 38%;
+        }
+
+        #Details .result-3 .results-page-content .cols div:nth-child(2) {
+            width: 30%;
+        }
+
+    #Details .result-4 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-4-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-4 .results-page-content .cols div:nth-child(1) {
+            width: 50%;
+            padding-left: 20%;
+        }
+
+        #Details .result-4 .results-page-content .cols div:nth-child(2) {
+            width: 50%;
+            padding-right: 13%;
+        }
+
+    #Details .result-5 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-5-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-5 .results-page-content .cols div:nth-child(1) {
+            width: 38%;
+        }
+
+        #Details .result-5 .results-page-content .cols div:nth-child(2) {
+            width: 26%;
+        }
+
+        #Details .result-5 .results-page-content .cols div:nth-child(3) {
+            width: 35%;
+        }
+
+    #Details .result-6 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-6-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-6 .results-page-content .cols div:nth-child(1) {
+            width: 35%;
+        }
+
+        #Details .result-6 .results-page-content .cols div:nth-child(2) {
+            width: 30%;
+        }
+
+        #Details .result-6 .results-page-content .cols div:nth-child(3) {
+            width: 30%;
+        }
+
+    #Details .result-7 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-7-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+    #Details .result-8 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-8-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-8 .results-page-content .cols div:nth-child(1) {
+            width: 47%;
+            padding-left: 20%;
+        }
+
+        #Details .result-8 .results-page-content .cols div:nth-child(2) {
+            width: 50%;
+            padding-right: 13%;
+        }
+
+    #Details .result-9 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-9-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-9 .results-page-content .cols div:nth-child(1) {
+            width: 38%;
+        }
+
+    #Details .result-10 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-10-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-10 .results-page-content .cols div:nth-child(1) {
+            width: 37%;
+        }
+
+    #Details .result-11 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-11-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+    #Details .result-12 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-12-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-12 .results-page-content .cols div:nth-child(1) {
+            width: 49%;
+            padding-left: 20%;
+        }
+
+        #Details .result-12 .results-page-content .cols div:nth-child(2) {
+            width: 50%;
+            padding-right: 13%;
+        }
+
+    #Details .result-13 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-13-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-13 .results-page-content .cols div:nth-child(1) {
+            width: 36%;
+        }
+
+        #Details .result-13 .results-page-content .cols div:nth-child(3) {
+            width: 33%;
+        }
+
+    #Details .result-14 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-14-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(1) {
+            width: 38%;
+        }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(2) {
+            width: 21%;
+        }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(3) {
+            width: 41%;
+        }
+
+    #Details .result-15 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-15-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(1) {
+            width: 37%;
+        }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(2) {
+            width: 21%;
+        }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(3) {
+            width: 41%;
+        }
+
+    #Details .result-16 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-16-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-16 .results-page-content .cols div:nth-child(1) {
+            width: 47%;
+            padding-left: 20%;
+        }
+
+        #Details .result-16 .results-page-content .cols div:nth-child(2) {
+            width: 50%;
+            padding-right: 13%;
+        }
+
+#Details .results-page-top {
+    /*background: url(/Content/images/sp/diagnosis/results/sp_results-bg-top.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;*/
+    position:relative;
+    text-align: center;
+    font-family:Koburina Gothic W3 JIS2004;
+    padding-bottom: 6.1%;
+}
+
+.results-page-top .result-title {
+    font-size:2.571em;
+    padding-top: 30%;
+}
+
+.results-page-top .result-percentage {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.results-page-top .result-peercentage img {
+    width: auto;
+}
+
+.results-page-top .result-small-headline {
+    font-size:1.786em;
+}
+
+.results-page-top .result-top-copy {
+    font-size:2.571em;
+}
+
+#Details .results-page-content .cols {
+    width: 100%;
+    font-size: 1.786em;
+    margin-top:75%;
+    overflow: auto;
+}
+
+#Details .results-page-content .cols div {
+    float:left;
+    width:30%;
+}
+
+#Details .results-page-content .cols div:nth-child(1) {
+    width: 40%;
+}
+
+#Details .results-page-content .cols div:nth-child(2) {
+    width: 28%;
+}
+
+#Details .results-page-content .cols div:nth-child(3) {
+    padding-right:0;
+    width:30%;
+}
+
+    #Details .results-page-content .cols div p {
+        text-align:center;
+    }
+
+#Details .results-page-content .content-block {
+    font-size:2.571em;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+    #Details .results-page-content .content-block p {
+        margin-bottom:5%;
+    }
+
+#Details .results-page-bottom {
+    text-align:center;
+    overflow:auto;
+}
+
+    #Details .results-page-bottom img {
+        width:100%;
+    }
+
+    #Details .results-page-bottom .bottom-block {
+        margin-top: -5%;
+        margin-bottom: 5%;
+    }
+
+    #Details .results-page-bottom .bottom-block p {
+        font-size:2.571em;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        clear:both;
+    }
+
+    #Details .results-page-bottom .results-sns p {
+        font-size:2.571em;
+    }
+
+
+    #Details .results-page-bottom .results-sns .sns-cols {
+        width: 60%;
+        overflow: auto;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+        #Details .results-page-bottom .results-sns .sns-cols div {
+            float:left;
+            width: 33%;
+        }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: auto;
+    }
+
+
+#Details .results-page-content.result-1 {
+    /*background: url(/Content/images/sp/diagnosis/results/sp_results-1-mid-bg.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;*/
+    position:relative;
+    font-family:Koburina Gothic W3 JIS2004;
+    overflow:auto;
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    #Details {
+        font-size:5px; /*base font*/
+    }
+
+    #Details .results-page-bottom img {
+        width: 100%;
+    }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: 70%;
+    }
+
+    #Details .results-page-content .content-block {
+        margin-bottom: 10%;
+    }
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    #Details {
+        font-size:7px; /*base font*/
+    }
+
+    #Details .results-page-bottom img {
+        width: 100%;
+    }
+
+    #Details .results-page-bottom .results-sns .sns-cols img {
+        width: 70%;
+    }
+
+     #Details .results-page-content .content-block {
+        margin-bottom: 10%;
+    }
+}

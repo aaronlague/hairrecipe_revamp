@@ -1,13 +1,49 @@
 ﻿@model hairrecipe.Models.DiagnosisViewModel
 @{
-    ViewBag.Title = "Index";
+    string uri = Request.Url.Segments[3] + Request.Url.Segments[4];
+    string metaTitle;
+    string metaDesc;
+    string fbMetaTitle;
+    
+    switch(uri) {
+
+        case "q1/abcd":
+            metaTitle = "Diagnosis abcd Title";
+            metaDesc = "Diagnosis abcd 1 Desc";
+            fbMetaTitle = "Diagnosis abcd FB Title";
+        break;
+            
+        case "result/1":
+            metaTitle = "Result 1 Title";
+            metaDesc = "Result 1 Desc";
+            fbMetaTitle = "Result 1 FB Title";
+        break;
+        
+        default:
+            metaTitle = "Diagnosis";
+            metaDesc = "Diagnosis Desc";
+            fbMetaTitle = "Diagnosis FB Title";
+        break;
+    }
+    
+}
+@{
+    ViewBag.Title = metaTitle;
+    ViewBag.Description = metaDesc;
+    ViewBag.fbTitle = fbMetaTitle;
+    ViewBag.fbType = "";
+    ViewBag.fbUrl = "";
+    ViewBag.fbImage = "";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
-
-@*<h2>Diagnosis Mobile Index</h2>*@
-
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-results.css" rel="stylesheet" />
+}
 @{     
     <div id="Details">
-        @Html.Partial(Model.QuestionsPartial)  
+
+        @Html.Partial(Model.QuestionsPartial)
+
     </div>  
 }
