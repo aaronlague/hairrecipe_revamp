@@ -6,7 +6,11 @@
 @media only screen and (orientation: landscape) and (min-device-width: 568px) and (max-device-width: 666px) {.view{font-size: 1.5em;}}
 @media only screen and (orientation: landscape) and (min-device-width: 667px) and (max-device-width: 750px) {.view{font-size: 1.8em;}}
 
-
+ul, li{
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
 /* common */
 
 .product-section{

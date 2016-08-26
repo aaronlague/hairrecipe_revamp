@@ -1,0 +1,282 @@
+﻿@import url("//hello.myfonts.net/count/31d781");
+@font-face {font-family: 'Koburina Gothic W3 JIS2004';src: url('../fonts/31D781_0_0.eot');src: url('../fonts/31D781_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_0_0.woff2') format('woff2'),url('../fonts/31D781_0_0.woff') format('woff'),url('../fonts/31D781_0_0.ttf') format('truetype');}  
+@font-face {font-family: 'LubalinGraph-Book';src: url('../fonts/31D781_1_0.eot');src: url('../fonts/31D781_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/31D781_1_0.woff2') format('woff2'),url('../fonts/31D781_1_0.woff') format('woff'),url('../fonts/31D781_1_0.ttf') format('truetype');}
+
+
+body{
+    color : #87847d;
+}
+.container-hairrecipe{
+    width : 1280px;
+    margin : 0 auto;
+}
+
+
+/*  header : start */
+header{
+    width : 100%;
+    
+    position : fixed;
+    z-index : 999999999999999999;
+}
+header nav{
+    background-color : rgba(0,0,0,0.5) ;
+}
+header .site-logo{
+    margin: 22px 0 29px 150px;
+    display : inline-block;
+}
+header img{
+    width : auto;
+}
+header a,
+header a:hover,
+header a:active,
+header a:visited{
+    text-decoration : none;
+    color : #fff;
+}
+header ul.anchors{
+    overflow : hidden;
+    float : right;
+    padding : 0;
+    margin : 27px 30px 0 0;    
+}
+header ul.anchors .underlined a:hover{
+    border-bottom :2px solid #fff;
+}
+header li{
+    list-style : none;
+    float : left;
+    font-family : 'Palatino Linotype';
+    font-size : 14px;
+    margin : 14px 0 0 22px;
+}
+header li .tw{
+    margin : 0 0 0 30px;
+}
+
+header ul li .sub{
+    display : none;
+    background-color : #fff;
+    min-height : 140px;
+    position : absolute;
+    z-index : 999999999999;
+    left : -410px;
+    width : 990px;
+    top : 39px;
+    -webkit-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.36);
+    -moz-box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.36);
+    box-shadow: 0px 1px 13px 1px rgba(0,0,0,0.36);
+}
+header ul li .holder{
+    position : absolute;
+    height : 39px;
+    width : 130px;
+}
+header .sub ul{
+    padding : 0 0 20px 50px;
+    overflow : hidden;
+}
+header .sub ul li{
+    float : left;
+    margin : 0 20px 0 0;
+}
+header .sub ul li *{
+    display : block;
+    color : #000;
+    margin : 0 auto;
+}
+header .sub ul li a span{
+    padding :3px 14px;
+}
+header .sub ul li a:hover span{
+    background-color : #87847d;
+    color : #fff
+}
+
+/*  header : end */
+
+/* footer : start */
+footer{
+    background-image : url('/Content/images/pc/footer-bg.jpg');
+    color : #fff;
+    height : 519px;
+    position : relative;
+    overflow : hidden;
+    font-family: 'LubalinGraph-Book';
+}
+footer a,
+footer a:active,
+footer a:hover,
+footer a:visited{
+    color : #fff;
+    text-decoration : none;
+}
+footer .wrap{
+    width : 980px;
+    margin : 0 auto;
+}
+footer section{
+    clear : both;
+}
+footer .specialInfo{
+    margin : 80px 0 0 0;
+}
+footer .specialInfo span{
+    font-size : 20px;
+    font-family : 'Palatino Linotype';
+}
+footer .specialInfo ul{
+        margin : 43px 0 0 0;
+}
+footer .specialInfo ul li{
+    float : left;
+    width : 480px;
+}
+footer .specialInfo ul li.first{
+    margin: 0 20px 0 0;
+}
+footer .specialInfo ul li img{
+    float : left;
+}
+footer .specialInfo ul li a{
+    float : right;
+}
+footer .sitemap{
+    color : #fff;
+}
+footer a .sitema{
+    font-size : 13px;
+}
+footer .sitemap .column{
+    float : left;
+    width : 250px;
+    margin : 30px -50px 0 0;
+}
+footer .sitemap .column ul li{
+    margin : 10px 0 0 0;
+}
+footer .sitemap .first{
+    margin : 30px 50px 0 0;
+    width : 197px;
+}
+footer .sitemap .first ul{
+    margin : 20px 0 0 0;
+    padding : 0 0 0 28px;
+}
+footer .sitemap .first ul li{
+    float : left;
+    width : 50px;
+    text-align : center;
+}
+footer .base{
+    padding : 36px 0 0 0;
+}
+footer .base ul{
+    float : right;
+}
+footer .base ul li{
+    float : left;
+    font-size : 11px;
+    margin: 0 0 0 20px;
+}
+/* footer : end */
+/* Footer Banner : Start */
+.footer-banner{
+    background : url("/Content/images/pc/footer-banner-bg.jpg");
+    height : 553px;
+    position : relative;
+    overflow : hidden;
+}
+.footer-banner ul{
+    display : table;
+    margin: 100px auto 0;
+}
+.footer-banner ul li{
+    display : table-cell;
+    text-align : center;
+    width: 450px;
+}
+.footer-banner ul li *{
+    display : block;
+    margin : 0 auto;
+}
+.footer-banner ul li span{
+    font-size : 37px;
+    font-family : 'Palatino Linotype';
+}
+.footer-banner ul li a{
+    margin : 50px auto 0;
+}
+/* Footer Banner : End */
+/*Background Style*/
+
+.wood-smooth{
+    background : url("/Content/images/sp/bg/wood-smooth.jpg");
+}
+.wood-rough{
+    background : url("/Content/images/sp/bg/wood-rough.jpg");
+}
+.wood-hp{
+    background : url("/Content/images/sp/bg/wood-hp.jpg");
+}
+.wood-b-hp{
+    background : url("/Content/images/sp/bg/wood-hp-2.jpg");
+}
+.wall {
+    background: url("/Content/images/sp/bg/wall-1.jpg");
+}
+
+.wall-hp{
+    background: url("/Content/images/sp/bg/wall-hp.jpg");
+}
+
+.stitch-b{
+    background : url("/Content/images/sp/bg/stitch-b.jpg");
+}
+.stitch-m{
+    background : url("/Content/images/sp/bg/stitch-m.jpg");
+}
+.stitch-s{
+    background : url("/Content/images/sp/bg/stitch-s.jpg");
+}
+
+.stitch-hp {
+    background : url("/Content/images/sp/bg/stitch-hp.jpg");
+}
+
+
+.generic-btn, 
+.generic-btn:hover,
+.generic-btn:active {
+    background-color: #fff;
+    border: 1px solid #87847d;
+    font-family: 'LubalinGraph-Book';
+    width: 180px;
+    height: 50px;
+    border-radius: 0;
+    position: relative;
+    font-size: 14px;
+    padding: 15px 38px;
+    text-transform: uppercase;
+    color: #87847d;
+    display : block;
+    text-decoration : none;
+    cursor : pointer;
+}
+
+.generic-btn.shop{
+    padding-left: 51px;
+    padding-right: 42px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+}
+.generic-btn.shop:before {
+    content: url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
+    position: relative;
+    left: -5px;
+    top: 5px;
+}
+
+

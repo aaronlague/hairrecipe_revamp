@@ -1,0 +1,56 @@
+﻿@model hairrecipe.data.Entities.Products.ProductLine
+@using hairrecipe.data.Helpers;
+
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section customStyles
+{
+    <link href="~/Content/pc-css/product-line.css" rel="stylesheet" />
+}
+
+
+<div id="@Model.GroupKeyword" class="view">
+    <img class="group-banner" src="~/Content/images/pc/product/@Model.GroupKeyword/banner.jpg" />
+    @if (!string.IsNullOrEmpty(Model.BannerText))
+    {
+        <h1 class="bannerTxt">@Model.BannerText</h1>
+    }
+    @foreach (var products in Model.ProductListMain)
+    {
+        @Html.Partial("_ProductBlock", products);
+    }
+
+    @if (Model.ProductListRefill != null && Model.ProductListRefill.Count > 0)
+{
+    <div class="refill">
+        <ul>
+            @foreach (var products in Model.ProductListRefill)
+            {
+                @Html.Partial("_ProductRefillBlock", products);
+            }
+        </ul>
+    </div>
+}   
+    @if (Model.CustomContent != null)
+    {
+        foreach (var customContent in Model.CustomContent)
+        {
+            @Html.Raw(customContent.HtmlSection.LineBreak("[pc-br]").ToString().Replace("[sw]","pc"));
+        }
+    }
+    @if (Model.ComboSets != null)
+    {
+        foreach (var ComboSet in Model.ComboSets)
+        {            
+            @Html.Partial("_ProductSetBlock", ComboSet);
+        }
+    }
+
+     @{Html.RenderPartial("_FootBannerBlock");}
+
+
+</div>

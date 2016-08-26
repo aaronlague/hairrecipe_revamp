@@ -1,0 +1,23 @@
+﻿@model hairrecipe.data.Entities.Products.ComboSet
+
+<div class="comboSection @Model.BackgroundClass">
+    <div class="center-section">
+        <p class="title">@Html.Raw(Model.Title)</p>
+        <p class="description">@Html.Raw(Model.Description)</p>
+        <img src="@Model.Image.Replace("[sw]", "pc")" />
+        @if (Model.ProductSets != null && Model.ProductSets.Count > 0)
+        {
+            <ul>
+                @foreach (var ProductSet in Model.ProductSets)
+                {
+                    <li>
+                        <p>@Html.Raw(ProductSet.JpTitle1)</p>
+                        <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
+                        <a class="generic-btn shop">To Shop</a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+
+</div>

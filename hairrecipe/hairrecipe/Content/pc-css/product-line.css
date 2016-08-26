@@ -1,0 +1,411 @@
+﻿img{
+    width :auto;
+}
+ul, li{
+    list-style : none;
+    padding : 0;
+    margin : 0;
+}
+
+.view{
+    width : 1280px;
+    margin : 0 auto;
+}
+.koburina{
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+.lubalin{
+    font-family: 'LubalinGraph-Book';
+}
+
+.full-length{
+    width : 100%;
+} 
+
+.center{
+    display : block;
+    margin-left :auto;
+    margin-right :auto;
+    text-align : center;
+}
+.product-section{
+    overflow : hidden;
+    padding : 55px 0 100px;
+    position : relative;
+}
+
+.body{
+    width : 640px;
+}
+
+.body.right{
+    float : right;
+}
+
+.body.left{
+    float : left;
+    margin-left : 150px;
+}
+
+
+.en-title{
+    font-size : 38px;
+    padding : 50px 0;
+}
+
+.jp-title-1,
+.jp-title-2,
+.jp-title-3,
+.size{
+    font-size : 16px;    
+    line-height : 150%;
+    letter-spacing : 1px;
+}
+
+.content-area{
+    margin : 39px 0 0;
+    overflow : hidden;
+}
+
+.main-details{
+    margin-top : 0;
+}
+
+.description{
+    font-size : 13.99px;
+    margin: 15px 0 0;
+    letter-spacing : 1px;
+}
+
+.additives{
+    background-image : url('/Content/images/pc/product/chalkboard.jpg');
+    color : #fff;
+    width: 490px;
+}
+.additives ul.multi{
+    overflow : hidden;
+    display: table-row;
+}
+
+.additives ul.multi li.column{
+    width : 244px;
+    display: table-cell;
+    padding-bottom : 20px;
+}
+.additives ul.multi li.column:nth-child(2) {
+    border-left: 1px solid #fff;
+}
+
+.additives .phrases li{
+    padding: 13px 23px 5px;
+}
+.additives .phrases li.phrase-title{
+    border-bottom : 1px solid #fff;
+    font-size : 16px;
+}
+.additives .phrases li.phrase{
+    line-height : 150%;
+    font-size : 12px;
+}
+.howtouse-hdr{
+    font-size : 20px;
+    margin : 39px 0 0;
+}
+.howtouse{
+    width : 490px;
+    font-size : 13px;
+    letter-spacing : 1px;
+    line-height : 150%;
+}
+.separator{
+    border-bottom : 1px solid #000;
+    margin : 8px 0;
+    width: 490px;
+}
+.refill{
+    height : 748px;
+    overflow : hidden;
+}
+.refill ul{
+    margin: 440px auto 0;
+    display : table;
+}
+
+.refill ul li{
+    float : left;
+    width : 353px;
+    display: table-cell;
+}
+.refill ul li span{
+    display : block;
+    text-align : center;
+}
+.refill ul li a{
+    display : block;
+    margin: 0 auto;
+}
+
+.view .generic-btn.shop{
+    margin-top : 20px;
+}
+.rr-section{
+    text-align : center;
+    width : 390px;
+    position : absolute;
+}
+.rr-section ul li{
+    float : left;
+    margin : 10px 0 0 10px;
+}
+
+.comboSection{
+    width : 1280px;
+    text-align : center;
+}
+
+
+/* 1st product */
+#apricot #shampoo{
+    background-image : url('/Content/images/pc/product/apricot/shampoo.jpg');    
+    height : 892px;
+}
+    #apricot #shampoo .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#kiwi #shampoo{
+    background-image : url('/Content/images/pc/product/kiwi/shampoo.jpg');    
+    height : 892px;
+}
+    #kiwi #shampoo .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#mint #cleansing{
+    background-image : url('/Content/images/pc/product/mint/cleansing.jpg');    
+    height : 892px;
+}
+    #mint #cleansing .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#booster #grape{
+    background-image : url('/Content/images/pc/product/booster/grape.jpg');    
+    height : 890px;
+}
+    #booster #grape .rr-section{
+        bottom: 155px;
+        left: 172px;
+    }
+
+/* 2nd product */
+#apricot #treatment .body.left{
+    margin-top: 150px;
+}
+#apricot #treatment{
+    background-image : url('/Content/images/pc/product/apricot/treatment.jpg');
+    height : 967px;
+}
+    #apricot #treatment .rr-section{
+        bottom: 196px;
+        right: 172px;
+    }
+#kiwi #treatment .body.left{
+    margin-top: 95px;
+}
+#kiwi #treatment{
+    background-image : url('/Content/images/pc/product/kiwi/treatment.jpg');
+    height : 906px;
+}
+    #kiwi #treatment .rr-section{
+        bottom: 196px;
+        right: 172px;
+    }
+
+#booster #seed .body.left{
+    margin-top: 50px;
+}
+#booster #seed{
+    background-image : url('/Content/images/pc/product/booster/seed.jpg');    
+    height : 699px;
+}
+    #booster #seed .rr-section{
+        bottom: 105px;
+        right: 172px;
+    }
+
+/* 3rd product */
+#apricot #mask{
+    background-image : url('/Content/images/pc/product/apricot/mask.jpg');
+    height : 776px;
+}
+    #apricot #mask .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+#kiwi #scalp{
+    background-image : url('/Content/images/pc/product/kiwi/scalp.jpg');
+    height : 776px;
+}
+    #kiwi #scalp .rr-section{
+        bottom: 125px;
+        left: 172px;
+    }
+
+
+/* Refill product */
+#apricot .refill{
+    background-image : url('/Content/images/pc/product/apricot/filler.jpg');
+}
+#kiwi .refill{
+    background-image : url('/Content/images/pc/product/kiwi/refill.jpg');
+}
+
+/* Booster */
+#booster .point{
+    background-image : url('/Content/images/pc/product/booster/oil_spoon.jpg');
+    width: 1280px;
+    height : 623px;
+    position : relative;
+}
+#booster .point img{
+    display : none;
+}
+#booster .point .float{
+    font-size : 14px;
+    line-height : 180%;
+    letter-spacing : 1px;
+    position : absolute;
+    left : 160px;
+    top : 100px;
+}
+#booster .point .float .heading{
+    font-size : 20px;
+    margin-bottom: 22px;
+}
+#booster .point-section{
+    padding : 100px 0;
+    overflow : hidden;
+}
+
+#booster .pc-float{
+    width: 490px;
+    font-size: 13px;
+    line-height: 230%;
+    letter-spacing: 0.8px;
+}
+#booster .pc-float .hilight{
+    font-size : 20px;
+    margin-bottom : 30px;
+}
+
+#booster .left .pc-float{
+    float : left;
+}
+#booster .left .pc-float.img{
+    margin: 0 40px 0 130px;
+}
+#booster .right .pc-float{
+    float : right;
+}
+#booster .right .pc-float.img{
+    margin: 0 130px 0 40px;
+}
+
+#booster .pc-float .box-text{
+    background-color : #fff;
+    border : 1px solid #87847d;
+    margin: 43px 0 0;
+    padding : 30px;
+}
+#booster .point-section,
+#booster .video{
+    clear : both;
+}
+#booster .video{
+    overflow : hidden;
+    padding-bottom : 99px;
+}
+#booster .video .placeholder{
+    text-align : center;
+}
+#booster .video .title{
+    text-align : center;
+    font-size : 20px;
+    margin : 98px auto 0;
+}
+#booster .video .placeholder iframe{
+    width :  1010px;   
+    height : 550px;
+    text-align: center;
+    margin : 60px auto 0;
+}
+
+#booster .video .text-content{
+    width :  1010px;   
+    margin : 37px auto 0;
+}
+
+#booster .video .text-content ul{
+    clear : both;
+    overflow : hidden;
+    margin : 0 0 20px 0;
+}
+
+#booster .video .text-content ul li{
+    float : left;
+    width : 30%;
+    margin-right : 30px;
+}
+
+#booster .oil-spoon{
+    background-image : url('/Content/images/pc/product/booster/oil_spoons.jpg');
+    width : 1280px;
+    height : 604px;
+    position : relative;
+}
+#booster .oil-spoon img{
+    display : none;
+}
+
+#booster .oil-spoon .text-content{
+    position: absolute;
+    width: 756px;
+    top: 230px;
+    left: 310px;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing : 2px;
+}
+#booster .oil-spoon .text-content .title{
+    font-size : 20px;
+}
+#booster .comboSection{
+    text-align : left;
+    padding : 50px 0;
+}
+#booster .comboSection .center-section{
+    width : 740px;
+    margin: 0 auto;
+}
+#booster .comboSection .title{
+    font-size : 20px;
+}   
+#booster .comboSection img{
+    display : block;
+    margin : 0 auto;
+}
+#booster .comboSection ul{
+    clear : both;
+    overflow : hidden;
+}
+#booster .comboSection ul li{
+    float : left;
+    width : 50%;
+    text-align : center;
+}
+#booster .comboSection ul li *{
+    display : block;    
+    margin: 0 auto;
+}

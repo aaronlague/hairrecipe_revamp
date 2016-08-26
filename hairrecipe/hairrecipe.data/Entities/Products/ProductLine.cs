@@ -18,5 +18,7 @@ namespace hairrecipe.data.Entities.Products
         public IList<Product> Products { get; set; }
         public IList<CustomContent> CustomContent { get; set; }
         public IList<ComboSet> ComboSets { get; set; }
+        public IList<Product> ProductListMain { get; set; }
+        public IList<Product> ProductListRefill { get; set; }
     }
 }

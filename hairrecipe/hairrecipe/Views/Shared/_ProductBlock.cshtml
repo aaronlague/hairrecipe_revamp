@@ -1,0 +1,80 @@
+﻿@model hairrecipe.data.Entities.Products.Product
+@using hairrecipe.data.Helpers;
+
+<div id="@Model.Name" class="product-section koburina @(Model.BackgroundClass)">
+    @if (!string.IsNullOrEmpty(Model.EnTitle))
+    {
+        <div class="en-title full-length"><span class="lubalin center">@Html.Raw(Model.EnTitle.LineBreak("[pc-br]"))</span></div>
+    }
+    <div class="body @Model.DesktopDirection">      
+            @if (Model.HasReview)
+            {
+                <div class="rr-section">
+                    <img src="~/Content/images/pc/temp.rating.jpg" />
+                    <ul>
+                        <li>
+                            <a class="generic-btn">レビューを読む</a>
+                        </li>
+                        <li>
+                            <a class="generic-btn">レビューを書く</a>
+                        </li>
+                    </ul>
+                </div>
+            }
+
+            <div class="main-details">
+                @if (!string.IsNullOrEmpty(Model.JpTitle1))
+                {
+                    <span class="jp-title-1"> @Html.Raw(@Model.JpTitle1.LineBreak("[pc-br]"))</span>
+                }
+                @if (!string.IsNullOrEmpty(Model.JpTitle2))
+                {
+                    <span class="jp-title-2">@Html.Raw(@Model.JpTitle2.LineBreak("[pc-br]"))</span>
+                }
+                @if (!string.IsNullOrEmpty(Model.Size))
+                {
+                    <span class="size">@Html.Raw(@Model.Size)</span>
+                }
+                
+                @if (!string.IsNullOrEmpty(Model.Description))
+                {
+                    <p class="description">@Html.Raw(@Model.Description.LineBreak("[pc-br]"))</p>
+                }
+                @if (Model.HasBIN) { 
+                    <a class="generic-btn shop">To Shop</a>
+                }
+            </div>
+            <div class="content-area">
+                @if (Model.Columns.Count > 0)
+                {
+                    <div class="additives">
+                        <ul class="columns @Html.Raw(Model.Columns.Count > 1 ? "multi" : "solo")">
+                            @foreach (var column in Model.Columns)
+                            {
+                                <li class="column">
+                                    <ul class="phrases">
+                                        <li class="phrase-title">@column.Header.LineBreak("[pc-br]")</li>
+                                        @foreach (var phrase in column.Phrases)
+                                        {
+                                            <li class="phrase">@phrase.Text.LineBreak("[pc-br]")</li>
+                                        }
+                                    </ul>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+            <div class="content-area">
+                @if (!string.IsNullOrEmpty(Model.Howtouse))
+                {
+                    <span class="howtouse-hdr full-length">How to Use</span>
+                    <div class="separator full-length"></div>
+                    <p class="howtouse">@Html.Raw(@Model.Howtouse.LineBreak("[pc-br]"))</p>
+                }
+            </div>
+
+        </div>
+    
+
+</div>
