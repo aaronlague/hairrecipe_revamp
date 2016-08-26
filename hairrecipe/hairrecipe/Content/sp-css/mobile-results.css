@@ -157,6 +157,58 @@
             width: 33%;
         }
 
+    #Details .result-14 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-14-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(1) {
+            width: 38%;
+        }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(2) {
+            width: 21%;
+        }
+
+        #Details .result-14 .results-page-content .cols div:nth-child(3) {
+            width: 41%;
+        }
+
+    #Details .result-15 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-15-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(1) {
+            width: 37%;
+        }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(2) {
+            width: 21%;
+        }
+
+        #Details .result-15 .results-page-content .cols div:nth-child(3) {
+            width: 41%;
+        }
+
+    #Details .result-16 {
+        background: url(/Content/images/sp/diagnosis/results/sp_results-16-bg.jpg);
+        background-size: 100%;
+        background-repeat:no-repeat;
+    }
+
+        #Details .result-16 .results-page-content .cols div:nth-child(1) {
+            width: 47%;
+            padding-left: 20%;
+        }
+
+        #Details .result-16 .results-page-content .cols div:nth-child(2) {
+            width: 50%;
+            padding-right: 13%;
+        }
+
 #Details .results-page-top {
     /*background: url(/Content/images/sp/diagnosis/results/sp_results-bg-top.jpg);
     background-size: 100%;

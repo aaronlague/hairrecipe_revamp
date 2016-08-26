@@ -180,6 +180,9 @@
     <Content Include="Content\images\sp\diagnosis\results\sp_results-11-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-12-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-13-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-14-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-15-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-16-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-2-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-3-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-30.png" />
@@ -495,6 +498,10 @@
     <Content Include="Views\Shared\result\10.cshtml" />
     <Content Include="Views\Shared\result\11.cshtml" />
     <Content Include="Views\Shared\result\12.cshtml" />
+    <Content Include="Views\Shared\result\13.cshtml" />
+    <Content Include="Views\Shared\result\14.cshtml" />
+    <Content Include="Views\Shared\result\15.cshtml" />
+    <Content Include="Views\Shared\result\16.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
