@@ -176,8 +176,22 @@
     <Content Include="Content\images\sp\bg\wood-hp-2.jpg" />
     <Content Include="Content\images\sp\diagnosis\1.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-1-bg.jpg" />
-    <Content Include="Content\images\sp\diagnosis\results\sp_results-1-mid-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-10-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-11-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-12-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-13-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-2-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-3-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-30.png" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-4-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-40.png" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-5-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-6-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-60.png" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-7-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-8-bg.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-80.png" />
+    <Content Include="Content\images\sp\diagnosis\results\sp_results-9-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-bg-top.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-sns-fb.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-sns-ln.jpg" />
@@ -207,6 +221,15 @@
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
+    <Content Include="Content\images\sp\product\kiwi\banner.jpg" />
+    <Content Include="Content\images\sp\product\kiwi\pack-refill-b.jpg" />
+    <Content Include="Content\images\sp\product\kiwi\pack-refill-b.png" />
+    <Content Include="Content\images\sp\product\kiwi\pack-refill.png" />
+    <Content Include="Content\images\sp\product\kiwi\scalp.png" />
+    <Content Include="Content\images\sp\product\kiwi\shampoo-refill.png" />
+    <Content Include="Content\images\sp\product\kiwi\shampoo.png" />
+    <Content Include="Content\images\sp\product\kiwi\treatment-refill.png" />
+    <Content Include="Content\images\sp\product\kiwi\treatment.png" />
     <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-1.jpg" />
     <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-2.jpg" />
     <Content Include="Content\images\sp\product\landing\bg\sp_product-stories-lineup-3.jpg" />
@@ -461,6 +484,17 @@
     <Content Include="Views\Shared\_productLineup.cshtml" />
     <Content Include="Views\Shared\_infoList.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
+    <Content Include="Views\Shared\result\2.cshtml" />
+    <Content Include="Views\Shared\result\3.cshtml" />
+    <Content Include="Views\Shared\result\4.cshtml" />
+    <Content Include="Views\Shared\result\5.cshtml" />
+    <Content Include="Views\Shared\result\6.cshtml" />
+    <Content Include="Views\Shared\result\7.cshtml" />
+    <Content Include="Views\Shared\result\8.cshtml" />
+    <Content Include="Views\Shared\result\9.cshtml" />
+    <Content Include="Views\Shared\result\10.cshtml" />
+    <Content Include="Views\Shared\result\11.cshtml" />
+    <Content Include="Views\Shared\result\12.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
