@@ -3,4 +3,41 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Contact</h2>
+@section customStyles
+{
+    <link href="~/Content/pc-css/contact.css" rel="stylesheet" />
+}
+
+<div class="banner-contact">
+    <img src="~/Content/images/pc/contact/banner-contact.jpg" />
+    <h1>Contact</h1>
+</div>
+<div class="wall-hp b60">
+    <div class="content-contact">
+        <h2 class="text-center">お問い合わせ</h2>
+        <p class="t40">
+            ヘアレシピサイトについてご質問がございましたら、こちらからお問い合わせください。<br />
+            なお、ご入力いただく前によくあるご質問で同様の内容がないかどうかをご確認ください。<br />
+            お問い合わせの内容により、お返事にお時間がかかる場合もございます。<br />
+            また、商品・サイト以外のお問い合わせは、<br />
+            お答えできない場合もございますのでご了承ください。
+        </p>
+    </div>
+</div>
+<div class="wood-hp pb100">
+    <div class="content-contact">
+        <h2 class="text-center b60"><span>P&G</span>お客様相談室</h2>
+        <h3 class="text-center">お電話でのお問い合わせ</h3>
+        <p class="text-center contact-number t10">0120-021327</p>
+        <p class="b60 l88">
+            全国から無料でおかけいただけます。<br />
+            祝日・年末年始を除く月曜～金曜（午前9時15分～午後5時）
+        </p>
+        <h3 class="text-center">メールでのお問い合わせ</h3>
+        <p class="text-center t20 b60"><a href="https://pgconsumercare.secure.force.com/ContactUs?siteid=AllJapan-Ja"><img src="~/Content/images/pc/contact/link-1.jpg" /></a></p>
+        <h3 class="text-center">お便りでのお問い合わせ</h3>
+        <p class="b60 t20 l50">〒658-0032神戸市東灘区向洋町中1丁目17<br />プロクター・アンド・ギャンブル・ジャパン 株式会社 「P&Gお客様相談室」</p>
+        <h3 class="text-center">よくあるご質問</h3>
+        <p class="text-center t20"><a href="/faq/"><img src="~/Content/images/pc/contact/link-2.jpg" /></a></p>
+    </div>
+</div>

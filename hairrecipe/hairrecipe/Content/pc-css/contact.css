@@ -1,0 +1,81 @@
+﻿.banner-contact {
+    position:relative;
+}
+
+.banner-contact > h1 {
+    position:absolute;
+    top:50%;
+    right:47%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+.content-contact {
+    width:654px;
+    margin:0 auto;
+    padding-top:60px;
+}
+
+.content-contact h2 {
+    font-size:22px;
+    font-family:Koburina Gothic W3 JIS2004;
+}
+
+.content-contact h2 span {
+    font-family:'Arial';
+}
+
+.content-contact h3 {
+    font-size:20px;
+}
+
+img {
+    width: initial;
+}
+
+.t60 {
+    margin-top:60px;
+}
+
+.t40 {
+    margin-top:40px;
+}
+
+.t20 {
+    margin-top:20px;
+}
+
+.t10 {
+    margin-top:10px;
+}
+
+.b60 {
+    margin-bottom:60px;
+}
+
+.l88 {
+    margin-left:88px;
+}
+
+.l50 {
+    margin-left:50px;
+}
+
+.pb100 {
+    padding-bottom:100px;
+}
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin:0;
+}
+
+.contact-number {
+    font-family:LubalinGraph-Book;
+    font-size:20px;
+}
+
+p{
+    line-height:22px;
+}
