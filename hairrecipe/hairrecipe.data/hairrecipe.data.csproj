@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\BIN\BIN.cs" />
+    <Compile Include="Entities\BIN\BINList.cs" />
+    <Compile Include="Entities\BIN\Store.cs" />
     <Compile Include="Entities\Products\Column.cs" />
     <Compile Include="Entities\Products\CustomContent.cs" />
     <Compile Include="Entities\Products\Phrase.cs" />
@@ -58,6 +61,7 @@
     <Compile Include="Helpers\ContentHelper.cs" />
     <Compile Include="Helpers\DataExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BINServices.cs" />
     <Compile Include="Services\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>

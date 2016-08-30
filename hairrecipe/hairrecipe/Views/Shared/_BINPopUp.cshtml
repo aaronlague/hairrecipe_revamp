@@ -1,0 +1,17 @@
+﻿@model hairrecipe.data.Entities.BIN.BIN
+<div class="bin-PopUp">
+    <img class="arrow" src="~/Content/images/bins/arrow.png" />
+    @if (Model.Stores.Count > 0)
+    {
+        <ul>
+            @foreach (var Store in Model.Stores)
+            {
+                <li><a href="@Store.URL"><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
+            }
+        </ul>
+    }
+    else
+    {
+        <span>NO Stores</span>
+    }
+</div>

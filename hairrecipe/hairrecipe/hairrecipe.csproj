@@ -146,6 +146,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BINController.cs" />
     <Compile Include="Controllers\DiagnosisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -486,7 +487,7 @@
     <Content Include="Views\Shared\_ProductSetBlock.cshtml" />
     <Content Include="Views\Shared\_FootBannerBlock.cshtml" />
     <Content Include="Views\Shared\_FooterBlock.cshtml" />
-	<Content Include="Views\Shared\_productStories.cshtml" />
+    <Content Include="Views\Shared\_productStories.cshtml" />
     <Content Include="Views\Shared\_productLineup.cshtml" />
     <Content Include="Views\Shared\_infoList.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
@@ -505,6 +506,7 @@
     <Content Include="Views\Shared\result\14.cshtml" />
     <Content Include="Views\Shared\result\15.cshtml" />
     <Content Include="Views\Shared\result\16.cshtml" />
+    <Content Include="Views\Shared\_BINPopUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

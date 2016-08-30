@@ -21,7 +21,8 @@ namespace hairrecipe
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/jasny-bootstrap.js",
-                        "~/Content/js/main.pc.js"
+                        "~/Content/js/main.pc.js",
+                        "~/Content/js/bin.js"
                         ));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -38,7 +39,9 @@ namespace hairrecipe
 
             //bundles.Add(new StyleBundle("~/Content/mobile-css").Include("~/Content/bootstrap-off-canvas-nav.css","~/Content/mobile-styles.css"));
 
-            bundles.Add(new StyleBundle("~/Content/mobile-css").Include("~/Content/mobile-styles.css"));
+            bundles.Add(new StyleBundle("~/Content/mobile-css").Include(
+                                        "~/Content/mobile-styles.css",
+                                        "~/Content/pc-css/bin.css"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
