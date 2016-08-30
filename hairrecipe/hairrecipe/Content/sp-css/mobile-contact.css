@@ -37,6 +37,11 @@ p{
    font-size:22px;   
 }
 
+p.bold{
+   font-family: 'Koburina Gothic W6 JIS2004';
+   font-weight: bold;
+}
+
 .contact-main {
     color: #87847d;
     width: 86%;
