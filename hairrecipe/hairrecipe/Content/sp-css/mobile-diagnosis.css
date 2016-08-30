@@ -1,4 +1,4 @@
-﻿body {
+﻿body #Details {
     font-size:14px;
 }
 
@@ -52,14 +52,36 @@
     font-family: 'Koburina Gothic W3 JIS2004';
 }
 
+.choices {
+    /*width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    
+    display:inline-block;*/
+}
+
 .choices .box {
-    background: #fff;
+    /*background: #fff;
     border: 1px solid #87847d;
     width: 37%;
-    display: inline-block;
+    display: inline-table;
     padding: 9.5% 4%;
     margin-bottom: 3%;
-    margin-right: 2%;    
+    margin-right: 2%;   
+    height:100%;*/ 
+    background: #fff;
+    display: inline-table;
+    width: 37%;
+    height: 265px;
+    text-align: center;
+    border: 1px solid #87847d;
+    margin: 0 2% 2% 0;
+}
+
+.choices .box div {
+    display: table-cell;
+  vertical-align: middle;
 }
 
 .choices .box .title {
@@ -87,26 +109,13 @@
     margin-top: 5%;
 }
 
-.choices.big {
-    height:265px;
-}
-
-.choices.big .box {
-    display: inline-table;
-    padding: 7% 4% 4% 4%;
-    height:100%;
-}
-
-.choices.big.c1 .box {
-    padding-top:9%;
-}
-
-.choices.big.top9 .box {
-    padding: 9% 4% 4% 4%;
-}
-
 .choices .box p {
     margin: 0;
+}
+
+
+.test {
+    font-size: 1.625em;
 }
 
 /*iPhone 5*/
@@ -114,19 +123,22 @@
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 568px) {
-    body {
-        font-size: 6px;
+    body #Details {
+        font-size: 7px;
     }
     .generic-btn {
         padding-top: 14px;
 
     }
-    .choices.big {
+    .choices .box {
+        height:100px;
+    }
+    /*.choices.big {
         height: 114px;
-    }
-    .choices.big .box {
+    }*/
+    /*.choices.big .box {
         padding: 4%;
-    }
+    }*/
 }
 
 
@@ -139,9 +151,9 @@ and (max-device-width : 568px) {
     body {
         font-size: 8px;
     }
-    .choices.big {
+    /*.choices.big {
         height: 195px;
-    }
+    }*/
     
 }
 
@@ -154,12 +166,12 @@ and (max-device-width : 667px) {
     body {
         font-size: 7px;
     }
-    .choices.big {
+    /*.choices.big {
         height: 135px;
     }
     .choices.big .box {
         padding: 5% 4% 4% 4%;
-    }
+    }*/
 }
 
 
@@ -172,36 +184,7 @@ and (max-device-width : 667px) {
     body {
         font-size: 10px;
     }
-    .choices.big {
+    /*.choices.big {
         height: 195px;
-    }
-}
-
-
-/*note 4*/
-
-@media only screen 
-and (min-device-width : 360px) 
-and (max-device-width : 640px) {
-    body {
-        font-size: 7px;
-    }
-    .choices.big {
-        height: 135px;
-    }
-}
-
-/*Landscape note 4*/
-
-@media only screen 
-and (min-device-width : 360px) 
-and (max-device-width : 640px)
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) {
-    body {
-        font-size: 7px;
-    }
-    .choices.big {
-        height: 160px;
-    }
+    }*/
 }
