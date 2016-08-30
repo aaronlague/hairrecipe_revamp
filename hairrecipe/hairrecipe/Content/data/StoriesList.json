@@ -9,28 +9,28 @@
 {  
     "StoryId": 2,  
     "StoryThumb": "sp_story-thumb-2.jpg",  
-    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryTitle": "世界各地から取り寄せた、<br />美しさのための素材",  
     "StoryText": "アメリカ、ヨーロッパ、アジア。世界各地で人々に長く愛され、美しさのもととなってきたパワーフード。ヘアレシピの材料は、いいものだけを国を越えて取り寄せているのです。",
 	"StoryBg" : "stitch-m"
 },
 {  
     "StoryId": 3,  
     "StoryThumb": "sp_story-thumb-3.jpg",  
-    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryTitle": "調香師の手でブレンドして<br />作られた香り",  
     "StoryText": "おいしくて栄養のある食べものからのインスピレーション。経験豊富な調香師がそれを上手に調合しました。時間とともに変化する香りで、豊かに心地よく。",
 	"StoryBg" : "wood-rough"
 },
 {  
     "StoryId": 4,  
     "StoryThumb": "sp_story-thumb-4.jpg",  
-    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryTitle": "「ソレー効果」で<br />さらにおいしく。",  
     "StoryText": "火を通してから一度冷ます。煮込み料理では味が深くなじみ旨味も加わります。このひと手間をヘアレシピにも応用。素材の力をぐっと凝縮しています。",
 	"StoryBg" : "stitch-s"
 },
 {  
     "StoryId": 5,  
     "StoryThumb": "sp_story-thumb-5.jpg",  
-    "StoryTitle": "ニュートリブレンド・<br />テクノロジー",  
+    "StoryTitle": "クリーミィな泡立ち",  
     "StoryText": "ホイップクリームのようにキメ細かくもちもち、おいしそうな泡立ちで、髪と地肌をやさしく洗い上げます。",
 	"StoryBg" : "stitch-b"
 }

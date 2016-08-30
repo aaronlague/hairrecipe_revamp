@@ -204,6 +204,7 @@
         padding-top: 28px;
     }
 
+/*iphone 5*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
     .content.product-stories {
@@ -224,6 +225,7 @@
 
         .product-stories-top .title {
             font-size: 3.5em;
+            padding: 35px 0 0 0;
         }
 
         .product-stories-top ol li {
@@ -241,8 +243,18 @@
         }
 
     .product-stories-top ol {
-        padding-bottom: 10%;
+        padding-bottom: 36%;
     }
+
+    .product-stories-content .product-story .story-title {
+        padding-left: 15px;
+    }
+
+        .product-stories-content .product-story .count {
+            margin-left: -20px;
+            margin-right: 5px;
+        }
+
 
     .product-lineup-container .lineup-1 .copy {
         padding-bottom: 67%;
@@ -254,7 +266,7 @@
     }
 
     .product-lineup-container .lineup-2 .copy {
-        padding-bottom: 63%;
+        padding-bottom: 68%;
         padding-top: 5%;
     }
 
@@ -264,7 +276,7 @@
     }
 
     .product-lineup-container .lineup-3 .copy {
-        padding-bottom: 59%;
+        padding-bottom: 58%;
         padding-top: 33%;
     }
 
@@ -274,13 +286,13 @@
     }
 
     .product-lineup-container .lineup-4 .copy {
-        padding-bottom: 52%;
+        padding-bottom: 55%;
         padding-top: 33%;
     }
 
     .product-lineup-container .lineup-4 .btn {
         padding-top: 14px;
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
 
     .product-lineup-container .lineup-4 .copy p {
@@ -288,7 +300,58 @@
     }
 }
 
+
+/*iphone 6*/
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    .content.product-stories {
+        font-size:7px; /*base font*/
+    }
+
+    .banner > h1 {
+        top:36%;
+    }
+
+    .product-stories-top {
+        background: url(/Content/images/sp/product/landing/sp_product-stories-top.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100%;
+        height: auto;
+    }
+
+    .product-stories-top .title {
+        padding: 50px 0 5px 0;
+    }
+
+    .product-stories-top ol {
+        padding-bottom: 47%;
+    }
+
+    .product-stories-content .product-story .story-title {
+        padding-left: 15px;
+    }
+
+        .product-stories-content .product-story .count {
+            margin-left: -20px;
+            margin-right: 5px;
+        }
+
+
+    .product-lineup-container .lineup-2 .copy {
+        padding-bottom: 70%;
+        padding-top: 5%;
+    }
+
+    .product-lineup-container .lineup-4 .copy {
+        padding-bottom: 60%;
+        padding-top: 33%;
+    }
+
+}
+
+/*iphone 6 plus*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
 
     .content.product-stories {
         font-size:7px; /*base font*/
@@ -325,8 +388,17 @@
         }
 
     .product-stories-top ol {
-        padding-bottom: 30%;
+        padding-bottom: 56%;
     }
+
+    .product-stories-content .product-story .story-title {
+        padding-left: 15px;
+    }
+
+        .product-stories-content .product-story .count {
+            margin-left: -20px;
+            margin-right: 5px;
+        }
 
     .product-lineup-container .lineup-1 .copy {
         padding-bottom: 70%;
@@ -338,7 +410,7 @@
     }
 
     .product-lineup-container .lineup-2 .copy {
-        padding-bottom: 70%;
+        padding-bottom: 75%;
     }
 
     .product-lineup-container .lineup-2 .btn {
