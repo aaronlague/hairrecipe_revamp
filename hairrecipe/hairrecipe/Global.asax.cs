@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -21,26 +22,69 @@ namespace hairrecipe
 
             string urlRequest = Request.Url.AbsolutePath.ToString();
 
-            if (urlRequest.Equals("/index.html"))
+            //string htmlPage = urlRequest.Substring(urlRequest.LastIndexOf("/") + 1);
+
+            //if ((urlRequest.Equals("/sp/diagnosis/index.html")) || (urlRequest.Equals("/diagnosis/index.html")))
+            //{
+            //    Context.RewritePath(urlRequest.Replace("index.html", ""));
+            //}
+            //else
+            //{
+            //    Context.RewritePath(urlRequest.Replace(".html", ""));
+            //}
+
+            if (!Request.Browser.IsMobileDevice)
             {
-                Context.RewritePath("/index");
+
+                if (urlRequest.Contains("diagnosis/q") || urlRequest.Contains("diagnosis/result"))
+                {
+
+                    Context.RewritePath(urlRequest.Replace(".html", ""));
+
+                }
+                else
+                {
+                
+                    Context.RewritePath(urlRequest.Replace("index.html", ""));
+
+                }
             }
-            else if (urlRequest.Equals("/sp/index.html"))
+            else
             {
-                Context.RewritePath("/sp/index");
+                if (urlRequest.Equals("/sp/diagnosis/index.html"))
+                {
+                    Context.RewritePath(urlRequest.Replace("index.html", ""));
+
+                } else {
+                
+                    Context.RewritePath(urlRequest.Replace(".html", ""));
+                
+                }
+                
             }
-            else if (urlRequest.Equals("/about/index.html"))
-            {
-                Context.RewritePath("/about");
-            }
-            else if (urlRequest.Equals("/sp/about/index.html"))
-            {
-                Context.RewritePath("/sp/about");
-            }
-            else if (urlRequest.Equals("/sp/diagnosis/q1/abcd.html"))
-            {
-                Context.RewritePath("/sp/diagnosis/q1/abcd");
-            }
+
+            
+
+            //if (urlRequest.Equals("/index.html"))
+            //{
+            //    Context.RewritePath("/index");
+            //}
+            //else if (urlRequest.Equals("/sp/index.html"))
+            //{
+            //    Context.RewritePath("/sp/index");
+            //}
+            //else if (urlRequest.Equals("/about/index.html"))
+            //{
+            //    Context.RewritePath("/about");
+            //}
+            //else if (urlRequest.Equals("/sp/about/index.html"))
+            //{
+            //    Context.RewritePath("/sp/about");
+            //}
+            //else if (urlRequest.Equals("/sp/diagnosis/q1/abcd.html"))
+            //{
+            //    Context.RewritePath("/sp/diagnosis/q1/abcd");
+            //}
 
         }
 

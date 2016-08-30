@@ -12,7 +12,7 @@ namespace hairrecipe.Controllers
     {
         //
         // GET: /Home/
-        [Route("Index")]
+        //[Route("Index")]
         public ActionResult Index()
         {
             if (Request.Browser.IsMobileDevice)
@@ -27,7 +27,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("About")]
+        [Route("/about")]
         public ActionResult About()
         {
             if (Request.Browser.IsMobileDevice)
@@ -42,7 +42,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("Contact")]
+        [Route("/contact")]
         public ActionResult Contact()
         {
             if (Request.Browser.IsMobileDevice)
@@ -57,7 +57,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("Faq")]
+        [Route("/faq")]
         public ActionResult Faq()
         {
             if (Request.Browser.IsMobileDevice)
@@ -72,7 +72,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("Cm")]
+        [Route("/cm")]
         public ActionResult Cm()
         {
             if (Request.Browser.IsMobileDevice)
@@ -87,7 +87,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("reco_recipe")]
+        [Route("/reco_recipe")]
         public ActionResult reco_recipe()
         {
             if (Request.Browser.IsMobileDevice)
@@ -102,7 +102,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("kodawari")]
+        [Route("/kodawari")]
         public ActionResult kodawari()
         {
             if (Request.Browser.IsMobileDevice)
@@ -117,7 +117,7 @@ namespace hairrecipe.Controllers
             }
         }
 
-        [Route("info")]
+        [Route("/info")]
         public ActionResult info()
         {
             if (Request.Browser.IsMobileDevice)
