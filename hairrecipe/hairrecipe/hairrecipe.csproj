@@ -175,6 +175,7 @@
     <Content Include="Content\images\sp\bg\sp_list-bg.png" />
     <Content Include="Content\images\sp\bg\wood-hp-2.jpg" />
     <Content Include="Content\images\sp\diagnosis\1.jpg" />
+    <Content Include="Content\images\sp\diagnosis\results\OGP_diagnosis.png" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-1-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-10-bg.jpg" />
     <Content Include="Content\images\sp\diagnosis\results\sp_results-11-bg.jpg" />
@@ -429,7 +430,6 @@
     <Content Include="Views\SpProduct\Apricot.cshtml" />
     <Content Include="Views\SpProduct\Kiwi.cshtml" />
     <Content Include="Views\SpProduct\Mint.cshtml" />
-    <Content Include="Views\Home\About.Mobile.cshtml" />
     <Content Include="Views\Shared\_navigation.cshtml" />
     <Content Include="Views\Shared\_navigation.Mobile.cshtml" />
     <Content Include="Views\Shared\_qTemplate2.cshtml" />
@@ -489,22 +489,23 @@
 	<Content Include="Views\Shared\_productStories.cshtml" />
     <Content Include="Views\Shared\_productLineup.cshtml" />
     <Content Include="Views\Shared\_infoList.cshtml" />
+    <Content Include="Views\Shared\result\1.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\2.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\3.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\4.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\5.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\6.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\7.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\8.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\9.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\10.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\11.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\12.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\13.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\14.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\15.Mobile.cshtml" />
+    <Content Include="Views\Shared\result\16.Mobile.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
-    <Content Include="Views\Shared\result\2.cshtml" />
-    <Content Include="Views\Shared\result\3.cshtml" />
-    <Content Include="Views\Shared\result\4.cshtml" />
-    <Content Include="Views\Shared\result\5.cshtml" />
-    <Content Include="Views\Shared\result\6.cshtml" />
-    <Content Include="Views\Shared\result\7.cshtml" />
-    <Content Include="Views\Shared\result\8.cshtml" />
-    <Content Include="Views\Shared\result\9.cshtml" />
-    <Content Include="Views\Shared\result\10.cshtml" />
-    <Content Include="Views\Shared\result\11.cshtml" />
-    <Content Include="Views\Shared\result\12.cshtml" />
-    <Content Include="Views\Shared\result\13.cshtml" />
-    <Content Include="Views\Shared\result\14.cshtml" />
-    <Content Include="Views\Shared\result\15.cshtml" />
-    <Content Include="Views\Shared\result\16.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
