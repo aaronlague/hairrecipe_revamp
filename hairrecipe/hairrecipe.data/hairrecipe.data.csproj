@@ -48,9 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\BIN\BIN.cs" />
-    <Compile Include="Entities\BIN\BINList.cs" />
-    <Compile Include="Entities\BIN\Store.cs" />
+    <Compile Include="Entities\BUYITNOW\BIN.cs" />
+    <Compile Include="Entities\BUYITNOW\BINList.cs" />
+    <Compile Include="Entities\BUYITNOW\Store.cs" />
     <Compile Include="Entities\CM\Video.cs" />
     <Compile Include="Entities\Products\Column.cs" />
     <Compile Include="Entities\Products\CustomContent.cs" />

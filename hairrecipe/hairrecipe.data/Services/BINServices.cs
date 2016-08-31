@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Collections.Specialized;
 using System.Web.Script.Serialization;
-using hairrecipe.data.Entities.BIN;
+using hairrecipe.data.Entities.BUYITNOW;
 using Newtonsoft.Json.Linq;
 
 
