@@ -341,6 +341,10 @@
         font-size:5px; /*base font*/
     }
 
+    #Details .results-page-content .cols {
+        margin-top: 78%;
+    }
+
     #Details .results-page-bottom img {
         width: 100%;
     }
@@ -356,8 +360,23 @@
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
     #Details {
         font-size:7px; /*base font*/
+    }
+
+    #Details .results-page-content .cols {
+        margin-top: 73%;
+    }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    #Details {
+        font-size:7px; /*base font*/
+    }
+
+    #Details .results-page-content .cols {
+        margin-top: 76%;
     }
 
     #Details .results-page-bottom img {
