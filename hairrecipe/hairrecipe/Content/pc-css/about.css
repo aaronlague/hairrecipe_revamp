@@ -1,0 +1,39 @@
+﻿.banner-about {
+    position:relative;
+}
+
+.banner-about > h1 {
+    position:absolute;
+    top:50%;
+    right:47%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+
+.content-about {
+    width:694px;
+    margin:0 auto;
+    padding-top:60px;
+}
+
+.content-about h2 {
+    font-size:22px;
+    font-family:Koburina Gothic W3 JIS2004;
+    margin-bottom:40px;
+}
+
+.content-about p {
+    line-height:22px;
+    margin-bottom:40px;
+}
+
+.pb100 {
+    padding-bottom:100px;
+}
+
+.pb60 {
+    padding-bottom:60px;
+}
