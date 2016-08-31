@@ -158,7 +158,6 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
-    <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\InfoViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
@@ -467,7 +466,7 @@
     <Content Include="Views\Shared\q5\c3.Mobile.cshtml" />
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
-    <Content Include="Views\Shared\_videoList.cshtml" />
+    <Content Include="Views\Shared\_videoListSp.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
     <Content Include="Views\Shared\_setSp.cshtml" />

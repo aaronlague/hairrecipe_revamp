@@ -8,6 +8,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-rough cm-one",
+    "sku" : "mint-cleansing",
 	"CMsectionId": "cm1"
 },  
 {  
@@ -19,6 +20,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-two",
+    "sku" : "apricot-treatment",
 	"CMsectionId": "cm2"
 },  
 {  
@@ -30,6 +32,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-b cm-three",
+    "sku" : "apricot-mask",
 	"CMsectionId": "cm3"
 },
 {  
@@ -41,6 +44,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-m cm-four",
+    "sku" : "apricot-shampoo-refill",
 	"CMsectionId": "cm4"
 },
 {  
@@ -52,6 +56,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-s cm-five",
+    "sku" : "kiwi-treatment",
 	"CMsectionId": "cm5"
 },
 {  
@@ -63,5 +68,6 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-six",
+    "sku" : "kiwi-scalp",
 	"CMsectionId": "cm6"
 }]

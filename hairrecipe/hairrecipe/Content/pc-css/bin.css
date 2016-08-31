@@ -78,5 +78,16 @@
     list-style: none;
 }
 
+.cm-main .bin .bin-PopUp{
+    width: 107%;
+    top: 72%;
+    left: -5%;
+}
+
+.cm-main .bin .bin-PopUp ul {
+    padding: 11% 0 0 5%;
+}
+
+
 
 

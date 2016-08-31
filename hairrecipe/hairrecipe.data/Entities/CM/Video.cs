@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace hairrecipe.Models
+namespace hairrecipe.data.Entities.CM
 {
-    public class CmViewModel
+    public class Video
     {
         public int CMProductId { get; set; }
         public string CMProductName1 { get; set; }
@@ -16,5 +17,6 @@ namespace hairrecipe.Models
         public string CMProductLink { get; set; }
         public string CMsectionClass { get; set; }
         public string CMsectionId { get; set; }
+        public string SKU { get; set; }
     }
 }

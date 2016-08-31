@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using System.Web.Script.Serialization;
 using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
+using hairrecipe.data.Entities.CM;
 using hairrecipe.data.Services;
 
 namespace hairrecipe.Controllers.sp
@@ -106,7 +107,7 @@ namespace hairrecipe.Controllers.sp
                 string file = Server.MapPath("~/Content/data/VideoList.json");
                 string Json = System.IO.File.ReadAllText(file);
                 JavaScriptSerializer videoObj = new JavaScriptSerializer();
-                var videoList = videoObj.Deserialize<List<CmViewModel>>(Json);
+                var videoList = videoObj.Deserialize<List<Video>>(Json);
 
                 return View(videoList);
             }
