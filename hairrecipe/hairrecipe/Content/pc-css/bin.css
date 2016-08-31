@@ -72,5 +72,11 @@
     margin-right: 5%;
 }
 
+.reco_recipe-main .bin .bin-PopUp ul {
+    padding: 10% 0 0 5%;
+    overflow: hidden;
+    list-style: none;
+}
+
 
 
