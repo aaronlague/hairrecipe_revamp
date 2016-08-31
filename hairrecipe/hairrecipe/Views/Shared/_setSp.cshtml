@@ -12,7 +12,9 @@
             <li>
                 <p>@Html.Raw(ProductSet.JpTitle1)</p>
                 <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
-                <a class="btn to-shop-btn">TO SHOP</a>
+                <div class="bin">
+                    <a class="btn to-shop-btn" sku="@ProductSet.SKU">TO SHOP</a>
+                </div>
             </li>
         }
     </ul>

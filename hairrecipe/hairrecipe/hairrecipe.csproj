@@ -146,6 +146,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BINController.cs" />
     <Compile Include="Controllers\DiagnosisController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -157,7 +158,6 @@
     </Compile>
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
-    <Compile Include="Models\CmViewModel.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\InfoViewModel.cs" />
     <Compile Include="Models\ProductListingViewModel.cs" />
@@ -277,7 +277,9 @@
     <Content Include="Content\images\sp\sp_to-shop-btn.png" />
     <Content Include="Content\images\sp_product-stories-btn.png" />
     <Content Include="Content\images\sp\sp_shopping-cart-icon.png" />
+    <Content Include="Content\js\bin.js" />
     <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\main.pc.js" />
     <Content Include="Content\mobile-hp.css" />
     <Content Include="Content\mobile-styles.css" />
     <Content Include="Content\global-styles.css" />
@@ -369,6 +371,7 @@
     <Content Include="Content\data\ProductList.json" />
     <Content Include="Content\data\StoriesList.json" />
     <Content Include="Content\data\InfoList.json" />
+    <Content Include="Content\data\BIN.json" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />
@@ -396,9 +399,6 @@
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\singleInstanceYTvideo.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Views\Shared\_ProductListingBlockSp.cshtml">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -469,8 +469,7 @@
     <Content Include="Views\Shared\q5\c3.Mobile.cshtml" />
     <Content Include="Views\Shared\_specialInfo.Mobile.cshtml" />
     <Content Include="Views\SpProduct\Product-line.cshtml" />
-    <Content Include="Views\Shared\_productList.cshtml" />
-    <Content Include="Views\Shared\_videoList.cshtml" />
+    <Content Include="Views\Shared\_videoListSp.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
     <Content Include="Views\Shared\_setSp.cshtml" />
@@ -486,7 +485,7 @@
     <Content Include="Views\Shared\_ProductSetBlock.cshtml" />
     <Content Include="Views\Shared\_FootBannerBlock.cshtml" />
     <Content Include="Views\Shared\_FooterBlock.cshtml" />
-	<Content Include="Views\Shared\_productStories.cshtml" />
+    <Content Include="Views\Shared\_productStories.cshtml" />
     <Content Include="Views\Shared\_productLineup.cshtml" />
     <Content Include="Views\Shared\_infoList.cshtml" />
     <Content Include="Views\Shared\result\1.Mobile.cshtml" />
@@ -506,6 +505,7 @@
     <Content Include="Views\Shared\result\15.Mobile.cshtml" />
     <Content Include="Views\Shared\result\16.Mobile.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
+    <Content Include="Views\Shared\_BINPopUp.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

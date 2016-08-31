@@ -1,6 +1,6 @@
-﻿@model IEnumerable<hairrecipe.Models.CmViewModel>
+﻿@model IEnumerable<hairrecipe.data.Entities.CM.Video>
 @{
-    ViewBag.Title = "CM&amp;MOVIE｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Title = "CM&MOVIE｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)のTVCM、WEB限定イメージムービーがご覧いただけます。";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
 }
@@ -26,9 +26,9 @@
             </div>
             @foreach (var item in Model)
             {
-                @Html.Partial("_videoList", item);
+                @Html.Partial("_videoListSp", item);
             }
-            
+
             <div class="cm-lineup-one text-center">
                 <div class="inner">
                     <h2>HAIR RECIPE LINEUP</h2>
@@ -65,7 +65,7 @@
             <div class="cm-lineup-five stitch-s text-center">
                 <div class="inner">
                     <a href="/diagnosis/index.html"><img class="img-fluid lazy" data-original="/Content/images/sp/cm/cm-27.jpg" /></a>
-</div>
+                </div>
             </div>
             <div></div>
         </div>

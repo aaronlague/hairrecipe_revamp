@@ -52,8 +52,8 @@
         <ul class="actions">
             @if (Model.HasBIN == true)
             {
-                <li>
-                    <a class="btn to-shop-btn">TO SHOP</a>
+                <li class="bin">
+                    <a class="btn to-shop-btn" sku="@Model.SKU" gaca="@Model.GACA">TO SHOP</a>
                 </li>
             }
 
@@ -66,6 +66,7 @@
         </ul>
     </div>
 </div>
+
 
 
 

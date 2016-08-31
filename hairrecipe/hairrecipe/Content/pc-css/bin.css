@@ -1,0 +1,93 @@
+﻿.bin{
+    position : relative;
+    width : 100%;
+}
+
+.bin .null{
+    margin-top: 16%;
+    display: block;
+}
+.bin .bin-PopUp{
+    display : none;
+    
+    background :  url('/Content/images/bins/bg.png');
+    background-repeat : no-repeat;
+    background-size : 100%;
+    position : absolute;
+    width : 90%;
+    height : 260%;
+    top : 100%;
+    left : 4%;
+    right : 0;
+    z-index : 999999999999999;
+    -webkit-border-radius: 3%;
+    -moz-border-radius: 3%;
+    border-radius: 3%;
+}
+.bin .bin-PopUp .arrow{
+    display : block;
+    position : absolute;
+    top : -19px;
+    width : 10%;
+    left : 44%;
+}
+.bin .bin-PopUp a img{
+    display : block;
+    border : 1px solid #87847d;
+    width: 100%;
+}
+
+.bin .bin-PopUp ul{
+    padding: 7% 0 0 5%;
+    overflow : hidden;
+    list-style : none;
+}
+.bin .bin-PopUp ul li{
+    float : left;
+    width :45%;
+    margin-right : 5%;
+}
+
+
+/* BIN override */
+.page-footer .special-info .shop-btn.bin .bin-PopUp,
+.home .bin .bin-PopUp {
+    width : 100%;
+    left : 0%;
+}
+.page-footer .special-info .shop-btn.bin .bin-PopUp a img,
+.home .bin .bin-PopUp a img,
+#booster .comboSection .bin .bin-PopUp a img {
+    margin : 10% 0;
+}
+#booster .comboSection .bin .bin-PopUp{
+    top: 89%;
+    height: 193%;
+}
+#booster .comboSection  .bin .bin-PopUp ul {
+    padding: 2% 0 0 5%;
+}
+
+#booster .comboSection .bin .bin-PopUp ul li {
+    margin-right: 5%;
+}
+
+.reco_recipe-main .bin .bin-PopUp ul {
+    padding: 10% 0 0 5%;
+    overflow: hidden;
+    list-style: none;
+}
+
+.cm-main .bin .bin-PopUp{
+    width: 107%;
+    top: 72%;
+    left: -5%;
+}
+
+.cm-main .bin .bin-PopUp ul {
+    padding: 11% 0 0 5%;
+}
+
+
+
+

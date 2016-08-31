@@ -1,0 +1,258 @@
+[
+    {
+        sku : 'common',
+        productName : 'common',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/b/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&node=3257396051&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/event/hairrecipe/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'mint-cleansing',
+        productName : 'mint-cleansing',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DQ4YO/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796403/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-shampoo',
+        productName : 'Apricot-shampoo',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPVFW/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796388/?int_id=search_keywordsearch'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-treatment',
+        productName : 'Apricot-treatment',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPVFW/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796397/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-mask',
+        productName : 'Apricot-mask',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DQ4US/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796520/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-shampoo-refill',
+        productName : 'Apricot-shampoo-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00X51IAR6/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1654751/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-treatment-refill',
+        productName : 'apricot-treatment-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00X51IJ4K/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1654813/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'apricot-pack-refill',
+        productName : 'apricot-pack-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPUY4/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796468/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-shampoo',
+        productName : 'kiwi-shampoo',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPV6Q/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796440/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-treatment',
+        productName : 'kiwi-treatment',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPUWG/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796477/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-scalp',
+        productName : 'kiwi-scalp',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M0EYR4Y/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796412/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-shampoo-refill',
+        productName : 'kiwi-shampoo-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00X51IAOO/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1654878/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-treatment-refill',
+        productName : 'kiwi-treatment-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00X51IJK4/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1654804/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'kiwi-pack-refill',
+        productName : 'kiwi-pack-refill',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DQ5AM/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796495/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'booster-grape',
+        productName : 'booster-grape',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00UPVQHRO/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1508851/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
+        sku : 'booster-seed',
+        productName : 'booster-seed',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00UPVQJPY/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1508898/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    }
+]
