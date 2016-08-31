@@ -19,7 +19,8 @@
             size:'30ml',
             description:'保湿効果の高いグレープシードオイルで、[sp-br]イキイキと美しい髪に。 ',
             howtouse:'',
-            sku:'012345678',
+            sku:'booster-grape',
+            gaca : '',
             isActive : true,
             hasReview : true,
             hasBIN : true,
@@ -45,7 +46,8 @@
             size:'30ml',
             description:'オメガ6※１とオメガ9※２が豊富な[sp-br][pc-br]サンフラワーシードオイルで、指通りのよい輝く髪に。[pc-br][sp-br]※1:リノール酸 ※2:オレイン酸',
             howtouse:'',
-            sku:'012345678',
+            sku:'booster-seed',
+            gaca : '',
             isActive : true,
             hasReview : true,
             hasBIN : true,
@@ -192,12 +194,14 @@
                 {
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
-                    SKU : '12345678789'
+                    SKU : 'apricot-treatment',
+                    gaca : ''
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
-                    SKU : '12345678789'
+                    SKU : 'booster-grape',
+                    gaca : ''
                 }                
             ]            
         },
@@ -210,12 +214,14 @@
                 {
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
-                    SKU : '12345678789'
+                    SKU : 'apricot-treatment',
+                    gaca : ''
                 },
                 {
                     jpTitle1 : 'サンフラワー シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
-                    SKU : '12345678789'
+                    SKU : 'booster-seed',
+                    gaca : ''
                 }                
             ]            
         },
@@ -228,12 +234,14 @@
                 {
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ ',
                     jpTitle2 : 'トリートメント',
-                    SKU : '12345678789'
+                    SKU : 'kiwi-treatment',
+                    gaca : ''
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ ',
                     jpTitle2 : '洗い流さないトリートメント',
-                    SKU : '12345678789'
+                    SKU : 'booster-grape',
+                    gaca : ''
                 }                
             ]            
         },
@@ -246,12 +254,14 @@
                 {
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ',
                     jpTitle2 : 'トリートメント',
-                    SKU : '12345678789'
+                    SKU : 'kiwi-treatment',
+                    gaca : ''
                 },
                 {
                     jpTitle1 : 'サンフラワー シード <br/>ブースター オイル レシピ  ',
                     jpTitle2 : '洗い流さないトリートメント',
-                    SKU : '12345678789'
+                    SKU : 'booster-seed',
+                    gaca : ''
                 }                
             ]            
         }        

@@ -1,5 +1,21 @@
 [
     {
+        sku : 'common',
+        productName : 'common',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/b/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&node=3257396051&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/event/hairrecipe/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
         sku : 'mint-cleansing',
         productName : 'mint-cleansing',
         stores :  [

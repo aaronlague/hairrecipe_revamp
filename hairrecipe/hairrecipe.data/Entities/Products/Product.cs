@@ -9,6 +9,7 @@ namespace hairrecipe.data.Entities.Products
     public class Product
     {
         public string SKU { get; set; }
+        public string GACA { get; set; }
         public string Name { get; set; }
         public string Line { get; set; }
         public string DesktopDirection { get; set; }

@@ -22,8 +22,14 @@ namespace hairrecipe.data.Services
 
             JArray jArryObj = JArray.Parse(Json);
             var binObj = jArryObj.ToObject<List<BIN>>();
-            var rtn = binObj.Where(x => x.SKU.Contains(SKU)).FirstOrDefault();
-            
+            var rtn = new BIN();
+            try { 
+                rtn = binObj.Where(x => x.SKU.Contains(SKU)).FirstOrDefault();
+            }
+            catch (Exception ex)
+            {
+                //do nothing
+            }
             return rtn;
         }
     }
