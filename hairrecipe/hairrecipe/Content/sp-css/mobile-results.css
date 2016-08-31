@@ -7,6 +7,14 @@
         background-repeat:no-repeat;
     }
 
+        #Details .result-1 .results-page-content .cols div:nth-child(1) {
+            width: 40%;
+        }
+
+        #Details .result-1 .results-page-content .cols div:nth-child(3) {
+            width: 31%;
+        }
+
     #Details .result-2 {
         background: url(/Content/images/sp/diagnosis/results/sp_results-2-bg.jpg);
         background-size: 100%;
@@ -84,6 +92,17 @@
         background-size: 100%;
         background-repeat:no-repeat;
     }
+        #Details .result-7 .results-page-content .cols div:nth-child(1) {
+            width: 36%;
+        }
+
+         #Details .result-7 .results-page-content .cols div:nth-child(2) {
+            width: 27%;
+        }
+
+         #Details .result-7 .results-page-content .cols div:nth-child(3) {
+            width: 37%;
+        }
 
     #Details .result-8 {
         background: url(/Content/images/sp/diagnosis/results/sp_results-8-bg.jpg);
@@ -342,7 +361,7 @@
     }
 
     #Details .results-page-content .cols {
-        margin-top: 78%;
+        margin-top: 78.8%;
     }
 
     #Details .results-page-bottom img {
@@ -390,4 +409,5 @@
      #Details .results-page-content .content-block {
         margin-bottom: 10%;
     }
+
 }
