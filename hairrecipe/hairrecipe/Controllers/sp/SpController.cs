@@ -131,12 +131,8 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                string file = Server.MapPath("~/Content/data/StoriesList.json");
-                string Json = System.IO.File.ReadAllText(file);
-                JavaScriptSerializer storiesObj = new JavaScriptSerializer();
-                var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
-
-                return View(storyList);
+                var returnList = JsonServices.QueryJsonObject<KodawariStoreListing>("/Content/data/StoriesList.json");
+                return View(returnList);
             }
         }
 

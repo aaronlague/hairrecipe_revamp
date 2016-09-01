@@ -1,7 +1,4 @@
-﻿@model hairrecipe.Models.StoriesListing
-@{
-    string uri = Request.Url.AbsolutePath;
-}
+﻿@model hairrecipe.data.Entities.Home.KodawariStoreListing
 
 <div class="product-story-container @Html.Raw(Model.StoryBg)">
     <a id="@(string.Concat("story", @Html.Raw(Model.StoryId)))"></a>
