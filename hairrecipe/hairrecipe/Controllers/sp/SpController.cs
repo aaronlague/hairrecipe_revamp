@@ -1,16 +1,17 @@
-﻿using AttributeRouting.Web.Mvc;
-using Newtonsoft.Json.Linq;
-using hairrecipe.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Script.Serialization;
+using System.Collections.Generic;
+using AttributeRouting.Web.Mvc;
+using Newtonsoft.Json.Linq;
+using hairrecipe.Models;
 using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
 using hairrecipe.data.Entities.CM;
 using hairrecipe.data.Entities.Home;
+using hairrecipe.data.Entities.Info;
 using hairrecipe.data.Services;
 
 namespace hairrecipe.Controllers.sp
@@ -146,13 +147,8 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-
-                string file = Server.MapPath("~/Content/data/InfoList.json");
-                string Json = System.IO.File.ReadAllText(file);
-                JavaScriptSerializer infoObj = new JavaScriptSerializer();
-                var infoList = infoObj.Deserialize<List<InfoViewModel>>(Json);
-
-                return View(infoList);
+                var returnList = JsonServices.QueryJsonObject<InfoList>("/Content/data/InfoList.json");
+                return View(returnList);
             }
         }
     }

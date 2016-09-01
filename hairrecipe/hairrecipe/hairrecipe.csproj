@@ -160,8 +160,6 @@
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
     <Compile Include="Models\InfoViewModel.cs" />
-    <Compile Include="Models\ProductListingViewModel.cs" />
-    <Compile Include="Models\StoriesListing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -484,7 +482,7 @@
     <Content Include="Views\Shared\_FooterBlock.cshtml" />
     <Content Include="Views\Shared\_productStories.cshtml" />
     <Content Include="Views\Shared\_productLineup.cshtml" />
-    <Content Include="Views\Shared\_infoList.cshtml" />
+    <Content Include="Views\Shared\_infoListSp.cshtml" />
     <Content Include="Views\Shared\result\1.Mobile.cshtml" />
     <Content Include="Views\Shared\result\2.Mobile.cshtml" />
     <Content Include="Views\Shared\result\3.Mobile.cshtml" />

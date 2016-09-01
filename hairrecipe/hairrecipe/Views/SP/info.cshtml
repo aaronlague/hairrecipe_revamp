@@ -1,4 +1,4 @@
-﻿@model IEnumerable<hairrecipe.Models.InfoViewModel>
+﻿@model IEnumerable<hairrecipe.data.Entities.Info.InfoList>
 @{
     ViewBag.Title = "NEWS｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)の新着・新発売情報とキャンペーン情報をお届けしています。新しいシャンプー・トリートメント情報、話題のイベントや最新コンテンツ、期間限定商品情報のほか、キャンペーンの詳細や、応募期間、応募方法などを詳しくご紹介しています。";
@@ -18,7 +18,7 @@
     <div class="container">
         @foreach (var item in Model)
         {
-            @Html.Partial("_infoList", item);
+            @Html.Partial("_infoListSp", item);
         }
     </div>
 </div>
