@@ -46,5 +46,18 @@
 
 
 /* BIN override */
+.refill ul .bin .bin-PopUp ul{
+    padding: 36px 0 0 20px!important;
+}
+.refill ul .bin {
+    width : auto;
+}
+.refill ul .bin .bin-PopUp {
+    left: 0;
+}
 
+.comboSection ul li .bin .bin-PopUp ul li {
+    width: 150px!important;
+    margin-right :10px!important;
+}
 

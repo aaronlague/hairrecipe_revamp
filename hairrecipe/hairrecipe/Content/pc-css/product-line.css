@@ -127,23 +127,25 @@ ul, li{
 }
 .refill{
     height : 748px;
-    overflow : hidden;
+    padding-top : 1px;
+    margin-top : -1px;
+    
 }
-.refill ul{
+.refill ul.refill-ul{
     margin: 440px auto 0;
     display : table;
 }
 
-.refill ul li{
+.refill ul.refill-ul li{
     float : left;
     width : 353px;
     display: table-cell;
 }
-.refill ul li span{
+.refill ul.refill-ul li span{
     display : block;
     text-align : center;
 }
-.refill ul li a{
+.refill ul.refill-ul li a{
     display : block;
     margin: 0 auto;
 }
@@ -399,15 +401,25 @@ ul, li{
     margin : 0 auto;
 }
 #booster .comboSection ul{
-    clear : both;
-    overflow : hidden;
+    clear: both;
+    display: table;
+    width: 800px;
+    margin-left: 56px;
 }
 #booster .comboSection ul li{
     float : left;
-    width : 50%;
+    width : 350px;
     text-align : center;
+    display : table-cell;
 }
 #booster .comboSection ul li *{
     display : block;    
     margin: 0 auto;
 }
+#booster .comboSection ul li .details{
+    display : block;    
+    margin: 0 auto 10px;
+    height : 70px;
+}
+
+

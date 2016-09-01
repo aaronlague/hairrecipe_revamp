@@ -11,9 +11,13 @@
                 @foreach (var ProductSet in Model.ProductSets)
                 {
                     <li>
-                        <p>@Html.Raw(ProductSet.JpTitle1)</p>
-                        <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
-                        <a class="generic-btn shop">To Shop</a>
+                        <div class="details">
+                            <p>@Html.Raw(ProductSet.JpTitle1)</p>
+                            <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
+                        </div>
+                        <div class="bin">
+                            <a class="generic-btn shop  to-shop-btn" sku="@ProductSet.SKU">To Shop</a>
+                        </div>
                     </li>
                 }
             </ul>
