@@ -283,6 +283,7 @@
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
     <Content Include="Content\pc-css\product-line.css" />
+    <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
     <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
@@ -500,6 +501,7 @@
     <Content Include="Views\Shared\result\16.Mobile.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
     <Content Include="Views\Shared\_BINPopUp.cshtml" />
+    <Content Include="Views\Home\sitemap.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

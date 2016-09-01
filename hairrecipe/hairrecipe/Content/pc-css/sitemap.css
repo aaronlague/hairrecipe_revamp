@@ -1,0 +1,45 @@
+﻿.banner-about {
+    position:relative;
+}
+
+.banner-about > h1 {
+    position:absolute;
+    top:50%;
+    right:47%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+
+.content-sitemap {
+    width:830px;
+    margin:0 auto;
+    padding-top:60px;
+    font-size:16px;
+}
+
+.content-sitemap p {
+    line-height:22px;
+    margin-bottom:40px;
+    font-family: 'LubalinGraph-Book';
+}
+
+.content-sitemap p a {
+    color:#87847d;
+    background: url(../images/pc/sitemap/arrow.png) right center no-repeat;
+    padding-right: 20px;
+}
+
+.Koburina a {
+    font-family:Koburina Gothic W3 JIS2004;
+}
+
+.pb100 {
+    padding-bottom:100px;
+}
+
+.pb60 {
+    padding-bottom:60px;
+}

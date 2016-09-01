@@ -131,5 +131,21 @@ namespace hairrecipe.Controllers
                 return View();
             }
         }
+
+        [Route("/sitemap")]
+        public ActionResult sitemap()
+        {
+            if (Request.Browser.IsMobileDevice)
+            {
+                //return RedirectToAction("Sitemap", "Sp");
+                return Redirect("/sp/sitemap/index.html");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
     }
 }
