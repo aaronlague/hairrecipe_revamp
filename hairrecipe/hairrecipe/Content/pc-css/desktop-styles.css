@@ -274,7 +274,7 @@ footer .base ul li{
     padding-bottom: 14px;
 }
 .generic-btn.shop:before {
-    content: url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
+    content: url(/../Content/images/sp/sp_shopping-cart-icon-sm.png);
     position: relative;
     left: -5px;
     top: 5px;

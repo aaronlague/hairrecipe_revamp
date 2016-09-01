@@ -1,0 +1,157 @@
+﻿.banner-cm {
+    position:relative;
+}
+
+.banner-cm > h1 {
+    position:absolute;
+    top:50%;
+    right:47%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+
+h1, h2, h3 {
+    margin:0;
+}
+.japanese {
+    font-family:Koburina Gothic W3 JIS2004;
+}
+
+.english {
+    font-family: 'LubalinGraph-Book'
+}
+
+.cm-menu{
+    background:url(/../Content/images/pc/cm/menu-bg.jpg);
+    background-size:100%;
+    height:255px;
+}
+
+.cm-menu ul {
+    text-align:center;
+    padding-top:100px;
+}
+
+.cm-menu ul li {
+    display:inline-block;
+    margin-left:50px;
+}
+
+.cm-menu ul li a {
+    color:inherit;
+    font-size:22px;
+    text-decoration:none;
+}
+
+
+.cm-menu ul li img {
+    width:initial;
+}
+
+
+.v1 {
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+img {
+    width:auto
+}
+
+.v1 ul {
+    padding:0
+}
+
+.v1 h2 {
+    font-size:22px;
+    margin-bottom: 20px;
+}
+
+.v1 h3 {
+    font-size:20px;
+    margin-bottom: 100px;
+}
+
+.video-wrapper {
+    padding-bottom: 550px;
+}
+a.btn.generic-btn {
+    padding:10px 0 0 0;
+    font-size:13px;
+    display: inline-block;
+    margin:40px 20px 0 20px;
+}
+
+.recipe {
+    background:url('/../Content/images/pc/cm/pc_cm_02.jpg');
+    background-size:100%;
+    height:857px;
+    position:relative;
+    padding-top: 100px;
+}
+
+.recipe2 {
+    background:url('/../Content/images/pc/cm/pc_cm_03.jpg');
+    background-size:100%;
+    height:833px;
+    position:relative;
+     padding-top: 100px;
+}
+
+.recipe3 {
+    background:url('/../Content/images/pc/cm/pc_cm_04.jpg');
+    background-size:100%;
+    height:857px;
+    position:relative;
+    padding-top: 100px;
+}
+
+.recipe4 {
+    background:url('/../Content/images/pc/cm/pc_cm_05.jpg');
+    background-size:100%;
+    height:857px;
+    position:relative;
+    padding-top: 193px;
+}
+
+.recipe a.btn.generic-btn, .recipe2 a.btn.generic-btn, .recipe3 a.btn.generic-btn, .recipe4 a.btn.generic-btn {
+    position:absolute;
+    bottom:100px;
+    left: 38%;
+    width: 260px;
+}
+
+.recipe h2, .recipe2 h2, .recipe3 h2, .recipe4 h2 {
+    font-family: 'LubalinGraph-Book';
+    font-size:22px;
+    margin-bottom: 20px;
+}
+
+.recipe h3, .recipe2 h3, .recipe3 h3, .recipe4 h3 {
+   font-family:Koburina Gothic W3 JIS2004;
+    font-size:20px;
+}
+
+.juicy {
+    height:auto;
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:50px;
+}
+
+.juicy ul li {
+    list-style:none;
+    display:inline-block;
+    margin-left:100px;
+    margin-right:100px;
+}
+
+.juicy ul li img {
+    margin-bottom:40px;
+}
+.juicy ul  {
+    padding:0;
+}

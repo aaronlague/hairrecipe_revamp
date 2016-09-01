@@ -2,78 +2,108 @@
 {  
     "CMProductId": 1,
 	"CMProductName1": "TVCM",  
-    "CMProductName2": "「ジューシーヘア」編(15秒)",  
+    "CMProductName2": "「ジューシーヘア」編(15秒)",
 	"CMProductNamePc": "「ジューシーヘア」編(15秒)", 
-    "CMProductImage": "cm-05.jpg",  
+    "CMProductImage": "cm-05.jpg",
 	"CMProductImage2": "v1.jpg",  
     "VideoId": "sH3jJpgfDS4",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-rough cm-one",
-	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm1"
+<<<<<<< HEAD
+    "sku" : "mint-cleansing",
+=======
+	"CMsectionClass2":"wood-smooth",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm1"
 },  
 {  
     "CMProductId": 2,
 	"CMProductName1": "TVCM",  
-    "CMProductName2": "「新発想、まぜるオイル」編（15秒）",  
+    "CMProductName2": "「新発想、まぜるオイル」編（15秒）",
 	"CMProductNamePc": "「新発想、まぜるオイル」編（15秒）",  
-    "CMProductImage": "cm-09.jpg",  
+    "CMProductImage": "cm-09.jpg",
 	"CMProductImage2": "v2.jpg",  
     "VideoId": "YEtq5OLYILM",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-two",
-	"CMsectionClass2":"stitch-s",    "sku" : "apricot-treatment",	"CMsectionId": "cm2"
+<<<<<<< HEAD
+    "sku" : "apricot-treatment",
+=======
+	"CMsectionClass2":"stitch-s",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm2"
 },  
 {  
     "CMProductId": 3,
 	"CMProductName1": "TVCM",  
     "CMProductName2": "「髪に、ごちそう。」編（15秒）",  
 	"CMProductNamePc": "「髪に、ごちそう。」編（15秒）", 
-    "CMProductImage": "cm-12.jpg",  
+    "CMProductImage": "cm-12.jpg",
 	"CMProductImage2": "v3.jpg",  
     "VideoId": "UD7-Kw9nOVo",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-b cm-three",
-	"CMsectionClass2":"wood-rough",    "sku" : "apricot-mask",	"CMsectionId": "cm3"
+<<<<<<< HEAD
+    "sku" : "apricot-mask",
+=======
+	"CMsectionClass2":"wood-rough",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm3"
 },
 {  
     "CMProductId": 4,
 	"CMProductName1": "ブースターオイル 使い方",  
-    "CMProductName2": "ブースターオイルの楽しみ方」編 <br /> （45秒）",  
+    "CMProductName2": "ブースターオイルの楽しみ方」編 <br /> （45秒）",
 	"CMProductNamePc": "ブースターオイルの楽しみ方」編（45秒）",    
-    "CMProductImage": "cm-14.jpg",  
+    "CMProductImage": "cm-14.jpg",
 	"CMProductImage2": "v4.jpg",  
     "VideoId": "6ZwNkIE9VPo",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-m cm-four",
-	"CMsectionClass2":"wood-smooth",    "sku" : "apricot-shampoo-refill",	"CMsectionId": "cm4"
+<<<<<<< HEAD
+    "sku" : "apricot-shampoo-refill",
+=======
+	"CMsectionClass2":"wood-smooth",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm4"
 },
 {  
     "CMProductId": 5,
 	"CMProductName1": "<span>WEB</span>限定＆イメージムービー",  
-    "CMProductName2": "「ヘアレシピ誕生」編<br />（2分38秒）",  
+    "CMProductName2": "「ヘアレシピ誕生」編<br />（2分38秒）",
 	"CMProductNamePc": "「ヘアレシピ誕生」編（2分38秒）",  
-    "CMProductImage": "cm-16.jpg",  
+    "CMProductImage": "cm-16.jpg",
 	"CMProductImage2": "v5.jpg",  
     "VideoId": "zu7Nshp3Nvc",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-s cm-five",
-	"CMsectionClass2":"stitch-m",    "sku" : "kiwi-treatment",	"CMsectionId": "cm5"
+<<<<<<< HEAD
+    "sku" : "kiwi-treatment",
+=======
+	"CMsectionClass2":"stitch-m",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm5"
 },
 {  
     "CMProductId": 6,
 	"CMProductName1": "<span>WEB</span>限定＆イメージムービー",  
-    "CMProductName2": "「ヘアレシピの世界へようこそ」編 <br /> （3分25秒）",  
+    "CMProductName2": "「ヘアレシピの世界へようこそ」編 <br /> （3分25秒）",
 	"CMProductNamePc": "「ヘアレシピの世界へようこそ」編 （3分25秒）",  
-    "CMProductImage": "cm-18.jpg",  
+    "CMProductImage": "cm-18.jpg",
 	"CMProductImage2": "v6.jpg",  
     "VideoId": "nWkukhmgfBw",
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-six",
-    "sku" : "kiwi-scalp",	"CMsectionClass2":"stitch-s",	"CMsectionId": "cm6"
+<<<<<<< HEAD
+    "sku" : "kiwi-scalp",
+=======
+	"CMsectionClass2":"stitch-s",
+>>>>>>> feature/PG-520
+	"CMsectionId": "cm6"
 }]
