@@ -1,6 +1,9 @@
-﻿.bin{
+﻿/* PC */
+
+.bin{
     position : relative;
-    width : 100%;
+    width : 180px;
+
 }
 
 .bin .null{
@@ -8,21 +11,14 @@
     display: block;
 }
 .bin .bin-PopUp{
-    display : none;
-    
-    background :  url('/Content/images/bins/bg.png');
+    display : none;    
+    background :  url('/Content/images/bins/pc.bg.png');
     background-repeat : no-repeat;
-    background-size : 100%;
     position : absolute;
-    width : 90%;
-    height : 260%;
-    top : 100%;
-    left : 4%;
-    right : 0;
+    width : 352px;
+    height : 118px;
+    left : -85px;
     z-index : 999999999999999;
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    border-radius: 3%;
 }
 .bin .bin-PopUp .arrow{
     display : block;
@@ -38,7 +34,7 @@
 }
 
 .bin .bin-PopUp ul{
-    padding: 7% 0 0 5%;
+    padding: 36px 0 0 20px;
     overflow : hidden;
     list-style : none;
 }
@@ -50,48 +46,5 @@
 
 
 /* BIN override */
-.page-footer .special-info .shop-btn.bin .bin-PopUp,
-.home .bin .bin-PopUp {
-    width : 100%;
-    left : 0%;
-}
-.page-footer .special-info .shop-btn.bin .bin-PopUp a img,
-.home .bin .bin-PopUp a img,
-#booster .comboSection .bin .bin-PopUp a img {
-    margin : 10% 0;
-}
-#booster .comboSection .bin .bin-PopUp{
-    top: 89%;
-    height: 193%;
-}
-#booster .comboSection  .bin .bin-PopUp ul {
-    padding: 2% 0 0 5%;
-}
-
-#booster .comboSection .bin .bin-PopUp ul li {
-    margin-right: 5%;
-}
-
-.reco_recipe-main .bin .bin-PopUp ul {
-    padding: 10% 0 0 5%;
-    overflow: hidden;
-    list-style: none;
-}
-
-.cm-main .bin .bin-PopUp{
-    width: 107%;
-    top: 72%;
-    left: -5%;
-}
-
-.cm-main .bin .bin-PopUp ul {
-    padding: 11% 0 0 5%;
-}
-
-.diagnosis .bin .bin-PopUp ul {
-    padding: 11% 0 0 5%;
-}
-
-
 
 

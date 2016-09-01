@@ -40,8 +40,11 @@
                 {
                     <p class="description">@Html.Raw(@Model.Description.LineBreak("[pc-br]"))</p>
                 }
-                @if (Model.HasBIN) { 
-                    <a class="generic-btn shop">To Shop</a>
+                @if (Model.HasBIN)
+                {
+                    <div class="bin">
+                        <a class="generic-btn shop to-shop-btn" sku="@Model.SKU">To Shop</a>
+                    </div>
                 }
             </div>
             <div class="content-area">
