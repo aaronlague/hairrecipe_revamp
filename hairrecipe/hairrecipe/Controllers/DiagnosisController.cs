@@ -19,7 +19,9 @@ namespace hairrecipe.Controllers
         {
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Index", "SpDiagnosis");
+                var requestUrl = Request.RawUrl.ToString();
+                return Redirect("/sp/" + requestUrl);
+                //return Redirect("/sp/diagnosis/index.html");
             }
             else
             {

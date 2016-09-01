@@ -25,7 +25,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Index", "Home");
+                //return RedirectToAction("Index", "Home");
+                return Redirect("/index.html");
 
             }
             else
@@ -40,7 +41,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("About", "Home");
+                //return RedirectToAction("About", "Home");
+                return Redirect("/about/index.html");
 
             }
             else
@@ -54,7 +56,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Contact", "Home");
+                //return RedirectToAction("Contact", "Home");
+                return Redirect("/contact/index.html");
 
             }
             else
@@ -68,7 +71,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Sitemap", "Home");
+                //return RedirectToAction("Sitemap", "Home");
+                return Redirect("/sitemap/index.html");
 
             }
             else
@@ -82,7 +86,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Faq", "Home");
+                //return RedirectToAction("Faq", "Home");
+                return Redirect("/faq/index.html");
 
             }
             else
@@ -97,7 +102,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Cm", "Home");
+                //return RedirectToAction("Cm", "Home");
+                return Redirect("/cm/index.html");
 
             }
             else
@@ -112,7 +118,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("reco_recipe", "Home");
+                //return RedirectToAction("reco_recipe", "Home");
+                return Redirect("/reco_recipe/index.html");
 
             }
             else
@@ -127,7 +134,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("kodawari", "Home");
+                //return RedirectToAction("kodawari", "Home");
+                return Redirect("/kodawari/index.html");
 
             }
             else
@@ -142,7 +150,8 @@ namespace hairrecipe.Controllers.sp
         {
             if (!Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("info", "Home");
+                //return RedirectToAction("info", "Home");
+                return Redirect("/info/index.html");
 
             }
             else
