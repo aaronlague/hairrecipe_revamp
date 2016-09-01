@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using hairrecipe.data.Entities.Diagnosis;
 
 namespace hairrecipe.Controllers
 {
@@ -19,11 +20,13 @@ namespace hairrecipe.Controllers
         {
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Index", "SpDiagnosis");
+                var requestUrl = Request.RawUrl.ToString();
+                return Redirect("/sp/" + requestUrl);
+                //return Redirect("/sp/diagnosis/index.html");
             }
             else
             {
-                var model = new DiagnosisViewModel
+                var model = new Diagnosis()
                 {
                     QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
                 };

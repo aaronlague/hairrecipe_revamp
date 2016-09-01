@@ -19,11 +19,13 @@ namespace hairrecipe.Controllers
         {
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction("Index", "SpProduct");
+                //return RedirectToAction("Index", "SpProduct");
+                return Redirect("/sp/kodawari/index.html");
 
             } else {
 
-                return View();
+                //return View();
+                return Redirect("/kodawari/index.html");
             }
         }
 
@@ -33,21 +35,31 @@ namespace hairrecipe.Controllers
         [Route("/product/Mint")]
         public ActionResult ProductLine()       
         
-{
-            string url = HttpContext.Request.Url.AbsolutePath;
-            string line = url.Split('/').Last();
+        {
 
             if (Request.Browser.IsMobileDevice)
             {
-                return RedirectToAction(line, "sp/product");
-
+                var requestUrl = Request.RawUrl.ToString();
+                return Redirect("/sp/" + requestUrl);
             }
-            ViewData["group-title"] = line;
-            string filepath = Server.MapPath("~/Content/data/" + line + ".json");
-            var productLine = ProductService.GetLineDetails(filepath);
-            productLine.ProductListMain = productLine.Products.Where(x => x.Type.Contains("main")).ToList();
-            productLine.ProductListRefill = productLine.Products.Where(x => x.Type.Contains("refill")).ToList();
-            return View("Product-line", productLine);
+            else
+            {
+                string url = HttpContext.Request.Url.AbsolutePath;
+                string line = url.Split('/').Last();
+
+                if (Request.Browser.IsMobileDevice)
+                {
+                    return RedirectToAction(line, "sp/product");
+
+                }
+                ViewData["group-title"] = line;
+                string filepath = Server.MapPath("~/Content/data/" + line + ".json");
+                var productLine = ProductService.GetLineDetails(filepath);
+                productLine.ProductListMain = productLine.Products.Where(x => x.Type.Contains("main")).ToList();
+                productLine.ProductListRefill = productLine.Products.Where(x => x.Type.Contains("refill")).ToList();
+                return View("Product-line", productLine);            
+            }
+
         }
 
 

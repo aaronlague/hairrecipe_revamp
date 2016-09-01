@@ -26,7 +26,8 @@ namespace hairrecipe.Controllers.sp
             if (!Request.Browser.IsMobileDevice)
             {
                 //return RedirectToAction("Index", "Product");
-                return RedirectToAction("kodawari", "Home");
+                //return RedirectToAction("kodawari", "Home");
+                return Redirect("/kodawari/index.html");
 
             }
             else
@@ -37,7 +38,8 @@ namespace hairrecipe.Controllers.sp
                 //var storyList = storiesObj.Deserialize<List<StoriesListing>>(Json);
 
                 //return View(storyList);
-                return RedirectToAction("kodawari", "Sp");
+                //return RedirectToAction("kodawari", "Sp");
+                return Redirect("/sp/kodawari/index.html");
             }
         }
 
@@ -48,13 +50,23 @@ namespace hairrecipe.Controllers.sp
         [Route("/sp/product/Mint")]
         public ActionResult ProductLine()
         {
-            string url = HttpContext.Request.Url.AbsolutePath;
-            string line = url.Split('/').Last();
-            ViewData["group-title"] = line;
-            string filepath = Server.MapPath("~/Content/data/" + line + ".json");
-            var productLine = ProductService.GetLineDetails(filepath);
+            if (!Request.Browser.IsMobileDevice)
+            {
+                //return RedirectToAction("Index", "Diagnosis");
+                var requestUrl = Request.RawUrl.ToString().Replace("/sp", "");
+                return Redirect(requestUrl);
 
-            return View("Product-line", productLine);
+            }
+            else
+            {
+                string url = HttpContext.Request.Url.AbsolutePath;
+                string line = url.Split('/').Last();
+                ViewData["group-title"] = line;
+                string filepath = Server.MapPath("~/Content/data/" + line + ".json");
+                var productLine = ProductService.GetLineDetails(filepath);
+
+                return View("Product-line", productLine);
+            }
         }
 
     }

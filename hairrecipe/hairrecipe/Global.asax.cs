@@ -22,8 +22,6 @@ namespace hairrecipe
 
             string urlRequest = Request.Url.AbsolutePath.ToString();
 
-            //string htmlPage = urlRequest.Substring(urlRequest.LastIndexOf("/") + 1);
-
             //if ((urlRequest.Equals("/sp/diagnosis/index.html")) || (urlRequest.Equals("/diagnosis/index.html")))
             //{
             //    Context.RewritePath(urlRequest.Replace("index.html", ""));
@@ -33,34 +31,35 @@ namespace hairrecipe
             //    Context.RewritePath(urlRequest.Replace(".html", ""));
             //}
 
-            if (!Request.Browser.IsMobileDevice)
-            {
-
-                if (urlRequest.Contains("diagnosis/q") || urlRequest.Contains("diagnosis/result"))
-                {
-
-                    Context.RewritePath(urlRequest.Replace(".html", ""));
-
-                }
-                else
-                {
-                
-                    Context.RewritePath(urlRequest.Replace("index.html", ""));
-
-                }
-            }
-            else
+            if (Request.Browser.IsMobileDevice)
             {
                 if (urlRequest.Equals("/sp/diagnosis/index.html"))
                 {
                     Context.RewritePath(urlRequest.Replace("index.html", ""));
 
-                } else {
-                
-                    Context.RewritePath(urlRequest.Replace(".html", ""));
-                
                 }
-                
+                else if (urlRequest.Contains("diagnosis/q") || urlRequest.Contains("diagnosis/result") || urlRequest.Contains("product/"))
+                {
+                    Context.RewritePath(urlRequest.Replace(".html", ""));
+                }
+                else {
+                    
+                    Context.RewritePath(urlRequest.Replace("index.html", ""));
+                }
+
+            }
+            else
+            {
+
+                if (urlRequest.Contains("diagnosis/q") || urlRequest.Contains("diagnosis/result") || urlRequest.Contains("product/"))
+                {
+                    Context.RewritePath(urlRequest.Replace(".html", ""));
+                }
+                else
+                {
+                    Context.RewritePath(urlRequest.Replace("index.html", ""));
+                }
+
             }
 
             
