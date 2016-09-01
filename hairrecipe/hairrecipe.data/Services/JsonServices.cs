@@ -10,7 +10,6 @@ using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
 using hairrecipe.data.Entities.CM;
 
-
 namespace hairrecipe.data.Services
 {
     public static class JsonServices
@@ -37,7 +36,5 @@ namespace hairrecipe.data.Services
             return retVal;
 
         }
-
-
     }
 }
