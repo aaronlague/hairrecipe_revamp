@@ -159,7 +159,6 @@
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
-    <Compile Include="Models\InfoViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
