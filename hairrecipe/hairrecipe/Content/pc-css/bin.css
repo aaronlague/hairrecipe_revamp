@@ -3,7 +3,6 @@
 .bin{
     position : relative;
     width : 180px;
-
 }
 
 .bin .null{
@@ -60,4 +59,19 @@
     width: 150px!important;
     margin-right :10px!important;
 }
+
+.comboSection ul li .bin .bin-PopUp ul li {
+    width: 150px!important;
+    margin-right :10px!important;
+}
+
+.cm-content .bin{
+    width : auto;
+}
+
+.cm-content .bin .bin-PopUp{
+    left : 50%;
+    margin-left : -176px;
+}
+
 
