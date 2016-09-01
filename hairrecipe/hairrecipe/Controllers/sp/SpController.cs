@@ -29,8 +29,8 @@ namespace hairrecipe.Controllers.sp
 
             }
             else
-            {              
-                var returnList = JsonServices.QueryJsonObject<HomeProducts>("/Content/data/ProductList.json");
+            {
+                var returnList = JsonServices.QueryJsonListOfObject<HomeProducts>("/Content/data/ProductList.json");
                 return View(returnList);
             }
         }
@@ -102,7 +102,7 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                var returnList = JsonServices.QueryJsonObject<Video>("/Content/data/VideoList.json");
+                var returnList = JsonServices.QueryJsonListOfObject<Video>("/Content/data/VideoList.json");
                 return View(returnList);
             }
         }
@@ -132,7 +132,7 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                var returnList = JsonServices.QueryJsonObject<KodawariStoreListing>("/Content/data/StoriesList.json");
+                var returnList = JsonServices.QueryJsonListOfObject<KodawariStoreListing>("/Content/data/StoriesList.json");
                 return View(returnList);
             }
         }
@@ -147,7 +147,7 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                var returnList = JsonServices.QueryJsonObject<InfoList>("/Content/data/InfoList.json");
+                var returnList = JsonServices.QueryJsonListOfObject<InfoList>("/Content/data/InfoList.json");
                 return View(returnList);
             }
         }

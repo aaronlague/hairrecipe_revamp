@@ -370,7 +370,6 @@
     <Content Include="Content\data\StoriesList.json" />
     <Content Include="Content\data\InfoList.json" />
     <Content Include="Content\data\BIN.json" />
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\carousel-swipe.js" />
     <Content Include="Scripts\jasny-bootstrap.js" />

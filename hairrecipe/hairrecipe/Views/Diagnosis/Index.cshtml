@@ -1,13 +1,13 @@
-﻿@model hairrecipe.Models.DiagnosisViewModel
+﻿@model hairrecipe.data.Entities.Diagnosis.Diagnosis
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <p>@ViewBag.question</p>
 @{
-       
-    <div id="Details">
-        @Html.Partial(Model.QuestionsPartial)  
+
+    <div id="Details" class="diagnosis">
+        @Html.Partial(Model.QuestionsPartial)
     </div>
-    
+
 }
