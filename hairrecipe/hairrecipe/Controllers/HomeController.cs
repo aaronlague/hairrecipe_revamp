@@ -1,10 +1,18 @@
 ﻿using AttributeRouting.Web.Mvc;
+using Newtonsoft.Json.Linq;
+using hairrecipe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using hairrecipe.Infrastructure;
+using System.Web.Script.Serialization;
+using hairrecipe.data;
+using hairrecipe.data.Entities.Products;
+using hairrecipe.data.Entities.CM;
+using hairrecipe.data.Services;
+
 
 namespace hairrecipe.Controllers
 {
@@ -77,7 +85,7 @@ namespace hairrecipe.Controllers
         [Route("/cm")]
         public ActionResult Cm()
         {
-            if (Request.Browser.IsMobileDevice)
+           if (Request.Browser.IsMobileDevice)
             {
                 //return RedirectToAction("Cm", "Sp");
                 return Redirect("/sp/cm/index.html");
@@ -85,8 +93,8 @@ namespace hairrecipe.Controllers
             }
             else
             {
-
-                return View();
+                var returnList = JsonServices.QueryJsonListOfObject<Video>("/Content/data/VideoList.json");
+                return View(returnList);
             }
         }
 
