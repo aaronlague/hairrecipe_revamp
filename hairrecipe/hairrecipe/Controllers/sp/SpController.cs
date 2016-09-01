@@ -10,6 +10,7 @@ using System.Web.Script.Serialization;
 using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
 using hairrecipe.data.Entities.CM;
+using hairrecipe.data.Entities.Home;
 using hairrecipe.data.Services;
 
 namespace hairrecipe.Controllers.sp
@@ -27,13 +28,9 @@ namespace hairrecipe.Controllers.sp
 
             }
             else
-            {
-                string file = Server.MapPath("~/Content/data/ProductList.json");
-                string Json = System.IO.File.ReadAllText(file);
-                JavaScriptSerializer productObj = new JavaScriptSerializer();
-                var productList = productObj.Deserialize<List<ProductListingViewModel>>(Json);
-
-                return View(productList);
+            {              
+                var returnList = JsonServices.QueryJsonObject<HomeProducts>("/Content/data/ProductList.json");
+                return View(returnList);
             }
         }
 
@@ -104,12 +101,8 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                string file = Server.MapPath("~/Content/data/VideoList.json");
-                string Json = System.IO.File.ReadAllText(file);
-                JavaScriptSerializer videoObj = new JavaScriptSerializer();
-                var videoList = videoObj.Deserialize<List<Video>>(Json);
-
-                return View(videoList);
+                var returnList = JsonServices.QueryJsonObject<Video>("/Content/data/VideoList.json");
+                return View(returnList);
             }
         }
 

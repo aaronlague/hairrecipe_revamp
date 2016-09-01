@@ -52,6 +52,7 @@
     <Compile Include="Entities\BUYITNOW\BINList.cs" />
     <Compile Include="Entities\BUYITNOW\Store.cs" />
     <Compile Include="Entities\CM\Video.cs" />
+    <Compile Include="Entities\Home\HomeProducts.cs" />
     <Compile Include="Entities\Products\Column.cs" />
     <Compile Include="Entities\Products\CustomContent.cs" />
     <Compile Include="Entities\Products\Phrase.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Helpers\DataExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BINServices.cs" />
+    <Compile Include="Services\JsonServices.cs" />
     <Compile Include="Services\ProductService.cs" />
   </ItemGroup>
   <ItemGroup>
