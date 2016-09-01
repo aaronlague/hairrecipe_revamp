@@ -52,6 +52,7 @@
     <Compile Include="Entities\BUYITNOW\BINList.cs" />
     <Compile Include="Entities\BUYITNOW\Store.cs" />
     <Compile Include="Entities\CM\Video.cs" />
+    <Compile Include="Entities\Diagnosis\Diagnosis.cs" />
     <Compile Include="Entities\Home\HomeProducts.cs" />
     <Compile Include="Entities\Home\KodawariStoreListing.cs" />
     <Compile Include="Entities\Info\InfoList.cs" />
