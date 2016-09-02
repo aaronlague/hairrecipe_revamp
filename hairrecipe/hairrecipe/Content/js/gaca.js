@@ -30,7 +30,6 @@ window.isohub = window.isohub || {};
         if (typeof GACode === 'undefined') { return false }
         EventLabel = (typeof EventLabel !== 'undefined') ? EventLabel : 'internal';
         typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', EventLabel, GACode]);
-
     },
     /*
 
@@ -45,8 +44,9 @@ window.isohub = window.isohub || {};
             $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA + "'])");
         });
     },
-    app.AddBINOnClick = function (dom) {
-        
+    app.CreatBINGACA = function (gaca, storeKeyword) {
+        var newgaca = gaca.replace("[store]", storeKeyword);
+        return "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + newgaca + "']);";
     },
     app.SetUp = function () {
         //no script
