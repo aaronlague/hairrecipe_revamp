@@ -1,0 +1,153 @@
+﻿.banner-about {
+    position:relative;
+}
+
+.banner-about > h1 {
+    position:absolute;
+    top:50%;
+    right:47%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+
+.content-about {
+    width:694px;
+    margin:0 auto;
+    padding-top:60px;
+}
+
+.content-about h2 {
+    font-size:22px;
+    font-family:Koburina Gothic W3 JIS2004;
+    margin-bottom:40px;
+}
+
+.content-about p {
+    line-height:22px;
+    margin-bottom:40px;
+}
+
+.pb100 {
+    padding-bottom:100px;
+}
+
+.pb60 {
+    padding-bottom:60px;
+}
+
+
+
+/*=========================================================*/
+
+
+.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    
+    padding: .8em 1.2em;
+    color: white;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Koburina Gothic W3 JIS2004';
+}
+
+h2.page-title {
+    color: #fff;
+    font-size: 4.8em;
+}
+
+
+.faq-main {
+  background-color: #fff;
+  color: #87847d;
+  margin-top: -1px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 990px;
+}
+
+/*.row {
+  display: table;
+}*/
+
+.col1, .col2 {
+  display: table-cell;
+  /*width: 50%;*/ /* depends on the number of columns */
+
+  padding: 1em;
+  /*border: solid;*/
+  vertical-align: middle;
+  font-family: 'Koburina Gothic W3 JIS2004';
+  /*float:left;*/
+}
+
+.col1 {
+    width:75px;
+    font-family: 'LubalinGraph-Book';
+    font-size:20px;
+    /*background:Red;*/
+}
+
+.col2 {
+    width:902px;
+    font-family: 'Koburina Gothic W3 JIS2004';
+    background: url(../images/sp/faq/arrow-down.png) right 40px center no-repeat;
+    /*background:yellow;*/
+    font-size:16px;
+}
+
+
+
+
+.clear {
+    clear:both;
+}
+
+[data-toggle="collapse"] {
+    border-bottom:1px solid #ebebeb;
+    cursor: pointer;
+}
+
+[aria-expanded="true"] {
+    border-bottom:0;
+}
+
+[aria-expanded="true"] .col2 {
+    background: url(../images/sp/faq/arrow-up.png) right 40px center no-repeat;
+}
+
+.answer {
+    background: none !important;
+}
+
+.answer a {
+    color:#87847d;
+}
+
+
+.question {
+    padding-right:81px;
+}
+
+.qa {
+    font-size:30px;
+}
+
+.bg {
+    background: url(../images/sp/faq/bg2.jpg) right 20px center repeat;
+}
+
+
