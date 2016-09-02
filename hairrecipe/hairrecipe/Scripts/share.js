@@ -40,10 +40,24 @@ function shareToTwitter(d) {
     var pageUrl = 'http://' + window.location.href;
     var content = twDetails.description;
 
-    var url = 'http://twitter.com/share?url=' + encodeURIComponent(pageUrl) + '&text=' + encodeURIComponent(content) + '';
+    var url = 'http://twitter.com/share?url=' + encodeURIComponent(".  ") + '&text=' + encodeURIComponent(content) + '';
 
     openShareWindow(url);
 }
+
+$.ajax({
+    url: "//media.line.me/js/line-button.js",
+    dataType: "script",
+    success: function () {
+        console.log("script loaded");
+        setTimeout(function () {
+            $('.line-btn span a img').addClass('test');
+            $('.line-btn span a img.test').attr('src', '/Content/images/sp/sp_footer-social-line.png');
+            $('.line-btn span a img.test').attr('width', '');
+            $('.line-btn span a img.test').attr('height', '');
+        }, 3000);
+    }
+});
 
 $(".facebook-share").click(function () {
 
