@@ -82,30 +82,30 @@ function shareToTwitterResults(d) {
     openShareWindow(url);
 }
 
-$.ajax({
-    url: "//media.line.me/js/line-button.js",
-    dataType: "script",
-    success: function () {
+//$.ajax({
+//    url: "//media.line.me/js/line-button.js",
+//    dataType: "script",
+//    success: function () {
 
-        console.log("script loaded");
-        if (/^(.*)\/diagnosis\/result/.test(window.location.href)) {
-            setTimeout(function () {
-                $('.sns-cols .line span a img').addClass('line');
-                $('.sns-cols .line span a img.line').attr('src', '/Content/images/sp/diagnosis/results/sp_results-sns-ln.jpg');
-                $('.sns-cols .line span a img.line').attr('width', '');
-                $('.sns-cols .line span a img.line').attr('height', '');
-            }, 3000);
-        }
+//        console.log("script loaded");
+//        if (/^(.*)\/diagnosis\/result/.test(window.location.href)) {
+//            setTimeout(function () {
+//                $('.sns-cols .line span a img').addClass('line');
+//                $('.sns-cols .line span a img.line').attr('src', '/Content/images/sp/diagnosis/results/sp_results-sns-ln.jpg');
+//                $('.sns-cols .line span a img.line').attr('width', '');
+//                $('.sns-cols .line span a img.line').attr('height', '');
+//            }, 3000);
+//        }
 
-        setTimeout(function () {
-            $('.line-btn span a img').addClass('test');
-            $('.line-btn span a img.test').attr('src', '/Content/images/sp/sp_footer-social-line.png');
-            $('.line-btn span a img.test').attr('width', '');
-            $('.line-btn span a img.test').attr('height', '');
-        }, 3000);
+//        setTimeout(function () {
+//            $('.line-btn span a img').addClass('test');
+//            $('.line-btn span a img.test').attr('src', '/Content/images/sp/sp_footer-social-line.png');
+//            $('.line-btn span a img.test').attr('width', '');
+//            $('.line-btn span a img.test').attr('height', '');
+//        }, 3000);
 
-    }
-});
+//    }
+//});
 
 
 $(".facebook-share").click(function () {
@@ -126,3 +126,22 @@ $(".sns-cols.results .twitter-share").click(function () {
     shareToTwitterResults();
 });
 
+$(".line-share").click(function () {
+    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？";
+
+    location.href = "http://line.me/R/msg/text/?" + text;
+
+});
+
+$(".line-share").click(function () {
+    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？";
+
+    location.href = "http://line.me/R/msg/text/?" + text;
+
+});
+
+$(".sns-cols.results .line-share").click(function () {
+    var text = "あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！";
+
+    location.href = "http://line.me/R/msg/text/?" + text;
+});
