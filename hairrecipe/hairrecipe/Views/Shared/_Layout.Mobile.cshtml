@@ -54,6 +54,7 @@
     @RenderSection("scripts", required: false)
     <script src="~/Scripts/carousel-swipe.js"></script>
     <script src="~/Scripts/jquery.lazyload.js"></script>
+    <script src="~/Scripts/share.js"></script>
     <script>
         $(document).ready(function () {
             $('#myCarousel').carousel({
@@ -72,6 +73,7 @@
                 var video = $(this).attr('data-video');
                 player.loadVideoById(video, 0, "default");
             });
+
         });
     </script>
     <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?3DdNOn6UIFc%3D" charset="utf-8"></script>

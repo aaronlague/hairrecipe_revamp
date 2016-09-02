@@ -221,6 +221,7 @@
     <Content Include="Content\images\sp\navigation\sp_hamburger.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
+    <Content Include="Content\images\sp\OGP.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
     <Content Include="Content\images\sp\product\kiwi\banner.jpg" />
     <Content Include="Content\images\sp\product\kiwi\pack-refill-b.jpg" />
@@ -395,6 +396,7 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\share.js" />
     <Content Include="Scripts\singleInstanceYTvideo.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -502,8 +504,7 @@
     <Content Include="Views\Shared\_videoListPC.cshtml" />
     <Content Include="Views\Shared\_BINPopUp.cshtml" />
     <Content Include="Views\Shared\_specialInfo.cshtml" />
-    <Content Include="Views\Shared\_infoListPc.cshtml" />
-  </ItemGroup>
+	<Content Include="Views\Shared\_spResultsSNS.cshtml" />  </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
   </ItemGroup>
