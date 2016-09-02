@@ -1,6 +1,7 @@
 {
     groupName : 'Booster',
     groupkeyword : 'booster',
+    gacaKeyword : 'booster',
     bannerText : '',
     metaTitle : 'ブースター オイル トリートメント｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
     metaDescription : 'グレープシード、サンフラワーシードのフレグランスブレンド『ブースター オイル レシピ』のヘアケアラインナップをご紹介。うるおいとつやを豊富にふくんだオイルを、とろとろ濃厚なソースに仕立てて。',
@@ -19,11 +20,13 @@
             size:'30ml',
             description:'保湿効果の高いグレープシードオイルで、[sp-br]イキイキと美しい髪に。 ',
             howtouse:'',
-            sku:'booster-grape',
-            gaca : '',
+            sku:'booster-grape',            
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-booster_bin1',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_read1',
             columns :[ 
                 {        
                     header:'香り',
@@ -51,6 +54,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-booster_bin2',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt2',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_read2',
             columns :[ 
                 {        
                     header:'香り',
@@ -195,13 +201,13 @@
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin3'
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-grape',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin4'
                 }                
             ]            
         },
@@ -215,13 +221,13 @@
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin5'
                 },
                 {
                     jpTitle1 : 'サンフラワー シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-seed',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin6'
                 }                
             ]            
         },
@@ -235,13 +241,13 @@
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin7'
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-grape',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin8'
                 }                
             ]            
         },
@@ -255,13 +261,13 @@
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin9'
                 },
                 {
                     jpTitle1 : 'サンフラワー シード <br/>ブースター オイル レシピ  ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-seed',
-                    gaca : ''
+                    gaca : 'pc_hairrepi_20161001_product-booster_bin10'
                 }                
             ]            
         }        

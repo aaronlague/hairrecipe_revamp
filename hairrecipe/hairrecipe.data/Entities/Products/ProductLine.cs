@@ -9,7 +9,8 @@ namespace hairrecipe.data.Entities.Products
     public class ProductLine
     {
         public string GroupName { get; set; }
-        public string GroupKeyword { get; set; }     
+        public string GroupKeyword { get; set; }
+        public string GACAKeyword { get; set; }     
         public string MetaTitle { get; set; }
         public string MetaDescription { get; set; }
         public string MetaKeyword { get; set; }

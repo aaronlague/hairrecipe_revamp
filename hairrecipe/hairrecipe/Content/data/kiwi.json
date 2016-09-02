@@ -1,6 +1,7 @@
 {
     groupName : 'Kiwi',
     groupkeyword : 'kiwi',
+    gacaKeyword : 'kiwi',
     bannerText : '',
     metaTitle : 'キウイ エンパワー ボリューム レシピ｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
     metaDescription : '"キウイといちじく、レモンソースのフレグランスブレンド『キウイエンパワーボリュームレシピ』のシャンプー、トリートメントをご紹介。フルーティなキウイと爽やかないちじくで、髪にたっぷりのハリとコシを。"',
@@ -24,6 +25,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin1',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-kiwi_review_wrigt1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-kiwi_review_read1',
             columns :[ 
                 {        
                     header:'添加',
@@ -61,6 +65,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin2',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-kiwi_review_wrigt2',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-kiwi_review_read2',
             columns :[ 
                 {        
                     header:'添加',
@@ -97,6 +104,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin3',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-kiwi_review_wrigt3',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-kiwi_review_read3',
             columns :[ 
                 {        
                     header:'添加',
@@ -137,6 +147,9 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin4',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         },
         {
@@ -157,6 +170,9 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin5',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         },
         {
@@ -177,6 +193,9 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin6',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         }        
     ]

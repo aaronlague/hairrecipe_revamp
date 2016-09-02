@@ -1,6 +1,7 @@
 {
     groupName : 'Apricot',
     groupkeyword : 'apricot',
+    gacaKeyword : 'apri',
     bannerText : '',
     metaTitle : 'ハニー アプリコット エンリッチ モイスチャー レシピ｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
     metaDescription : 'アプリコットとハチミツ、バニラのフレグランスブレンド『ハニーアプリコットエンリッチモイスチャーレシピ』のヘアケアラインナップをご紹介。華やかな味わいのアプリコットにとろけるハニー、髪に豊かなつやとうるおいを。',
@@ -24,6 +25,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin1',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-kiwi_review_wrigt1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-kiwi_review_read1',
             columns :[ 
                 {        
                     header:'添加',

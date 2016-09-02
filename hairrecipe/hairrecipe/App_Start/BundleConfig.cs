@@ -22,6 +22,7 @@ namespace hairrecipe
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/jasny-bootstrap.js",
                         "~/Content/js/main.pc.js",
+                        "~/Content/js/gaca.js",
                         "~/Content/js/bin.js"
                         ));
 
