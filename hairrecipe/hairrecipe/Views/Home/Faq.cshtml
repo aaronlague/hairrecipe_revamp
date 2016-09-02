@@ -1,6 +1,260 @@
 ﻿@{
-    ViewBag.Title = "Faq";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "よくあるご質問｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Description = "HAIR RECIPE（ヘアレシピ)についてよく頂くご質問と回答がご覧いただけます。";
+    Layout = "~/Views/Shared/_Layout.cshtml";    
 }
 
-<h2>Faq</h2>
+@section customStyles
+{
+    <link href="~/Content/pc-css/faq.css" rel="stylesheet" />
+}
+
+<div class="banner-about">
+    <img src="~/Content/images/pc/faq/banner-faq.jpg" />
+    <h1>Q&amp;A</h1>
+</div>
+<div class="wall-hp pb60">
+    <div class="container faq-main">
+        @*-----===QA1===-----*@
+        <div data-toggle="collapse" data-target="#q1">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                ヘアレシピの名前の由来は？
+            </div>
+        </div>
+        <div id="q1" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                ヘアレシピはブランド哲学として「一つ一つの素材以上にレシピこそが重要である」と掲げています。素材を厳選することは勿論、<br>それらをいかにミックスし、シナジーを生み出すかのレシピを最重要視しているという思いをこめて、「ヘアレシピ」と名付けました。
+            </div>
+        </div>
+
+        @*-----===QA2===-----*@
+        <div data-toggle="collapse" data-target="#q2">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                髪に良いものが製品に含まれているのですか？
+            </div>
+        </div>
+        <div id="q2" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                ヘアレシピの成分の中には、植物性油や菜種油のように、天然由来成分のものが含まれています。また、ヘアレシピは原料だけではなく、そのレシピも大切にしております。処方は独自のテクノロジーにより、素材の力を引き出す最適な処方を考えました。
+            </div>
+        </div>
+
+        @*-----===QA3===-----*@
+        <div data-toggle="collapse" data-target="#q3">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                製品毎の役割は何でしょうか？
+            </div>
+        </div>
+        <div id="q3" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                <a href="index.html/#A"><u>製品情報ページ</u></a>をご覧ください。
+
+            </div>
+        </div>
+
+        @*-----===QA4===-----*@
+        <div data-toggle="collapse" data-target="#q4">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                製品を使う時に何か心がけることはありますか？
+            </div>
+        </div>
+        <div id="q4" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                正しい使い方をサイトでご案内しています。<a href="index.html/#A"><u>こちらのリンク</u></a>からご覧ください。
+            </div>
+        </div>
+
+        @*-----===QA5===-----*@
+        <div data-toggle="collapse" data-target="#q5">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                男性なのですが使っても問題ないのでしょうか?
+            </div>
+        </div>
+        <div id="q5" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                性別、年齢を問わず、お使いになれます。
+            </div>
+        </div>
+
+        @*-----===QA6===-----*@
+        <div data-toggle="collapse" data-target="#q6">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                ミントブレンド クレンジング レシピはどうして毎日使ってはいけないのでしょうか?
+            </div>
+        </div>
+        <div id="q6" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                クレンジング力が高いものですので、頭皮に必要な皮脂を取り過ぎないためにも週1～2回の使用がお勧めです。
+            </div>
+        </div>
+
+        @*-----===QA7===-----*@
+        <div data-toggle="collapse" data-target="#q7">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                製品に関しての問い合わせをしたいのですが。
+            </div>
+        </div>
+        <div id="q7" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                製品に関するお問い合わせは下記窓口までご連絡ください。<br />
+                【Ｐ＆Ｇヘアケアお客様相談室】<br>
+                0120-021327 祝日・年末年始を除く月曜～金曜 （午前9時15分～午後5時）
+            </div>
+        </div>
+
+        @*-----===QA8===-----*@
+        <div data-toggle="collapse" data-target="#q8">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                成分について詳しく教えてください。
+            </div>
+        </div>
+        <div id="q8" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                ヘアレシピのシャンプーはノンシリコン、ノンパラベン、鉱物油フリ―です。
+            </div>
+        </div>
+
+        @*-----===QA9===-----*@
+        <div data-toggle="collapse" data-target="#q9">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                それぞれのシリーズの違いは何でしょうか?
+            </div>
+        </div>
+        <div id="q9" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                ハニー アプリコット エンリッチ モイスチャー レシピ はより潤いやしっとりした仕上がりがお好みの方にお勧めです。キウイ  エンパ<br>
+                ワー  ボリューム レシピは髪をふんわりさせたい方にお勧めです。ミントブレンド クレンジング レシピは週1～2回、ハニー アプリコッ<br>
+                ト エンリッチ モイスチャー レシピ シャンプー及びキウイ エンパワー ボリューム レシピ シャンプーの代わりに、より地肌をクレンジ<br>
+                ングするためにお使いください。                
+            </div>
+        </div>
+
+        @*-----===QA10===-----*@
+        <div data-toggle="collapse" data-target="#q10">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                なぜコンディショナーがないのですか。
+            </div>
+        </div>
+        <div id="q10" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                ヘアレシピのトリートメントはコンディショナーと同様の機能と働きをしますので、コンディショナーはご用意しておりません。
+            </div>
+        </div>
+
+        @*-----===QA11===-----*@
+        <div data-toggle="collapse" data-target="#q11">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                ミントブレンド クレンジング レシピの使い方を教えてください 。
+            </div>
+        </div>
+        <div id="q11" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                指の腹で地肌をやさしくマッサージしながらシャンプーしてください。
+            </div>
+        </div>
+
+        @*-----===QA12===-----*@
+        <div data-toggle="collapse" data-target="#q12">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                どこで買えますか?
+            </div>
+        </div>
+        <div id="q12" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                お近くのドラッグストア等でご購入になれます。一部お取り扱いのない店舗もございます。
+            </div>
+        </div>
+
+        @*-----===QA13===-----*@
+        <div data-toggle="collapse" data-target="#q13">
+            <div class="col1 qa">
+                Q
+            </div>
+            <div class="col2 question">
+                トリートメントの後、ヘアフードマスク（洗い流すトリートメント）またはスカルプフィードエッセンス（洗い流さない<br>トリートメント）も使ったほうがいいですか？
+            </div>
+        </div>
+        <div id="q13" class="collapse bg">
+            <div class="col1 qa">
+                A
+            </div>
+            <div class="col2 answer">
+                <a href="/product/apricot.html"><u>ハニー アプリコット エンリッチ モイスチャー レシピ</u></a>のヘアフードマスク（洗い流すトリートメント）は、<a href="/product/apricot.html"><u>ハニー アプリコット エンリッチ モイスチャーレシピ</u></a>のトリートメントに合わせて使うことで、さらに潤ったなめらかな髪を叶えます。髪のコンディションにあわせて、週に1～2回の使用をおすすめします。<a href="/product/kiwi.html"><u>キウイ エンパワー ボリューム レシピ</u></a>のスカルプフィードエッセンス（洗い流さないトリートメント）は<a href="/product/kiwi.html"><u>キウイ エンパワー ボリューム レシピ</u></a>のトリートメントに合わせて使うことで、さらに髪にボリュームをもたらし、エネルギーあふれる弾む髪を叶えます。こちらの製品は毎日の使用をおすすめしています。
+            </div>
+        </div>
+
+    </div>
+    <a href="#" id="back-to-top" title="Back to top"><img src="~/Content/images/pc/back-to-top.png" /></a>
+</div>
