@@ -75,3 +75,17 @@
 }
 
 
+footer .specialInfo ul li  .bin {
+    float: left;
+    margin-left : 30px;
+}
+
+footer .specialInfo ul li .bin .bin-PopUp{
+    top: 50px;
+}
+
+footer .specialInfo ul li .bin .bin-PopUp ul{
+    padding: 0px 0 0 18px;
+}
+
+
