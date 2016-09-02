@@ -13,10 +13,10 @@
                     <img src="~/Content/images/pc/temp.rating.jpg" />
                     <ul>
                         <li>
-                            <a class="generic-btn">レビューを読む</a>
+                            <a class="generic-btn gaca-btn" gaca="@Model.ReviewWriteGACA">レビューを読む</a>
                         </li>
                         <li>
-                            <a class="generic-btn">レビューを書く</a>
+                            <a class="generic-btn gaca-btn" gaca="@Model.ReviewReadGACA">レビューを書く</a>
                         </li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
                 @if (Model.HasBIN)
                 {
                     <div class="bin">
-                        <a class="generic-btn shop to-shop-btn" sku="@Model.SKU">To Shop</a>
+                        <a class="generic-btn shop to-shop-btn gaca-btn" sku="@Model.SKU" gaca="@Model.BINGACA">To Shop</a>
                     </div>
                 }
             </div>

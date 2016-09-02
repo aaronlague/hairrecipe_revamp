@@ -10,6 +10,7 @@ namespace hairrecipe.data.Entities.Products
     {
         public string JpTitle1 { get; set; }
         public string JpTitle2 { get; set; }
+        public string GACA { get; set; }
         public string SKU { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 @font-face {font-family: 'Koburina Gothic W3 JIS2004';src: url('/fonts/31D781_0_0.eot');src: url('/fonts/31D781_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/31D781_0_0.woff2') format('woff2'),url('/fonts/31D781_0_0.woff') format('woff'),url('/fonts/31D781_0_0.ttf') format('truetype');}
 @font-face {font-family: 'Koburina Gothic W6 JIS2004';src: url('/fonts/31D781_0_0.eot');src: url('/fonts/31D781_0_0.eot?#iefix') format('embedded-opentype'),url('/fonts/31D781_0_0.woff2') format('woff2'),url('/fonts/31D781_0_0.woff') format('woff'),url('/fonts/31D781_0_0.ttf') format('truetype');}    
 @font-face {font-family: 'LubalinGraph-Book';src: url('/fonts/31D781_1_0.eot');src: url('/fonts/31D781_1_0.eot?#iefix') format('embedded-opentype'),url('/fonts/31D781_1_0.woff2') format('woff2'),url('/fonts/31D781_1_0.woff') format('woff'),url('/fonts/31D781_1_0.ttf') format('truetype');}
-
+ul, li{list-style : none;}
 
 body{
     color : #87847d;
@@ -115,7 +115,7 @@ footer a:visited{
     text-decoration : none;
 }
 footer .wrap{
-    width : 980px;
+    width : 1024px;
     margin : 0 auto;
 }
 footer section{
@@ -140,6 +140,7 @@ footer .specialInfo ul li.first{
 }
 footer .specialInfo ul li img{
     float : left;
+    width : auto;
 }
 footer .specialInfo ul li a{
     float : right;
@@ -147,7 +148,11 @@ footer .specialInfo ul li a{
 footer .sitemap{
     color : #fff;
 }
-footer a .sitema{
+footer .sitemap img{
+    color : #fff;
+    width : auto;
+}
+footer a .sitemap{
     font-size : 13px;
 }
 footer .sitemap .column{
@@ -184,6 +189,7 @@ footer .base ul li{
 }
 /* footer : end */
 /* Footer Banner : Start */
+
 .footer-banner{
     background : url("/Content/images/pc/footer-banner-bg.jpg");
     height : 553px;

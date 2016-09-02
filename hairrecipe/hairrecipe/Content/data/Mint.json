@@ -1,6 +1,7 @@
 {
     groupName : 'Mint',
     groupkeyword : 'mint',
+    gacaKeyword : 'mint',
     bannerText : '',
     metaTitle : 'ミントブレンド クレンジング レシピ｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
     metaDescription : 'いちごとミント、フレッシュジンジャーのフレグランスブレンド『ミントブレンドクレンジングレシピ』のご紹介。酸味のあるストロベリーと爽やかなミントで、髪と地肌にさっぱりディープクレンジング。',
@@ -24,6 +25,9 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-mint_bin1',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-mint_review_wrigt1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-mint_review_read1',
             columns :[ 
                 {        
                     header:'添加',

@@ -9,7 +9,6 @@ namespace hairrecipe.data.Entities.Products
     public class Product
     {
         public string SKU { get; set; }
-        public string GACA { get; set; }
         public string Name { get; set; }
         public string Line { get; set; }
         public string DesktopDirection { get; set; }
@@ -25,6 +24,9 @@ namespace hairrecipe.data.Entities.Products
         public bool IsActive { get; set; }
         public bool HasReview { get; set; }
         public bool HasBIN { get; set; }
+        public string BINGACA { get; set; }
+        public string ReviewReadGACA { get; set; }
+        public string ReviewWriteGACA { get; set; }
         public IList<Column> Columns { get; set; }
     }
 }
