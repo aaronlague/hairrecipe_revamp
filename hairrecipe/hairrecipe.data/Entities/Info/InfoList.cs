@@ -13,6 +13,7 @@ namespace hairrecipe.data.Entities.Info
         public string InfoTitle { get; set; }
         public string InfoDate { get; set; }
         public string InfoNews { get; set; }
+        public string InfoNews2 { get; set; }
         public string InfoClass { get; set; }
         public string InfoLink { get; set; }
     }

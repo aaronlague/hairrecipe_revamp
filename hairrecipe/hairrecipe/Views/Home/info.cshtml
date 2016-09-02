@@ -1,6 +1,25 @@
-﻿@{
-    ViewBag.Title = "info";
+﻿@model IEnumerable<hairrecipe.data.Entities.Info.InfoList>
+@{
+    ViewBag.Title = "このサイトについてNEWS｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Description = "HAIR RECIPE（ヘアレシピ)の新着・新発売情報とキャンペーン情報をお届けしています。新しいシャンプー・トリートメント情報、話題のイベントや最新コンテンツ、期間限定商品情報のほか、キャンペーンの詳細や、応募期間、応募方法などを詳しくご紹介しています。";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>info</h2>
+@section customStyles
+{
+    <link href="~/Content/pc-css/news.css" rel="stylesheet" />
+}
+
+<div class="banner-news">
+    <img src="~/Content/images/pc/info/banner-news.jpg" />
+    <h1>NEWS</h1>
+</div>
+<div class="wall-hp">
+    <div class="row content-news">
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_infoListPc", item);
+        }
+    </div>
+</div>
+<a href="#" id="back-to-top" title="Back to top"><img src="~/Content/images/pc/back-to-top.png" /></a>

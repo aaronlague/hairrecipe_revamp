@@ -11,6 +11,7 @@ using System.Web.Script.Serialization;
 using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
 using hairrecipe.data.Entities.CM;
+using hairrecipe.data.Entities.Info;
 using hairrecipe.data.Services;
 
 
@@ -142,7 +143,8 @@ namespace hairrecipe.Controllers
             else
             {
 
-                return View();
+                var returnList = JsonServices.QueryJsonListOfObject<InfoList>("/Content/data/InfoList.json");
+                return View(returnList);
             }
         }
 
