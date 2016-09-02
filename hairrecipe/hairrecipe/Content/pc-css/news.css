@@ -1,0 +1,51 @@
+﻿.banner-news {
+    position:relative;
+}
+
+.banner-news > h1 {
+    position:absolute;
+    top:50%;
+    right:50%;
+    margin-left:-50px;
+    margin-right:-50px;
+    font-family:Koburina Gothic W3 JIS2004;
+    color:white;
+    text-transform:uppercase;
+}
+
+.content-news {
+    width:980px;
+    margin:0 auto;
+    padding-top: 100px;
+}
+
+.info-content {
+    position:relative;
+}
+
+span.news-title {
+    float: left;
+    padding: 2px;
+    background: #87847d;
+    width: 100px;
+    text-align: center;
+    margin-top: 28px;
+    color:#fff;
+    font-size:13px;
+}
+
+span.news-date {
+    float: right;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    margin-top: 25px;
+    font-family:LubalinGraph-Book;
+    font-size: 19px;
+}
+
+.info-content p {
+    margin-top: 30%;
+    font-size: 1em;
+    height: 150px;
+}
