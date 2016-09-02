@@ -26,6 +26,7 @@
             hasReview : true,
             hasBIN : true,
             bingaca : 'pc_hairrepi_20161001_product-mint_bin1',
+            binStoreGaca : 'pc_hairrepi_20161001_product-mint_[store]',
             reviewReadGACA : 'pc_hairrepi_20161001_product-mint_review_wrigt1',
             reviewWriteGACA : 'pc_hairrepi_20161001_product-mint_review_read1',
             columns :[ 

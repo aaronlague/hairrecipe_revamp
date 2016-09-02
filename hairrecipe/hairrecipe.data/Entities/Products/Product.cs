@@ -25,6 +25,7 @@ namespace hairrecipe.data.Entities.Products
         public bool HasReview { get; set; }
         public bool HasBIN { get; set; }
         public string BINGACA { get; set; }
+        public string BINStoreGaca { get; set; }
         public string ReviewReadGACA { get; set; }
         public string ReviewWriteGACA { get; set; }
         public IList<Column> Columns { get; set; }

@@ -25,9 +25,10 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
-            bingaca : 'pc_hairrepi_20161001_product-kiwi_bin1',
-            reviewReadGACA : 'pc_hairrepi_20161001_product-kiwi_review_wrigt1',
-            reviewWriteGACA : 'pc_hairrepi_20161001_product-kiwi_review_read1',
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin1',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-apri_review_wrigt1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-apri_review_read1',
             columns :[ 
                 {        
                     header:'添加',
@@ -65,6 +66,10 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin2',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]_2',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-apri_review_wrigt2',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-apri_review_read2',
             columns :[ 
                 {        
                     header:'添加',
@@ -101,6 +106,10 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin3',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]_3',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-apri_review_wrigt3',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-apri_review_read3',
             columns :[ 
                 {        
                     header:'添加',
@@ -137,6 +146,10 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin4',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]_4',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         },
         {
@@ -157,6 +170,10 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin5',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]_5',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         },
         {
@@ -177,6 +194,10 @@
             isActive : true,
             hasReview : false,
             hasBIN : true,
+            bingaca : 'pc_hairrepi_20161001_product-apri_bin6',
+            binStoreGaca : 'pc_hairrepi_20161001_product-apri_[store]_6',
+            reviewReadGACA : '',
+            reviewWriteGACA : '',
             columns :[]
         }        
     ]
