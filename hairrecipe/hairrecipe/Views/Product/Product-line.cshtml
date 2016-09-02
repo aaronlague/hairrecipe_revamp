@@ -25,16 +25,16 @@
     }
 
     @if (Model.ProductListRefill != null && Model.ProductListRefill.Count > 0)
-{
-    <div class="refill">
-        <ul>
-            @foreach (var products in Model.ProductListRefill)
-            {
-                @Html.Partial("_ProductRefillBlock", products);
-            }
-        </ul>
-    </div>
-}   
+    {
+        <div class="refill">
+            <ul class="refill-ul">
+                @foreach (var products in Model.ProductListRefill)
+                {
+                    @Html.Partial("_ProductRefillBlock", products);
+                }
+            </ul>
+        </div>
+    }   
     @if (Model.CustomContent != null)
     {
         foreach (var customContent in Model.CustomContent)

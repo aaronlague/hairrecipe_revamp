@@ -1,6 +1,8 @@
-﻿.bin{
+﻿/* PC */
+
+.bin{
     position : relative;
-    width : 100%;
+    width : 180px;
 }
 
 .bin .null{
@@ -8,21 +10,14 @@
     display: block;
 }
 .bin .bin-PopUp{
-    display : none;
-    
-    background :  url('/Content/images/bins/bg.png');
+    display : none;    
+    background :  url('/Content/images/bins/pc.bg.png');
     background-repeat : no-repeat;
-    background-size : 100%;
     position : absolute;
-    width : 90%;
-    height : 260%;
-    top : 100%;
-    left : 4%;
-    right : 0;
+    width : 352px;
+    height : 118px;
+    left : -85px;
     z-index : 999999999999999;
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    border-radius: 3%;
 }
 .bin .bin-PopUp .arrow{
     display : block;
@@ -38,7 +33,7 @@
 }
 
 .bin .bin-PopUp ul{
-    padding: 7% 0 0 5%;
+    padding: 36px 0 0 20px;
     overflow : hidden;
     list-style : none;
 }
@@ -50,48 +45,47 @@
 
 
 /* BIN override */
-.page-footer .special-info .shop-btn.bin .bin-PopUp,
-.home .bin .bin-PopUp {
-    width : 100%;
-    left : 0%;
+.refill ul .bin .bin-PopUp ul{
+    padding: 36px 0 0 20px!important;
 }
-.page-footer .special-info .shop-btn.bin .bin-PopUp a img,
-.home .bin .bin-PopUp a img,
-#booster .comboSection .bin .bin-PopUp a img {
-    margin : 10% 0;
+.refill ul .bin {
+    width : auto;
 }
-#booster .comboSection .bin .bin-PopUp{
-    top: 89%;
-    height: 193%;
-}
-#booster .comboSection  .bin .bin-PopUp ul {
-    padding: 2% 0 0 5%;
+.refill ul .bin .bin-PopUp {
+    left: 0;
 }
 
-#booster .comboSection .bin .bin-PopUp ul li {
-    margin-right: 5%;
+.comboSection ul li .bin .bin-PopUp ul li {
+    width: 150px!important;
+    margin-right :10px!important;
 }
 
-.reco_recipe-main .bin .bin-PopUp ul {
-    padding: 10% 0 0 5%;
-    overflow: hidden;
-    list-style: none;
+.comboSection ul li .bin .bin-PopUp ul li {
+    width: 150px!important;
+    margin-right :10px!important;
 }
 
-.cm-main .bin .bin-PopUp{
-    width: 107%;
-    top: 72%;
-    left: -5%;
+.cm-content .bin{
+    width : auto;
 }
 
-.cm-main .bin .bin-PopUp ul {
-    padding: 11% 0 0 5%;
-}
-
-.diagnosis .bin .bin-PopUp ul {
-    padding: 11% 0 0 5%;
+.cm-content .bin .bin-PopUp{
+    left : 50%;
+    margin-left : -176px;
 }
 
 
+footer .specialInfo ul li  .bin {
+    float: left;
+    margin-left : 30px;
+}
+
+footer .specialInfo ul li .bin .bin-PopUp{
+    top: 50px;
+}
+
+footer .specialInfo ul li .bin .bin-PopUp ul{
+    padding: 0px 0 0 18px;
+}
 
 
