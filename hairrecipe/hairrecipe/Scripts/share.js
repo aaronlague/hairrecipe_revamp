@@ -13,10 +13,10 @@ function shareToFaceboook(d) {
     var targetUrl = '';
 
     fbDetails = {
-                picture: 'http://i.imgur.com/ZnxbzLg.jpg',
-                name: '髪に、ごちそう。',
-                caption: '【ヘアレシピ ｜秘密のレシピ公開中 】 ',
-                description: '新ブランド、ごちそうシャンプー　ヘアレシピ誕生！<center></center>栄養士× ヘアエキスパート共同開発コンセプト。<center></center>髪に、ごちそうフルコースを召し上がれ。あなたにピッタリなごちそうレシピは？<center></center>http://hairrecipe.jp <center></center> <center></center>ヘアレシピ ',
+                picture: baseUrl + '/Content/images/sp/OGP.png',
+                name: '',
+                caption: '',
+                description: '髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ ',
 
             }
 

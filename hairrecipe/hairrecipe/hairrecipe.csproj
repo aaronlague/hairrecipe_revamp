@@ -221,6 +221,7 @@
     <Content Include="Content\images\sp\navigation\sp_hamburger.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
+    <Content Include="Content\images\sp\OGP.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
     <Content Include="Content\images\sp\product\kiwi\banner.jpg" />
     <Content Include="Content\images\sp\product\kiwi\pack-refill-b.jpg" />
