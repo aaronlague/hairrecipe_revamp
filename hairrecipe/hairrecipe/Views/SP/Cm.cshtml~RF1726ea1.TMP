@@ -35,7 +35,7 @@
                     <h2>HAIR RECIPE LINEUP</h2>
                     <h3>つやとうるおいの <br />アプリコットハニー</h3>
                     <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-01.png" />
-                    <a href="/product/apricot.html" class="btn to-read-btn gaca-btn" gaca="sp_hairrepi_20161001_cm_apri">ハニー アプリコット エンリッチ<br />モイスチャー レシピ</a>
+                    <a href="/product/apricot.html" class="btn to-read-btn gaca-btn" gaca="">ハニー アプリコット エンリッチ<br />モイスチャー レシピ</a>
                 </div>
             </div>
             <div class="cm-lineup-two text-center">
@@ -43,7 +43,7 @@
                     <h2>HAIR RECIPE LINEUP</h2>
                     <h3>ふんわりうるおいの <br />キウイいちじく</h3>
                     <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-02.png" />
-                    <a href="/product/kiwi.html" class="btn to-read-btn gaca-btn" gaca="sp_hairrepi_20161001_cm_kiwi">キウイ エンパワー<br />ボリューム レシピ</a>
+                    <a href="/product/kiwi.html" class="btn to-read-btn gaca-btn" gaca="">キウイ エンパワー<br />ボリューム レシピ</a>
                 </div>
             </div>
             <div class="cm-lineup-three text-center">
@@ -51,7 +51,7 @@
                     <h2>HAIR RECIPE LINEUP</h2>
                     <h3>地肌クレンジングのいちごミント</h3>
                     <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-03.png" />
-                    <a href="/product/mint.html" class="btn to-read-btn gaca-btn" gaca="sp_hairrepi_20161001_cm_mint">ミントブレンド<br />クレンジング レシピ</a>
+                    <a href="/product/mint.html" class="btn to-read-btn gaca-btn" gaca="">ミントブレンド<br />クレンジング レシピ</a>
                 </div>
             </div>
             <div class="cm-lineup-four text-center">
@@ -60,12 +60,12 @@
                     <h3>うるおいアップのグレープシード<br />ブースター オイル<br />つやアップのサンフラワーシード<br />ブースター オイル </h3>
                     <p>トリートメントとまぜて効果アップ！ <br />洗い流さないトリートメントとしても使える！</p>
                     <img class="img-fluid lazy" data-original="/Content/images/sp/cm/recipe-line-up-04.png" />
-                    <a href="/product/booster.html" class="btn to-read-btn single-line gaca-btn" gaca="sp_hairrepi_20161001_cm_booster_2">ブースター オイル レシピ</a>
+                    <a href="/product/booster.html" class="btn to-read-btn single-line gaca-btn" gaca="">ブースター オイル レシピ</a>
                 </div>
             </div>
             <div class="cm-lineup-five stitch-s text-center">
                 <div class="inner">
-                    <a href="/diagnosis/index.html" class="gaca-btn" gaca="sp_hairrepi_20161001_cm_juicy"><img class="img-fluid lazy" data-original="/Content/images/sp/cm/cm-27.jpg" /></a>
+                    <a href="/diagnosis/index.html"><img class="img-fluid lazy" data-original="/Content/images/sp/cm/cm-27.jpg" /></a>
                 </div>
             </div>
             <div></div>

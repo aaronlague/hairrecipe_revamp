@@ -23,8 +23,10 @@ window.isohub = window.isohub || {};
     GATAG : gaca
     PLATFORM : Mobile or Desktop
     APPENDOBJ :  element where to append the BIN Popup
+    CALLER : the element triggered the script
     */
     app.ShowHideBin = function (SKU, PLATFORM, APPENDOBJ, CALLER) {
+        if (typeof SKU === undefined ) { return false}
         //Check if theres an existing popup, but dont know where it is
         if ($(".bin .bin-PopUp").length > 0) {
             //check if theres a popup in your target space
@@ -61,7 +63,7 @@ window.isohub = window.isohub || {};
                     //loop the anchors and add the bin contents
                     $(dom).find('.bin-links').each(function (i, obj) {
                         var gaca = CALLER.attr("binbtngaca"); //get bin from the button
-                        var eventLabel = CALLER.attr("eventLabel"); //get the event from the button
+                        var eventLabel = CALLER.attr("binEventLabel"); //get the event from the button
                         var store = $(obj).attr("store");// get the store keyword                 
                         //pass parameters and construct the bin script and add it to the anchor
                         $(obj).attr("onlick", isohub.GACA.CreatBINGACA(gaca, store, eventLabel)); 

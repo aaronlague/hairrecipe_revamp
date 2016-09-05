@@ -48,7 +48,6 @@
     margin-right : 5%;
 }
 
-
 /* BIN override */
 
 
@@ -93,7 +92,7 @@
 }
 
 .reco_recipe-main .bin .bin-PopUp ul {
-    padding: 10% 0 0 5%;
+    padding: 12% 0 0 5%;
     overflow: hidden;
     list-style: none;
 }
@@ -113,6 +112,22 @@
 }
 
 
+
+.bin .bin-PopUp.solo {
+    width: 62%;
+    left: 17%;
+}
+
+.bin .bin-PopUp.solo ul {
+    width: 100%;
+    padding: 9% 0 0 5%;
+}
+.bin .bin-PopUp.solo ul li{
+    width:59%;
+    margin-left: 18%;
+}
+
+
 /*  */
 @media only screen and (max-width: 414px) {
     .bin .bin-PopUp {
@@ -121,7 +136,7 @@
 }
 @media only screen and (max-width: 320px) {
     .bin .bin-PopUp {
-        /**/
+        height: 203%;
     }
 }
 

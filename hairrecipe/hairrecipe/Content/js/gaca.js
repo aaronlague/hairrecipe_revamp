@@ -36,8 +36,12 @@ window.isohub = window.isohub || {};
         Loops all that dom, get the attribute and use it to construct a new onclick event
     */
     app.AlterElement = function () {
-        $('.gaca-btn').each(function (i, obj) {            
+        $('.gaca-btn').each(function (i, obj) {
             var GACA = $(obj).attr("gaca");
+            if (typeof GACA === 'undefined' || GACA === null) {
+                console.log('gaca undefined');
+                return null;
+            }
             var EVENTLABEL = $(obj).attr("eventlabel");
             EVENTLABEL = (typeof EVENTLABEL !== 'undefined') ? EVENTLABEL : 'internal';
             $(obj).removeAttr("gaca");

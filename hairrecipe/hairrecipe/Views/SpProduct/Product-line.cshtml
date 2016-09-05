@@ -5,6 +5,7 @@
     ViewBag.Title = Model.MetaTitle;
     ViewBag.Description = Model.MetaDescription;
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+    ViewData["GACAKeyword"] = Model.GroupKeyword;
 }
 
 @section customStyles
@@ -40,9 +41,9 @@
 @{ 
     string[,] contents = new string[,]
 	{
-        { Model.FooterBannerBackground, "", "" },
-	    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"},
-	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
+        { Model.FooterBannerBackground, "", "", "" },
+	    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック", "sp_hairrepi_20161001_product-"+Model.GroupKeyword+"_diagnosis"},
+	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで", "sp_hairrepi_20161001_product-"+Model.GroupKeyword+"_your-recipe"},
 
 	};
     Html.RenderPartial("_FootBannerSp", contents);  
