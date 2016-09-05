@@ -5,7 +5,7 @@
 .banner-about > h1 {
     position:absolute;
     top:50%;
-    right:47%;
+    right:51%;
     margin-left:-50px;
     margin-right:-50px;
     font-family:Koburina Gothic W3 JIS2004;
@@ -92,6 +92,7 @@ h2.page-title {
   vertical-align: middle;
   font-family: 'Koburina Gothic W3 JIS2004';
   /*float:left;*/
+  line-height: 1.8em;
 }
 
 .col1 {
@@ -106,7 +107,7 @@ h2.page-title {
     font-family: 'Koburina Gothic W3 JIS2004';
     background: url(../images/sp/faq/arrow-down.png) right 40px center no-repeat;
     /*background:yellow;*/
-    font-size:16px;
+    font-size:1em;
 }
 
 
@@ -150,4 +151,6 @@ h2.page-title {
     background: url(../images/sp/faq/bg2.jpg) right 20px center repeat;
 }
 
-
+.wall-hp {
+  background: rgba(0, 0, 0, 0) url("/Content/images/pc/faq/wall-hp2.jpg") repeat scroll 0 0;
+}
