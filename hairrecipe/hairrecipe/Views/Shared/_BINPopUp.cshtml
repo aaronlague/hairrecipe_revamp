@@ -1,7 +1,11 @@
 ﻿@model hairrecipe.data.Entities.BUYITNOW.BIN
 
 @{
-    string classStoreCtr =  (Model.Stores.Count > 1)? "multi" : "solo";
+    string classStoreCtr = string.Empty;
+    if (Model.Stores != null)
+    {
+        classStoreCtr =  (Model.Stores.Count > 1)? "multi" : "solo";
+    }
 }
 
 <div class="bin-PopUp @classStoreCtr">
