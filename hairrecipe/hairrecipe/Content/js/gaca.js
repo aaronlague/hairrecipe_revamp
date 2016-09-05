@@ -32,7 +32,8 @@ window.isohub = window.isohub || {};
         typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', EventLabel, GACode]);
     },
     /*
-
+        Alters all the element that has .gaca-btn class on page load
+        Loops all that dom, get the attribute and use it to construct a new onclick event
     */
     app.AlterElement = function () {
         $('.gaca-btn').each(function (i, obj) {            
@@ -44,9 +45,21 @@ window.isohub = window.isohub || {};
             $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA + "'])");
         });
     },
-    app.CreatBINGACA = function (gaca, storeKeyword) {
-        var newgaca = gaca.replace("[store]", storeKeyword);
-        return "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + newgaca + "']);";
+    /*
+        Create the BIN script for BIN's individual store
+        GACA :  GA code
+        StoreKeyword : store keyword ex. amazon, lohaco, etc.
+        EventLabel : optional* will be set to internal if null
+    */
+    app.CreatBINGACA = function (GACA, StoreKeyword, EventLabel)
+    {
+        if (typeof GACA === 'undefined' || GACA === null) {
+            console.log('gaca undefined');
+            return null;
+        }
+        EventLabel = (typeof EventLabel !== 'undefined') ? EventLabel : 'internal';       
+        var newgaca = GACA.replace("[store]", StoreKeyword);
+        return "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EventLabel + "', '" + newgaca + "']);";
     },
     app.SetUp = function () {
         //no script

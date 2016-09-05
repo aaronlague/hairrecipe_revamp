@@ -50,6 +50,26 @@
 
 
 /* BIN override */
+
+
+
+
+.carousel-inner{
+    overflow : visible;
+}
+#myCarousel .carousel-inner .bin .bin-PopUp  {
+    left: -13%;
+    top : 86%;
+    width: 125%;
+}
+#myCarousel .carousel-inner .bin .bin-PopUp ul {
+    padding: 11% 0 0 5%;
+}
+
+.home .col-md-12{
+    position : initial;
+}
+
 .page-footer .special-info .shop-btn.bin .bin-PopUp,
 .home .bin .bin-PopUp {
     width : 100%;
@@ -92,6 +112,18 @@
     padding: 11% 0 0 5%;
 }
 
+
+/*  */
+@media only screen and (max-width: 414px) {
+    .bin .bin-PopUp {
+        height: 272%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .bin .bin-PopUp {
+        /**/
+    }
+}
 
 
 
