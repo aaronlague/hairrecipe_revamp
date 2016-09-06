@@ -275,6 +275,7 @@
         sku : 'dgnsis-apricot',
         productName : 'diagnosis-apricot',
         stores :  [
+
             {
                 storeName : 'Amazon',
                 storeKeyword : 'amazon',
@@ -290,6 +291,28 @@
                 storeName : 'Amazon',
                 storeKeyword : 'amazon',
                 url :  'https://www.amazon.co.jp/dp/B01DNSC7O2/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            }          
+        ]
+    },
+    {
+        sku : 'footer-amazon',
+        productName : 'footer-amazon',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/b/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&node=3257396051&tag=pgjp_angelica-22'
+            }          
+        ]
+    },
+    {
+        sku : 'footer-lohaco',
+        productName : 'footer-lohaco',
+        stores :  [
+            {
+                storeName : 'lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/event/hairrecipe/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
             }          
         ]
     }

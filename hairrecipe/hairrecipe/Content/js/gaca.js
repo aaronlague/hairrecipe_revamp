@@ -63,8 +63,8 @@ window.isohub = window.isohub || {};
             $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
         });
         //return link
-        var keyInt = pageKeyword.substring(2, 1);
-        var returnKeyword = ((keyInt - 1) < 1 ? "top" : "q" + (keyInt - 1));
+        var keyInt = pageKeyword.substr(11, 1);
+        var returnKeyword = (parseInt(keyInt - 1) < 1 ? "top" : "q" + parseInt(keyInt - 1));
         var GACABaseTop = GACABase + pageKeyword + "_" + returnKeyword;
         $(".desc a").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABaseTop + "'])");
 

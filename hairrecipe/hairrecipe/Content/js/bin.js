@@ -26,7 +26,8 @@ window.isohub = window.isohub || {};
     CALLER : the element triggered the script
     */
     app.ShowHideBin = function (SKU, PLATFORM, APPENDOBJ, CALLER) {
-        if (typeof SKU === undefined ) { return false}
+
+        if (SKU === undefined ) { return false}
         //Check if theres an existing popup, but dont know where it is
         if ($(".bin .bin-PopUp").length > 0) {
             //check if theres a popup in your target space
