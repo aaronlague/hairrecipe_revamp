@@ -28,7 +28,7 @@ namespace hairrecipe.Controllers
             {
                 var model = new Diagnosis()
                 {
-                    QuestionsPartial = (question == null) ? "_diagnosisLanding" : question + "/" + page
+                    QuestionsPartial = (question == null) ? "_diagnosisLandingDesktop" : question + "/" + page
                 };
 
                 return View(model);

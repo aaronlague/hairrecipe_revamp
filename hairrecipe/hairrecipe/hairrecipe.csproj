@@ -221,7 +221,6 @@
     <Content Include="Content\images\sp\navigation\sp_hamburger.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-arrow-left.png" />
     <Content Include="Content\images\sp\navigation\sp_menu-close.png" />
-    <Content Include="Content\images\sp\OGP.png" />
     <Content Include="Content\images\sp\product\chalkboard.jpg" />
     <Content Include="Content\images\sp\product\kiwi\banner.jpg" />
     <Content Include="Content\images\sp\product\kiwi\pack-refill-b.jpg" />
@@ -283,6 +282,7 @@
     <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
+    <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
@@ -396,7 +396,6 @@
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
-    <Content Include="Scripts\share.js" />
     <Content Include="Scripts\singleInstanceYTvideo.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -468,7 +467,7 @@
     <Content Include="Views\Shared\_videoListSp.cshtml" />
     <Content Include="Views\Shared\_FootBannerSp.cshtml" />
     <Content Include="Views\Shared\_productListSp.cshtml" />
-    <Content Include="Views\Shared\_ProductSetBlock.SP.cshtml" />
+    <Content Include="Views\Shared\_setSp.cshtml" />
     <Content Include="Views\Sp\reco_recipe.cshtml" />
     <Content Include="Views\Sp\kodawari.cshtml" />
     <Content Include="Views\Home\kodawari.cshtml" />
@@ -501,10 +500,34 @@
     <Content Include="Views\Shared\result\15.Mobile.cshtml" />
     <Content Include="Views\Shared\result\16.Mobile.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
-    <Content Include="Views\Shared\_videoListPC.cshtml" />
     <Content Include="Views\Shared\_BINPopUp.cshtml" />
     <Content Include="Views\Shared\_specialInfo.cshtml" />
-	<Content Include="Views\Shared\_spResultsSNS.cshtml" />  </ItemGroup>
+    <Content Include="Views\Shared\_diagnosisLandingDesktop.cshtml" />
+    <Content Include="Views\Shared\q3\a1.cshtml" />
+    <Content Include="Views\Shared\q3\a2.cshtml" />
+    <Content Include="Views\Shared\q3\b1.cshtml" />
+    <Content Include="Views\Shared\q3\b2.cshtml" />
+    <Content Include="Views\Shared\q4\a1.cshtml" />
+    <Content Include="Views\Shared\q4\a2.cshtml" />
+    <Content Include="Views\Shared\q4\a3.cshtml" />
+    <Content Include="Views\Shared\q4\a4.cshtml" />
+    <Content Include="Views\Shared\q4\b1.cshtml" />
+    <Content Include="Views\Shared\q4\b2.cshtml" />
+    <Content Include="Views\Shared\q4\b3.cshtml" />
+    <Content Include="Views\Shared\q4\b4.cshtml" />
+    <Content Include="Views\Shared\q5\a1.cshtml" />
+    <Content Include="Views\Shared\q5\a2.cshtml" />
+    <Content Include="Views\Shared\q5\a3.cshtml" />
+    <Content Include="Views\Shared\q5\a4.cshtml" />
+    <Content Include="Views\Shared\q5\b1.cshtml" />
+    <Content Include="Views\Shared\q5\b2.cshtml" />
+    <Content Include="Views\Shared\q5\b3.cshtml" />
+    <Content Include="Views\Shared\q5\b4.cshtml" />
+    <Content Include="Views\Shared\q5\c1.cshtml" />
+    <Content Include="Views\Shared\q5\c2.cshtml" />
+    <Content Include="Views\Shared\q5\c3.cshtml" />
+    <Content Include="Views\Shared\q5\c4.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
   </ItemGroup>
@@ -539,7 +562,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:60937/</IISUrl>
+          <IISUrl>http://localhost:55656/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
