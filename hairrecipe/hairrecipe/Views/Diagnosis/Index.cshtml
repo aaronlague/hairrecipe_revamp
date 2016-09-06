@@ -3,7 +3,13 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<p>@ViewBag.question</p>
+@section customStyles
+{
+    <link href="~/Content/pc-css/diagnosis.css" rel="stylesheet" />
+}
+
+
+@*<p>@ViewBag.question</p>*@
 @{
 
     <div id="Details" class="diagnosis">
@@ -11,3 +17,4 @@
     </div>
 
 }
+
