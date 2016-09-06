@@ -1,4 +1,6 @@
-﻿<div class="result-7">
+﻿@{Session["diagnosisKeyword"] = "diagnosis-result7";}
+@Html.Hidden("pageKey", Session["diagnosisKeyword"])
+<div class="result-7">
     <div class="results-page-top">
         <p class="result-title">あなたの髪の<br />ジューシー度は</p>
         <div class="result-percentage">

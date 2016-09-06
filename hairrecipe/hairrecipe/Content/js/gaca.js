@@ -50,6 +50,36 @@ window.isohub = window.isohub || {};
         });
     },
     /*
+        customized function made only for diagnosis
+        Loops all that dom, get the attribute and use it to construct a new onclick event
+    */
+    app.DiagnosisAlterElement = function () {        
+        var pageKeyword = $("#pageKey").val();
+        var GACABase = "sp_hairrepi_20161001_";
+        //question block
+        $('.choices a').each(function (i, obj) {
+            var letterKey = $(obj).find(".title").html();
+            GACA = GACABase + pageKeyword + "_" + letterKey.toLowerCase();
+            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
+        });
+        //return link
+        var keyInt = pageKeyword.substring(2, 1);
+        var returnKeyword = ((keyInt - 1) < 1 ? "top" : "q" + (keyInt - 1));
+        var GACABaseTop = GACABase + pageKeyword + "_" + returnKeyword;
+        $(".desc a").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABaseTop + "'])");
+
+        //results Block
+        $('.content-block .bin .gaca-btn, .results-page-bottom .bin .gaca-btn').each(function (i, obj) {
+            GACA = GACABase + pageKeyword + "_" + "bin_" + parseInt(i + 1);
+            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
+        });
+        //result SNS
+        $(".results-sns .twitter-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
+        $(".results-sns .facebook-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
+        $(".results-sns .line-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");
+
+    },
+    /*
         Create the BIN script for BIN's individual store
         GACA :  GA code
         StoreKeyword : store keyword ex. amazon, lohaco, etc.

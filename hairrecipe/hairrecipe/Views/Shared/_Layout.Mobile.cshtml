@@ -43,7 +43,6 @@
     <div class="page-footer">
         <div class="container">
             <div class="row">
-                @ViewData["GACAKeyword"]= @(ViewData["GACAKeyword"] == null ? "hairrecipe" : ViewData["GACAKeyword"]);
                 @Html.Partial("_specialInfo", ViewData["GACAKeyword"])
             </div>
         </div>

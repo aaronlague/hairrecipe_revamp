@@ -44,10 +44,26 @@
 {
     <link href="~/Content/sp-css/mobile-results.css" rel="stylesheet" />
 }
+
+
+
 @{  
-    
     <div id="Details" class="diagnosis">
         @Html.Partial(Model.QuestionsPartial)
 
     </div>  
+    ViewData["GACAKeyword"] = Session["diagnosisKeyword"];
+    Session["diagnosisKeyword"] = null;
 }
+
+
+@section scripts
+{
+    <script type="text/javascript" />
+    isohub.GACA.DiagnosisAlterElement();
+    </script>
+}
+
+
+
+
