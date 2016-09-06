@@ -8,6 +8,7 @@
     footerBannerBackground : 'stitch-b',
     products : [
         {
+            sortId : 1,
             name:'grape',
             backgroundClass : 'wall',
             line:'Booster',
@@ -26,8 +27,8 @@
             hasBIN : true,
             bingaca : 'pc_hairrepi_20161001_product-booster_bin1',
             binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]',
-            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt1',
-            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_read1',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_read1',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt1 ',
             columns :[ 
                 {        
                     header:'香り',
@@ -38,6 +39,7 @@
             ]
         },
         {
+            sortId : 2,
             name:'seed',
             backgroundClass : 'stitch-s',
             line:'Booster',
@@ -57,8 +59,8 @@
             hasBIN : true,
             bingaca : 'pc_hairrepi_20161001_product-booster_bin2',
             binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_2',
-            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt2',
-            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_read2',
+            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_read2',
+            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt2',
             columns :[ 
                 {        
                     header:'香り',

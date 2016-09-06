@@ -1,16 +1,25 @@
 ﻿@model hairrecipe.data.Entities.BUYITNOW.BIN
-<div class="bin-PopUp">
-    @if ( Model != null && Model.Stores != null &&  Model.Stores.Count > 0)
+
+@{
+    string classStoreCtr = string.Empty;
+    if (Model.Stores != null)
     {
-        <ul>
-            @foreach (var Store in Model.Stores)
-            {
-                <li><a href="@Store.URL" store="@Store.StoreKeyword" class="bin-links"><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
-            }
-        </ul>
+        classStoreCtr =  (Model.Stores.Count > 1)? "multi" : "solo";
     }
-    else
-    {
+}
+
+<div class="bin-PopUp @classStoreCtr">
+@if (Model != null && Model.Stores != null && Model.Stores.Count > 0)
+{
+    <ul >
+        @foreach (var Store in Model.Stores)
+        {
+            <li><a href="@Store.URL" store="@Store.StoreKeyword" class="bin-links"><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
+        }
+    </ul>
+}
+else
+{
         <span class="null">NO STORES</span>
     }
 </div>

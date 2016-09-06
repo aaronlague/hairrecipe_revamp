@@ -1,9 +1,10 @@
 ﻿@{
     ViewBag.Title = "Q3 - a2";
+    Session["diagnosisKeyword"] = "diagnosis-q3_a";
 }
 
 <link href="~/Content/sp-css/mobile-diagnosis.css" rel="stylesheet" />
-
+@Html.Hidden("pageKey", Session["diagnosisKeyword"])
 <div class="diagnosis-main">
     <div class="inner">
         <div class="check">Check 3</div>

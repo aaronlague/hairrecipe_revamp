@@ -2,6 +2,7 @@
     ViewBag.Title = "YOUR RECIPE｜HAIR RECIPE（ヘアレシピ) | P&G";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)人気のおすすめシャンプー、トリートメント等レシピの組み合わせをご紹介。しっとり髪、ふんわり髪、まとまり髪、軽やか髪の4タイプ別に、オススメのシャンプー、トリートメント、オイル、ヘアマスクの効果的な組み合わせが分かります。";
+    ViewData["GACAKeyword"] = "your-recipe";
 }
 @section customStyles
 {
@@ -28,22 +29,22 @@
                 <div class="section1">
                     <img src="~/Content/images/sp/reco/2.jpg" />
                     <div class="inner">
-                        <a href="#A" class="linkA">
+                        <a href="#A" class="linkA gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_recipe1">
                             <span class="title">RECIPE 1</span><br />
                             <p>しっとり髪</p>
                             <span class="desc">になりたい！</span>
                         </a>       
-                        <a href="#B" class="linkB">
+                        <a href="#B" class="linkB gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_recipe2">
                             <span class="title">RECIPE 2</span><br />
-                             <p>ふんわり髪</p>
+                            <p>ふんわり髪</p>
                             <span class="desc">になりたい！</span>
                         </a> 
-                        <a href="#C" class="linkC">
+                        <a href="#C" class="linkC gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_recipe3">
                             <span class="title">RECIPE 3</span><br />
                             <p>まとまり髪</p>
                             <span class="desc">になりたい！</span>
                         </a>
-                        <a href="#D" class="linkD">
+                        <a href="#D" class="linkD gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_recipe4">
                             <span class="title">RECIPE 4</span><br />
                             <p>軽やか髪</p>
                             <span class="desc">になりたい！</span>
@@ -73,7 +74,7 @@
                                 [クレンジングシャンプー]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="mint-cleansing" class="btn to-shop-btn">
+                                <a sku="mint-cleansing" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin1" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -83,7 +84,7 @@
                                 [トリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="apricot-treatment" class="btn to-shop-btn">
+                                <a sku="apricot-treatment" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin2" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_2"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -93,7 +94,7 @@
                                 [洗い流すトリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="apricot-mask" class="btn to-shop-btn">
+                                <a sku="apricot-mask" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin3" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_3"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -123,7 +124,7 @@
                                 [クレンジングシャンプー]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="mint-cleansing" class="btn to-shop-btn">
+                                <a sku="mint-cleansing" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin4" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_4"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -132,7 +133,7 @@
                                 [トリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="kiwi-treatment" class="btn to-shop-btn">
+                                <a sku="kiwi-treatment" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin5" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_5"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -142,7 +143,7 @@
                                 [洗い流さないトリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="kiwi-scalp" class="btn to-shop-btn">
+                                <a sku="kiwi-scalp" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin6" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_6"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -173,7 +174,7 @@
                                 ［シャンプー］
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="apricot-shampoo" class="btn to-shop-btn">
+                                <a sku="apricot-shampoo-reco" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin7" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_7"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -183,7 +184,7 @@
                                 [トリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="apricot-treatment" class="btn to-shop-btn">
+                                <a sku="apricot-treatment" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin8" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_8"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -193,7 +194,7 @@
                                 [洗い流さないトリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="booster-grape" class="btn to-shop-btn">
+                                <a sku="booster-grape" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin9" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_9"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -222,7 +223,7 @@
                                 ［シャンプー］
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="kiwi-shampoo" class="btn to-shop-btn">
+                                <a sku="kiwi-shampoo" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin10" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_10"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -231,7 +232,7 @@
                                 [トリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="kiwi-treatment" class="btn to-shop-btn">
+                                <a sku="kiwi-treatment" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin11" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_11"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>
@@ -241,7 +242,7 @@
                                 [洗い流さないトリートメント]
                             </p>
                             <div class="shop-btn bin">
-                                <a sku="grape-seed" class="btn to-shop-btn">
+                                <a sku="booster-seed" class="btn to-shop-btn gaca-btn" gaca="sp_hairrepi_20161001_your-recipe_bin12" binbtngaca="sp_hairrepi_20161001_your-recipe_[store]_12"  binEventLabel="external">
                                     To Shop
                                 </a>
                             </div>                            
@@ -257,8 +258,8 @@
                 @{ 
                     string[,] contents = new string[,]
 	                {
-                        { "stitch-b", "", "" },
-	                    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"}
+                        { "stitch-b", "", "", "" },
+	                    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック", "sp_hairrepi_20161001_your-recipe_diagnosis"}
 
 	                };
                     Html.RenderPartial("_FootBannerSp", contents);  

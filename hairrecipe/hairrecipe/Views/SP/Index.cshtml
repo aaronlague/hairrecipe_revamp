@@ -4,6 +4,7 @@
     ViewBag.Title = "HAIR RECIPE（ヘアレシピ) | P&amp;G";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
     ViewBag.Description = "そのレシピは、美となり髪となる。あなたが食べたものから、あなたはできている。このシンプルで普遍的な考えから。ヘアレシピは誕生しました。";
+    ViewData["GACAKeyword"] = "top";
 }
 
 @section customStyles
@@ -36,9 +37,9 @@
                     @{ 
                         string[,] contents = new string[,]
 	                    {
-                            { "", "", "" },
-	                        {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック"},
-	                        {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
+                            { "", "", "", "" },
+	                        {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック", "sp_hairrepi_20161001_top_diagnosis"},
+	                        {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで", "sp_hairrepi_20161001_top_your-recipe"},
 
 	                    };
                         Html.RenderPartial("_FootBannerSp", contents);  
@@ -57,7 +58,7 @@
             <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
         </div>
         <div class="life-splash">
-            <a href="https://www.instagram.com/hairrecipe_official" target="_blank">
+            <a href="https://www.instagram.com/hairrecipe_official" target="_blank" class="gaca-btn" gaca="sp_hairrepi_20161001_top_life_with">
                 <img class="lazy" data-original="/Content/images/sp/home/sp_life-with-hairrecipe.jpg" />
             </a>
         </div>
@@ -68,7 +69,7 @@
         <div class="spoon-h">
             <img class="lazy" data-original="/Content/images/sp/home/sp_hp-spoon-wood.png" />
         </div>
-        <a href="/sp/info/index.html#a">
+        <a href="/sp/info/index.html#a" class="gaca-btn" gaca="sp_hairrepi_20161001_top_news_1">
             <div class="news-splash">
                 <img class="lazy" data-original="/Content/images/sp/sp_diagnosis-thumbnail.png" alt="あなたの髪、うるおっている？ジューシー度チェック" />
             </div>
@@ -84,7 +85,7 @@
         <div class="news-content-wrapper">
             <div class="news-content">
 
-                <a href="/sp/info/index.html#b">
+                <a href="/sp/info/index.html#b" class="gaca-btn" gaca="sp_hairrepi_20161001_top_news_2">
                     <div class="news">
                         <img class="lazy" data-original="/Content/images/sp/home/sp_news-thumb-1.jpg" alt="冬の髪に、旬のレシピいかがですか？ 売り切れ御礼！おかげさまで、完売しました。" />
                         <p class="text">
@@ -96,7 +97,7 @@
                 </a>
                 
 
-                <a href="/sp/info/index.html#c">
+                <a href="/sp/info/index.html#c" class="gaca-btn" gaca="sp_hairrepi_20161001_top_news_3">
                     <div class="news">
                         <img class="lazy" data-original="/Content/images/sp/home/sp_news-thumb-2.jpg" alt="数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！" />
                         <p class="text">
@@ -108,7 +109,7 @@
                 </a>
                 
 
-                <a href="/sp/info/index.html#d">
+                <a href="/sp/info/index.html#d" class="gaca-btn" gaca="sp_hairrepi_20161001_top_news_4">
                     <div class="news">
                         <img class="lazy" data-original="/Content/images/sp/home/sp_news-thumb-3.jpg" alt="ついに登場！詰め替え用シャンプー＆トリートメント！" />
                         <p class="text">
@@ -122,7 +123,7 @@
             </div>
         </div>
         <div class="centered-btn">
-            <a href="/sp/info/index.html" class="btn generic-btn">
+            <a href="/sp/info/index.html" class="btn generic-btn gaca-btn" gaca="sp_hairrepi_20161001_top_news_archive">
                 Archive
             </a>
         </div>
@@ -138,7 +139,7 @@
             <div class="hide" id="player"></div>
         </div>
         <div class="centered-btn">
-            <a href="/sp/cm/index.html" class="btn generic-btn">
+            <a href="/sp/cm/index.html" class="btn generic-btn gaca-btn" gaca="sp_hairrepi_20161001_top_cm_other">
                 Watch other movies
             </a>
         </div>

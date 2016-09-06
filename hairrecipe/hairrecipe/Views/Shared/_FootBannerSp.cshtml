@@ -9,12 +9,13 @@
 	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで"},
 -->
 <div class="footer-banner @Model[0, 0] ">
-    @for (int i = 1; i < (Model.Length / 3); i++)
+    @for (int i = 1; i < (Model.Length / 4); i++)
     {
         string link = Model[i, 0];
         string img = Model[i, 1];
         string alt = Model[i, 2];
-        <a href="@link">
+        string gaca = Model[i, 3];
+        <a href="@link" class="gaca-btn" gaca="@gaca">
             <img class="lazy" data-original="/Content/images/sp/@img" alt="@alt" />
         </a>
     }

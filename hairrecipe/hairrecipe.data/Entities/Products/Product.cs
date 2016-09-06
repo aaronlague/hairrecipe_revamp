@@ -8,6 +8,7 @@ namespace hairrecipe.data.Entities.Products
 {
     public class Product
     {
+        public Int16 SortId { get; set; }
         public string SKU { get; set; }
         public string Name { get; set; }
         public string Line { get; set; }

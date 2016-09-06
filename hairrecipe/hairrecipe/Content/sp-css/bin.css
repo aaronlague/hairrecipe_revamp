@@ -48,8 +48,27 @@
     margin-right : 5%;
 }
 
-
 /* BIN override */
+
+
+
+
+.carousel-inner{
+    overflow : visible;
+}
+#myCarousel .carousel-inner .bin .bin-PopUp  {
+    left: -13%;
+    top : 86%;
+    width: 125%;
+}
+#myCarousel .carousel-inner .bin .bin-PopUp ul {
+    padding: 11% 0 0 5%;
+}
+
+.home .col-md-12{
+    position : initial;
+}
+
 .page-footer .special-info .shop-btn.bin .bin-PopUp,
 .home .bin .bin-PopUp {
     width : 100%;
@@ -73,7 +92,7 @@
 }
 
 .reco_recipe-main .bin .bin-PopUp ul {
-    padding: 10% 0 0 5%;
+    padding: 12% 0 0 5%;
     overflow: hidden;
     list-style: none;
 }
@@ -92,6 +111,39 @@
     padding: 11% 0 0 5%;
 }
 
+
+
+.bin .bin-PopUp.solo {
+    width: 62%;
+    left: 17%;
+}
+
+.bin .bin-PopUp.solo ul {
+    width: 100%;
+    padding: 9% 0 0 5%;
+}
+.bin .bin-PopUp.solo ul li{
+    width:59%;
+    margin-left: 18%;
+}
+
+
+.page-footer .bin .bin-PopUp.solo ul{
+    padding: 3% 0 0 5%;
+}
+
+
+/*  */
+@media only screen and (max-width: 414px) {
+    .bin .bin-PopUp {
+        height: 272%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .bin .bin-PopUp {
+        height: 203%;
+    }
+}
 
 
 

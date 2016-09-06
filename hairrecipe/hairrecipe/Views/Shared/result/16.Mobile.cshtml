@@ -1,4 +1,6 @@
-﻿<div class="result-16">
+﻿@{Session["diagnosisKeyword"] = "diagnosis-result16";}
+@Html.Hidden("pageKey", Session["diagnosisKeyword"])
+<div class="result-16">
     <div class="results-page-top">
         <p class="result-title">あなたの髪の<br />ジューシー度は</p>
         <div class="result-percentage">
@@ -18,7 +20,7 @@
                 エンパワー ボリューム レシピ<br />
                ［シャンプー］
             </p>
-            <div class="bin"><a class="btn to-shop-btn" sku="kiwi-shampoo">To Shop</a></div>
+            <div class="bin"><a class="btn to-shop-btn gaca-btn" binbtngaca="sp_hairrepi_20161001_diagnosis-result16_[store]" binEventLabel="external" sku="kiwi-shampoo">To Shop</a></div>
          </div>
 
          <div class="content-block">
@@ -27,7 +29,7 @@
                 エンパワー ボリューム レシピ<br />
                 [トリートメント]
             </p>
-            <div class="bin"><a class="btn to-shop-btn" sku="kiwi-treatment">To Shop</a></div>
+            <div class="bin"><a class="btn to-shop-btn gaca-btn" binbtngaca="sp_hairrepi_20161001_diagnosis-result16_[store]_2" binEventLabel="external" sku="kiwi-treatment">To Shop</a></div>
          </div>
 
     </div>
@@ -40,7 +42,7 @@
                ［シャンプー&トリートメント］<br />
                 3日間 お試しパック
             </p>
-            <div class="bin"><a class="btn to-shop-btn" sku="kiwi-pack-refill">To Shop</a></div>
+            <div class="bin"><a class="btn to-shop-btn gaca-btn" binbtngaca="sp_hairrepi_20161001_diagnosis-result16_[store]_3" bineventlabel="external" sku="dgnsis-kiwi">To Shop</a></div>
         </div>
         <div class="results-sns">
             <p>ジューシー度チェックを<br />

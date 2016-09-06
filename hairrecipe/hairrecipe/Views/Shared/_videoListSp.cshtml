@@ -6,8 +6,8 @@
     <div class="embed-responsive embed-responsive-16by9">
 		<img class="play_vid lazy" data-original="/Content/images/sp/cm/@Model.CMProductImage" data-video="http://www.youtube.com/embed/@Model.VideoId">
 	</div>
-    <a href="@Model.CMProductLink" class="btn to-read-btn">動画で紹介されている<br /> 製品をチェック！</a>
+    <a href="@Model.CMProductLink" class="btn to-read-btn gaca-btn" gaca="@("sp_hairrepi_20161001_cm_prpduct" + Model.CMProductId)">動画で紹介されている<br /> 製品をチェック！</a>
     <div class="bin">
-        <a sku="@Model.SKU" class="btn to-shop-btn">To Shop</a>
+        <a sku="@Model.SKU" class="btn to-shop-btn gaca-btn" bineventlabel="external" binbtngaca="sp_hairrepi_20161001_cm_[store]@(     (Model.CMProductId <= 1) ? "" : "_"+ Model.CMProductId)" gaca="@("sp_hairrepi_20161001_cm_bin" +@Model.CMProductId)">To Shop</a>
 	</div>
 </div>

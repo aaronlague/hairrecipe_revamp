@@ -48,6 +48,22 @@
         ]
     },
     {
+        sku : 'apricot-shampoo-reco',
+        productName : 'Apricot-shampoo',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/dp/B00M2DPUKI/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796388/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
+    },
+    {
         sku : 'apricot-treatment',
         productName : 'Apricot-treatment',
         stores :  [
@@ -253,6 +269,51 @@
                 storeKeyword : 'lohaco',
                 url :  'http://lohaco.jp/product/1508898/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
             }            
+        ]
+    },
+    {
+        sku : 'dgnsis-apricot',
+        productName : 'diagnosis-apricot',
+        stores :  [
+
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'https://www.amazon.co.jp/dp/B01DNSC7JW/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            }          
+        ]
+    },
+    {
+        sku : 'dgnsis-kiwi',
+        productName : 'diagnosis-kiwi',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'https://www.amazon.co.jp/dp/B01DNSC7O2/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            }          
+        ]
+    },
+    {
+        sku : 'footer-amazon',
+        productName : 'footer-amazon',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'http://www.amazon.co.jp/b/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&node=3257396051&tag=pgjp_angelica-22'
+            }          
+        ]
+    },
+    {
+        sku : 'footer-lohaco',
+        productName : 'footer-lohaco',
+        stores :  [
+            {
+                storeName : 'lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/event/hairrecipe/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }          
         ]
     }
 ]
