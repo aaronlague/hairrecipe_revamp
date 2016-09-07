@@ -48,6 +48,8 @@
 
             .product-stories-top ol li a {
                 font-family:Koburina Gothic W3 JIS2004;
+                display : block;
+                width : 150px;
             }
 
 .product-stories-content {
