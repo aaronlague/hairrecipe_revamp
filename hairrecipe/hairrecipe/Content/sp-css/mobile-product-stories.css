@@ -206,6 +206,7 @@
         padding-top: 28px;
     }
 
+
 /*iphone 5*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
@@ -439,4 +440,10 @@
         padding-top: 14px;
         margin-bottom: 10%;
     }
+}
+
+
+.product-lineup-container .lineup-2 .generic-btn{
+    letter-spacing : 2px;
+    padding-top: 1.5%;
 }
