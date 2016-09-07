@@ -78,7 +78,7 @@ a:hover, a:focus {
     font-family: 'LubalinGraph-Book';
     height: 100px;
     border-radius: 0;
-
+    width: 49.6%;
     position: relative;
     font-size: 26px;
     padding-top: 24px;
@@ -576,6 +576,10 @@ and (max-device-width : 568px) {
         .item .product-stories-btn:active, .item .to-shop-btn:active {
             width: 68%;
         }
+
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom: 45px;
+    }
 }
 
 /*iPhone 6*/
