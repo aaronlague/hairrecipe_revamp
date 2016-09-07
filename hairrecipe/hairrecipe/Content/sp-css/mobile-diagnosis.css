@@ -26,11 +26,13 @@
 
 .text2 {
     font-size: 5.375em;
+    margin: 5% auto 3%;
+    line-height: 102%;
 }
 
 .text3 {
     font-size:1.625em;
-    margin-bottom:25px;
+    margin-bottom: 4%;
 }
 
 .generic-btn {
