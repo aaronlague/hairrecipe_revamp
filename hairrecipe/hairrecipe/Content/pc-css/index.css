@@ -1,5 +1,7 @@
 ﻿.row {
     padding-bottom:90px;
+    margin-left:0;
+    margin-right:0;
 }
 .main-content {
     width:980px;
