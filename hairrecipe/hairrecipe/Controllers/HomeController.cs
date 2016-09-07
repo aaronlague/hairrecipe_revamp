@@ -12,6 +12,7 @@ using hairrecipe.data;
 using hairrecipe.data.Entities.Products;
 using hairrecipe.data.Entities.CM;
 using hairrecipe.data.Entities.Info;
+using hairrecipe.data.Entities.Home;
 using hairrecipe.data.Services;
 
 
@@ -33,7 +34,13 @@ namespace hairrecipe.Controllers
             else
             {
 
-                return View();
+                var DualObj = new HomeDualObj();
+
+                DualObj.HomeProducts = JsonServices.QueryJsonListOfObject<HomeProducts>("/Content/data/ProductList.json");
+                DualObj.Videos = JsonServices.QueryJsonListOfObject<Video>("/Content/data/VideoList.json");
+                DualObj.InfoList = JsonServices.QueryJsonListOfObject<InfoList>("/Content/data/InfoList.json");
+
+                return View(DualObj);
             }
         }
 

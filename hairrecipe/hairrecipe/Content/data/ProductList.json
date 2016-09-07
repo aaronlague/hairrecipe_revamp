@@ -1,33 +1,44 @@
 [  
 {  
     "ProductId": 1,  
-    "ProductName": "Mint Blend Cleansing<br />Recipe",  
-    "ProductImage": "sp_mint-thumbnail.png",  
+    "ProductName": "Mint Blend Cleansing<br />Recipe",
+	"ProductNamePC": "Mint Blend Cleansing<br />Recipe",    
+    "ProductImage": "sp_mint-thumbnail.png",
+	"ProductImagePC": "pc-home_04.jpg",
+	"ProductIntroTextPC": "酸味のあるストロベリーと爽やか<br />なミントで、髪と地肌にさっぱり <br />ディープクレンジング。",  
     "ProductIntroText1": "酸味のあるストロベリーと爽やかなミントで、",
 	"ProductIntroText2": "髪と地肌にさっぱりディープクレンジング。",
 	"ProductLink": "product/mint"
 },  
 {  
     "ProductId": 2,  
-    "ProductName": "Honey Apricot Enrich Moisture<br />Recipe",  
+    "ProductName": "Honey Apricot Enrich Moisture<br />Recipe",
+	"ProductNamePC": "Honey Apricot Enrich<br />MoistureRecipe",  
     "ProductImage": "sp_apricot-thumbnail.png",
+	"ProductImagePC": "pc-home_06.jpg", 
+	"ProductIntroTextPC": "華やかな味わいのアプリコットに<br />とろけるハニー、髪に豊かな <br />つやとうるおいを。",
     "ProductIntroText1": "華やかな味わいのアプリコットにとろけるハニー、",
 	"ProductIntroText2": "髪に豊かなつやとうるおいを。",
 	"ProductLink": "product/apricot"
 },
 {  
     "ProductId": 3,  
-    "ProductName": "Kiwi Empower Volume<br />Recipe",  
-    "ProductImage": "sp_kiwi-thumbnail.png",  
+    "ProductName": "Kiwi Empower Volume<br />Recipe",
+	"ProductNamePC": "Kiwi Empower Volume<br />Recipe",   
+    "ProductImage": "sp_kiwi-thumbnail.png",
+	"ProductImagePC": "pc-home_08.jpg",
+	"ProductIntroTextPC": "フルーティなキウイと爽やかな<br />いちじくで、髪にたっぷりの<br />ハリとコシを。",
     "ProductIntroText1": "フルーティなキウイと爽やかないちじくで、",
 	"ProductIntroText2": "髪にたっぷりのハリとコシを。",
 	"ProductLink": "product/kiwi"
 },
 {  
     "ProductId": 4,  
-    "ProductName": "Booster Oil Treatment",  
+    "ProductName": "Booster Oil Treatment",
+	"ProductNamePC": "Booster Oil <br />Treatment",    
     "ProductImage": "sp_booster-thumbnail.png",
-    "ProductIntroText1": "うるおいとつやを豊富にふくんだオイルを、",
-	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
+	"ProductImagePC": "pc-home_10.jpg",
+	"ProductIntroTextPC": "うるおいとつやを豊富にふくんだ<br />オイルを、とろとろ濃厚な<br />ソースに仕立てて。",
+	"ProductIntroText1": "うるおいとつやを豊富にふくんだオイルを",	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
 	"ProductLink": "product/booster"
 }]

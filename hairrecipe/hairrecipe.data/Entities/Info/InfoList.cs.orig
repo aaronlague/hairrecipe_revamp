@@ -18,6 +18,9 @@ namespace hairrecipe.data.Entities.Info
         public string InfoLink { get; set; }
         public string GACA { get; set; }
         public string alt { get; set; }
+<<<<<<< HEAD
+=======
         public string InfoImgAlt { get; set; }
+>>>>>>> feature/PG-543
     }
 }

@@ -1,0 +1,13 @@
+﻿@model hairrecipe.data.Entities.Home.HomeProducts
+@{
+    string uri = Request.Url.AbsolutePath;
+}
+
+<div class="col-xs-6 col-sm-3 text-center">
+    <h3>@Html.Raw(Model.ProductNamePC)</h3>
+    <img src="/Content/images/pc/homepage/@Model.ProductImagePC">
+    <p class="product-text">@Html.Raw(Model.ProductIntroTextPC)</p>
+    <div class="bin text-center">
+        <a href="javascript:void(0);" sku="common" class="btn generic-btn shop">To Shop</a>
+    </div>
+</div>

@@ -528,6 +528,9 @@
     <Content Include="Views\Shared\q5\c2.cshtml" />
     <Content Include="Views\Shared\q5\c3.cshtml" />
     <Content Include="Views\Shared\q5\c4.cshtml" />
+    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\_homeProductListingPC.cshtml" />
+    <Content Include="Views\Shared\_videoHomeList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

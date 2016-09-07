@@ -10,7 +10,8 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-rough cm-one",
-	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm1"
+	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm1",
+	"HomeVideoImage" : "pc-home_37.jpg"
 },  
 {  
     "CMProductId": 2,
@@ -23,7 +24,8 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-two",
-	"CMsectionClass2":"stitch-s",    "sku" : "apricot-treatment",	"CMsectionId": "cm2"
+	"CMsectionClass2":"stitch-s",    "sku" : "apricot-treatment",	"CMsectionId": "cm2",
+	"HomeVideoImage" : "pc-home_39.jpg"
 },  
 {  
     "CMProductId": 3,
@@ -36,7 +38,8 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-b cm-three",
-	"CMsectionClass2":"wood-rough",    "sku" : "apricot-mask",	"CMsectionId": "cm3"
+	"CMsectionClass2":"wood-rough",    "sku" : "apricot-mask",	"CMsectionId": "cm3",
+	"HomeVideoImage" : "pc-home_41.jpg"
 },
 {  
     "CMProductId": 4,
@@ -49,7 +52,8 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-m cm-four",
-	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm4"
+	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm4",
+	"HomeVideoImage" : "pc-home_44.jpg"
 },
 {  
     "CMProductId": 5,
