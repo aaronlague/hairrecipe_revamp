@@ -87,6 +87,10 @@
         font-size: 1.857em;
     }
 
+.product-lineup-container .copy h1 {
+    font-family: 'LubalinGraph-Book';
+}
+
 .product-lineup-container .lineup-1 {
     background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-1.jpg);
     background-repeat:no-repeat;
