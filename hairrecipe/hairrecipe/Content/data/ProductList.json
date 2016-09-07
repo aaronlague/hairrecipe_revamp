@@ -39,7 +39,7 @@
     "ProductImage": "sp_booster-thumbnail.png",
 	"ProductImagePC": "pc-home_10.jpg",
 	"ProductIntroTextPC": "うるおいとつやを豊富にふくんだ<br />オイルを、とろとろ濃厚な<br />ソースに仕立てて。",
-    "ProductIntroText1": "うるおいとつやを豊富にふくんだオイルを",
+	"ProductIntroText1": "うるおいとつやを豊富にふくんだオイルを",
 	"ProductIntroText2": "とろとろ濃厚なソースに仕立てて。",
 	"ProductLink": "product/booster"
 }]

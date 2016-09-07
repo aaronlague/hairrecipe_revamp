@@ -16,6 +16,8 @@ namespace hairrecipe.data.Entities.Info
         public string InfoNews2 { get; set; }
         public string InfoClass { get; set; }
         public string InfoLink { get; set; }
+        public string GACA { get; set; }
+        public string alt { get; set; }
         public string InfoImgAlt { get; set; }
     }
 }
