@@ -64,10 +64,16 @@ a:hover, a:focus {
 }
 
 .to-shop-btn:before {
-    content:url(/Content/images/sp/sp_shopping-cart-icon.png);
+    /*content:url(/Content/images/sp/sp_shopping-cart-icon.png);*/
+    background-image: url(/Content/images/sp/sp_shopping-cart-icon.png);
+    background-repeat:no-repeat;
+    content: "";
     position:relative;
+    display: inline-block;
     left: -8px;
     top:8px;
+    height:33px;
+    width: 42px;
 }
 
 
@@ -77,7 +83,7 @@ a:hover, a:focus {
     font-family: 'LubalinGraph-Book';
     height: 100px;
     border-radius: 0;
-
+    width: 49.6%;
     position: relative;
     font-size: 26px;
     padding-top: 24px;
@@ -528,22 +534,37 @@ and (max-device-width : 568px) {
 
 
     .to-shop-btn:before {
-        content:url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
-        position:relative;
+        /*content:url(/Content/images/sp/sp_shopping-cart-icon.png);
+        position:relative;*/
         left: -5px;
         top:5px;
+        height: 20px;
+        width: 26px;
+        background-size: 100%;
     }
 
-    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
+    .to-shop-btn, .to-shop-btn:active {
         width: 50%;
         height: 50px;
         border-radius: 0;
         position: relative;
-        font-size: 12px;
+        font-size: 11px;
         text-transform: uppercase;
         border: 1px solid #87847d;
         padding-top: 10px;
         padding-left: 15px;
+    }
+
+    .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
+        width: 50%;
+        height: 50px;
+        border-radius: 0;
+        position: relative;
+        font-size: 11px;
+        text-transform: uppercase;
+        border: 1px solid #87847d;
+        padding-top: 17px;
+        padding-left: 12px;
         
     }
 
@@ -557,7 +578,7 @@ and (max-device-width : 568px) {
         height: 50px;
         border-radius: 0;
         position: relative;
-        font-size: 12px;
+        font-size: 11px;
         padding-top: 15px;
         text-transform: uppercase;
         border: 1px solid #fff;
@@ -575,6 +596,10 @@ and (max-device-width : 568px) {
         .item .product-stories-btn:active, .item .to-shop-btn:active {
             width: 68%;
         }
+
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom: 45px;
+    }
 }
 
 /*iPhone 6*/
@@ -684,13 +709,16 @@ and (max-device-width : 667px) {
     
 
     .to-shop-btn:before {
-        content:url(/Content/images/sp/sp_shopping-cart-icon-sm.png);
-        position:relative;
+        /*content:url(/Content/images/sp/sp_shopping-cart-icon.png);
+        position:relative;*/
         left: -5px;
         top:5px;
+        height: 20px;
+        width: 26px;
+        background-size: 100%;
     }
 
-    .to-shop-btn, .to-shop-btn:active, .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
+    /*.to-shop-btn, .to-shop-btn:active,*/ .to-read-btn, .to-read-btn:active, .to-write-btn, .to-write-btn:active, .to-rate-btn, .to-rate-btn:active, .generic-btn, .generic-btn:active {
         width: 50%;
         height: 50px;
         border-radius: 0;
@@ -698,8 +726,8 @@ and (max-device-width : 667px) {
         font-size: 12px;
         text-transform: uppercase;
         border: 1px solid #87847d;
-        padding-top: 13px;
-        padding-left: 15px;
+        padding-top: 16px;
+        padding-left: 12px;
         
     }
 
@@ -731,6 +759,10 @@ and (max-device-width : 667px) {
         .item .product-stories-btn:active, .item .to-shop-btn:active {
             width: 68%;
         }
+
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom: 60px;
+    }
 }
 
 

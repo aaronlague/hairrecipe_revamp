@@ -63,7 +63,7 @@
 .product-item .product-name {
     font-family: 'LubalinGraph-Book';
     font-size:40px;
-    margin: 50px 0 20px 0;
+    margin: 80px 0 20px 0;
 }
 
 .product-thumbnail {
@@ -75,7 +75,7 @@
     font-size: 24px;
     line-height: 22px;
     margin-top: 20px;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     color: #87847d;
 }
 
@@ -146,6 +146,10 @@
 
 .news-splash iframe {
     width:100%;
+}
+
+.footer-banner {
+    margin-top: 50px;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
@@ -287,7 +291,7 @@
     }
 
     .news-content .news .text {
-        font-size: 13px;
+        font-size: 12px;
         line-height:18px;
     }
 
