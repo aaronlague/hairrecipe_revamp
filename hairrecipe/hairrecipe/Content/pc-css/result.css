@@ -1,0 +1,207 @@
+
+
+.result-main {
+
+}
+
+.result-main  img {
+  width: auto;
+}
+
+/*juicy-degree*/
+.juicy-degree {
+  background: #f1f1f1 url("/Content/images/pc/result/pc_diagnosis-result_01.jpg") no-repeat scroll 0 0;
+  background-size: contain ;
+  height: 1325px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+/*======================= text-container =============================*/
+
+.text-container-1 {
+  font-family: "Koburina Gothic W3 JIS2004";
+  font-size: 1.4em;
+  height: auto;
+  line-height: 2.5em;
+  margin: 0 auto;
+  padding-top: 176px;
+  text-align: center;
+  width: 508px;
+}
+
+.text-container-1 p {
+
+}
+
+.text-container-1 img {
+
+}
+
+.text-container-1 .text2 {
+  font-size: 0.6em;
+  letter-spacing: 0.3em;
+}
+
+
+/*======================= text-container =============================*/
+
+.product-container {
+  font-family: "Koburina Gothic W3 JIS2004";
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  width: 1040px;
+  height: auto;
+}
+
+.product-container.item3 {
+  width: 1040px;
+}
+
+.product-container.item2 {
+  width: 676px;
+}
+
+
+.item {
+  float: left;
+  min-height: 100px;
+  overflow: visible;
+  width: 291px;
+}
+
+.item-x {
+  float: left;
+  margin-top: 235px;
+}
+
+
+
+.item .item-image {
+  height: 484px;
+  overflow: visible;
+  width: 291px;
+}
+
+.item .item-image img {
+  height: auto;
+  margin-left: 22px;
+  margin-top: -6px;
+  width: auto;
+}
+
+.item .item-detail {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  min-height: 251px;
+  overflow: hidden;
+  position: relative;
+}
+
+.item .item-detail h3 {
+  font-size: 0.6em;
+  line-height: 2.5em;
+  letter-spacing: 0.6em;
+}
+
+.item .item-detail p {
+    
+}
+
+.bin {
+  bottom: 3px;
+  left: 20%;
+  position: absolute;
+  width: 180px;
+}
+
+.generic-btn.shop {
+    padding: 9px 46px 14px 51px;
+}
+
+a.generic-btn.shop:focus {
+    text-decoration:none;
+    color: #87847d;
+}
+
+
+
+.product-suggest .text-container-1 a.generic-btn.shop {
+  display: block;
+  margin: 27px auto 56px;
+  padding: 7px 46px 14px 51px;
+}
+/*================= end juicy-degree ==================*/
+
+
+
+/*product-suggest*/
+
+
+.product-suggest {
+  background: #f1f1f1 url("/Content/images/pc/result/pc_diagnosis-result_21.jpg") repeat-y scroll 0 0 / contain ;
+  height: 895px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+    .product-suggest .text-container-1 {
+        padding-top: 98px;
+        line-height: 1.8em;
+    }
+
+
+.trial_image_sns_container {
+  height: 350px;
+  margin: 0 auto;
+  overflow: visible;
+  width: 346px;
+}
+
+.trial_image_sns_container img {
+  height: auto;
+  margin-left: -54px;
+  margin-top: -64px;
+  width: auto;
+}
+
+.product-suggest .social-container {
+
+}
+
+.product-suggest .social-container a {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.product-suggest .social-container a:first-child {
+    margin-right: 38px;
+}
+/*================= end product-suggest ==================*/
+
+
+    #back-to-top {
+            right: 4%;
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+    }
+
+@media (min-width: 1300px) and (max-width: 1567px){
+    #back-to-top {
+            right: 7%;
+    }
+}
+
+
+@media (min-width: 1568px) {
+    #back-to-top {
+            right: 20%;
+    }
+}
+
+
