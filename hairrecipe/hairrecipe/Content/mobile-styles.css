@@ -732,6 +732,10 @@ and (max-device-width : 667px) {
         .item .product-stories-btn:active, .item .to-shop-btn:active {
             width: 68%;
         }
+
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom: 60px;
+    }
 }
 
 
