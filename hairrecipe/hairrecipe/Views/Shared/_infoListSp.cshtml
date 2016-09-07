@@ -1,7 +1,7 @@
 ﻿@model hairrecipe.data.Entities.Info.InfoList
 <div class="row">
     <div class="@Model.InfoClass info-content">
-        <a href="@Model.InfoLink"><img class="lazy" data-original="/Content/images/sp/info/@Model.InfoImage" /></a>
+        <a href="@Model.InfoLink"><img class="lazy" data-original="/Content/images/sp/info/@Model.InfoImage" alt="@Model.alt" /></a>
         <span class="news-title">@Model.InfoTitle</span>
         <span class="news-date">@Model.InfoDate</span>
         <p>@Html.Raw(Model.InfoNews)</p>

@@ -8,7 +8,8 @@
 	"InfoNews2": "あなたの髪、うるおっていますか？髪のジューシー度をチェックするとあなたにピッタリなレシピをご提案！今すぐチェック！",
 	"InfoClass": "wall",
     "gaca" : "pc_hairrepi_20161001_news_news1",
-	"InfoLink": "/diagnosis/"
+	"InfoLink": "/diagnosis/",
+	"alt" : "あなたの髪、うるおっている？ジューシー度チェック"
     
 },
 
@@ -21,7 +22,8 @@
 	"InfoNews2": "新メニュー、アップルジンジャー濃密保湿あたたかレシピ登場！乾燥しやすい冬の髪に、高濃度コンディショニング成分で濃密保湿。たっぷりうるおい髪で冬を乗り切りましょう！",
 	"InfoClass": "wood-smooth",
     "gaca" : "pc_hairrepi_20161001_news_news2",
-	"InfoLink": ""
+	"InfoLink": "",
+	"alt" : "冬の髪に、旬のレシピいかがですか？ 売り切れ御礼！おかげさまで、完売しました。"
 },
 
 {  
@@ -33,7 +35,8 @@
 	"InfoNews2": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジュースパックに入ったシャンプー＆トリートメントセットを数量限定で発売！",
 	"InfoClass": "stitch-m",
     "gaca" : "pc_hairrepi_20161001_news_news3",
-	"InfoLink": "/powercharge/"
+	"InfoLink": "/powercharge/",
+	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"
 },
 
 {  
@@ -45,7 +48,9 @@
 	"InfoNews2": "ついに登場！シャンプー＆トリートメントのお得な詰替え用。オンラインストアで価格をチェック！",
 	"InfoClass": "wood-rough",
     "gaca" : "pc_hairrepi_20161001_news_news4",
-	"InfoLink": "BIN"
+	"InfoLink": "BIN",
+	"alt" : "ついに登場！詰め替え用シャンプー＆トリートメント！"
+
 },
 
 {  
@@ -57,7 +62,8 @@
 	"InfoNews2": "新メニューが登場！トリートメントに“まぜる”ごちそうオイル。お好みの量をまぜて、あなただけのレシピをつくりませんか？",
 	"InfoClass": "stitch-s",
     "gaca" : "pc_hairrepi_20161001_news_news5",
-	"InfoLink": "/product/booster.html"
+	"InfoLink": "/product/booster.html",
+	"alt" : ""
 },
 
 {  
@@ -69,7 +75,8 @@
 	"InfoNews2": "グラノーラ専門店GANORIとヘアレシピがコラボ！「ヘアレシピミックス」1週間限定発売！",
 	"InfoClass": "wood-smooth",
     "gaca" : "pc_hairrepi_20161001_news_news6",
-	"InfoLink": "/ganori/"
+	"InfoLink": "/ganori/",
+	"alt" : ""
 },
 
 {  
@@ -81,7 +88,9 @@
 	"InfoNews2": "六本木ヒルズで開催された商品発売記念のイベントレポートを紹介！",
 	"InfoClass": "stitch-m",
     "gaca" : "pc_hairrepi_20161001_news_news7",
-	"InfoLink": "/market/after_index.html"
+	"InfoLink": "/market/after_index.html",
+	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"
+
 }
 
 ]
