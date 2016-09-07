@@ -1,0 +1,182 @@
+﻿.row {
+    padding-bottom:90px;
+}
+.main-content {
+    width:980px;
+    margin:0 auto;
+    padding-top:80px;
+}
+h3 {
+    font-family:'LubalinGraph-Book';
+    font-size:15px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.prod-stories-btn.btn {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 0;
+    border: 1px solid #fff;
+    position: absolute;
+    color: #fff;
+    left:185px;
+    top:403px;
+    font-family:'LubalinGraph-Book';
+    padding: 15px 27px;
+}
+
+.home-shop {
+    position:absolute;
+    left:185px;
+    top:471px;
+}
+
+.generic-btn:hover {
+    position:absolute;
+}
+
+.title-section {
+    text-align:center;
+    text-transform:uppercase;
+    font-family: 'Koburina Gothic W3 JIS2004';
+    float: none;
+    margin: 0 auto 60px;
+    width:100%;
+}
+
+.title-section img {
+    width:auto;
+}
+
+.product-text {
+    font-size:13px;
+    line-height:20px;
+}
+
+.bin a.btn.generic-btn.shop {
+    margin-left: 17px;
+}
+
+video-wrapper {
+    height:100%;
+}
+
+.col-xs-6.col-sm-3.text-center img {
+    margin-bottom:30px;
+}
+
+span.news-title {
+    float: left;
+    padding: 2px;
+    background: #87847d;
+    width: 100px;
+    text-align: center;
+    margin-top: 28px;
+    color:#fff;
+    font-size:13px;
+}
+
+span.news-date {
+    float: right;
+    padding: 2px;
+    width: 100px;
+    text-align: center;
+    margin-top: 25px;
+    font-family:LubalinGraph-Book;
+    font-size: 19px;
+}
+
+.info-content p {
+    margin-top: 30%;
+    font-size: 1em;
+    height: 150px;
+}
+
+.main-content img {
+    width:auto;
+}
+
+ div.info-content > a img {
+     width:100%;
+ }
+
+ .embed-responsive-16by9 {
+     padding-bottom:0;
+ }
+
+ .home-btn, a.home-btn:hover {
+    background-color: #fff;
+    border: 1px solid #87847d;
+    font-family: 'LubalinGraph-Book';
+    width: 200px;
+    height: 50px;
+    border-radius: 0;
+    position: relative;
+    font-size: 14px;
+    padding: 17px 12px;
+    text-transform: uppercase;
+    color: #87847d;
+    text-decoration : none;
+    cursor : pointer;
+    display:inline-block;
+ }
+
+ .btn-section {
+    text-align:center;
+    text-transform:uppercase;
+    margin: 30PX auto;
+    width:100%;
+}
+
+.carousel-control .glyphicon-menu-right {
+    right: 10%;
+    margin-right: -10px;
+    position: absolute;
+    top: 30%;
+    z-index: 5;
+    display: inline-block;
+    color:#87847d;
+    text-shadow:none;
+    
+}
+
+.carousel-control {
+   top: 50%;
+   width: 8%;
+    
+}
+
+.carousel-control.right {
+    background-color:white;
+    background-image:none;
+    height: 50px;
+}
+
+.carousel-indicators li {
+    display:none;
+    background-color:none;
+    color:#87847d;
+    text-indent: 14px;
+    text-shadow:none;
+    font-family: 'LubalinGraph-Book';
+    font-size: 15px;
+}
+
+.carousel-indicators .active {
+    display:block
+}
+
+ol.carousel-indicators {
+    top:14px;
+}
+
+.base-indicator {
+    color:#87847d;
+    text-shadow:none;
+    font-family: 'LubalinGraph-Book';
+    top: 14px;
+    position: absolute;
+    font-size: 15px;
+}

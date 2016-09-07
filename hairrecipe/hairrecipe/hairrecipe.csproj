@@ -503,6 +503,9 @@
     <Content Include="Views\Shared\_BINPopUp.cshtml" />
     <Content Include="Views\Shared\_specialInfo.cshtml" />
     <Content Include="Views\Shared\_infoListPc.cshtml" />
+    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\_homeProductListingPC.cshtml" />
+    <Content Include="Views\Shared\_videoHomeList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

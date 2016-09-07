@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    string checkController = @ViewContext.RouteData.Values["Controller"].ToString();
+    string checkAction = @ViewContext.RouteData.Values["Action"].ToString();
+}
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -16,6 +20,11 @@
 <body>
     <div class="container-hairrecipe">
         @{Html.RenderPartial("_navigation", "");}
+        @if (checkController == "Home" && checkAction == "Index")
+        {
+           
+            @Html.Partial("_slider", "")
+        }
         @RenderBody()
         @{Html.RenderPartial("_FooterBlock", "");}
     </div>
