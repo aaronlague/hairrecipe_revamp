@@ -63,7 +63,6 @@ a:hover, a:focus {
     background : url("/Content/images/sp/bg/stitch-hp.jpg");
 }
 
-
 .to-shop-btn:before {
     content:url(/Content/images/sp/sp_shopping-cart-icon.png);
     position:relative;
@@ -347,7 +346,7 @@ a:hover, a:focus {
 
         .page-footer .special-info img {
             width: auto;
-            margin-bottom: 20px;
+            margin-bottom: 4%;
         }
 
         .page-footer .special-info .footer-links-container {
@@ -360,7 +359,7 @@ a:hover, a:focus {
             list-style: none;
             padding: 0;
             margin: 0;
-            margin-bottom: 30px;
+            margin-bottom: 3%;
             margin-left: -10px;
         }
 
