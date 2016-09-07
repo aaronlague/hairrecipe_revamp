@@ -87,7 +87,7 @@ h2.page-title {
   display: table-cell;
   /*width: 50%;*/ /* depends on the number of columns */
 
-  padding: 1em;
+  padding: 0.7em;
   /*border: solid;*/
   vertical-align: middle;
   font-family: 'Koburina Gothic W3 JIS2004';
@@ -145,6 +145,7 @@ h2.page-title {
 
 .qa {
     font-size:30px;
+    padding-left: 1em;
 }
 
 .bg {
@@ -153,4 +154,29 @@ h2.page-title {
 
 .wall-hp {
   background: rgba(0, 0, 0, 0) url("/Content/images/pc/faq/wall-hp2.jpg") repeat scroll 0 0;
+  padding-top: 87px
 }
+
+
+
+    #back-to-top {
+            right: 4%;
+    -webkit-transition:all 1s ease;
+         -moz-transition:all 1s ease;
+               -o-transition:all 1s ease;
+                     transition:all 1s ease;
+    }
+
+@media (min-width: 1300px) and (max-width: 1567px){
+    #back-to-top {
+            right: 7%;
+    }
+}
+
+
+@media (min-width: 1568px) {
+    #back-to-top {
+            right: 20%;
+    }
+}
+
