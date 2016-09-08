@@ -16,6 +16,10 @@
     font-family: 'Koburina Gothic W3 JIS2004';
 }
 
+.page-title .generic-btn {
+    text-transform: none;
+}
+
 .diagnosis-main .inner {
     top: 19%;
 }
