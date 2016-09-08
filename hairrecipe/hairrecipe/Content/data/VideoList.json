@@ -52,7 +52,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-m cm-four",
-	"CMsectionClass2":"wood-smooth",    "sku" : "mint-cleansing",	"CMsectionId": "cm4",
+	"CMsectionClass2":"stitch-s",    "sku" : "mint-cleansing",	"CMsectionId": "cm4",
 	"HomeVideoImage" : "pc-home_44.jpg"
 },
 {  
@@ -66,7 +66,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "stitch-s cm-five",
-	"CMsectionClass2":"stitch-m",    "sku" : "kiwi-treatment",	"CMsectionId": "cm5"
+	"CMsectionClass2":"stitch-b",    "sku" : "kiwi-treatment",	"CMsectionId": "cm5"
 },
 {  
     "CMProductId": 6,
@@ -79,5 +79,6 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-six",
-    "sku" : "kiwi-scalp",	"CMsectionClass2":"stitch-s",	"CMsectionId": "cm6"
+    "sku" : "kiwi-scalp",	
+	"CMsectionClass2":"stitch-m",	"CMsectionId": "cm6"
 }]
