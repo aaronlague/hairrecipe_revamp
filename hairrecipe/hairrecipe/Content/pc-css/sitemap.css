@@ -1,4 +1,8 @@
-﻿.banner-about {
+﻿.wall-sm {
+    background: url("/Content/images/pc/diagnosis/wall-sm.jpg");
+}
+
+.banner-about {
     position:relative;
 }
 
@@ -32,6 +36,10 @@
     padding-right: 20px;
 }
 
+.content-sitemap p.last {
+    margin-bottom:0;
+}
+
 .Koburina a {
     font-family:Koburina Gothic W3 JIS2004;
 }
@@ -42,4 +50,25 @@
 
 .pb60 {
     padding-bottom:60px;
+}
+
+#back-to-top {
+        right: 4%;
+-webkit-transition:all 1s ease;
+        -moz-transition:all 1s ease;
+            -o-transition:all 1s ease;
+                    transition:all 1s ease;
+}
+
+@media (min-width: 1300px) and (max-width: 1567px){
+    #back-to-top {
+            right: 7%;
+    }
+}
+
+
+@media (min-width: 1568px) {
+    #back-to-top {
+        right: 20%;
+    }
 }
