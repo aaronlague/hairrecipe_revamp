@@ -71,7 +71,7 @@ h2.page-title {
 
 
 .faq-main {
-  background-color: #fff;
+  background-color: transparent;
   color: #87847d;
   margin-top: -1px;
   padding-left: 0;
@@ -110,6 +110,9 @@ h2.page-title {
     font-size:1em;
 }
 
+.faq-main .qsec {
+    background-color: #fff;
+}
 
 
 
@@ -149,7 +152,7 @@ h2.page-title {
 }
 
 .bg {
-    background: url(../images/sp/faq/bg2.jpg) right 20px center repeat;
+    /*background: url(../images/sp/faq/bg2.jpg) right 20px center repeat;*/
 }
 
 .wall-hp {
