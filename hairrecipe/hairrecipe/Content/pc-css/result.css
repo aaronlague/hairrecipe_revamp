@@ -88,7 +88,7 @@
 .item .item-image img {
   height: auto;
   margin-left: 22px;
-  margin-top: -6px;
+  margin-top: -48px;
   width: auto;
 }
 
@@ -102,8 +102,9 @@
 
 .item .item-detail h3 {
   font-size: 0.6em;
-  line-height: 2.5em;
   letter-spacing: 0.6em;
+  line-height: 2.5em;
+  margin-top: 0px;
 }
 
 .item .item-detail p {
