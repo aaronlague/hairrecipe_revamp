@@ -531,6 +531,7 @@
     <Content Include="Views\Shared\_slider.cshtml" />
     <Content Include="Views\Shared\_homeProductListingPC.cshtml" />
     <Content Include="Views\Shared\_videoHomeList.cshtml" />
+    <Content Include="Views\Shared\_spResultsSNS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
