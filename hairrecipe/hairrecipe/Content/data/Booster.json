@@ -15,7 +15,7 @@
             desktopDirection : 'right',
             type : 'main',
             enTitle:'Booster Oil Recipe',
-            jpTitle1:'グレープ シード[sp-br]ブースター オイル レシピ[pc-br]',
+            jpTitle1:'グレープ シード [sp-br] ブースター オイル レシピ[pc-br]',
             jpTitle2:'[うるおいレシピ]',
             jpTitle3:'',
             size:'30ml',
@@ -202,7 +202,7 @@
             image : '/Content/images/[sw]/product/booster/set_01.png',
             productSets : [
                 {
-                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
+                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチ モイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
                     gaca : 'pc_hairrepi_20161001_product-booster_bin3',
@@ -224,7 +224,7 @@
             image : '/Content/images/[sw]/product/booster/set_02.png',
             productSets : [
                 {
-                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチモイスチャー レシピ ',
+                    jpTitle1 : 'ハニー アプリコット <br/>エンリッチ モイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
                     gaca : 'pc_hairrepi_20161001_product-booster_bin5',
