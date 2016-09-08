@@ -1,6 +1,43 @@
 ﻿@model hairrecipe.data.Entities.Diagnosis.Diagnosis
 @{
-    ViewBag.Title = "Index";
+    bool uri = Request.Url.AbsolutePath.Contains("result");
+    string fbMetaTitle;
+    string fbType;
+    string fbUrl;
+    string fbImage;
+    
+    switch(uri) {
+            
+        case true:
+            fbMetaTitle = "あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！";
+            fbType = "article";
+            fbUrl = Request.Url.AbsoluteUri + ".html";
+            fbImage = Request.Url.Scheme + "://" + Request.Url.Authority + "/" + "content/images/sp/diagnosis/results/OGP_diagnosis.png";
+        break;
+
+        case false:
+            fbMetaTitle = "";
+            fbType = "";
+            fbUrl = "";
+            fbImage = "";
+        break;
+        
+        default:
+            fbMetaTitle = "";
+            fbType = "";
+            fbUrl = "";
+            fbImage = "";
+        break;
+    }
+    
+}
+@{
+    ViewBag.Title = "ジューシー度チェック｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Description = "あなたの髪、うるおっている？髪のジューシー度をチェックして、あなたの髪にピッタリなレシピを提案！シャンプー、トリートメント、オイル、ヘアマスクの効果的な組み合わせが分かります。";
+    ViewBag.fbTitle = fbMetaTitle;
+    ViewBag.fbType = fbType;
+    ViewBag.fbUrl = fbUrl;
+    ViewBag.fbImage = fbImage;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section customStyles
