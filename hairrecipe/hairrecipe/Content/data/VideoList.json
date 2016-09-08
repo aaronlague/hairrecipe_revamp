@@ -24,7 +24,7 @@
 	"ShopLink": "#",
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-two",
-	"CMsectionClass2":"stitch-s",    "sku" : "apricot-treatment",	"CMsectionId": "cm2",
+	"CMsectionClass2":"stitch-m",    "sku" : "apricot-treatment",	"CMsectionId": "cm2",
 	"HomeVideoImage" : "pc-home_39.jpg"
 },  
 {  
@@ -80,5 +80,5 @@
 	"CMProductLink": "../#products",
 	"CMsectionClass": "wood-smooth cm-six",
     "sku" : "kiwi-scalp",	
-	"CMsectionClass2":"stitch-m",	"CMsectionId": "cm6"
+	"CMsectionClass2":"stitch-cm",	"CMsectionId": "cm6"
 }]

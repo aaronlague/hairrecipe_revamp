@@ -159,3 +159,7 @@ a.btn.generic-btn {
 .bin {
     display:inline;
 }
+
+.stitch-cm {
+    background:url('/../Content/images/pc/cm/bg1.jpg') repeat;
+}
