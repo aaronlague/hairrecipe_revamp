@@ -84,12 +84,10 @@
                     <p class="bodyText">
                         トリートメントにひと味きかせて[pc-br]あなたがなりたい髪へ仕上げるブースターオイル。
                         <br/><br/>
-                        自然の恵みがつまったオイルを[sp-br]
-                        トリートメントにまぜるだけ。
+                        自然の恵みがつまったオイルを[sp-br]トリートメントにまぜるだけ。
                         <br/><br/>
                         とろとろ濃厚なソースとなって、なりたい髪へ仕上げる、<br/>
-                        あなただけのレシピをつくって[sp-br]
-                        みませんか？
+                        あなただけのレシピをつくって[sp-br]みませんか？
                     </p>
                 </div>
             </div>
@@ -102,7 +100,7 @@
                 </div>
                 <div  class="pc-float">
                     <div class="text-content">
-                        <p class="hilight">“まぜるオイル”だからできる トリートメント力 </p>
+                        <p class="hilight">“まぜるオイル”だからできる<br />トリートメント力 </p>
                         <p>たとえば、トマトをオイルと一緒にとると、リコピンの吸収が高まり美味しさがアップします。</p>
                         <p>その相乗効果をもたらすプロセスを、ヘアケアにも応用。</p>
                         <p>大きなコンディショニング粒子を含むブースターオイルと細かなコンディショニング粒子を含むトリートメントを混ぜることで大小のコンディショニング成分が瞬時に混ざり合い、髪の保湿力や水分バリア機能をアップ。</p>
@@ -246,7 +244,7 @@
             image : '/Content/images/[sw]/product/booster/set_03.png',
             productSets : [
                 {
-                    jpTitle1 : 'キウイ エンパワー ボリューム レシピ ',
+                    jpTitle1 : 'キウイ <br />エンパワー ボリューム レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
                     gaca : 'pc_hairrepi_20161001_product-booster_bin7',
@@ -268,7 +266,7 @@
             image : '/Content/images/[sw]/product/booster/set_04.png',
             productSets : [
                 {
-                    jpTitle1 : 'キウイ エンパワー ボリューム レシピ',
+                    jpTitle1 : 'キウイ<br /> エンパワー ボリューム レシピ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
                     gaca : 'pc_hairrepi_20161001_product-booster_bin9',

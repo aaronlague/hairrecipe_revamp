@@ -405,6 +405,8 @@ ul, li{
     display: table;
     width: 800px;
     margin-left: 56px;
+    margin-top: -70px;
+    margin-bottom: 50px;
 }
 #booster .comboSection ul li{
     float : left;
