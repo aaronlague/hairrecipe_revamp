@@ -21,6 +21,7 @@ namespace hairrecipe
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                         "~/Scripts/bootstrap.js",
                         "~/Scripts/jasny-bootstrap.js",
+                        "~/Content/js/helper.js",
                         "~/Content/js/main.pc.js",
                         "~/Content/js/gaca.js",
                         "~/Content/js/bin.js"

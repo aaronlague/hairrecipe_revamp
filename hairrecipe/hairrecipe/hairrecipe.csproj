@@ -276,6 +276,8 @@
     <Content Include="Content\images\sp_product-stories-btn.png" />
     <Content Include="Content\images\sp\sp_shopping-cart-icon.png" />
     <Content Include="Content\js\bin.js" />
+    <Content Include="Content\js\gaca.js" />
+    <Content Include="Content\js\helper.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\main.pc.js" />
     <Content Include="Content\mobile-hp.css" />
