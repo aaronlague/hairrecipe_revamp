@@ -14,7 +14,7 @@
     <ul >
         @foreach (var Store in Model.Stores)
         {
-            <li><a href="@Store.URL" store="@Store.StoreKeyword" class="bin-links"><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
+            <li><a href="@Store.URL" store="@Store.StoreKeyword" target="_blank" class="bin-links" ><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
         }
     </ul>
 }
