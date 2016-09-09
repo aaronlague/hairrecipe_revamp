@@ -45,8 +45,10 @@ var hairrecipe = {
     /*
     *Youtube embed Video
     */
-    PlayVideo: function (){
+    PlayVideo: function () {
+        console.log("bind");
         $('.play_vid').click(function () {
+            console.log("execute");
             video = '<iframe class="embed-responsive-item" src="' + $(this).attr('data-video') + '"></iframe>';
             $(this).replaceWith(video);
         });
@@ -54,7 +56,8 @@ var hairrecipe = {
     /*
     * holds all function that needs to run on page load
     */
-    startup: function (){
+    startup: function () {
+        
         hairrecipe.subHeader();
         hairrecipe.BackToTop();
         hairrecipe.PlayVideo();
@@ -64,3 +67,11 @@ var hairrecipe = {
 
 /* run om page load */
 hairrecipe.startup();
+
+
+
+$('.play_vid').click(function () {
+    console.log("execute");
+    video = '<iframe class="embed-responsive-item" src="' + $(this).attr('data-video') + '"></iframe>';
+    $(this).replaceWith(video);
+});

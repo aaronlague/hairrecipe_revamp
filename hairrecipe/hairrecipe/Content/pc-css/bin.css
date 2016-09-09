@@ -45,6 +45,23 @@
 
 
 /* BIN override */
+
+#myCarousel .bin{
+    position : absolute;
+    top: 468px;
+    left : 168px;
+}
+
+#myCarousel .bin .bin-PopUp{
+    top: 50px;
+    left: -70px;
+}
+
+.product-home .bin .bin-PopUp{
+    top: 50px;
+    left: -66px;
+}
+
 .refill ul .bin .bin-PopUp ul{
     padding: 36px 0 0 20px!important;
 }
