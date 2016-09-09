@@ -25,10 +25,10 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
-            bingaca : 'pc_hairrepi_20161001_product-booster_bin1',
-            binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]',
-            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_read1',
-            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt1 ',
+            bingaca : '[platform]_hairrepi_20161001_product-booster_bin1',
+            binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-booster_review_read1',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-booster_review_wrigt1 ',
             columns :[ 
                 {        
                     header:'香り',
@@ -57,10 +57,10 @@
             isActive : true,
             hasReview : true,
             hasBIN : true,
-            bingaca : 'pc_hairrepi_20161001_product-booster_bin2',
-            binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_2',
-            reviewReadGACA : 'pc_hairrepi_20161001_product-booster_review_read2',
-            reviewWriteGACA : 'pc_hairrepi_20161001_product-booster_review_wrigt2',
+            bingaca : '[platform]_hairrepi_20161001_product-booster_bin2',
+            binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_2',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-booster_review_read2',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-booster_review_wrigt2',
             columns :[ 
                 {        
                     header:'香り',
@@ -205,15 +205,15 @@
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチ モイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin3',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_3'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin3',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_3'
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-grape',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin4',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_4'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin4',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_4'
                 }                
             ]            
         },
@@ -227,15 +227,15 @@
                     jpTitle1 : 'ハニー アプリコット <br/>エンリッチ モイスチャー レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'apricot-treatment',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin5',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_5'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin5',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_5'
                 },
                 {
                     jpTitle1 : 'サンフラワー シード<br/>ブースター オイル レシピ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-seed',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin6',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_6'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin6',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_6'
                 }                
             ]            
         },
@@ -249,15 +249,15 @@
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin7',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_7'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin7',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_7'
                 },
                 {
                     jpTitle1 : 'グレープ シード<br/>ブースター オイル レシピ ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-grape',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin8',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_8'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin8',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_8'
                 }                
             ]            
         },
@@ -271,15 +271,15 @@
                     jpTitle1 : 'キウイ エンパワー ボリューム レシピ',
                     jpTitle2 : 'トリートメント',
                     SKU : 'kiwi-treatment',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin9',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_9'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin9',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_9'
                 },
                 {
                     jpTitle1 : 'サンフラワー シード <br/>ブースター オイル レシピ  ',
                     jpTitle2 : '洗い流さないトリートメント',
                     SKU : 'booster-seed',
-                    gaca : 'pc_hairrepi_20161001_product-booster_bin10',
-                    binStoreGaca : 'pc_hairrepi_20161001_product-booster_[store]_10'
+                    gaca : '[platform]_hairrepi_20161001_product-booster_bin10',
+                    binStoreGaca : '[platform]_hairrepi_20161001_product-booster_[store]_10'
                 }                
             ]            
         }        

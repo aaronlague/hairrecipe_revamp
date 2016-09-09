@@ -46,7 +46,7 @@ window.isohub = window.isohub || {};
             EVENTLABEL = (typeof EVENTLABEL !== 'undefined') ? EVENTLABEL : 'internal';
             $(obj).removeAttr("gaca");
             $(obj).removeAttr("eventlabel");
-            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA + "'])");
+            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA.replace("[platform]", isohub.helper.ReturnPlatformKeyword()) + "'])");
         });
     },
     /*
@@ -55,7 +55,7 @@ window.isohub = window.isohub || {};
     */
     app.DiagnosisAlterElement = function () {        
         var pageKeyword = $("#pageKey").val();
-        var GACABase = "sp_hairrepi_20161001_";
+        var GACABase = "[platform]_hairrepi_20161001_".replace("[platform]", isohub.helper.ReturnPlatformKeyword());
         //question block
         $('.choices a').each(function (i, obj) {
             var letterKey = $(obj).find(".title").html();
@@ -92,7 +92,7 @@ window.isohub = window.isohub || {};
             return null;
         }
         EventLabel = (typeof EventLabel !== 'undefined') ? EventLabel : 'internal';       
-        var newgaca = GACA.replace("[store]", StoreKeyword);
+        var newgaca = GACA.replace("[store]", StoreKeyword).replace("[platform]", isohub.helper.ReturnPlatformKeyword());
         return "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EventLabel + "', '" + newgaca + "']);";
     },
     app.SetUp = function () {
