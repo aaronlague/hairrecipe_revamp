@@ -5,6 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     var DualObj = new hairrecipe.data.Entities.Home.HomeDualObj();
     DualObj = Model;
+    ViewData["GACAKeyword"] = "top";
 }
 
 @section customStyles
@@ -13,7 +14,7 @@
 }
 
 <div class="row wall-hp">
-    <div class="main-content">
+    <div class="main-content product-home">
         <div class="title-section col-lg-1">
             <h2>Products</h2>
             <img src="/Content/images/pc/homepage/spoon-title.png">
@@ -26,7 +27,7 @@
     </div>
 </div>
 
-<div class="row wood-rough">
+<div class="row wood-rough gaca-btn" gaca="pc_hairrepi_20161001_top_life_with">
     <div class="main-content">
         <div class="title-section col-lg-1">
             <h2>LIFE with HAIR RECIPE</h2>
@@ -70,7 +71,7 @@
         {
             @Html.Partial("_infoListPc", DualObj.InfoList.ElementAt(ctr))
         }
-    <div class="btn-section col-lg-1"><a href="/info" class="home-btn">ARCHIVE</a></div>
+    <div class="btn-section col-lg-1"><a href="/info" class="home-btn gaca-btn" gaca="pc_hairrepi_20161001_top_news_other">ARCHIVE</a></div>
     </div>
 </div>
 
@@ -81,31 +82,16 @@
             <h2>CM & MOVIE</h2>
             <img src="/Content/images/pc/homepage/spoon-title.png">
         </div>
-         @for (int ctr = 0; ctr <= 3; ctr++)
-        {
-            @Html.Partial("_videoHomeList", DualObj.Videos.ElementAt(ctr))
-        }
-        <div class="btn-section col-lg-1"><a href="/cm" class="home-btn">Watch other Movies</a></div>
+
+            @for (int ctr = 0; ctr <= 3; ctr++)
+            {
+                @Html.Partial("_videoHomeList", DualObj.Videos.ElementAt(ctr))
+            }
+        <div class="btn-section col-lg-1"><a href="/cm" class="home-btn gaca-btn" gaca="pc_hairrepi_20161001_top_cm_other">Watch other Movies</a></div>
     </div>
+</div>
+<div class="home">
+    @{Html.RenderPartial("_FootBannerBlock", ViewData["GACAKeyword"]);}
 </div>
 
-<div class="row wood-smooth">
-    <div class="main-content">
-        <div class="col-xs-6 text-center">
-            <div class="title-section col-lg-1">
-                <h2>JUICY HAIR CHECK</h2>
-                <img src="/Content/images/pc/homepage/spoon-title.png">
-            </div>
-            <a href="/deiagnosis/"><img src="/Content/images/pc/homepage/pc-home_45.jpg" alt="あなたの髪、うるおっている？
-ジューシー度チェック"></a>
-</div>
-        <div class="col-xs-6 text-center">
-            <div class="title-section col-lg-1">
-                <h2>YOUR RECIPE</h2>
-                <img src="/Content/images/pc/homepage/spoon-title.png">
-            </div>
-            <a href="/reco_recipe/"><img src="/Content/images/pc/homepage/pc-home_46.jpg" alt="YOUR RECIPE なりたい髪を選んで"></a>
-</div>
-    </div>
-</div>
 <a href="javascript:void(0)" id="back-to-top" title="Back to top"><img src="~/Content/images/pc/back-to-top.png" /></a>

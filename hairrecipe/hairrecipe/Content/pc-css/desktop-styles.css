@@ -114,6 +114,9 @@ footer a:visited{
     color : #fff;
     text-decoration : none;
 }
+footer a.generic-btn.shop {
+    color : #87847d;
+}
 footer .wrap{
     width : 1024px;
     margin : 0 auto;
@@ -209,6 +212,13 @@ footer .base ul li{
     display : block;
     margin : 0 auto;
 }
+    .home .footer-banner ul li img {
+        width: auto;
+    }
+    .home  .footer-banner {
+        background : url("/Content/images/sp/bg/wood-smooth.jpg");
+    }
+
 .footer-banner ul li span{
     font-size : 37px;
     font-family : 'Palatino Linotype';

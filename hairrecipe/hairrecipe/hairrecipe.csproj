@@ -534,6 +534,9 @@
     <Content Include="Views\Shared\_homeProductListingPC.cshtml" />
     <Content Include="Views\Shared\_videoHomeList.cshtml" />
     <Content Include="Views\Shared\_spResultsSNS.cshtml" />
+    <Content Include="Views\Shared\_infoListPc.cshtml" />
+    <Content Include="Views\Shared\_ProductSetBlock.SP.cshtml" />
+    <Content Include="Views\Shared\_videoListPC.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
