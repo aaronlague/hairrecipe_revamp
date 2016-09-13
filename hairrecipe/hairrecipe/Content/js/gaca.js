@@ -69,13 +69,13 @@ window.isohub = window.isohub || {};
         $(".desc a").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABaseTop + "'])");
 
         //results Block
-        $('.content-block .bin .gaca-btn, .results-page-bottom .bin .gaca-btn').each(function (i, obj) {
+        $('.content-block .bin .gaca-btn, .results-page-bottom .bin .gaca-btn, .diagnosis .item .item-detail .bin a, .diagnosis .product-suggest .bin a').each(function (i, obj) {
             GACA = GACABase + pageKeyword + "_" + "bin_" + parseInt(i + 1);
             $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
         });
         //result SNS
-        $(".results-sns .twitter-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
-        $(".results-sns .facebook-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
+        $(".results-sns .twitter-share, .diagnosis .social-container .twitter").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
+        $(".results-sns .facebook-share, .diagnosis .social-container .fb").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
         $(".results-sns .line-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");
 
     },

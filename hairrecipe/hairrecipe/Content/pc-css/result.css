@@ -13,7 +13,7 @@
   background: #f1f1f1 url("/Content/images/pc/result/pc_diagnosis-result_01.jpg") no-repeat scroll 0 0;
   background-size: contain ;
   height: 1325px;
-  overflow: hidden;
+  
   position: relative;
   width: 1280px;
 }
@@ -50,10 +50,16 @@
 .product-container {
   font-family: "Koburina Gothic W3 JIS2004";
   margin: 0 auto;
-  overflow: hidden;
   text-align: center;
   width: 1040px;
   height: auto;
+}
+
+.product-container .item .item-detail p{
+    height : 146px;
+}
+.product-container .item .item-detail .bin{
+        margin: 0 auto;
 }
 
 .product-container.item3 {
@@ -96,7 +102,6 @@
   font-size: 1.4em;
   line-height: 1.5em;
   min-height: 251px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -111,12 +116,7 @@
     
 }
 
-.bin {
-  bottom: 3px;
-  left: 20%;
-  position: absolute;
-  width: 180px;
-}
+
 
 .generic-btn.shop {
     padding: 9px 46px 14px 51px;
@@ -131,7 +131,7 @@ a.generic-btn.shop:focus {
 
 .product-suggest .text-container-1 a.generic-btn.shop {
   display: block;
-  margin: 27px auto 56px;
+  margin: 27px auto 25px;
   padding: 7px 46px 14px 51px;
 }
 /*================= end juicy-degree ==================*/
@@ -149,9 +149,22 @@ a.generic-btn.shop:focus {
   width: 1280px;
 }
 
+.product-suggest .bin{
+    position : relative;
+    bottom: -5px;
+    left: 32%;
+}
+
+.product-suggest .bin .bin-PopUp{
+    top : 50px;
+}
+.product-suggest .bin .bin-PopUp.solo a img{
+    margin-left: 81px;
+}
     .product-suggest .text-container-1 {
         padding-top: 98px;
         line-height: 1.8em;
+        position : relative;
     }
 
 
@@ -170,7 +183,7 @@ a.generic-btn.shop:focus {
 }
 
 .product-suggest .social-container {
-
+    margin-top : 20px;
 }
 
 .product-suggest .social-container a {

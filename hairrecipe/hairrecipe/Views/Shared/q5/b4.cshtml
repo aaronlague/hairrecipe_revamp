@@ -1,4 +1,7 @@
-﻿
+﻿@{
+    Session["diagnosisKeyword"] = "diagnosis-q5_b";
+}
+@Html.Hidden("pageKey", Session["diagnosisKeyword"])
 <div class="main-diagnosis">
     <img src="~/Content/images/pc/diagnosis/1.jpg" />
     <div class="content-diagnosis qa">
