@@ -1,0 +1,272 @@
+﻿.banner-recipe > h1 {
+color:#FFF;
+font-family:Koburina Gothic W3 JIS2004;
+margin-left:-50px;
+margin-right:-107px;
+position:absolute;
+right:50%;
+text-transform:uppercase;
+top:52%;
+}
+
+.content-diagnosis {
+width:100%;
+display:block;
+position:absolute;
+top:37%;
+text-align:center;
+font-family:'Koburina Gothic W3 JIS2004';
+}
+
+.qa {
+top:18%;
+}
+
+.generic-btn,.generic-btn:hover {
+display:inline-block;
+}
+
+.content-diagnosis h1 {
+font-size:65px;
+}
+
+.check {
+font-family:LubalinGraph-Book;
+font-size:35px;
+font-weight:400;
+letter-spacing:4px;
+margin-bottom:96px;
+}
+
+.question {
+font-size:20px;
+margin-bottom:40px;
+}
+
+.desc {
+font-size:14px;
+margin-bottom:40px;
+margin-top:40px;
+}
+
+.choices .box {
+background:#fff;
+display:inline-table;
+width:19%;
+height:230px;
+text-align:center;
+border:1px solid #87847d;
+color:#87847d;
+margin:0 1% 0 0;
+}
+
+.choices .box:hover {
+text-decoration:none;
+}
+
+.choices .box div {
+display:table-cell;
+vertical-align:middle;
+}
+
+.choices .box img {
+width:inherit;
+}
+
+.choices .box .title {
+font-size:20px;
+font-family:LubalinGraph-Book;
+}
+
+.choices .box p {
+font-size:20px;
+margin:15px 0;
+}
+
+.steps {
+margin-top:40px;
+}
+
+.steps img {
+width:23%;
+}
+
+.steps .desc {
+font-size:14px;
+margin-top:20px;
+}
+
+.steps .desc a {
+color:#87847d;
+}
+
+.Koburina a {
+font-family:Koburina Gothic W3 JIS2004;
+}
+
+.pb100 {
+padding-bottom:100px;
+}
+
+.pb60 {
+padding-bottom:60px;
+}
+
+
+
+.banner-recipe,.main-diagnosis,.recipe-container {
+position:relative;
+}
+
+.banner-recipe,.main-diagnosis,.recipe-container {
+position:relative;
+}
+
+.recipe-content {
+display:block;
+position:absolute;
+top:0;
+width:100%;
+height:976px;
+}
+
+.recipe-content.recipe1 {
+    height:1002px;
+}
+
+.recipe-content.recipe2 {
+    height: 976px;
+}
+
+.recipe-content.recipe3 {
+    height: 961px;
+}
+
+.recipe-content.recipe4 {
+    height: 1145px;
+}
+
+.recipe-content-inner {
+width:100%;
+height:100%;
+position:relative;
+}
+
+.recipe-content-inner .recipe-title {
+font-family:"Koburina Gothic W3 JIS2004";
+font-size:22px;
+height:86px;
+left:0;
+overflow:visible;
+position:absolute;
+right:0;
+text-align:center;
+top:91px;
+width:600px;
+margin:auto;
+}
+
+.recipe-content-inner .recipe-title h3 {
+font-family:LubalinGraph-Book;
+font-size:21px;
+font-weight:400;
+letter-spacing:1px;
+}
+
+.recipe-content-inner .recipe-title p {
+font-size:20px;
+font-weight:lighter;
+letter-spacing:1px;
+}
+
+.recipe-content-inner .recipe-items {
+height:286px;
+left:0;
+overflow:visible;
+position:absolute;
+right:0;
+top:643px;
+width:1146px;
+margin:auto;
+}
+
+.recipe-content-inner .recipe-items .item {
+float:left;
+height:251px;
+margin-right:57px;
+margin-top:8px;
+position:relative;
+text-align:center;
+width:291px;
+font-family:"Koburina Gothic W3 JIS2004";
+}
+
+.recipe-content-inner .recipe-items .item:first-child {
+margin-left:81px;
+}
+
+.recipe-content-inner .recipe-items .item .item-detail {
+font-size:1.4em;
+line-height:1.5em;
+min-height:232px;
+overflow:hidden;
+position:relative;
+}
+
+.recipe-content-inner .recipe-items .item .item-detail .generic-btn {
+line-height:1em;
+}
+
+.recipe-content-inner .recipe-items .item .item-detail h3 {
+font-size:.6em;
+letter-spacing:.6em;
+line-height:3.2em;
+margin-top:0;
+}
+
+.recipe-content-inner .recipe-items .item .item-detail .bin {
+bottom:1px;
+margin-left:60px;
+position:absolute;
+width:180px;
+}
+
+
+/*modifiers*/
+
+.recipe-content.recipe2 .recipe-content-inner .recipe-title {
+    top: 65px;
+}
+
+.recipe-content.recipe3 .recipe-content-inner .recipe-title {
+    top: 70px;
+    width: 689px;
+}
+
+.recipe-content.recipe4 .recipe-content-inner .recipe-title {
+    top: 70px;
+}
+
+.recipe-content.recipe3 .recipe-content-inner .recipe-items .item .item-detail,
+.recipe-content.recipe4 .recipe-content-inner .recipe-items .item .item-detail {
+  min-height: 202px;
+}
+
+#make-it-yourself {
+  bottom: 76px;
+  font-family: "Koburina Gothic W3 JIS2004";
+  font-size: 28px;
+  height: 58px;
+  left: 0;
+  letter-spacing: 4.5px;
+  margin: auto;
+  overflow: visible;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 684px;
+}
+
+.footer-banner img {
+    width: auto;
+}
