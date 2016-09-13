@@ -1,6 +1,80 @@
 ﻿@{
-    ViewBag.Title = "kodawari";
+    ViewBag.Title = "PRODUCT STORIES｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
+    ViewBag.Description = "HAIR RECIPE（ヘアレシピ)のプロダクトストーリー。レシピの5つのこだわりポイントがご覧いただけます。";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>kodawari</h2>
+@section customStyles
+{
+    <link href="~/Content/pc-css/kodawari.css" rel="stylesheet" />
+}
+
+<div class="banner-kodawari">
+    <img src="~/Content/images/pc/kodawari/banner-kodawari.jpg" />
+    <h1>PRODUCT STORIES</h1>
+</div>
+<div class="kodawari-content">
+    <div class="kodawari-menu">
+        <h2>レシピの５つのこだわりポイント</h2>
+        <ul>
+            <li><a href="#kd1" class="japanese gaca-btn" gaca="pc_hairrepi_20161001_cm_tvcm"><span class="english">1.</span>テクノロジー<br /><img src="~/Content/images/pc/down-arrow.png" /></a> </li>
+            <li><a href="#kd2" class="japanese gaca-btn" gaca="pc_hairrepi_20161001_cm_booster"><span class="english">2.</span>素材<br /><img src="~/Content/images/pc/down-arrow.png" /></a></li>
+            <li><a href="#kd3" class="japanese gaca-btn" gaca="pc_hairrepi_20161001_cm_webmove"><span class="english">3.</span>香り<br /><img src="~/Content/images/pc/down-arrow.png" /></a></li>
+            <li><a href="#kd4" class="japanese gaca-btn" gaca="pc_hairrepi_20161001_cm_webmove"><span class="english">4.</span>ソレー効果<br /><img src="~/Content/images/pc/down-arrow.png" /></a></li>
+            <li><a href="#kd5" class="japanese gaca-btn" gaca="pc_hairrepi_20161001_cm_webmove"><span class="english">5.</span>泡立ち<br /><img src="~/Content/images/pc/down-arrow.png" /></a></li>
+        </ul>
+    </div>
+    <div class="kodawari1" id="kd1">
+        <div class="right-side">
+            <h3><span class="english">1.</span>ニュートリブレンド・テクノロジー</h3>
+            <p>ナチュラルフードから発想を得た素材を、精度の高いテクノロジーで<br />ブレンド。髪のためのオリジナルレシピを完成しました。</p>
+        </div>
+    </div>
+    <div class="kodawari2" id="kd2">
+        <div class="left-side">
+            <h3><span class="english">2.</span>世界各地から取り寄せた、 美しさのための素材</h3>
+            <p>アメリカ、ヨーロッパ、アジア。<br />世界各地で人々に長く愛され、美しさのもととなってきたパワーフード。</p>
+        </div>
+    </div>
+    <div class="kodawari3" id="kd3">
+        <div class="right-side">
+            <h3><span class="english">3.</span>調香師の手でブレンドして作られた香り</h3>
+            <p>おいしくて栄養のある食べものからのインスピレーション。経験豊富な<br />調香師がそれを上手に調合しました。時間とともに変化する香りで、<br />豊かに心地よく。</p>
+        </div>
+    </div>
+    <div class="kodawari4" id="kd4">
+        <div class="left-side">
+            <h3><span class="english">4.</span>「ソレー効果」でさらにおいしく。</h3>
+            <p>火を通してから一度冷ます。煮込み料理では味が深くなじみ旨味も加わ<br />ります。このひと手間をヘアレシピにも応用。<br />素材の力をぐっと凝縮しています。</p>
+        </div>
+    </div>
+    <div class="kodawari5" id="kd5">
+        <div class="right-side">
+            <h3><span class="english">5.</span>クリーミィな泡立ち</h3>
+            <p>ホイップクリームのようにキメ細かくもちもち、おいしそうな泡立ちで、<br />髪と地肌をやさしく洗い上げます。</p>
+        </div>
+    </div>
+    <div class="recipe text-center">
+        <h2>HAIR RECIPE LINEUP</h2>
+        <h3>つやとうるおいのアプリコットハニー</h3>
+        <a href="/product/apricot.html" class="btn generic-btn gaca-btn" gaca="pc_hairrepi_20161001_cm_apri">ハニー アプリコット エンリッチ<br />モイスチャー レシピ！</a>
+    </div>
+    <div class="recipe2 text-center">
+        <h2>HAIR RECIPE LINEUP</h2>
+        <h3>ふんわりうるおいのキウイいちじく</h3>
+        <a href="/product/kiwi.html" class="btn generic-btn gaca-btn" gaca="pc_hairrepi_20161001_cm_kiwi">キウイ エンパワー<br />ボリューム レシピ</a>
+    </div>
+    <div class="recipe3 text-center">
+        <h2>HAIR RECIPE LINEUP</h2>
+        <h3>地肌クレンジングのいちごミント</h3>
+        <a href="/product/mint.html" class="btn generic-btn gaca-btn" gaca="pc_hairrepi_20161001_cm_mint">ミントブレンド<br />クレンジング レシピ</a>
+    </div>
+    <div class="recipe4 text-center">
+        <h2>HAIR RECIPE LINEUP</h2>
+        <h3>うるおいアップのグレープ シード ブースター オイル/ つやアップのサンフラワー シード ブースター オイル </h3>
+        <p>トリートメントとまぜて効果アップ！洗い流さないトリートメントとしても使える！</p>
+        <a href="/product/booster.html" class="btn generic-btn gaca-btn" gaca="pc_hairrepi_20161001_cm_booster_2">ブースター オイル レシピ</a>
+    </div>
+    @{Html.RenderPartial("_FootBannerBlock", ViewData["GACAKeyword"]);}
+    <a href="#" id="back-to-top" title="Back to top"><img src="~/Content/images/pc/back-to-top.png" /></a>
+</div>
