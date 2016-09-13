@@ -57,3 +57,18 @@ $('.play_vid').click(function () {
     video = '<iframe class="embed-responsive-item" src="' + $(this).attr('data-video') + '"></iframe>';
     $(this).replaceWith(video);
 });
+
+
+/* scrollto reco_recipe */
+
+$(".scrollto").click(function (event) {
+    event.preventDefault();
+    var defaultAnchorOffset = 98;
+    var anchor = $(this).attr('data-attr-scroll');
+    var anchorOffset = $('#' + anchor).attr('data-scroll-offset');
+    if (!anchorOffset)
+        anchorOffset = defaultAnchorOffset;
+    $('html,body').animate({
+        scrollTop: $('#' + anchor).offset().top - anchorOffset
+    }, 500);
+});
