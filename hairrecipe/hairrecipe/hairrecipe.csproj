@@ -537,6 +537,21 @@
     <Content Include="Views\Shared\_infoListPc.cshtml" />
     <Content Include="Views\Shared\_ProductSetBlock.SP.cshtml" />
     <Content Include="Views\Shared\_videoListPC.cshtml" />
+    <Content Include="Views\Shared\result\10.cshtml" />
+    <Content Include="Views\Shared\result\11.cshtml" />
+    <Content Include="Views\Shared\result\12.cshtml" />
+    <Content Include="Views\Shared\result\13.cshtml" />
+    <Content Include="Views\Shared\result\14.cshtml" />
+    <Content Include="Views\Shared\result\15.cshtml" />
+    <Content Include="Views\Shared\result\16.cshtml" />
+    <Content Include="Views\Shared\result\2.cshtml" />
+    <Content Include="Views\Shared\result\3.cshtml" />
+    <Content Include="Views\Shared\result\4.cshtml" />
+    <Content Include="Views\Shared\result\5.cshtml" />
+    <Content Include="Views\Shared\result\6.cshtml" />
+    <Content Include="Views\Shared\result\7.cshtml" />
+    <Content Include="Views\Shared\result\8.cshtml" />
+    <Content Include="Views\Shared\result\9.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
