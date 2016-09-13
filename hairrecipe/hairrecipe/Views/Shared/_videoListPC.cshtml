@@ -6,7 +6,7 @@
     <div class="btns">      
         <a href="#" class="btn generic-btn gaca-btn" gaca="@("pc_hairrepi_20161001_cm_prpduct" + Model.CMProductId)">動画で紹介されている<br />製品をチェック！</a>
         <div class="bin">
-            <a class="btn generic-btn shop to-shop-btn gaca-btn" gaca="@("pc_hairrepi_20161001_cm_bin" +@Model.CMProductId)" sku="@Model.SKU">To Shop</a>
+            <a class="btn generic-btn shop to-shop-btn gaca-btn" bineventlabel="external" binbtngaca="@("pc_hairrepi_20161001_cm_[store]_" + (Model.CMProductId <= 1 ? "" : Model.CMProductId.ToString()))" gaca="@("pc_hairrepi_20161001_cm_bin" +@Model.CMProductId)" sku="@Model.SKU">To Shop</a>
         </div>
     </div>
 </div>

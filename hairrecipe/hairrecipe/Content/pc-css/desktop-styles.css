@@ -114,6 +114,9 @@ footer a:visited{
     color : #fff;
     text-decoration : none;
 }
+footer a.generic-btn.shop {
+    color : #87847d;
+}
 footer .wrap{
     width : 1024px;
     margin : 0 auto;
