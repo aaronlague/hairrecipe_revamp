@@ -58,9 +58,6 @@
 .product-container .item .item-detail p{
     height : 146px;
 }
-.product-container .item .item-detail .bin{
-        margin: 0 auto;
-}
 
 .product-container.item3 {
   width: 1040px;
@@ -149,23 +146,7 @@ a.generic-btn.shop:focus {
   width: 1280px;
 }
 
-.product-suggest .bin{
-    position : relative;
-    bottom: -5px;
-    left: 32%;
-}
 
-.product-suggest .bin .bin-PopUp{
-    top : 50px;
-}
-.product-suggest .bin .bin-PopUp.solo a img{
-    margin-left: 81px;
-}
-    .product-suggest .text-container-1 {
-        padding-top: 98px;
-        line-height: 1.8em;
-        position : relative;
-    }
 
 
 .trial_image_sns_container {
