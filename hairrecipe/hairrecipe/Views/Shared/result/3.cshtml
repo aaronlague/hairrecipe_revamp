@@ -63,18 +63,15 @@
             <div class="trial_image_sns_container">
                 <img src="~/Content/images/pc/result/trial_SNS.png" alt="" />
             </div>        
-            <p>
+            <div>
                 ハニー アプリコット エンリッチ<br>
                 モイスチャー レシピ<br>
                 シャンプー&トリートメント<br>
                 3日間 お試しパック<br>
                 <div class="bin"><a href="javascript:void(0);" sku="dgnsis-apricot" binbtngaca="pc_hairrepi_20161001_diagnosis-result3_[store]_4" bineventlabel="external" class="generic-btn shop to-shop-btn gaca-btn">To Shop</a></div>
                 ジューシー度チェックを友達におしえる
-                <div class="social-container">
-                    <a href="javascript:void(0);"  class="twitter"><img src="~/Content/images/pc/result/result-sb-twitter.jpg" class="" alt="twitter" /></a>
-                    <a href="javascript:void(0);" class="fb"><img src="~/Content/images/pc/result/result-sb-fb.jpg" class="" alt="facebook" /></a>
-                </div>                
-            </p>
+                @Html.Partial("_pcResultsSNS", "")              
+            </div>
         </div>
     </div>
     <a href="#" id="back-to-top" title="Back to top"><img src="/Content/images/pc/back-to-top.png" /></a>

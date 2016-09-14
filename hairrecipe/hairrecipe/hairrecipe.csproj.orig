@@ -268,6 +268,7 @@
     <Content Include="Content\images\sp\home\sp_product-img-heading.png" />
     <Content Include="Content\images\sp\sp_product-stories-btn.png" />
     <Content Include="Content\images\sp\sp_reco-recipe-thumbnail.png" />
+    <Content Include="Content\images\sp\sp_shopping-cart-icon-lrg.png" />
     <Content Include="Content\images\sp\sp_shopping-cart-icon-sm.png" />
     <Content Include="Content\images\sp\sp_special-info-amazon.png" />
     <Content Include="Content\images\sp\sp_special-info-lohaco.png" />
@@ -275,6 +276,8 @@
     <Content Include="Content\images\sp_product-stories-btn.png" />
     <Content Include="Content\images\sp\sp_shopping-cart-icon.png" />
     <Content Include="Content\js\bin.js" />
+    <Content Include="Content\js\gaca.js" />
+    <Content Include="Content\js\helper.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\main.pc.js" />
     <Content Include="Content\mobile-hp.css" />
@@ -282,6 +285,7 @@
     <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
+    <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
@@ -500,8 +504,59 @@
     <Content Include="Views\Shared\result\16.Mobile.cshtml" />
     <Content Include="Views\Shared\result\1.cshtml" />
     <Content Include="Views\Shared\_BINPopUp.cshtml" />
-	<Content Include="Views\Shared\_specialInfo.cshtml" />
+    <Content Include="Views\Shared\_specialInfo.cshtml" />
+    <Content Include="Views\Shared\_diagnosisLandingDesktop.cshtml" />
+    <Content Include="Views\Shared\q3\a1.cshtml" />
+    <Content Include="Views\Shared\q3\a2.cshtml" />
+    <Content Include="Views\Shared\q3\b1.cshtml" />
+    <Content Include="Views\Shared\q3\b2.cshtml" />
+    <Content Include="Views\Shared\q4\a1.cshtml" />
+    <Content Include="Views\Shared\q4\a2.cshtml" />
+    <Content Include="Views\Shared\q4\a3.cshtml" />
+    <Content Include="Views\Shared\q4\a4.cshtml" />
+    <Content Include="Views\Shared\q4\b1.cshtml" />
+    <Content Include="Views\Shared\q4\b2.cshtml" />
+    <Content Include="Views\Shared\q4\b3.cshtml" />
+    <Content Include="Views\Shared\q4\b4.cshtml" />
+    <Content Include="Views\Shared\q5\a1.cshtml" />
+    <Content Include="Views\Shared\q5\a2.cshtml" />
+    <Content Include="Views\Shared\q5\a3.cshtml" />
+    <Content Include="Views\Shared\q5\a4.cshtml" />
+    <Content Include="Views\Shared\q5\b1.cshtml" />
+    <Content Include="Views\Shared\q5\b2.cshtml" />
+    <Content Include="Views\Shared\q5\b3.cshtml" />
+    <Content Include="Views\Shared\q5\b4.cshtml" />
+    <Content Include="Views\Shared\q5\c1.cshtml" />
+    <Content Include="Views\Shared\q5\c2.cshtml" />
+    <Content Include="Views\Shared\q5\c3.cshtml" />
+    <Content Include="Views\Shared\q5\c4.cshtml" />
+    <Content Include="Views\Shared\_slider.cshtml" />
+    <Content Include="Views\Shared\_homeProductListingPC.cshtml" />
+    <Content Include="Views\Shared\_videoHomeList.cshtml" />
+    <Content Include="Views\Shared\_spResultsSNS.cshtml" />
+<<<<<<< Updated upstream
+    <Content Include="Views\Shared\_infoListPc.cshtml" />
+    <Content Include="Views\Shared\_ProductSetBlock.SP.cshtml" />
     <Content Include="Views\Shared\_videoListPC.cshtml" />
+    <Content Include="Views\Shared\result\10.cshtml" />
+    <Content Include="Views\Shared\result\11.cshtml" />
+    <Content Include="Views\Shared\result\12.cshtml" />
+    <Content Include="Views\Shared\result\13.cshtml" />
+    <Content Include="Views\Shared\result\14.cshtml" />
+    <Content Include="Views\Shared\result\15.cshtml" />
+    <Content Include="Views\Shared\result\16.cshtml" />
+    <Content Include="Views\Shared\result\2.cshtml" />
+    <Content Include="Views\Shared\result\3.cshtml" />
+    <Content Include="Views\Shared\result\4.cshtml" />
+    <Content Include="Views\Shared\result\5.cshtml" />
+    <Content Include="Views\Shared\result\6.cshtml" />
+    <Content Include="Views\Shared\result\7.cshtml" />
+    <Content Include="Views\Shared\result\8.cshtml" />
+    <Content Include="Views\Shared\result\9.cshtml" />
+    <Content Include="Views\Home\sitemap.cshtml" />
+=======
+    <Content Include="Views\Shared\_pcResultsSNS.cshtml" />
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
