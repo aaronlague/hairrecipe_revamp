@@ -82,31 +82,6 @@ function shareToTwitterResults(d) {
     openShareWindow(url);
 }
 
-//$.ajax({
-//    url: "//media.line.me/js/line-button.js",
-//    dataType: "script",
-//    success: function () {
-
-//        console.log("script loaded");
-//        if (/^(.*)\/diagnosis\/result/.test(window.location.href)) {
-//            setTimeout(function () {
-//                $('.sns-cols .line span a img').addClass('line');
-//                $('.sns-cols .line span a img.line').attr('src', '/Content/images/sp/diagnosis/results/sp_results-sns-ln.jpg');
-//                $('.sns-cols .line span a img.line').attr('width', '');
-//                $('.sns-cols .line span a img.line').attr('height', '');
-//            }, 3000);
-//        }
-
-//        setTimeout(function () {
-//            $('.line-btn span a img').addClass('test');
-//            $('.line-btn span a img.test').attr('src', '/Content/images/sp/sp_footer-social-line.png');
-//            $('.line-btn span a img.test').attr('width', '');
-//            $('.line-btn span a img.test').attr('height', '');
-//        }, 3000);
-
-//    }
-//});
-
 
 $(".facebook-share").click(function () {
 
