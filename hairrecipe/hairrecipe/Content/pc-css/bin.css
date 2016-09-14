@@ -1,108 +1,30 @@
 ﻿/* PC */
-
-.bin{
-    position : relative;
-    width : 180px;
-}
-
-.bin .null{
-    margin-top: 16%;
-    display: block;
-}
-.bin .bin-PopUp{
-    display : none;    
-    background :  url('/Content/images/bins/pc.bg.png');
-    background-repeat : no-repeat;
-    position : absolute;
-    width : 352px;
-    height : 118px;
-    left : -85px;
-    z-index : 999999999999999;
-}
-.bin .bin-PopUp .arrow{
-    display : block;
-    position : absolute;
-    top : -19px;
-    width : 10%;
-    left : 44%;
-}
-.bin .bin-PopUp a img{
-    display : block;
-    border : 1px solid #87847d;
-    width: 100%;
-}
-
-.bin .bin-PopUp ul{
-    padding: 36px 0 0 20px;
-    overflow : hidden;
-    list-style : none;
-}
-.bin .bin-PopUp ul li{
-    float : left;
-    width :45%;
-    margin-right : 5%;
-}
-
-
+.bin { position : relative; width : 180px; }
+.bin .null { margin-top: 16%; display: block; }
+.bin .bin-PopUp { display : none; background : url('/Content/images/bins/pc.bg.png'); background-repeat : no-repeat; position : absolute; width : 352px; height : 118px; left : -85px; z-index : 99999999; }
+.bin .bin-PopUp .arrow { display : block; position : absolute; top : -19px; width : 10%; left : 44%; }
+.bin .bin-PopUp a img { display : block; border : 1px solid #87847d; width: 100%; }
+.bin .bin-PopUp ul { padding: 36px 0 0 20px; overflow : hidden; list-style : none; }
+.bin .bin-PopUp ul li { float : left; width : 45%; margin-right : 5%; }
 /* BIN override */
-
-#myCarousel .bin{
-    position : absolute;
-    top: 468px;
-    left : 168px;
-}
-
-#myCarousel .bin .bin-PopUp{
-    top: 50px;
-    left: -70px;
-}
-
-.product-home .bin .bin-PopUp{
-    top: 50px;
-    left: -66px;
-}
-
-.refill ul .bin .bin-PopUp ul{
-    padding: 36px 0 0 20px!important;
-}
-.refill ul .bin {
-    width : auto;
-}
-.refill ul .bin .bin-PopUp {
-    left: 0;
-}
-
-.comboSection ul li .bin .bin-PopUp ul li {
-    width: 150px!important;
-    margin-right :10px!important;
-}
-
-.comboSection ul li .bin .bin-PopUp ul li {
-    width: 150px!important;
-    margin-right :10px!important;
-}
-
-.cm-content .bin{
-    width : auto;
-}
-
-.cm-content .bin .bin-PopUp{
-    left : 50%;
-    margin-left : -176px;
-}
-
-
-footer .specialInfo ul li  .bin {
-    float: left;
-    margin-left : 30px;
-}
-
-footer .specialInfo ul li .bin .bin-PopUp{
-    top: 50px;
-}
-
-footer .specialInfo ul li .bin .bin-PopUp ul{
-    padding: 0px 0 0 18px;
-}
-
-
+#myCarousel .bin { position : absolute; top: 468px; left : 168px; }
+#myCarousel .bin .bin-PopUp { top: 50px; left: -70px; }
+#myCarousel .bin a.btn.generic-btn.shop { margin-left: 17px }
+.product-home .bin{margin: 0 auto; }
+.product-home .bin .bin-PopUp { top: 50px; left: -66px; }
+.refill ul .bin .bin-PopUp ul { padding: 36px 0 0 20px!important }
+.refill ul .bin { width : auto }
+.refill ul .bin .bin-PopUp { left: 0 }
+.comboSection ul li .bin .bin-PopUp ul li { width: 150px!important; margin-right : 10px!important; }
+.comboSection ul li .bin .bin-PopUp ul li { width: 150px!important; margin-right : 10px!important; }
+.cm-content .bin { width : auto; display: inline; }
+.cm-content .bin .bin-PopUp { left : 50%; margin-left : -176px; }
+.recipe-content-inner .recipe-items .item .item-detail .bin { bottom: 1px; margin-left: 60px; position: absolute; width: 180px; }
+.diagnosis .product-container .item .item-detail .bin { margin: 0 auto }
+.diagnosis .product-suggest .bin { position : relative; bottom: -5px; left: 32%; }
+.diagnosis .product-suggest .bin .bin-PopUp { top : 50px }
+.diagnosis .product-suggest .bin .bin-PopUp.solo a img { margin-left: 81px }
+.diagnosis .product-suggest .text-container-1 { padding-top: 98px; line-height: 1.8em; position : relative; }
+footer .specialInfo ul li  .bin { float: left; margin-left : 30px; }
+footer .specialInfo ul li .bin .bin-PopUp { top: 50px }
+footer .specialInfo ul li .bin .bin-PopUp ul { padding: 0px 0 0 18px }
