@@ -113,7 +113,7 @@ $(".facebook-share").click(function () {
     shareToFacebook()
 });
 
-$(".sns-cols.results .facebook-share").click(function () {
+$(".sns-cols.results .facebook-share, .social-container  .facebook-share").click(function () {
     shareToFacebookResults();
 });
 
@@ -122,7 +122,7 @@ $(".twitter-share").click(function () {
     shareToTwitter()
 });
 
-$(".sns-cols.results .twitter-share").click(function () {
+$(".sns-cols.results .twitter-share, .social-container  .twitter-share").click(function () {
     shareToTwitterResults();
 });
 

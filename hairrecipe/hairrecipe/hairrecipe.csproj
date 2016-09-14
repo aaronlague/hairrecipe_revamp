@@ -553,6 +553,7 @@
     <Content Include="Views\Shared\result\8.cshtml" />
     <Content Include="Views\Shared\result\9.cshtml" />
     <Content Include="Views\Home\sitemap.cshtml" />
+    <Content Include="Views\Shared\_pcResultsSNS.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
