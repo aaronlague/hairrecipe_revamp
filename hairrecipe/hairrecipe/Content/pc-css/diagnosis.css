@@ -25,6 +25,7 @@
 
 .generic-btn, .generic-btn:hover {
     display:inline-block;
+    text-transform: inherit;
 }
 
 .content-diagnosis h1 {
