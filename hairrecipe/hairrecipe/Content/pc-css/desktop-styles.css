@@ -7,13 +7,16 @@ ul, li{list-style : none;}
 body{
     color : #87847d;
 }
-.container-hairrecipe{
+.container-hairrecipe {
     width : 1280px;
     margin : 0 auto;
 }
 
 
 /*  header : start */
+header.container-hairrecipe {
+    width:100%;
+}
 header{
     width : 100%;
     

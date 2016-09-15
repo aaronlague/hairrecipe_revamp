@@ -24,16 +24,18 @@
     @Styles.Render("~/Content/pc-css/bin.css")
 </head>
 <body>
-    <div class="container-hairrecipe s">
-        @{Html.RenderPartial("_navigation", "");}
+    @{Html.RenderPartial("_navigation", "");}
+    <div class="container-hairrecipe">
+        
         @if (checkController == "Home" && checkAction == "Index")
         {
            
             @Html.Partial("_slider", "")
         }
         @RenderBody()
-        @{Html.RenderPartial("_FooterBlock", ViewData["GACAKeyword"]);}
+        
     </div>
+    @{Html.RenderPartial("_FooterBlock", ViewData["GACAKeyword"]);}
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/Scripts/share.js"></script>
