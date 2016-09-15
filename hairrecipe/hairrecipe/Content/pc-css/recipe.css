@@ -228,14 +228,29 @@ margin-top:0;
 
 /*modifiers*/
 
+.recipe-content.recipe2 .recipe-content-inner .recipe-items {
+    top: 615px;
+}
+
 .recipe-content.recipe2 .recipe-content-inner .recipe-title {
     top: 65px;
 }
 
+
+.recipe-content.recipe3 .recipe-content-inner .recipe-items {
+    top: 623px;
+}
+
 .recipe-content.recipe3 .recipe-content-inner .recipe-title {
     top: 70px;
-    width: 689px;
+    width: 745px;
 }
+
+
+.recipe-content.recipe4 .recipe-content-inner .recipe-items {
+    top: 630px;
+}
+
 
 .recipe-content.recipe4 .recipe-content-inner .recipe-title {
     top: 70px;
