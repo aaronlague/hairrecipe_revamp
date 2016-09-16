@@ -91,7 +91,7 @@ header .sub ul li{
 }
 header .sub ul li *{
     display : block;
-    color : #000;
+    color : #87847d;
     margin : 0 auto;
 }
 header .sub ul li a span{
@@ -138,7 +138,7 @@ footer .specialInfo span{
     font-family : 'Palatino Linotype';
 }
 footer .specialInfo ul{
-        margin : 43px 0 0 0;
+        margin : 24px 0 0 0;
 }
 footer .specialInfo ul li{
     float : left;
@@ -170,11 +170,14 @@ footer .sitemap .column{
     margin : 30px -50px 0 0;
 }
 footer .sitemap .column ul li{
-    margin : 10px 0 0 0;
+    margin : 5px 0 0 0;
 }
 footer .sitemap .first{
     margin : 30px 50px 0 0;
     width : 197px;
+}
+footer .sitemap .last{
+    width : 300px;
 }
 footer .sitemap .first ul{
     margin : 20px 0 0 0;
@@ -186,7 +189,7 @@ footer .sitemap .first ul li{
     text-align : center;
 }
 footer .base{
-    padding : 36px 0 0 0;
+    padding : 40px 0 0 0;
 }
 footer .base ul{
     float : right;
