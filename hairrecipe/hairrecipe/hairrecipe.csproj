@@ -556,6 +556,10 @@
     <Content Include="Views\Shared\result\9.cshtml" />
     <Content Include="Views\Home\sitemap.cshtml" />
     <Content Include="Views\Shared\_pcResultsSNS.cshtml" />
+    <Content Include="Views\Shared\rnr\_Read.cshtml" />
+    <Content Include="Views\Shared\rnr\_ReadMobile.cshtml" />
+    <Content Include="Views\Shared\rnr\_Write.cshtml" />
+    <Content Include="Views\Shared\rnr\_WriteMobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
