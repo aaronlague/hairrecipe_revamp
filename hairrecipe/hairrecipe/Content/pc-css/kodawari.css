@@ -4,7 +4,7 @@
 
 .banner-kodawari > h1 {
     position:absolute;
-    top:50%;
+    top:55%;
     right:41%;
     margin-left:-50px;
     margin-right:-50px;
@@ -169,7 +169,7 @@ h1, h2, h3 {
 }
 
 a.btn.generic-btn {
-    padding:10px 0 0 0;
+    padding:7px 0 0 0;
     font-size:13px;
     display: inline-block;
     margin:40px 20px 0 20px;
@@ -180,6 +180,10 @@ a.btn.generic-btn {
     bottom:100px;
     left: 38%;
     width: 260px;
+}
+
+.recipe4 a.btn.generic-btn {
+    padding:15px 0 0 0;
 }
 
 .recipe h2, .recipe2 h2, .recipe3 h2, .recipe4 h2 {
