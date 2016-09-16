@@ -1,0 +1,178 @@
+﻿<div style="display:none">
+    <div id="write" class="popups">
+        <div class="productName"></div>
+        <div class="frame">
+            <div class="formfields bvSubmitReview">
+                <form id="form1" method="POST" data-autosubmit action="http://api.bazaarvoice.com/data/submitreview.json?" novalidate="novalidate">
+                    <input type="hidden" name="apiversion" value="5.4" />
+                    <input type="hidden" name="passkey" value="pcro76iso26s65nkf5zg90pgc" />
+                    <input type="hidden" name="action" value="submit" />
+                    <input type="hidden" name="HostedAuthentication_CallbackUrl" value="http://hairrecipe.jp" />
+                    <input type="hidden" name="HostedAuthentication_AuthenticationEmail" />
+                    <input type="hidden" name="productid" />
+                    <input type="hidden" name="locale" value="ja_JP" />
+
+                    <div id="required">※全て必須項で目す。</div>
+                    <div id="reviewmessage">以下の内容で投稿します。<br />よろしければ[ レビューを投稿する ]を押してください。</div>
+                    <div id="visible_fields">
+                        <div class="subReview">
+
+                            <div class="overall ratings" name="overall">
+                                <span class="label">総合評価</span>
+
+                                <span>
+                                    <select id="rating" name="rating" title="必須項目です" required class="new_type drp">
+                                        <option value="">&#9734;&#9734;&#9734;&#9734;&#9734; </option>
+                                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 非常に良い</option>
+                                        <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 良い</option>
+                                        <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 平均</option>
+                                        <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; まあまあ</option>
+                                        <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 悪い</option>
+                                    </select>
+                                </span>
+
+                                <label id="rating-error" class="error" for="rating"></label>
+                            </div>
+
+
+                            <div class="satisfaction ratings" name="satisfaction">
+                                <span class="label">満足度</span>
+
+                                <span>
+                                    <select id="rating_Satisfaction" name="rating_Satisfaction" title="必須項目です" required class="new_type drp">
+                                        <option value="">&#9734;&#9734;&#9734;&#9734;&#9734; </option>
+                                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 非常に良い</option>
+                                        <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 良い</option>
+                                        <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 平均</option>
+                                        <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; まあまあ</option>
+                                        <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 悪い</option>
+                                    </select>
+                                </span>
+
+                                <label id="rating_Satisfaction-error" class="error" for="rating_Satisfaction"></label>
+                            </div>
+
+
+                            <div class="recommendation ratings" name="recommendation">
+                                <span class="label">おススメ度</span>
+
+                                <span>
+                                    <select id="rating_Recommendation" name="rating_Recommendation" title="必須項目です" required class="new_type drp">
+                                        <option value="">&#9734;&#9734;&#9734;&#9734;&#9734; </option>
+                                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 非常に良い</option>
+                                        <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 良い</option>
+                                        <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 平均</option>
+                                        <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; まあまあ</option>
+                                        <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 悪い</option>
+                                    </select>
+                                </span>
+
+                                <label id="rating_Recommendation-error" class="error" for="rating_Recommendation"></label>
+                            </div>
+
+
+                            <div class="fragrance ratings" name="fragrance">
+                                <span class="label">香り</span>
+
+                                <span>
+                                    <select id="rating_Fragrance" name="rating_Fragrance" title="必須項目です" required class="new_type drp">
+                                        <option value="">&#9734;&#9734;&#9734;&#9734;&#9734; </option>
+                                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 非常に良い</option>
+                                        <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 良い</option>
+                                        <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 平均</option>
+                                        <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; まあまあ</option>
+                                        <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 悪い</option>
+                                    </select>
+                                </span>
+
+                                <label id="rating_Fragrance-error" class="error" for="rating_Fragrance"></label>
+                            </div>
+
+                            <div class="hairfinishing ratings" name="hairfinishing">
+                                <span class="label">髪の仕上がり</span>
+
+                                <span>
+                                    <select id="rating_Hairfinishing" name="rating_Hairfinishing" title="必須項目です" required class="new_type drp">
+                                        <option value="">&#9734;&#9734;&#9734;&#9734;&#9734; </option>
+                                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733; 非常に良い</option>
+                                        <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734; 良い</option>
+                                        <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734; 平均</option>
+                                        <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734; まあまあ</option>
+                                        <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734; 悪い</option>
+                                    </select>
+                                </span>
+
+                                <label id="rating_Hairfinishing-error" class="error" for="rating_Hairfinishing"></label>
+                            </div>
+
+                            <span class="label isrecommended">この製品をお友達にオススメしますか？</span>
+
+                            <select id="isrecommended" name="isrecommended" title="必須項目です" value="" required="" class="new_type drp" aria-required="true">
+                                <option value="true">はい</option>
+                                <option value="false">いいえ</option>
+                            </select>
+
+                        </div>
+
+                        <div class="formfield nickname">
+                            <span class="label">ユーザー名を入力して下さい。<br />※5文字以上25文字以内［全角英数字のみ］</span>
+                            <span class="labelfr">ユーザー名</span>
+                            <input id="usernickname" name="usernickname" title="ユーザー名は5〜25文字以内で入力して下さい" type="text" required="" maxlength="25" aria-required="true" class="error" aria-invalid="true">
+                            <label id="nickname-error" class="error" for="usernickname"></label>
+                            <span class="caption">※これが、今後の投稿すべてに表示されます。（実名を使用しないことをおすすめします）</span>
+                        </div>
+                        <div class="formfield title">
+                            <span class="label">タイトルを入力してください。<br />※30文字以内</span>
+                            <span class="labelfr">タイトル</span>
+                            <label id="title-error" class="error" for="title"></label>
+                            <input id="title" name="title" title="レビューのタイトルを入力してください" type="text" required="" minlength="4" maxlength="30" aria-required="true" class="error" aria-invalid="true">
+                            <span class="caption">例） 艶のある染め上がりに！</span>
+                        </div>
+                        <div class="formfield reviewtext">
+                            <span class="label">レビューを入力して下さい。<br />※25文字以上200文字以内</span>
+                            <span class="labelfr">レビュー内容</span>
+                            <label id="comments-error" class="error" for="reviewtext"></label>
+                            <textarea cols="20" id="reviewtext" name="reviewtext" title="レビューは25文字以上300文字以内でお書きください" rows="2" required="" minlength="25" maxlength="200"></textarea>
+                        </div>
+
+                        <div class="formfield useremail">
+                            <span class="label">PCメールアドレスを入力して下さい。</span>
+                            <span class="labelfr">PCメールアドレス</span>
+                            <label id="useremail-error" class="error" for="useremail"></label>
+                            <input id="useremail" name="useremail" title="PCメールアドレスを入力して下さい" type="email" value="" required="" aria-required="true" class="error" aria-invalid="true">
+                            <span class="caption">※携帯メールアドレスは登録できません。</span>
+                            <span class="caption">※入力いただいたメールアドレスは、あなたの投稿に関する通知のみに使用します。</span>
+                        </div>
+                        <div class="formfield terms">
+                            <span class="labelfr">コミュニティガイドラインと利用規約に同意する</span>
+                            <input id="agreedtotermsandconditions" title="レビューを投稿するには、利用規約に同意する必要があります" type="checkbox" name="agreedtotermsandconditions" value="True" required="">
+                            <span>
+                                P&G Myレシピ.comのマイレピ商品レビューに投稿されたあなたのユーザ名と投稿内容（個人情報は含まれません）を、以下のコミュニティガイドラインおよび利用規約に定められた範囲で、P&Gが二次利用し、また第三者のウェブサイト等で公開することをご了承ください。
+                            </span>
+                            <div class="terms_link">
+                                <br /><a href="http://www.myrepi.com/page/%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%82%AC%E3%82%A4%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3" target="_blank">コミュニティガイドライン ></a>
+                                <br /><br /><a href="http://www.myrepi.com/page/terms-condition" target="_blank">利用規約 ></a>
+                            </div>
+                            <label id="terms-error" class="error" for="agreedtotermsandconditions"></label>
+                        </div>
+                    </div>
+                    <br />
+                        <div class="formbutton">
+                            <button id="btnConfirm" type="button" name="confirmreview" class="imgfade"></button>
+                        </div>
+                </form>
+            </div><!-- END: formfields -->
+            <div class="result">
+                <div class="buttons">
+                    <button id="btnBack" type="button" name="backreview" class="imgfade" />
+                    <button id="btnSubmit" type="button" name="submitreview" class="imgfade" />
+                </div>
+            </div><!-- END: result -->
+        </div>
+        <div class="success">
+            <p>レビューのご投稿、ありがとうございます。<br />レビューがサイトに反映されるまでに時間かかることがあります。</p>
+            <button id="btnCloseReview" class="imgfade"></button>
+        </div><!-- END: success -->
+
+    </div>
+</div>

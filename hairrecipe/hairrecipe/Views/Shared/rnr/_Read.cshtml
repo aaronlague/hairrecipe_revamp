@@ -1,0 +1,120 @@
+﻿<script type="text/html" id="read_review_template">
+    <% _.each(Results, function(Review) { %>
+
+    <% console.log(Review); %>
+    <li class="review">
+        <div class="lft">
+            <div class="submissionTime"><%=formatDate(Review.SubmissionTime)%></div>
+            <div class="subReview">
+                <% if(Review.Rating){%>
+                <div class="overall">
+                    <span class="label">総合評価</span>
+                    <span class="rating2">
+                        <span class="ratingHighlight" style="width:<%=100*(Review.Rating/5)%>%"></span>
+                    </span>
+                    <span class="num"><%=Review.Rating%></span>
+                </div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Satisfaction){%>
+                <div class="satisfaction">
+                    <span class="label"><%=Review.SecondaryRatings.Satisfaction.Label%></span>
+                    <span class="rating">
+                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Satisfaction.Value/5)%>%"></span>
+                    </span>
+                </div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Recommendation){%>
+                <div class="recommendation">
+                    <span class="label"><%=Review.SecondaryRatings.Recommendation.Label%></span>
+                    <span class="rating">
+                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Recommendation.Value/5)%>%"></span>
+                    </span>
+                </div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Fragrance){%>
+                <div class="colorfinishing">
+                    <span class="label"><%=Review.SecondaryRatings.Fragrance.Label%></span>
+                    <span class="rating">
+                        <span class="ratingHighlight" style="width: <%=100*(Review.SecondaryRatings.Fragrance.Value/5)%>%"></span>
+                    </span>
+                </div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Hairfinishing){%>
+                <div class="easyforuse">
+                    <span class="label"><%=Review.SecondaryRatings.Hairfinishing.Label%></span>
+                    <span class="rating">
+                        <span class="ratingHighlight" style="width: <%=100*(Review.SecondaryRatings.Hairfinishing.Value/5)%>%"></span>
+                    </span>
+                </div>
+                <% } %>
+                <div class="IsRecommended">
+                    <div>
+                        お友達にオススメしますか？
+                        <% if(Review.IsRecommended == true){%>
+                        ［<span class="recommended"> <%=IsRecommended %> はい</span> ］
+                        <% } else { %>
+                        ［<span class="recommended"> <%=IsRecommended %> いいえ</span> ］
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rght">
+            <%
+            var authorName = "Anonymous";
+            if(Review.UserNickname) {
+            authorName = Review.UserNickname;
+            }
+
+            var IsRecommended = "";
+            if(Review.IsRecommended == true) {
+            IsRecommended = "はい";
+            }else if (Review.IsRecommended == false){
+            IsRecommended = "いいえ";
+            }else if (Review.IsRecommended == null){
+            IsRecommended = "null"
+            }
+            %>
+            <div class="author">
+                <span><%= authorName %> さん</span>
+            </div>
+            <div class="title">
+                <span><%=truncate(Review.Title, 200)%></span>
+            </div>
+            <p class="body"> <%=truncate(Review.ReviewText, 200)%> </p>
+        </div>
+        <div class="separator"></div>
+    </li>
+    <% }); %>
+</script>
+<script type="text/html" id="rnrr_template_empty">
+    <div>There are no reviews for this product.</div>
+</script>
+<div class="modal fade" id="rnrr_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <div class="model-header-image"></div>
+
+
+                <h4 class="modal-title productName" id="myModalLabel">ミントブレンド クレンジング レシピ ［ クレンジングシャンプー ］</h4>
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><img src="/Content/images/pc/common/modalClose.png" /></span>
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+                <div class="frame">
+                    <div class="innerframe">
+                        <ul id="reviews" class="pagination"></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
