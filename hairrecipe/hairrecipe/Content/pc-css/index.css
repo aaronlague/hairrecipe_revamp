@@ -171,6 +171,7 @@ ol.carousel-indicators {
     text-shadow:none;
     font-family: 'LubalinGraph-Book';
     top: 14px;
+    left: 50px;
     position: absolute;
     font-size: 15px;
 }
