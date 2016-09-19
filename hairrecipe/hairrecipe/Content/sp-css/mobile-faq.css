@@ -119,6 +119,7 @@ and (max-device-width : 568px) {
     }
     .col1, .col2 {
         padding:0.7em 1em;
+        padding-left: 0.7em;
     }
     .col1 {
         width: 50px;
