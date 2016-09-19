@@ -357,11 +357,23 @@ ul, li{
     margin : 0 0 20px 0;
 }
 
-#booster .video .text-content ul li{
+#booster .video .text-content ul li {
     float : left;
     width : 30%;
     margin-right : 30px;
 }
+
+    #booster .video .text-content ul li:nth-of-type(1) {
+        margin-right:50px;
+    }
+
+    #booster .video .text-content ul li:nth-of-type(2) {
+        margin-right:50px;
+    }
+
+    #booster .video .text-content ul li:nth-of-type(3) {
+        margin-right:0px;
+    }
 
 #booster .oil-spoon{
     background-image : url('/Content/images/pc/product/booster/oil_spoons.jpg');
