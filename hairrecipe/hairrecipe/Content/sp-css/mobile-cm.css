@@ -95,7 +95,7 @@ ul {
 
 .cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four {
     position:relative;
-    padding: 0 10% 10% 10%;
+    padding: 0 10% 9% 10%;
 
 }
 
@@ -115,7 +115,8 @@ ul {
 }
 
 .cm-lineup-one  div.inner, .cm-lineup-three  div.inner, .cm-lineup-four div.inner {
-    padding-top:120px;
+    padding-top:35%;
+    padding-bottom: 75%;
 }
 
 .cm-lineup-five div.inner {
@@ -123,7 +124,8 @@ ul {
 }
 
 .cm-lineup-two div.inner {
-    padding-top:50px;
+    padding-top: 5%;
+    padding-bottom: 90%;
 }
 
 .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
@@ -138,7 +140,11 @@ ul {
     line-height:30px;
 }
 
-.inner a.btn.to-read-btn {
+.cm-lineup-one a.btn.to-read-btn {
+    margin-top:15%;
+}
+
+a.btn.to-read-btn {
     width: 70%;
 }
 
@@ -171,6 +177,31 @@ ul {
 
    .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
        font-size: 1.2em;
+   }
+
+   .cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four{
+       padding: 0 10% 2% 10%;
+   }
+
+   div.inner a.btn.to-read-btn {
+       padding-bottom:20px;
+   }
+
+   .cm-lineup-two div.inner {
+       padding-bottom: 80%;
+   }
+
+    a.btn.to-read-btn.gaca-btn {
+        margin-bottom: 10%;
+    }
+
+    .cm-lineup-three  a.btn.to-read-btn.gaca-btn  {
+        margin-top:10%;
+    }
+
+   .cm-lineup-one  div.inner, .cm-lineup-three  div.inner, .cm-lineup-four div.inner {
+       padding-top: 35%;
+       padding-bottom: 65%;
    }
 }
 
@@ -220,6 +251,10 @@ ul {
 
    .cm-lineup-four img {
        margin-top: 7px;
+   }
+
+   .cm-lineup-two {
+       padding: 0 10% 6% 10%;
    }
 }
 
