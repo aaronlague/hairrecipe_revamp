@@ -220,6 +220,7 @@ a.btn.to-read-btn {
 
    .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
        font-size:15px;
+       line-height: 25px;
    }
 
    p {
@@ -234,11 +235,15 @@ a.btn.to-read-btn {
 
    .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
        font-size: 1.1em;
-       margin-top: 10px;
+       margin-top: 26px;
    }
 
    .cm-one h2, .cm-two h2, .cm-three h2, .cm-four h2, .cm-five h2, .cm-six h2 {
        font-size: 1.2em;
+   }
+
+   .cm-lineup-one  div.inner, .cm-lineup-three  div.inner, .cm-lineup-four div.inner {
+       padding-bottom:65%;
    }
 
    .cm-anc li a:after {
@@ -255,6 +260,18 @@ a.btn.to-read-btn {
 
    .cm-lineup-two {
        padding: 0 10% 6% 10%;
+   }
+
+   .cm-lineup-four div.inner {
+       padding-bottom:66%;
+   }
+
+   .cm-lineup-one a.btn.to-read-btn {
+       margin-top: 21%;
+   }
+
+   .cm-lineup-three a.btn.to-read-btn {
+       margin-top:12%;
    }
 }
 
