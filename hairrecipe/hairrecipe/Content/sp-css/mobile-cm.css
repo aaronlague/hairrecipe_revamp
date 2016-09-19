@@ -107,7 +107,8 @@ ul {
 .cm-one h2, .cm-two h2, .cm-three h2, .cm-four h2, .cm-five h2, .cm-six h2 {
     font-family:LubalinGraph-Book;
     padding-top:50px;
-    font-size: 1.4em;
+    /*font-size: 1.4em;*/
+    font-size: 1.2em;
 }
 
 .cm-one h2 span, .cm-two h2 span, .cm-three h2 span, .cm-four h2 span, .cm-five h2 span, .cm-six h2 span {
@@ -136,6 +137,7 @@ ul {
     font-family:Koburina Gothic W3 JIS2004;
     font-size: 19px;
     line-height:30px;
+    margin-top: 15px;
 }
 
 .inner a.btn.to-read-btn {
@@ -156,7 +158,8 @@ ul {
    }
 
    .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3{
-       font-size:18px;
+       /*font-size:18px;*/
+       font-size:15px;
    }
 
    p {
@@ -296,4 +299,9 @@ ul {
   and (orientation: landscape) {
 
 }
-   
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
+    .to-read-btn {
+        padding-left: 9px;
+    }
+}

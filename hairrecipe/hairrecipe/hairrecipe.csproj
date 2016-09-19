@@ -290,6 +290,7 @@
     <Content Include="Content\pc-css\faq.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\sitemap.css" />
+    <Content Include="Content\sp-css\mobile-cm.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
     <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
