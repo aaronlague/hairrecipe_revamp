@@ -1,11 +1,14 @@
-
-
 .modal-content {
     border-radius: 0px;
     height: 800px;
     margin-top: 25%;
     width: 740px;
+    background-image: url(/Content/images/pc/common/rnrr-bg.jpg)
+}
 
+.modal-header {
+    padding: 15px;
+    border: none;
 }
 
 .modal-header .close {
@@ -18,14 +21,19 @@
     opacity: 1;
 }
 
+.modal-title-group {
+    width:60%;
+    float: left;
+}
+
 h4.modal-title {
     font-size: 16px;
-    float: left;
-    width: 60%;
     margin: 30px 0 0 0;
 }
 
-.model-header-image {
+
+
+.modal-header-image {
     margin: 30px;
     float: left;
     width: 100px;
@@ -39,6 +47,8 @@ h4.modal-title {
 }
 
 
+
+
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: hidden !important;
@@ -50,6 +60,125 @@ h4.modal-title {
 
 .innerframe {
     text-align: left;
-    height: 90%;
+    height: 80%;
     overflow-y: scroll;
 }
+
+
+.review-page {
+    margin: 0 60px 0 60px;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+
+/* ----------------------------
+Support for star ratings
+---------------------------- */
+
+.rating-box{
+    margin: 15px 0 15px 0;
+}
+
+.rating {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/rating-stars-off.png) repeat-x scroll 0 0;
+    height:13px;
+    width: 110px;
+	text-align: left;
+}
+
+.rating .ratingHighlight {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/rating-stars.png) repeat-x scroll 0 -1px;
+    height:13px;
+}
+
+.bvOverallRating {
+    margin-top:20px;
+
+}
+
+
+
+.review {
+    margin: 100px 0 0 0;
+}
+
+.review:first-child {
+    margin: 0 0 0 0;
+}
+
+.review .separator {
+    clear:both;
+    width:100%;
+    border-bottom: 1px solid #87847d;
+}
+
+.review .reviewtext {
+    width:50%;
+    padding: 10px 0px 10px 25px;
+    line-height: 1.8em;
+}
+
+.review .label {
+    color: #87847d;
+    padding: .2em .6em .3em 0;
+    font-size: 100%;
+    width: 50%;
+    text-align: left;
+}
+
+.review .author{
+    width:50%;
+    padding: 0 0 20px 0;
+    font-size: 20px;
+}
+
+.review .submission-time {
+    width:50%;
+    padding: 0 0 20px 0;
+    text-align:right;
+}
+
+.review .rating-score{
+    width:50%;
+}
+
+
+
+
+
+
+
+/*
+
+.rating2 {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/stars1.png) repeat-x scroll 0px 1px;
+    height: 18px;
+    width: 105px;
+    text-align: left;
+}
+
+.rating2 .ratingHighlight {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/stars1.png) repeat-x scroll 0px -17px;
+    height: 18px
+}
+.rating span {
+    display: none;
+}
+
+#module {
+	width: 100%;
+	padding: 5px;
+}
+	
+.bvOverallRating {
+	padding:10px;
+}
+*/
+
+
+

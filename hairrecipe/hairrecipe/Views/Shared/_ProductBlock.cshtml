@@ -9,8 +9,8 @@
     <div class="body @Model.DesktopDirection">      
             @if (Model.HasReview)
 {
-    <div class="rr-section">
-        <img src="~/Content/images/pc/temp.rating.jpg" />
+    <div class="rr-section" data-sku="@Model.SKU">
+        <div id="averagerating" class="bvOverallRating"></div>
         <ul>
             <li>
                 <a class="generic-btn gaca-btn write-review" data-toggle="modal" data-target="#rnrw_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewWriteGACA">レビューを読む</a>

@@ -2,91 +2,92 @@
     <% _.each(Results, function(Review) { %>
 
     <% console.log(Review); %>
+
+    <%
+    var authorName = "Anonymous";
+    if(Review.UserNickname) {
+    authorName = Review.UserNickname;
+    }
+
+    var IsRecommended = "";
+    if(Review.IsRecommended == true) {
+    IsRecommended = "はい";
+    }else if (Review.IsRecommended == false){
+    IsRecommended = "いいえ";
+    }else if (Review.IsRecommended == null){
+    IsRecommended = "null"
+    }
+    %>
+
     <li class="review">
-        <div class="lft">
-            <div class="submissionTime"><%=formatDate(Review.SubmissionTime)%></div>
+
+        <div class="author pull-left">
+            <span><%= authorName %> さん</span>
+        </div>
+
+        <div class="submission-time pull-right"><%=formatDate(Review.SubmissionTime)%></div>
+
+        <div class="separator"></div>
+
+
+        <div class="rating-score  pull-left"  >
             <div class="subReview">
                 <% if(Review.Rating){%>
-                <div class="overall">
-                    <span class="label">総合評価</span>
-                    <span class="rating2">
+                <div class="rating-box overall">
+                    <div class="label pull-left">総合</div>
+                    <div class="rating">
                         <span class="ratingHighlight" style="width:<%=100*(Review.Rating/5)%>%"></span>
-                    </span>
-                    <span class="num"><%=Review.Rating%></span>
-                </div>
-                <% } %>
-                <% if(Review.SecondaryRatings.Satisfaction){%>
-                <div class="satisfaction">
-                    <span class="label"><%=Review.SecondaryRatings.Satisfaction.Label%></span>
-                    <span class="rating">
-                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Satisfaction.Value/5)%>%"></span>
-                    </span>
-                </div>
-                <% } %>
-                <% if(Review.SecondaryRatings.Recommendation){%>
-                <div class="recommendation">
-                    <span class="label"><%=Review.SecondaryRatings.Recommendation.Label%></span>
-                    <span class="rating">
-                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Recommendation.Value/5)%>%"></span>
-                    </span>
-                </div>
-                <% } %>
-                <% if(Review.SecondaryRatings.Fragrance){%>
-                <div class="colorfinishing">
-                    <span class="label"><%=Review.SecondaryRatings.Fragrance.Label%></span>
-                    <span class="rating">
-                        <span class="ratingHighlight" style="width: <%=100*(Review.SecondaryRatings.Fragrance.Value/5)%>%"></span>
-                    </span>
-                </div>
-                <% } %>
-                <% if(Review.SecondaryRatings.Hairfinishing){%>
-                <div class="easyforuse">
-                    <span class="label"><%=Review.SecondaryRatings.Hairfinishing.Label%></span>
-                    <span class="rating">
-                        <span class="ratingHighlight" style="width: <%=100*(Review.SecondaryRatings.Hairfinishing.Value/5)%>%"></span>
-                    </span>
-                </div>
-                <% } %>
-                <div class="IsRecommended">
-                    <div>
-                        お友達にオススメしますか？
-                        <% if(Review.IsRecommended == true){%>
-                        ［<span class="recommended"> <%=IsRecommended %> はい</span> ］
-                        <% } else { %>
-                        ［<span class="recommended"> <%=IsRecommended %> いいえ</span> ］
-                        <% } %>
                     </div>
                 </div>
+                <div class="separator"></div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Satisfaction){%>
+                <div class="rating-box satisfaction">
+                    <div class="label pull-left">満足度</div>
+                    <div class="rating">
+                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Satisfaction.Value/5)%>%"></span>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Recommendation){%>
+                <div class="rating-box recommendation">
+                    <div class="label pull-left">おススメ度 </div>
+                    <div class="rating">
+                        <span class="ratingHighlight" style="width:<%=100*(Review.SecondaryRatings.Recommendation.Value/5)%>%"></span>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <% } %>
+                <% if(Review.SecondaryRatings.Fragrance){%>
+                <div class="rating-box fragrance">
+                    <div class="label pull-left">香り </div>
+                    <div class="rating">
+                        <span class="ratingHighlight" style="width: <%=100*(Review.SecondaryRatings.Fragrance.Value/5)%>%"></span>
+                    </div>
+                </div>
+                <% } %>
+
             </div>
         </div>
-        <div class="rght">
-            <%
-            var authorName = "Anonymous";
-            if(Review.UserNickname) {
-            authorName = Review.UserNickname;
-            }
+        <div class="reviewtext pull-right">
 
-            var IsRecommended = "";
-            if(Review.IsRecommended == true) {
-            IsRecommended = "はい";
-            }else if (Review.IsRecommended == false){
-            IsRecommended = "いいえ";
-            }else if (Review.IsRecommended == null){
-            IsRecommended = "null"
-            }
-            %>
-            <div class="author">
-                <span><%= authorName %> さん</span>
-            </div>
             <div class="title">
                 <span><%=truncate(Review.Title, 200)%></span>
             </div>
-            <p class="body"> <%=truncate(Review.ReviewText, 200)%> </p>
+            <p> <%=truncate(Review.ReviewText, 200)%> </p>
         </div>
         <div class="separator"></div>
     </li>
     <% }); %>
 </script>
+
+
+<script type="text/html" id="overall_rating_template">
+    <% var averageRating = Results[0].ProductStatistics.NativeReviewStatistics.AverageOverallRating;  %>
+    <span class="rating"><span class="ratingHighlight" style="width:<%=100*(averageRating/5)%>%"></span></span>
+</script>
+
 <script type="text/html" id="rnrr_template_empty">
     <div>There are no reviews for this product.</div>
 </script>
@@ -96,11 +97,12 @@
         <div class="modal-content">
             <div class="modal-header">
 
-                <div class="model-header-image"></div>
+                <div class="modal-header-image"></div>
 
-
-                <h4 class="modal-title productName" id="myModalLabel">ミントブレンド クレンジング レシピ ［ クレンジングシャンプー ］</h4>
-
+                <div class="modal-title-group">
+                    <h4 class="modal-title productName" id="myModalLabel">ミントブレンド クレンジング レシピ ［ クレンジングシャンプー ］</h4>
+                    <div id="averagerating" class="bvOverallRating"></div>
+                </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><img src="/Content/images/pc/common/modalClose.png" /></span>
                 </button>
@@ -110,7 +112,7 @@
             <div class="modal-body">
                 <div class="frame">
                     <div class="innerframe">
-                        <ul id="reviews" class="pagination"></ul>
+                        <ul id="reviews" class="review-page"></ul>
                     </div>
                 </div>
             </div>

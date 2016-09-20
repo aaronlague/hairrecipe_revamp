@@ -23,13 +23,14 @@ $(document).ready(function () {
     // Allow for API results to be cached
     $.ajaxSetup({ cache: true });
 
-    productID = $('.readReview').attr("data-sku");
+    var productSKU = $(".rr-section").attr("data-sku")
+
     // Overall review parameters
-    //$(".bvOverallRating").bvOverallRatingWidget({bvproductID:productID, bvTemplate:'overall_rating_template'});
+    $(".bvOverallRating").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_template' });
+
 
     // Initialize Rating Widget
     $(".rating_selector").bvRatingSelectorWidget();
-
 
 
     // Display Ratings and Reviews
@@ -41,12 +42,15 @@ $(document).ready(function () {
 
         icon = "/Content/images/pc/product/" + productLine + "/" + productID + ".png";
 
+        // Overall review parameters
+        $(".bvOverallRating").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_template' });
+
         $("#reviews").bvDisplayRatingReviewWidget({ bvproductID: productSKU, bvTemplate: 'read_review_template' });
 
-        $(".model-header-image").css('background-image', "url(" + icon + ")");
+        $(".modal-header-image").css('background-image', "url(" + icon + ")");
         
 
-        console.log(icon);
+       
 
         //if ($("body").attr("id") == "booster") {
         //    var course = $(this).attr("data-course");
@@ -245,7 +249,7 @@ $(document).ready(function () {
   this.formatDate = function formatDate(str) {
 	var fdate = str;
 	var myarr = fdate.split("T");
-	return myarr[0].replace(/-/g, "/");
+	return myarr[0].replace(/-/g, ".");
   };  
 })();
 
@@ -253,27 +257,29 @@ $(document).ready(function () {
 // Bazaarvoice widgets
 (function($) {
 	// Overall Rating
-    $.fn.bvOverallRatingWidget = function(options) {
+    $.fn.bvOverallRatingWidget = function (options) {
         var defaults = {
 			bvTemplate:"",
 			bvproductID:""
         };
         var options = $.extend(defaults, options);
-		var bvParam = "passkey=" + api_key + "&apiversion=" + api_version + "&filter=ProductId:" + options.bvproductID + "&stats=NativeReviews";
+        var bvParam = "passkey=" + api_key + "&apiversion=" + api_version + "&filter=ProductId:" + options.bvproductID + "&stats=NativeReviews";
 
-        return this.each(function() {
+        return this.each(function () {
             var selector = $(this);
 			var jqxhr = $.getJSON( api_server + "/statistics.json?callback=?", bvParam,
-			function(json){
+			function (json) {
+			    console.log(json)
 				// Render the template into a variable
-				var output = _.template(document.getElementById(options.bvTemplate).innerHTML, json);
+			    var output = _.template(document.getElementById(options.bvTemplate).innerHTML, json);
+			    $(selector).children().remove();
 				$(selector).append(output);
-			});				
+			});
         });	
 	}
 	
 	// Ratings and Reviews
-    $.fn.bvDisplayRatingReviewWidget = function(options) {
+    $.fn.bvDisplayRatingReviewWidget = function (options) {
         var defaults = {
 			bvTemplate:"",
 			bvproductID:""
