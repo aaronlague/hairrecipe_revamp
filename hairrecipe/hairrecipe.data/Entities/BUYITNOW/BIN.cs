@@ -8,7 +8,7 @@ namespace hairrecipe.data.Entities.BUYITNOW
 {
     public class BIN
     {
-        public string SKU { get; set; }
+        public string Id { get; set; }
         public string ProductName { get; set; }
         public IList<Store> Stores { get; set; }
     }

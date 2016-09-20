@@ -16,9 +16,9 @@ namespace hairrecipe.Controllers
         [Route("/GetBIN")]
         public ActionResult GetBIN()
         {
-            var sku = Request.Form["sSKU"];
+            var binId = Request.Form["binId"];
             var gaca = Request.Form["gaca"];
-            var BIN = BINServices.GetBIN(sku);
+            var BIN = BINServices.GetBIN(binId);
             return PartialView("_BINPopUp", BIN);
         }
     }
