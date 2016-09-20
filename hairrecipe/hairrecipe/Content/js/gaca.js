@@ -48,6 +48,10 @@ window.isohub = window.isohub || {};
             $(obj).removeAttr("eventlabel");
             $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA.replace("[platform]", isohub.helper.ReturnPlatformKeyword()) + "'])");
         });
+        //to top button
+        var ToTopGACA = "[platform]_hairrepi_20161001_".replace("[platform]", isohub.helper.ReturnPlatformKeyword());
+        var pageKeyword = $("#pageKey").val();
+        $("#back-to-top").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + ToTopGACA + pageKeyword + "_page-top'])");
     },
     /*
         customized function made only for diagnosis
@@ -76,8 +80,7 @@ window.isohub = window.isohub || {};
         //result SNS
         $(".diagnosis .social-container .twitter-share, .results-sns .twitter-share, .diagnosis .social-container .twitter").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
         $(".diagnosis .social-container .facebook-share, .results-sns .facebook-share, .diagnosis .social-container .fb").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
-        $(".results-sns .line-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");
-        
+        $(".results-sns .line-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");               
     },
     /*
         Create the BIN script for BIN's individual store
