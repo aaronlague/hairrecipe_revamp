@@ -12,22 +12,22 @@ window.isohub = window.isohub || {};
     app.Start = function () {
         $(".to-shop-btn").click(function (e) {
             var _this = $(this);
-            var SKU = _this.attr("sku");
+            var BINID = _this.attr("BINID");
             var PARENT = $(this).parent();
-            app.ShowHideBin(SKU, "", PARENT, _this)
+            app.ShowHideBin(BINID, "", PARENT, _this)
         });
     },
     /*
     Toggles the popup button
-    SKU : sku code
+    BINID : BINID code
     GATAG : gaca
     PLATFORM : Mobile or Desktop
     APPENDOBJ :  element where to append the BIN Popup
     CALLER : the element triggered the script
     */
-    app.ShowHideBin = function (SKU, PLATFORM, APPENDOBJ, CALLER) {
+    app.ShowHideBin = function (BINID, PLATFORM, APPENDOBJ, CALLER) {
 
-        if (SKU === undefined ) { return false}
+        if (BINID === undefined ) { return false}
         //Check if theres an existing popup, but dont know where it is
         if ($(".bin .bin-PopUp").length > 0) {
             //check if theres a popup in your target space
@@ -37,26 +37,26 @@ window.isohub = window.isohub || {};
                 //remove all popup
                 $(".bin .bin-PopUp").remove();
                 //no popup in your target space? if yes! pop that shit!!
-                if (!targetHasPopUp) { app.ReturnBIN(SKU, PLATFORM, APPENDOBJ, CALLER); }
+                if (!targetHasPopUp) { app.ReturnBIN(BINID, PLATFORM, APPENDOBJ, CALLER); }
             });
         //No popups pop that BIN
         }else{
-            app.ReturnBIN(SKU, PLATFORM, APPENDOBJ, CALLER);
+            app.ReturnBIN(BINID, PLATFORM, APPENDOBJ, CALLER);
         }
     },
     /*
     Queries all the needed data for BIN from json file
-    SKU : sku code
+    BINID : BINID code
     GATAG : gaca
     PLATFORM : Mobile or Desktop
     APPENDOBJ :  element where to append the BIN Popup
     */
-    app.ReturnBIN = function (SKU, PLATFORM, APPENDOBJ, CALLER) {
+    app.ReturnBIN = function (BINID, PLATFORM, APPENDOBJ, CALLER) {
         $.when(
             $.ajax({
                 type: 'POST',
                 url: "/GetBIN",
-                data: { "sSKU": SKU, "platform": PLATFORM },
+                data: { "binId": BINID, "platform": PLATFORM },
                 cache: false,
                 dataType: 'html',
                 success: function (data) {

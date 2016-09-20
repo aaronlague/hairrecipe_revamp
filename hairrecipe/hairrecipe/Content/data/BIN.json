@@ -1,6 +1,6 @@
 [
     {
-        sku : 'common',
+        id : 'common',
         productName : 'common',
         stores :  [
             {
@@ -16,7 +16,7 @@
         ]
     },
     {
-        sku : 'mint-cleansing',
+        id : 'mint-cleansing',
         productName : 'mint-cleansing',
         stores :  [
             {
@@ -32,7 +32,7 @@
         ]
     },
     {
-        sku : 'apricot-shampoo',
+        id : 'apricot-shampoo',
         productName : 'Apricot-shampoo',
         stores :  [
             {
@@ -48,7 +48,7 @@
         ]
     },
     {
-        sku : 'apricot-shampoo-reco',
+        id : 'apricot-shampoo-reco',
         productName : 'Apricot-shampoo',
         stores :  [
             {
@@ -64,7 +64,7 @@
         ]
     },
     {
-        sku : 'apricot-treatment',
+        id : 'apricot-treatment',
         productName : 'Apricot-treatment',
         stores :  [
             {
@@ -80,7 +80,7 @@
         ]
     },
     {
-        sku : 'apricot-mask',
+        id : 'apricot-mask',
         productName : 'Apricot-mask',
         stores :  [
             {
@@ -96,7 +96,7 @@
         ]
     },
     {
-        sku : 'apricot-shampoo-refill',
+        id : 'apricot-shampoo-refill',
         productName : 'Apricot-shampoo-refill',
         stores :  [
             {
@@ -112,7 +112,7 @@
         ]
     },
     {
-        sku : 'apricot-treatment-refill',
+        id : 'apricot-treatment-refill',
         productName : 'apricot-treatment-refill',
         stores :  [
             {
@@ -128,7 +128,7 @@
         ]
     },
     {
-        sku : 'apricot-pack-refill',
+        id : 'apricot-pack-refill',
         productName : 'apricot-pack-refill',
         stores :  [
             {
@@ -144,7 +144,7 @@
         ]
     },
     {
-        sku : 'kiwi-shampoo',
+        id : 'kiwi-shampoo',
         productName : 'kiwi-shampoo',
         stores :  [
             {
@@ -160,7 +160,7 @@
         ]
     },
     {
-        sku : 'kiwi-treatment',
+        id : 'kiwi-treatment',
         productName : 'kiwi-treatment',
         stores :  [
             {
@@ -176,7 +176,7 @@
         ]
     },
     {
-        sku : 'kiwi-scalp',
+        id : 'kiwi-scalp',
         productName : 'kiwi-scalp',
         stores :  [
             {
@@ -192,7 +192,7 @@
         ]
     },
     {
-        sku : 'kiwi-shampoo-refill',
+        id : 'kiwi-shampoo-refill',
         productName : 'kiwi-shampoo-refill',
         stores :  [
             {
@@ -208,7 +208,7 @@
         ]
     },
     {
-        sku : 'kiwi-treatment-refill',
+        id : 'kiwi-treatment-refill',
         productName : 'kiwi-treatment-refill',
         stores :  [
             {
@@ -224,7 +224,7 @@
         ]
     },
     {
-        sku : 'kiwi-pack-refill',
+        id : 'kiwi-pack-refill',
         productName : 'kiwi-pack-refill',
         stores :  [
             {
@@ -240,7 +240,7 @@
         ]
     },
     {
-        sku : 'booster-grape',
+        id : 'booster-grape',
         productName : 'booster-grape',
         stores :  [
             {
@@ -256,7 +256,7 @@
         ]
     },
     {
-        sku : 'booster-seed',
+        id : 'booster-seed',
         productName : 'booster-seed',
         stores :  [
             {
@@ -272,7 +272,7 @@
         ]
     },
     {
-        sku : 'dgnsis-apricot',
+        id : 'dgnsis-apricot',
         productName : 'diagnosis-apricot',
         stores :  [
 
@@ -284,7 +284,7 @@
         ]
     },
     {
-        sku : 'dgnsis-kiwi',
+        id : 'dgnsis-kiwi',
         productName : 'diagnosis-kiwi',
         stores :  [
             {
@@ -295,7 +295,7 @@
         ]
     },
     {
-        sku : 'footer-amazon',
+        id : 'footer-amazon',
         productName : 'footer-amazon',
         stores :  [
             {
@@ -306,7 +306,7 @@
         ]
     },
     {
-        sku : 'footer-lohaco',
+        id : 'footer-lohaco',
         productName : 'footer-lohaco',
         stores :  [
             {

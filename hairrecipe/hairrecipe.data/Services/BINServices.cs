@@ -15,7 +15,7 @@ namespace hairrecipe.data.Services
 {
     public class BINServices
     {
-        public static BIN GetBIN(string SKU)
+        public static BIN GetBIN(string Id)
         {
             string filePath = System.Configuration.ConfigurationManager.AppSettings["BINSourceFilepath"];
             string Json = System.IO.File.ReadAllText(System.Web.Hosting.HostingEnvironment.MapPath(filePath));
@@ -23,8 +23,8 @@ namespace hairrecipe.data.Services
             JArray jArryObj = JArray.Parse(Json);
             var binObj = jArryObj.ToObject<List<BIN>>();
             var rtn = new BIN();
-            try { 
-                rtn = binObj.Where(x => x.SKU.Contains(SKU)).FirstOrDefault();
+            try {
+                rtn = binObj.Where(x => x.Id.Contains(Id)).FirstOrDefault();
             }
             catch (Exception ex)
             {
