@@ -313,7 +313,7 @@
 
     #Details .results-page-bottom .bottom-block {
         margin-top: -5%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
 
     #Details .results-page-bottom .bottom-block p {
@@ -333,7 +333,7 @@
         width: 60%;
         overflow: auto;
         margin: 0 auto;
-        margin-top: 7%;
+        margin-top: 0%;
         margin-bottom: 10%;
     }
 
