@@ -3,6 +3,7 @@
     ViewBag.Title = "PRODUCT STORIES｜HAIR RECIPE（ヘアレシピ) | P&amp;G";
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)のプロダクトストーリー。レシピの5つのこだわりポイントがご覧いただけます。";
     Layout = "~/Views/Shared/_Layout.Mobile.cshtml";
+    ViewData["GACAKeyword"] = "prpduct-stories";
 }
 @section customStyles
 {
@@ -16,11 +17,11 @@
     <div class="product-stories-top">
         <p class="title">レシピの５つの<br />こだわりポイント</p>
         <ol>
-            <li><a href="#story1">テクノロジー</a></li>
-            <li><a href="#story2">素材</a></li>
-            <li><a href="#story3">香り</a></li>
-            <li><a href="#story4">ソレー効果</a></li>
-            <li><a href="#story5">泡立ち</a></li>
+            <li><a class="gaca-btn" gaca="sp_hairrepi_20161001_prpduct-stories_technology" href="#story1">テクノロジー</a></li>
+            <li><a class="gaca-btn" gaca="sp_hairrepi_20161001_prpduct-stories_material" href="#story2">素材</a></li>
+            <li><a class="gaca-btn" gaca="sp_hairrepi_20161001_prpduct-stories_fragrance" href="#story3">香り</a></li>
+            <li><a class="gaca-btn" gaca="sp_hairrepi_20161001_prpduct-stories_soule" href="#story4">ソレー効果</a></li>
+            <li><a class="gaca-btn" gaca="sp_hairrepi_20161001_prpduct-stories_foam" href="#story5">泡立ち</a></li>
         </ol>
     </div>
     <div class="product-stories-content">
