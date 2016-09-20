@@ -39,6 +39,7 @@ h4.modal-title {
     width: 100px;
     height: 150px;
     background-size: contain;
+    background-repeat:no-repeat;
 }
 
 .modal-body {

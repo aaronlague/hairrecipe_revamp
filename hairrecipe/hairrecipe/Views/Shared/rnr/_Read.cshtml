@@ -83,6 +83,11 @@
 </script>
 
 
+<script type="text/html" id="overall_rating_popup_template">
+    <% var averageRating = Results[0].ProductStatistics.NativeReviewStatistics.AverageOverallRating;  %>
+    <span class="rating"><span class="ratingHighlight" style="width:<%=100*(averageRating/5)%>%"></span></span>
+</script>
+
 <script type="text/html" id="overall_rating_template">
     <% var averageRating = Results[0].ProductStatistics.NativeReviewStatistics.AverageOverallRating;  %>
     <span class="rating"><span class="ratingHighlight" style="width:<%=100*(averageRating/5)%>%"></span></span>

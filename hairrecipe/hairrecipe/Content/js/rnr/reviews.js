@@ -40,10 +40,10 @@ $(document).ready(function () {
         productID = $(this).attr("data-pid");
         productLine = $(this).attr("data-line");
 
-        icon = "/Content/images/pc/product/" + productLine + "/" + productID + ".png";
+        icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
 
         // Overall review parameters
-        $(".bvOverallRating").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_template' });
+        $(".bvOverallRatingPopup").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_popup_template' });
 
         $("#reviews").bvDisplayRatingReviewWidget({ bvproductID: productSKU, bvTemplate: 'read_review_template' });
 
