@@ -28,8 +28,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-mint_bin1',
             binStoreGaca : '[platform]_hairrepi_20161001_product-mint_[store]',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-mint_review_wrigt1',
-            reviewWriteGACA : '[platform]_hairrepi_20161001_product-mint_review_read1',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-mint_review_wrigt1',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-mint_review_read1',
             columns :[ 
                 {        
                     header:'添加',

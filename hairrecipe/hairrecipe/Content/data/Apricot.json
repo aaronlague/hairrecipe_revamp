@@ -28,8 +28,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-apri_bin1',
             binStoreGaca : '[platform]_hairrepi_20161001_product-apri_[store]',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt1',
-            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_read1',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt1',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_read1',
             columns :[ 
                 {        
                     header:'添加',
@@ -70,8 +70,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-apri_bin2',
             binStoreGaca : '[platform]_hairrepi_20161001_product-apri_[store]_2',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt2',
-            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_read2',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt2',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_read2',
             columns :[ 
                 {        
                     header:'添加',
@@ -111,8 +111,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-apri_bin3',
             binStoreGaca : '[platform]_hairrepi_20161001_product-apri_[store]_3',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt3',
-            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_read3',
+            reviewWriteGACA : '[platform]_hairrepi_20161001_product-apri_review_wrigt3',
+            reviewReadGACA : '[platform]_hairrepi_20161001_product-apri_review_read3',
             columns :[ 
                 {        
                     header:'添加',
