@@ -7,6 +7,10 @@ ul, li{list-style : none;}
 body{
     color : #87847d;
 }
+
+p {
+    font-family: Koburina Gothic W3 JIS2004;
+}
 .container-hairrecipe{
     width : 1280px;
     margin : 0 auto;
@@ -322,3 +326,5 @@ footer .base ul li{
 #back-to-top.show {
     opacity: 1;
 }
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { p { font-family: Koburina Gothic W3 JIS2004; font-weight: 600;} }
