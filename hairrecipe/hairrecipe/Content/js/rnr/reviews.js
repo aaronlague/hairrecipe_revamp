@@ -1,14 +1,14 @@
 ﻿// Reviews 
 
 // Stage API request configuration
-// var api_server = "http://stg.api.bazaarvoice.com/data";
+var api_server = "http://stg.api.bazaarvoice.com/data";
 // Stage API key
-// var api_key = "ndhxusgk9hj9arfay95nsxjd";
+ var api_key = "ndhxusgk9hj9arfay95nsxjd";
 
 // Prod API request configuration
-var api_server = "http://api.bazaarvoice.com/data";
+//var api_server = "http://api.bazaarvoice.com/data";
 // Prod API key
-var api_key = "dk182v936arkrh2e68gqaucus";
+//var api_key = "dk182v936arkrh2e68gqaucus";
 
 
 // Refer to http://developer.bazaarvoice.com to find the latest version
@@ -36,35 +36,24 @@ $(document).ready(function () {
     // Display Ratings and Reviews
     $(".read-review").click(function () {
 
-        productSKU = $(this).attr("data-sku");
-        productID = $(this).attr("data-pid");
-        productLine = $(this).attr("data-line");
+        var productSKU = $(this).attr("data-sku");
+        var productID = $(this).attr("data-pid");
+        var productLine = $(this).attr("data-line");
 
-        icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
+        var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
+        $(".modal-header-image").css('background-image', "url(" + icon + ")");
+
+        var productName = $("#" + productID + " .main-details .jp-title-1").html()
+            + $("#" + productID + " .main-details .jp-title-2").html()
+            + $("#" + productID + " .main-details .size").html();
+
+        $(".modal-title").html(productName);
 
         // Overall review parameters
         $(".bvOverallRatingPopup").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_popup_template' });
 
         $("#reviews").bvDisplayRatingReviewWidget({ bvproductID: productSKU, bvTemplate: 'read_review_template' });
 
-        $(".modal-header-image").css('background-image', "url(" + icon + ")");
-        
-
-       
-
-        //if ($("body").attr("id") == "booster") {
-        //    var course = $(this).attr("data-course");
-        //} else {
-        //    var course = $(this).parent().attr("data-course");
-        //    var dataItem = $(this).parent().attr("data-review-item");
-        //}
-        
-        //var productName = $("#" + course + " .productNameImg").attr("alt");
-        var productName = $("#" + productID + " .main-details .jp-title-1").html()
-            + $("#" + productID + " .main-details .jp-title-2").html()
-            + $("#" + productID + " .main-details .size").html();
-
-        $(".modal-title").html(productName);
 
         //if ((dataItem != "refill")) {
         //    productName = productName.replace(/[0-9l]+ml/, "");
@@ -81,28 +70,42 @@ $(document).ready(function () {
     });
 
     // Display Submission form
-    $(".writeReview").click(function () {
+    $(".write-review").click(function () {
         reviewmode = false;
-        form.show();
-        productID = $(this).attr("rel");
-        $("input[name='productid']").val(productID);
+        //form.show();
 
-        var icon = $(this).parent().attr("data-icon");
-        var course = $(this).parent().attr("data-course");
-        var dataItem = $(this).parent().attr("data-review-item");
-        var productName = $("#" + course + " .productNameImg").attr("alt");
+        var productSKU = $(this).attr("data-sku");
+        var productID = $(this).attr("data-pid");
+        var productLine = $(this).attr("data-line");
 
-        if ((dataItem != "refill")) {
-            productName = productName.replace(/[0-9l]+ml/, "");
-            productName = productName.replace(/[0-9l]+\g/, "");
-            $(".productName").text(productName);
-        } else {
-            var trimmedProductName = productName.split('ml')[0]
+        var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
+        $(".modal-header-image").css('background-image', "url(" + icon + ")");
+
+        var productName = $("#" + productID + " .main-details .jp-title-1").html()
+            + $("#" + productID + " .main-details .jp-title-2").html()
+            + $("#" + productID + " .main-details .size").html();
+
+        $(".modal-title").html(productName);
+
+
+        $("input[name='productid']").val(productSKU);
+
+
+        //var course = $(this).parent().attr("data-course");
+        //var dataItem = $(this).parent().attr("data-review-item");
+        //var productName = $("#" + course + " .productNameImg").attr("alt");
+
+        //if ((dataItem != "refill")) {
+        //    productName = productName.replace(/[0-9l]+ml/, "");
+        //    productName = productName.replace(/[0-9l]+\g/, "");
+        //    $(".productName").text(productName);
+        //} else {
+        //    var trimmedProductName = productName.split('ml')[0]
             //alert(trimmedProductName);
-            $(".productName").text(trimmedProductName + "ml");
-        }
+        //    $(".productName").text(trimmedProductName + "ml");
+        //}
 
-        $(".reviewSKU").attr("src", "/images/pc/common/review-" + icon + "-" + course + ".png").addClass(icon);
+        //$(".reviewSKU").attr("src", "/images/pc/common/review-" + icon + "-" + course + ".png").addClass(icon);
 
     });
 
@@ -269,7 +272,7 @@ $(document).ready(function () {
             var selector = $(this);
 			var jqxhr = $.getJSON( api_server + "/statistics.json?callback=?", bvParam,
 			function (json) {
-			    console.log(json)
+			    //console.log(json)
 				// Render the template into a variable
 			    var output = _.template(document.getElementById(options.bvTemplate).innerHTML, json);
 			    $(selector).children().remove();
@@ -298,9 +301,9 @@ $(document).ready(function () {
 			        $(selector).append(output);
 			    }
 			    else {
-			        var output = _.template(document.getElementById(options.bvTemplate + '_empty').innerHTML, json);
-			        $(selector).children().remove();
-			        $(selector).append(output);
+			        //var output = _.template(document.getElementById(options.bvTemplate + '_empty').innerHTML, json);
+			        //$(selector).children().remove();
+			        //$(selector).append(output);
 			    }
 			});				
         });
