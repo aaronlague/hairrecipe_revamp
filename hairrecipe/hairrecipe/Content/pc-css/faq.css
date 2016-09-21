@@ -108,6 +108,7 @@ h2.page-title {
     background: url(../images/sp/faq/arrow-down.png) right 40px center no-repeat;
     /*background:yellow;*/
     font-size:1em;
+    font-weight: 600;
 }
 
 .faq-main .qsec {
