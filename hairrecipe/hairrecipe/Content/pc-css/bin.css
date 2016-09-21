@@ -22,7 +22,7 @@
 .recipe-content-inner .recipe-items .item .item-detail .bin { bottom: 1px; margin-left: 60px; position: absolute; width: 180px; }
 .diagnosis .product-container .item .item-detail .bin { margin: 0 auto }
 .diagnosis .product-suggest .bin { position : relative; bottom: -5px; width : 100%; }
-.diagnosis .product-suggest .bin .bin-PopUp { top : 50px }
+.diagnosis .product-suggest .bin .bin-PopUp { top : 50px; left : 139px; }
 .diagnosis .product-suggest .bin .bin-PopUp.solo a img { margin-left: 81px }
 .diagnosis .product-suggest .text-container-1 { padding-top: 98px; line-height: 1.8em; position : relative; }
 footer .specialInfo ul li  .bin { float: left; margin-left : 30px; }
