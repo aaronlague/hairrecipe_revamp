@@ -18,6 +18,7 @@ h1, h2, h3 {
 }
 .japanese {
     font-family:Koburina Gothic W3 JIS2004;
+    font-weight:600;
 }
 
 .english {
@@ -73,6 +74,8 @@ img {
 .v1 h3 {
     font-size:20px;
     margin-bottom: 100px;
+    font-family:Koburina Gothic W3 JIS2004;
+    font-weight:600;
 }
 
 .video-wrapper {
@@ -83,6 +86,13 @@ a.btn.generic-btn {
     font-size:13px;
     display: inline-block;
     margin:40px 20px 0 20px;
+    font-family:Koburina Gothic W3 JIS2004;
+    font-weight:600;
+}
+
+a.btn.to-shop-btn {
+    font-family: 'LubalinGraph-Book';
+    font-weight:normal;
 }
 
 .recipe {
@@ -133,6 +143,7 @@ a.btn.generic-btn {
 .recipe h3, .recipe2 h3, .recipe3 h3, .recipe4 h3 {
    font-family:Koburina Gothic W3 JIS2004;
     font-size:20px;
+    font-weight: 600;
 }
 
 .juicy {
