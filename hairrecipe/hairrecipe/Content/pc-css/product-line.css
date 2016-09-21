@@ -61,6 +61,7 @@ ul, li{
     font-size : 16px;    
     line-height : 150%;
     letter-spacing : 1px;
+    font-weight:600;
 }
 
 .content-area{
@@ -105,19 +106,22 @@ ul, li{
 .additives .phrases li.phrase-title{
     border-bottom : 1px solid #fff;
     font-size : 16px;
+    font-weight:600;
 }
 .additives .phrases li.phrase{
     line-height : 150%;
     font-size : 12px;
+    font-weight:600;    
 }
 .howtouse-hdr{
     font-size : 20px;
     margin : 39px 0 0;
+    font-family: 'LubalinGraph-Book';
 }
 .howtouse{
     width : 490px;
     font-size : 13px;
-    letter-spacing : 1px;
+    letter-spacing : 0px;
     line-height : 150%;
 }
 .separator{
@@ -152,6 +156,8 @@ ul, li{
 
 .view .generic-btn.shop{
     margin-top : 20px;
+    font-family: 'LubalinGraph-Book';
+    font-weight:normal;
 }
 .rr-section{
     text-align : center;
@@ -168,6 +174,11 @@ ul, li{
     text-align : center;
 }
 
+
+.generic-btn, .generic-btn:hover, .generic-btn:active {
+    font-family: 'Koburina Gothic W3 JIS2004';
+    font-weight:600;
+}
 
 /* 1st product */
 #apricot #shampoo{
@@ -357,11 +368,23 @@ ul, li{
     margin : 0 0 20px 0;
 }
 
-#booster .video .text-content ul li{
+#booster .video .text-content ul li {
     float : left;
     width : 30%;
     margin-right : 30px;
 }
+
+    #booster .video .text-content ul li:nth-of-type(1) {
+        margin-right:50px;
+    }
+
+    #booster .video .text-content ul li:nth-of-type(2) {
+        margin-right:50px;
+    }
+
+    #booster .video .text-content ul li:nth-of-type(3) {
+        margin-right:0px;
+    }
 
 #booster .oil-spoon{
     background-image : url('/Content/images/pc/product/booster/oil_spoons.jpg');
@@ -387,7 +410,7 @@ ul, li{
 }
 #booster .comboSection{
     text-align : left;
-    padding : 50px 0;
+    padding : 100px 0 50px;
 }
 #booster .comboSection .center-section{
     width : 740px;

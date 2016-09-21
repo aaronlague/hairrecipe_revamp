@@ -37,6 +37,8 @@ h1, h2, h3 {
 .kodawari-menu h2 {
     text-align:center;
     padding-top:100px;
+    font-family:'Koburina Gothic W3 JIS2004';
+    font-weight:600;
 }
 .kodawari-menu ul {
     text-align:center;
@@ -53,6 +55,8 @@ h1, h2, h3 {
     color:inherit;
     font-size:22px;
     text-decoration:none;
+    font-weight:600;
+    font-family:'Koburina Gothic W3 JIS2004';
 }
 
 .kodawari1 {
@@ -89,6 +93,7 @@ h1, h2, h3 {
     font-size: 22px;
     margin-top:50%;
     font-family:Koburina Gothic W3 JIS2004;
+    font-weight:600;
 }
 
 .kodawari1 p, .kodawari2 p, .kodawari3 p, .kodawari4 p, .kodawari5 p {
@@ -173,6 +178,8 @@ a.btn.generic-btn {
     font-size:13px;
     display: inline-block;
     margin:40px 20px 0 20px;
+    font-family:'Koburina Gothic W3 JIS2004';
+    font-weight:600;
 }
 
 .recipe a.btn.generic-btn, .recipe2 a.btn.generic-btn, .recipe3 a.btn.generic-btn, .recipe4 a.btn.generic-btn {
@@ -193,8 +200,9 @@ a.btn.generic-btn {
 }
 
 .recipe h3, .recipe2 h3, .recipe3 h3, .recipe4 h3 {
-   font-family:Koburina Gothic W3 JIS2004;
+   font-family:'Koburina Gothic W3 JIS2004';
     font-size:20px;
+    font-weight:600;
 }
 
 .juicy {

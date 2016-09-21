@@ -21,7 +21,7 @@ namespace hairrecipe.data.Entities.CM
         public string CMsectionClass2 { get; set; }
         public string CMsectionId { get; set; }
         public string CMProductNamePc { get; set; }
-        public string SKU { get; set; }
+        public string BINID { get; set; }
         public string HomeVideoImage { get; set; }
     }	 
 }

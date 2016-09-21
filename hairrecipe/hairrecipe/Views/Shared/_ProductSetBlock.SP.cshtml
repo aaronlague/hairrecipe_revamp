@@ -3,7 +3,7 @@
 <div  class="comboSection @Model.BackgroundClass">
     <p class="title">@Html.Raw(Model.Title)</p>
     <p>@Html.Raw(Model.Description)</p>
-    <img src="@Model.Image.Replace("[sw]", "pc")" />
+    <img src="@Model.Image.Replace("[sw]", "sp")" />
     @if ( Model.ProductSets != null && Model.ProductSets.Count > 0)
     {
     <ul>
@@ -13,7 +13,7 @@
                 <p>@Html.Raw(ProductSet.JpTitle1)</p>
                 <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
                 <div class="bin">
-                    <a class="btn to-shop-btn gaca-btn" binbtngaca="@ProductSet.BINStoreGaca" eventlabel="external" gaca="@ProductSet.GACA" sku="@ProductSet.SKU">TO SHOP</a>
+                    <a class="btn to-shop-btn gaca-btn" binbtngaca="@ProductSet.BINStoreGaca" eventlabel="external" gaca="@ProductSet.GACA" binid="@ProductSet.BINID">TO SHOP</a>
                 </div>
             </li>
         }

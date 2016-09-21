@@ -295,7 +295,7 @@
     font-size:2.471em;
     text-align:center;
     margin-top: 5%;
-    margin-bottom: 10%;
+    margin-bottom: 10%; 
 }
 
     #Details .results-page-content .content-block p {
@@ -313,7 +313,7 @@
 
     #Details .results-page-bottom .bottom-block {
         margin-top: -5%;
-        margin-bottom: 9%;
+        margin-bottom: 10%;
     }
 
     #Details .results-page-bottom .bottom-block p {
@@ -333,7 +333,7 @@
         width: 60%;
         overflow: auto;
         margin: 0 auto;
-        margin-top: 7%;
+        margin-top: 0%;
         margin-bottom: 10%;
     }
 
@@ -409,7 +409,7 @@
     }
 
      #Details .results-page-content .content-block {
-        margin-bottom: 10%;
+        margin-bottom: 8%;
     }
 
 }

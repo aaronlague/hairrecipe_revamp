@@ -7,6 +7,11 @@ ul, li{list-style : none;}
 body{
     color : #87847d;
 }
+
+p {
+    font-family: Koburina Gothic W3 JIS2004;
+    font-weight: 600;
+}
 .container-hairrecipe{
     width : 1280px;
     margin : 0 auto;
@@ -66,7 +71,7 @@ header li .fb:hover{
 header ul li .sub{
     display : none;
     background-color : #fff;
-    min-height : 140px;
+    min-height : 200px;
     position : absolute;
     z-index : 999999999999;
     left : -410px;
@@ -180,12 +185,12 @@ footer .sitemap .last{
     width : 300px;
 }
 footer .sitemap .first ul{
-    margin : 20px 0 0 0;
-    padding : 0 0 0 28px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 31px;
 }
 footer .sitemap .first ul li{
     float : left;
-    width : 50px;
+    width: 73px;
     text-align : center;
 }
 footer .base{
@@ -193,10 +198,14 @@ footer .base{
 }
 footer .base ul{
     float : right;
+    font-family: Koburina Gothic W3 JIS2004;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 5px;
 }
 footer .base ul li{
     float : left;
-    font-size : 11px;
+    font-size : 10px;
     margin: 0 0 0 20px;
 }
 /* footer : end */
@@ -318,3 +327,5 @@ footer .base ul li{
 #back-to-top.show {
     opacity: 1;
 }
+
+/*@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { p { font-family: Koburina Gothic W3 JIS2004; font-weight: 600;} }*/

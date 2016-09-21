@@ -31,9 +31,9 @@ font-size:65px;
 }
 
 .check {
-font-family:LubalinGraph-Book;
+font-family: "Koburina Gothic W3 JIS2004";
+font-weight: 600;
 font-size:35px;
-font-weight:400;
 letter-spacing:4px;
 margin-bottom:96px;
 }
@@ -175,7 +175,7 @@ letter-spacing:1px;
 
 .recipe-content-inner .recipe-title p {
 font-size:20px;
-font-weight:lighter;
+font-weight:600;
 letter-spacing:1px;
 }
 
@@ -221,6 +221,7 @@ font-size:.6em;
 letter-spacing:.6em;
 line-height:3.2em;
 margin-top:0;
+font-weight:600;
 }
 
 
@@ -264,6 +265,7 @@ margin-top:0;
 #make-it-yourself {
   bottom: 76px;
   font-family: "Koburina Gothic W3 JIS2004";
+  font-weight: 600;
   font-size: 28px;
   height: 58px;
   left: 0;
