@@ -90,7 +90,7 @@ p{
 }
 
 
-.generic-btn{
+.generic-btn,.generic-btn:hover{
     margin : 0 auto;
     font-weight : normal;
     letter-spacing : 2px;
