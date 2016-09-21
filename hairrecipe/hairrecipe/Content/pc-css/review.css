@@ -1,7 +1,5 @@
 /* Custom Modal */
 
-
-
 .modal.bvrnw {
     top: 80px;
     overflow-x: hidden;
@@ -27,7 +25,6 @@
 
 .modal.bvrnw .modal-dialog {
     width: 740px;
-    height:80%;
 }
 
 
@@ -65,11 +62,13 @@
     position: relative;
     padding: 15px;
     height:inherit;
+    text-align:center;
 }
 
 .modal.bvrnw .frame {
-    height:480px;
+    height:1080px;
 }
+
 
 .modal .innerframe {
     text-align: left;
@@ -169,6 +168,10 @@ li.review .rating-score{
     width:29%;
 }
 
+.rating-widget input{
+    position:absolute;
+}
+
 .br-widget {
     display: inline;
 }
@@ -221,6 +224,15 @@ li.review .rating-score{
 .formfield select {
     width:180px;
     height:50px;
+    padding-left: 15px;
+}
+
+.formfield .select-wrapper {
+    margin-right:8px;
+}
+
+.formfield.nickname {
+    margin-top:30px;
 }
 
 .formfield.terms input {
@@ -228,16 +240,17 @@ li.review .rating-score{
     margin: 3px 10px 64px 0;
 }
 
-
+.formfield.terms input[type=checkbox] {
+    visibility: hidden;
+    position:absolute;
+}
 
 .formfield.terms span {
     display: block;
     font-size: 14px;
-    letter-spacing: 2px;
-    color: #333333;
     margin-bottom: 8px;
     line-height: 20px;
-    padding-left: 22px;
+    padding-left: 30px;
 }
 
 .formfield .character-limit {
@@ -247,15 +260,16 @@ li.review .rating-score{
     font-weight: normal;
 }
 
+
+
 #rnrw_modal.modal.bvrnw .frame {
-    height: 1488px;
+    height: 1540px;
 }
 
 #rnrw_modal.modal .innerframe {
-    overflow-y:auto;
+    overflow-y:hidden;
     background-color: #ffffff;
     padding: 40px 40px 20px 40px;
-
 }
 
 #rnrw_modal.modal.bvrnw .generic-btn, #rnrw_modal.modal.bvrnw .generic-btn:hover, #rnrw_modal.modal.bvrnw .generic-btn:active {
@@ -263,3 +277,76 @@ li.review .rating-score{
     height: 50px;
     margin: auto;
 }
+
+#rnrw_success_modal .modal-body, #rnrw_age_error_modal .modal-body {
+    height: 443px;
+    padding-top: 140px;
+}
+
+#rnrw_success_modal .modal-body h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Error styles */
+
+.error {
+    color:#ff0000;
+    display: block;
+}
+
+
+.rating-box .error {
+    margin-left: 100px;
+}
+
+.formfield input.error, .formfield textarea.error, .formfield select.error, .pseudo-checkbox.error {
+    border-color:#ff0000;
+    background-color:#fff3f3;
+}
+
+.formfield.age .error{
+    display:inline;
+}
+
+
+
+/* Custom Checkbox */
+
+.pseudo-checkbox {
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+}
+
+/* Hover and focus states */
+.pseudo-checkbox:hover{
+	background: #eeeeee;
+}
+
+/* Check mark */
+.pseudo-checkbox:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.pseudo-checkbox.checked:after {
+    display: block;
+    top: 4px;
+    left: 8px;
+    width: 4px;
+    height: 9px;
+    transform: rotate(45deg);
+    border: solid #87847d;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+

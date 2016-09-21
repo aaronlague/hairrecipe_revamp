@@ -14,7 +14,7 @@ var api_server = "http://stg.api.bazaarvoice.com/data";
 // Refer to http://developer.bazaarvoice.com to find the latest version
 var api_version = "5.4";
 var num_items = 20;
-var form = $("#form1");
+var form = $("#rrform");
 var validator;
 var reviewmode = false;
 
@@ -23,15 +23,26 @@ $(document).ready(function () {
     // Allow for API results to be cached
     $.ajaxSetup({ cache: true });
 
+    form.attr("action", api_server + "/submitreview.json?");
+
+    $('input[name = "passkey"]').val(api_key);
+
     var productSKU = $(".rr-section").attr("data-sku")
 
     // Overall review parameters
     $(".bvOverallRating").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_template' });
 
-
     // Initialize Rating Widget
     $(".rating_selector").bvRatingSelectorWidget();
 
+
+    var underage = getCookie("underage");
+
+    if (underage) {
+        $('.write-review').attr('data-target', '#rnrw_age_error_modal');
+        // redirect to homepage
+        var myTvar = setInterval(function () { window.location.replace("/index.html"); clearInterval(myTvar); }, 4000);
+    }
 
     // Display Ratings and Reviews
     $(".read-review").click(function () {
@@ -54,25 +65,10 @@ $(document).ready(function () {
 
         $("#reviews").bvDisplayRatingReviewWidget({ bvproductID: productSKU, bvTemplate: 'read_review_template' });
 
-
-        //if ((dataItem != "refill")) {
-        //    productName = productName.replace(/[0-9l]+ml/, "");
-        //    productName = productName.replace(/[0-9l]+\g/, "");
-        //    $(".productName").text(productName);
-        //} else {
-        //    var trimmedProductName = productName.split('ml')[0]
-            
-        //    $(".productName").text(trimmedProductName + "ml");
-
-        //}
-
-        //$(".reviewSKU").attr("src", "/images/pc/common/review-" + icon + "-" + course + ".png").addClass(icon);
     });
 
     // Display Submission form
     $(".write-review").click(function () {
-        reviewmode = false;
-        //form.show();
 
         var productSKU = $(this).attr("data-sku");
         var productID = $(this).attr("data-pid");
@@ -90,26 +86,9 @@ $(document).ready(function () {
 
         $("input[name='productid']").val(productSKU);
 
-
-        //var course = $(this).parent().attr("data-course");
-        //var dataItem = $(this).parent().attr("data-review-item");
-        //var productName = $("#" + course + " .productNameImg").attr("alt");
-
-        //if ((dataItem != "refill")) {
-        //    productName = productName.replace(/[0-9l]+ml/, "");
-        //    productName = productName.replace(/[0-9l]+\g/, "");
-        //    $(".productName").text(productName);
-        //} else {
-        //    var trimmedProductName = productName.split('ml')[0]
-            //alert(trimmedProductName);
-        //    $(".productName").text(trimmedProductName + "ml");
-        //}
-
-        //$(".reviewSKU").attr("src", "/images/pc/common/review-" + icon + "-" + course + ".png").addClass(icon);
-
     });
 
-    // Validate the form
+    /* Validate the form */
 
     validator = form.validate();
 
@@ -125,7 +104,7 @@ $(document).ready(function () {
         minlength: 5,
         maxlength: 25,
         messages: {
-            required: "※ユーザー名は5〜25文字以内で入力して下さい",
+            required: "ーザー名を入力して下さい。※5文字以上25文字以内［全角英数字のみ］",
             minlength: "※ユーザー名は5〜25文字以内で入力して下さい",
             loginRegex: "ユーザー名に使用できるのは全角英数字のみです"
         }
@@ -134,126 +113,131 @@ $(document).ready(function () {
     // Form Submission
     $("#btnSubmit").click(function () {
         if (form.valid()) {
-            $("#form1 input, #form1 textarea").removeAttr("disabled");
-            $.ajax({
-                type: form.attr('method'),
-                url: form.attr('action'),
-                data: form.serialize()
-            }).done(function (result) {
-                // Optionally alert the user of success here...
-                form[0].reset();
-                $(".result").hide();
-                $("#cboxClose").hide();
-                $(".formfields").hide();
-                $(".reviewSKU, .productName").hide();
+            var year = $("#birthYear").val();
+            var month = $("#birthMonth").val();
+            var age = calculateAge(year, month);
 
-                $(".popups#write").addClass("successful");
+            if (age < 20) {
+                $('#rnrw_modal').modal('hide');
+                $('#rnrw_age_error_modal').modal('show');
 
-                $.colorbox.resize({ 'height': 320 });
+                //create a cookie to track underage user
+                setCookie("underage", true, 1);
 
-                $(".success").show();
-                //$("html, body").delay(500).animate({ scrollTop: 0 }, 500);
-                //console.log(result);
-            }).fail(function () {
-                // Optionally alert the user of an error here...
-            });
-        }
-    });
+                // redirect to homepage
+                var myTvar = setInterval(function () { window.location.replace("/index.html"); clearInterval(myTvar); }, 4000);
+            }
+            else {
+                $.ajax({
+                    type: form.attr('method'),
+                    url: form.attr('action'),
+                    data: form.serialize()
+                }).done(function (result) {
+                    $('#rnrw_modal').modal('hide');
+                    $('#rnrw_success_modal').modal('show');
 
-    $("#btnConfirm").click(function () {
-        if (form.valid()) {
-            reviewmode = true;
-            $(".formbutton, #required").hide();
-            $(".result, #reviewmessage").show();
-            $("#form1 #visible_fields input, #form1 #visible_fields textarea").attr("disabled", "disabled");
-        }
-        //$("html, body").delay(500).animate({ scrollTop: 0 }, 500);
-    });
-
-    $("#btnBack").click(function () {
-        reviewmode = false;
-        $(".formbutton, #required").show();
-        $(".result, #reviewmessage").hide();
-        $("#form1 #visible_fields input, #form1 #visible_fields textarea").removeAttr("disabled");
-        // $("html, body").delay(500).animate({ scrollTop: 0 }, 500);
-    });
-
-
-    // Close the read review popup
-    $("#cboxClose").click(function () {
-        reviewmode = false;
-        validator.resetForm();
-    });
-
-
-    // Close the write review form popup
-    $("#btnCloseReview").click(function () {
-
-        $(".popups#write").removeClass("successful");
-
-        //Check if browser is IE or not
-        if (navigator.userAgent.search("MSIE") >= 0) {
-            $(".popups#write").css("height", 1380);
+                }).fail(function () {
+                    // Optionally alert the user of an error here...
+                });
+            }
         }
         else {
-            h = 1380;
-            $.colorbox.resize({ 'height': h });
+            if (!$(".pseudo-checkbox").hasClass("checked")) {
+                $(".pseudo-checkbox").addClass("error");
+            }
         }
 
-        document.getElementById("form1").reset();
-        $("#form1 #visible_fields input, #form1 #visible_fields textarea").removeAttr("disabled");
-        $("#form1 #visible_fields input, #form1 #visible_fields textarea").removeAttr("value");
-        $(".br-widget a").removeClass("star-on").addClass("star-off");
+    });
 
 
-        $("#cboxClose").show();
-        $(".productName, .reviewSKU").show();
-        $(".formfields").show();
-        $(".success").hide();
-        $(".result, #reviewmessage").hide();
-        $(".formbutton").show();
-
-        $.colorbox.close();
-
+    // When write review modal is closed, reset the form
+    $('#rnrw_modal').on('hide.bs.modal', function () {
+        validator.resetForm();
+        form[0].reset();
+        $(".rating_selector").attr("value", "");
+        $(".br-widget a").removeClass("star-on");
+        $(".br-widget a").addClass("star-off");
 
     });
+
 
     $("#useremail").change(function () {
         $("input[name='HostedAuthentication_AuthenticationEmail']").val($(this).val());
     });
 
-    // Close the form popup
-    //$("#btnConfirm").click(function () {
-    //    $("#isRecommended").text("[ " + $("[type='radio']:checked").next().text() + " ]");
-    //    $("#input_nickname .value").text($("#usernickname").val());
-    //    $("#input_title .value").text($("#title").val());
-    //    $("#input_review .value").text($("#reviewtext").val());
-    //});
+    // custom checkbox
+    $(".pseudo-checkbox").click(function () {
+        var cbID = $(this).attr("data-id");
+        $(this).removeClass("error");
+        if ($(this).hasClass("checked")) {
+            $(this).removeClass("checked");
+            $("#" + cbID).prop("checked", false);
+        }
+        else {
+            $(this).addClass("checked");
+            $("#" + cbID).prop("checked", true);
+            $("#terms-error").hide();
+        }
+    });
 
 });
 
 
-// Truncate a string on word boundaries rather than character boundries. 
-// Dustin Mihalik
-(function(){
-  this.truncate = function truncate(str, length) {
-	  var trunc = str;
-	  if (trunc && trunc.length > length) {
-		  /* Truncate the content of the P, then go back to the end of the previous word. */
-		  trunc = trunc.substring(0, length);
-		  trunc = trunc.replace(/\w+$/, '');
-		  return trunc + "...";
-	  } else {
-		  return trunc;
-	  }
-  };
+(function () {
+    // Truncate a string on word boundaries rather than character boundries. 
+    this.truncate = function truncate(str, length) {
+        var trunc = str;
+        if (trunc && trunc.length > length) {
+            /* Truncate the content of the P, then go back to the end of the previous word. */
+            trunc = trunc.substring(0, length);
+            trunc = trunc.replace(/\w+$/, '');
+            return trunc + "...";
+        } else {
+            return trunc;
+        }
+    };
   
-  // Date Format
-  this.formatDate = function formatDate(str) {
-	var fdate = str;
-	var myarr = fdate.split("T");
-	return myarr[0].replace(/-/g, ".");
-  };  
+    // Date Format
+    this.formatDate = function formatDate(str) {
+        var fdate = str;
+        var myarr = fdate.split("T");
+        return myarr[0].replace(/-/g, ".");
+    };
+
+    this.calculateAge = function calculateAge(year, month) {
+        var dateString = year + "/" + month + "/" + "1";
+        var today = new Date();
+        var birthDate = new Date(dateString);
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age--;
+        }
+        return age;
+    };
+
+    this.setCookie = function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+    };
+
+    this.getCookie = function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    };
+
 })();
 
 
@@ -349,6 +333,7 @@ $(document).ready(function () {
 
 		selector.siblings().find('a').click(function () {
 		    if (reviewmode == false) {
+		        console.log(reviewmode);
 		        var rating = $(this).attr('data-rating-value');
 		        var txt = $(this).attr('data-rating-text');
 		        var currSelected = $(this);
