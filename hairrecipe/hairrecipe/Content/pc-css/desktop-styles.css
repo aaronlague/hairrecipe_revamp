@@ -264,7 +264,8 @@ footer .base ul li{
 }
 
 .wall-hp{
-    background: url("/Content/images/sp/bg/wall-hp.jpg");
+    /*background: url("/Content/images/sp/bg/wall-hp.jpg");*/
+    background: url("/Content/images/pc/bg/wall-hp-pc.jpg");
 }
 
 .stitch-b{
