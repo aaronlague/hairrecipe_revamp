@@ -44,7 +44,7 @@
     float: left;
 }
 
-.modal.bvrnw h4.modal-title {
+.modal.bvrnw h4 {
     font-size: 16px;
     margin: 30px 0 0 0;
 }
@@ -350,3 +350,190 @@ li.review .rating-score{
 	border-color: #7b7b7b;
 }
 
+/* Mobile */
+
+@media only screen and (max-device-width: 667px) and (min-device-width: 375px){
+
+    #rnrw_modal.modal .innerframe {
+        padding: 0;
+    }
+
+    .modal.bvrnw .modal-dialog {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .modal.bvrnw .modal-dialog {
+        margin: 0;
+    }
+
+    .modal.bvrnw .close {
+        margin: 8% 5% 0 0;
+        opacity: 1;
+        width: 5%
+    }
+
+    .modal.bvrnw .modal-header {
+        padding: 0;
+        background-color:#bdbdbd;
+        color: #ffffff;
+        min-height: 14%;
+    }
+
+    .modal.bvrnw h4 {
+        margin: 5% 0 5% 5%; 
+    }
+
+    .modal.bvrnw.message h4 {
+        line-height: 3em;
+    }
+
+    .modal.bvrnw .modal-content {
+        padding: 0;
+    }
+
+    .modal.bvrnw.message .modal-content {
+        padding: 0;
+        height: 100%;
+    }
+
+    .modal.bvrnw .modal-content {
+        padding: 0;
+    }
+
+    .modal.bvrnw .modal-body {
+        padding: 0;
+    }
+
+    .modal.bvrnw .modal-header-image {
+        margin: auto;
+        clear: both;
+        float:none;
+        height: 280px;
+        width:200px;
+        background-size:cover;
+        background-position-x: 20px;
+    }
+
+    .modal.bvrnw .modal-title-group {
+        width: 88%;
+    }
+
+    .modal.bvrnw .frame {
+        height: 100%;
+    }
+
+    .modal .innerframe {
+        overflow-y:visible;
+    }
+
+    .modal.bvrnw .subReview {
+        clear:both;
+    }
+
+    .modal.bvrnw .review-page {
+        padding: 0;
+        background: none;
+    }
+
+    .bvOverallRating    {
+        width: 50%;
+        height: 50px;
+        border-radius: 0;
+        position: relative;
+        font-size: 12px;
+        text-transform: uppercase;
+        border: 1px solid #87847d;
+        padding-top: 18px;
+        padding-left: 12px;
+        margin: 5% auto;
+        background-color:#ffffff;
+        text-align:center;
+    }
+
+
+    li.review, li.review:first-child {
+        background-color:#ffffff;
+        margin:8%;
+        padding: 10%;
+    }
+
+
+    li.review .reviewtext {
+        width: 100%;
+        padding:0;
+        margin: 10% 0 0 0;
+    }
+
+    li.review .reviewtext .title {
+        font-weight:bold;
+    }
+
+
+    li.review .rating-score {
+        width: 100%;
+    }
+
+    #rnrw_modal.modal.bvrnw .frame {
+        height: 100%;
+    }
+
+    .rating-widget {
+        width: 44%;
+    }
+
+    .modal.bvrnw .separator {
+        border-bottom: 1px solid #e7e7e7;
+    }
+
+    .formfield .select-wrapper {
+        margin-right: 2%;
+    }
+
+    .formfield select {
+        width: 48%;
+
+    }
+
+    .formbutton{
+        text-align:center;
+        margin: 10% 0 10% 0;
+    }
+
+
+    #rnrw_modal.modal.bvrnw .generic-btn, #rnrw_modal.modal.bvrnw .generic-btn:hover, #rnrw_modal.modal.bvrnw .generic-btn:active {
+        width: 50%;
+        height: 50px;
+        padding:0;
+    }
+
+
+    .formfield {
+        margin: 15px 15px 15px 15px;
+    }
+
+    .formfield input[type="text"], .formfield input[type="email"], .formfield select {
+        height: 75px;
+    }
+
+    .formfield.nickname .character-limit, .formfield.reviewtext .character-limit{
+       top: 50px;
+    }
+
+
+    .rating-box {
+        margin: 15px 15px 15px 15px;
+        height: 20px;
+    }
+    .rating-box .error {
+        margin-left: 10px;
+    }
+
+    .error {
+        font-size: .96em;
+    }
+
+
+
+}

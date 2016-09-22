@@ -22,7 +22,10 @@
         @RenderSection("customStyles", required: false)
     }
     @Styles.Render("~/Content/pc-css/bin.css")
-    @Styles.Render("~/Content/pc-css/review.css")
+    @if (checkController == "Product" && checkAction == "ProductLine")
+    {    
+        @Styles.Render("~/Content/pc-css/review.css")
+    }
     <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?3DdNOn6UIFc%3D" charset="utf-8"></script>
 </head>
 <body>
@@ -30,20 +33,27 @@
         @{Html.RenderPartial("_navigation", "");}
         @if (checkController == "Home" && checkAction == "Index")
         {
-           
             @Html.Partial("_slider", "")
         }
         @RenderBody()
 
-        @{Html.RenderPartial("rnr/_Write", "");}
-        @{Html.RenderPartial("rnr/_Read", "");}
+        @if (checkController == "Product" && checkAction == "ProductLine")
+        {
+            @Html.Partial("rnr/_Write", "");
+            @Html.Partial("rnr/_Read", "");
+        }
+        
         @{Html.RenderPartial("_FooterBlock", ViewData["GACAKeyword"]);}
     </div>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/Content/js/rnr/jquery.validate.js")
-    @Scripts.Render("~/Content/js/rnr/underscore-min.js")
-    @Scripts.Render("~/Content/js/rnr/reviews.js")
+
+    @if (checkController == "Product" && checkAction == "ProductLine")
+    {
+        @Scripts.Render("~/Content/js/rnr/jquery.validate.js")
+        @Scripts.Render("~/Content/js/rnr/underscore-min.js")
+        @Scripts.Render("~/Content/js/rnr/reviews.js")
+    }   
     <script src="~/Scripts/share.js"></script>
     @RenderSection("scripts", required: false)
 </body>
