@@ -1,55 +1,352 @@
+/* Custom Modal */
 
-
-.modal-content {
-    border-radius: 0px;
-    height: 800px;
-    margin-top: 25%;
-    width: 740px;
-
+.modal.bvrnw {
+    top: 80px;
+    overflow-x: hidden;
+    /*overflow-y: hidden !important;*/
 }
 
-.modal-header .close {
-    margin-top: 25px;
-    margin-right: 25px;
+.modal.bvrnw .close {
+    margin-top: 50px;
     opacity: .5;
 }
 
-.modal-header .close:hover {
+.modal.bvrnw .close:hover {
     opacity: 1;
 }
 
-h4.modal-title {
-    font-size: 16px;
+.modal.bvrnw .label{
+    color: #87847d;
+    padding: .2em .6em .3em 0;
+    font-size: 100%;
+    text-align: left;
+    font-weight: normal;
+}
+
+.modal.bvrnw .modal-dialog {
+    width: 740px;
+}
+
+
+.modal.bvrnw .modal-content {
+    padding: 0px 60px 60px 60px;
+    border-radius: 0px;
+    background-image: url(/Content/images/pc/common/rnrr-bg.jpg)
+}
+
+.modal.bvrnw .modal-header {
+    border: none;
+}
+
+
+.modal.bvrnw .modal-title-group {
+    width:60%;
     float: left;
-    width: 60%;
+}
+
+.modal.bvrnw h4.modal-title {
+    font-size: 16px;
     margin: 30px 0 0 0;
 }
 
-.model-header-image {
-    margin: 30px;
+.modal.bvrnw .modal-header-image {
+    margin: 10px 0;
     float: left;
     width: 100px;
     height: 150px;
     background-size: contain;
+    background-repeat:no-repeat;
 }
 
-.modal-body {
+.modal.bvrnw .modal-body {
     position: relative;
     padding: 15px;
+    height:inherit;
+    text-align:center;
+}
+
+.modal.bvrnw .frame {
+    height:1080px;
 }
 
 
-.modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: hidden !important;
-}
-
-.frame {
-    height:600px;
-}
-
-.innerframe {
+.modal .innerframe {
     text-align: left;
-    height: 90%;
+    height: 100%;
     overflow-y: scroll;
 }
+
+
+.modal.bvrnw .review-page {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.modal.bvrnw .separator {
+    clear:both;
+    width:100%;
+    border-bottom: 1px solid #87847d;
+}
+
+/* ----------------------------
+Support for star ratings
+---------------------------- */
+
+.rating-box{
+    margin: 15px 0 15px 0;
+    height: 20px;
+}
+
+.rating {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/rating-stars-off.png) repeat-x scroll 0 0;
+    height:13px;
+    width: 110px;
+	text-align: left;
+}
+
+.rating .ratingHighlight {
+    display: inline-block;
+    background: transparent url(/Content/images/pc/common/rating-stars.png) repeat-x scroll 0 -1px;
+    height:13px;
+}
+
+.bvOverallRating {
+    margin-top:20px;
+
+}
+
+
+li.review {
+    margin: 100px 0 0 0;
+}
+
+li.review:first-child {
+    margin: 0 0 0 0;
+}
+
+li.review .reviewtext {
+    width:50%;
+    padding: 10px 0px 10px 25px;
+    line-height: 1.8em;
+}
+
+li.review .reviewtext p {
+    word-wrap: break-word;
+}
+
+li.review .label {
+    width: 50%;
+}
+
+li.review .author{
+    width:50%;
+    padding: 0 0 20px 0;
+    font-size: 20px;
+}
+
+li.review .submission-time {
+    width:50%;
+    padding: 0 0 20px 0;
+    text-align:right;
+}
+
+li.review .rating-score{
+    width:50%;
+}
+
+
+/* Write Review */
+
+.hiddenfield {
+    visibility: hidden;
+    width: 0;
+    height: 0 !important;
+}
+
+.rating-widget{
+    width:29%;
+}
+
+.rating-widget input{
+    position:absolute;
+}
+
+.br-widget {
+    display: inline;
+}
+
+.br-widget a {
+    background: url(/Content/images/pc/common/stars.png);
+    width: 17px;
+    height: 17px;
+    display: block;
+    float: left;
+    margin-left: 11px;
+}
+
+.star-on {
+	background-position:0 17px !important;
+}
+
+#rnrw_modal .separator {
+    width: 100%;
+}
+
+.formfield {
+    margin: 18px 0 25px 0;
+    position:relative;
+}
+
+.formfield .caption {
+    font-size: 12px;
+}
+
+.formfield input[type="text"], .formfield input[type="email"] {
+    width: 99%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 10px;
+    border:1px solid #87847d;
+}
+
+.formfield textarea {
+    width: 99%;
+    height: 50px;
+    margin: 5px 0;
+    padding: 10px;
+    border:1px solid #87847d;
+    resize: none;
+    overflow: hidden;
+    line-height: 20px;
+}
+
+.formfield select {
+    width:180px;
+    height:50px;
+    padding-left: 15px;
+}
+
+.formfield .select-wrapper {
+    margin-right:8px;
+}
+
+.formfield.nickname {
+    margin-top:30px;
+}
+
+.formfield.terms input {
+    float: left;
+    margin: 3px 10px 64px 0;
+}
+
+.formfield.terms input[type=checkbox] {
+    visibility: hidden;
+    position:absolute;
+}
+
+.formfield.terms span {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 20px;
+    padding-left: 30px;
+}
+
+.formfield .character-limit {
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    font-weight: normal;
+}
+
+
+
+#rnrw_modal.modal.bvrnw .frame {
+    height: 1540px;
+}
+
+#rnrw_modal.modal .innerframe {
+    overflow-y:hidden;
+    background-color: #ffffff;
+    padding: 40px 40px 20px 40px;
+}
+
+#rnrw_modal.modal.bvrnw .generic-btn, #rnrw_modal.modal.bvrnw .generic-btn:hover, #rnrw_modal.modal.bvrnw .generic-btn:active {
+    width: 205px;
+    height: 50px;
+    margin: auto;
+}
+
+#rnrw_success_modal .modal-body, #rnrw_age_error_modal .modal-body {
+    height: 443px;
+    padding-top: 140px;
+}
+
+#rnrw_success_modal .modal-body h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Error styles */
+
+.error {
+    color:#ff0000;
+    display: block;
+}
+
+
+.rating-box .error {
+    margin-left: 100px;
+}
+
+.formfield input.error, .formfield textarea.error, .formfield select.error, .pseudo-checkbox.error {
+    border-color:#ff0000;
+    background-color:#fff3f3;
+}
+
+.formfield.age .error{
+    display:inline;
+}
+
+
+
+/* Custom Checkbox */
+
+.pseudo-checkbox {
+    border: 1px solid;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+}
+
+/* Hover and focus states */
+.pseudo-checkbox:hover{
+	background: #eeeeee;
+}
+
+/* Check mark */
+.pseudo-checkbox:after {
+	position: absolute;
+	display: none;
+	content: '';
+}
+
+/* Show check mark */
+.pseudo-checkbox.checked:after {
+    display: block;
+    top: 4px;
+    left: 8px;
+    width: 4px;
+    height: 9px;
+    transform: rotate(45deg);
+    border: solid #87847d;
+    border-width: 0 2px 2px 0;
+}
+
+/* Disabled tick colour */
+.control--checkbox input:disabled ~ .control__indicator:after {
+	border-color: #7b7b7b;
+}
+

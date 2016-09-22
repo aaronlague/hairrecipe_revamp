@@ -280,6 +280,9 @@
     <Content Include="Content\js\helper.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\main.pc.js" />
+    <Content Include="Content\js\rnr\jquery.validate.js" />
+    <Content Include="Content\js\rnr\reviews.js" />
+    <Content Include="Content\js\rnr\underscore-min.js" />
     <Content Include="Content\mobile-hp.css" />
     <Content Include="Content\mobile-styles.css" />
     <Content Include="Content\global-styles.css" />
