@@ -54,9 +54,9 @@ $(document).ready(function () {
         var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
-        var productName = $("#" + productID + " .main-details .jp-title-1").html()
-            + $("#" + productID + " .main-details .jp-title-2").html()
-            + $("#" + productID + " .main-details .size").html();
+        var productName = $("#" + productID + " .jp-title-1").html()
+            + $("#" + productID + " .jp-title-2").html()
+            + " " + $("#" + productID + " .size").html();
 
         $(".modal-title").html(productName);
 
@@ -77,9 +77,9 @@ $(document).ready(function () {
         var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
-        var productName = $("#" + productID + " .main-details .jp-title-1").html()
-            + $("#" + productID + " .main-details .jp-title-2").html()
-            + $("#" + productID + " .main-details .size").html();
+        var productName = $("#" + productID + " .jp-title-1").html()
+            + $("#" + productID + " .jp-title-2").html()
+            + " " + $("#" + productID + " .size").html();
 
         $(".modal-title").html(productName);
 
@@ -152,12 +152,7 @@ $(document).ready(function () {
 
     // When write review modal is closed, reset the form
     $('#rnrw_modal').on('hide.bs.modal', function () {
-        validator.resetForm();
-        form[0].reset();
-        $(".rating_selector").attr("value", "");
-        $(".br-widget a").removeClass("star-on");
-        $(".br-widget a").addClass("star-off");
-
+        resetForm();
     });
 
 
@@ -236,6 +231,16 @@ $(document).ready(function () {
             }
         }
         return "";
+    };
+
+    this.resetForm = function resetForm(cname, cvalue, exdays) {
+        validator.resetForm();
+        form[0].reset();
+        $(".rating_selector").attr("value", "");
+        $(".br-widget a").removeClass("star-on");
+        $(".br-widget a").addClass("star-off");
+        $(".pseudo-checkbox").removeClass("error");
+
     };
 
 })();
