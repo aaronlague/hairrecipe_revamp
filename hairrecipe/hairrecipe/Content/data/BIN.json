@@ -279,8 +279,13 @@
             {
                 storeName : 'Amazon',
                 storeKeyword : 'amazon',
-                url :  'https://www.amazon.co.jp/dp/B01DNSC7JW/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
-            }          
+                url :  'https://www.amazon.co.jp/dp/B00M2DPUY4/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796468/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }             
         ]
     },
     {
@@ -290,8 +295,13 @@
             {
                 storeName : 'Amazon',
                 storeKeyword : 'amazon',
-                url :  'https://www.amazon.co.jp/dp/B01DNSC7O2/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
-            }          
+                url :  'https://www.amazon.co.jp/dp/B00M2DQ5AM/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/9796495/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }       
         ]
     },
     {

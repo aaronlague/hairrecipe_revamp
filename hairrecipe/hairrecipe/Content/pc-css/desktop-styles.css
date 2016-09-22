@@ -127,6 +127,8 @@ footer a:visited{
 }
 footer a.generic-btn.shop {
     color : #87847d;
+    font-family: 'LubalinGraph-Book';
+    font-weight : normal;
 }
 footer .wrap{
     width : 1024px;
