@@ -329,3 +329,9 @@ footer .base ul li{
 }
 
 /*@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { p { font-family: Koburina Gothic W3 JIS2004; font-weight: 600;} }*/
+
+@media only screen and (max-width: 1280px) {
+    .container-hairrecipe {
+        width:100%;
+    }
+}
