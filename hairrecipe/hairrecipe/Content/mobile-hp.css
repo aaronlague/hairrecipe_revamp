@@ -190,6 +190,23 @@
         line-height: 30px;
     }
 
+        .carousel-inner .item:nth-of-type(1) .slide-text-content.top {
+            left: 0;
+            width: 100%;
+            top: 14%;
+        }
+
+        .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline {
+            font-size: 19px;
+            text-align:center;
+            padding-left:10px;
+        }
+
+            .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline ~ p {
+                text-align:center;
+                line-height: 20px;
+            }
+
     .product-intro-text {
         font-size: 12px;
     }
@@ -268,6 +285,22 @@
         font-size: 13px;
         line-height: 30px;
     }
+
+        .carousel-inner .item:nth-of-type(1) .slide-text-content.top {
+            left: 0;
+            width: 100%;
+            top: 14%;
+        }
+
+        .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline {
+            font-size: 19px;
+            text-align:center;
+            padding-left:10px;
+        }
+
+            .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline ~ p {
+                text-align:center;
+            }
     
     .product-intro-text {
         font-size: 14px;
