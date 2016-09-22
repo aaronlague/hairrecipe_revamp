@@ -164,8 +164,8 @@ a.btn.to-read-btn {
    }
 
    .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3{
-       /*font-size:18px;*/
-       font-size:15px;
+       font-size:18px;
+       /*font-size:15px;*/
    }
 
    p {

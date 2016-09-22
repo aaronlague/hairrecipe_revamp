@@ -264,7 +264,8 @@ footer .base ul li{
 }
 
 .wall-hp{
-    background: url("/Content/images/sp/bg/wall-hp.jpg");
+    /*background: url("/Content/images/sp/bg/wall-hp.jpg");*/
+    background: url("/Content/images/pc/bg/wall-hp-pc.jpg");
 }
 
 .stitch-b{
@@ -329,3 +330,9 @@ footer .base ul li{
 }
 
 /*@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { p { font-family: Koburina Gothic W3 JIS2004; font-weight: 600;} }*/
+
+@media only screen and (max-width: 1280px) {
+    .container-hairrecipe {
+        width:100%;
+    }
+}
