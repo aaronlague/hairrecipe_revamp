@@ -311,6 +311,9 @@ ul, li{
     line-height: 230%;
     letter-spacing: 0.8px;
 }
+#booster p.hilight {
+    font-family: 'Koburina Gothic W6 JIS2004';
+}
 #booster .pc-float .hilight{
     font-size : 20px;
     margin-bottom : 30px;
