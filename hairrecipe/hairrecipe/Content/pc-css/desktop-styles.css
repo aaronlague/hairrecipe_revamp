@@ -289,7 +289,6 @@ footer .base ul li{
 
 
 .generic-btn, 
-.generic-btn:hover,
 .generic-btn:active {
     background-color: #fff;
     border: 1px solid #87847d;
@@ -306,6 +305,18 @@ footer .base ul li{
     text-decoration : none;
     cursor : pointer;
 }
+ 
+/*.generic-btn:hover{
+    opacity:70;
+    background:rgba(255,255,255,.7);
+    color: rgba(128, 128, 128,.7);
+    border: 1px solid rgba(128, 128, 128,.7);
+}*/
+
+    .generic-btn.shop:hover, .home-btn:hover, a.btn.generic-btn:hover, .generic-btn:hover {
+        opacity: 0.7;
+        color: rgba(128, 128, 128,.7);
+    }
 
 .generic-btn.shop{
     padding-left: 48px;
