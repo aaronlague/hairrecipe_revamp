@@ -16,6 +16,13 @@ window.isohub = window.isohub || {};
             var PARENT = $(this).parent();
             app.ShowHideBin(BINID, "", PARENT, _this)
         });
+
+        $(".info-bin-btn").click(function (e) {
+            var _this = $(this);
+            var BINID = _this.attr("BINID");
+            var PARENT = $(this).parent();
+            app.ShowHideBin(BINID, "", PARENT, _this)
+        });
     },
     /*
     Toggles the popup button
@@ -29,13 +36,14 @@ window.isohub = window.isohub || {};
 
         if (BINID === undefined ) { return false}
         //Check if theres an existing popup, but dont know where it is
-        if ($(".bin .bin-PopUp").length > 0) {
+        if (($(".bin .bin-PopUp").length > 0) || ($(".custom-bin .bin-PopUp")).length > 0){
             //check if theres a popup in your target space
             var targetHasPopUp = APPENDOBJ.find(".bin-PopUp").length;
             //fade all pop-up
             $(".bin-PopUp").fadeOut("fast", function () {
                 //remove all popup
                 $(".bin .bin-PopUp").remove();
+                $(".custom-bin .bin-PopUp").remove();
                 //no popup in your target space? if yes! pop that shit!!
                 if (!targetHasPopUp) { app.ReturnBIN(BINID, PLATFORM, APPENDOBJ, CALLER); }
             });

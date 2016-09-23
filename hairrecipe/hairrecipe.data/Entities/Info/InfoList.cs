@@ -19,5 +19,7 @@ namespace hairrecipe.data.Entities.Info
         public string GACA { get; set; }
         public string alt { get; set; }
         public string InfoImgAlt { get; set; }
+        public string CustomBinContainer { get; set;  }
+        public string CustomBinBtnClass { get; set; }
     }
 }

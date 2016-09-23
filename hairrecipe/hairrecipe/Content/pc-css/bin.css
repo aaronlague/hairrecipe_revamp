@@ -28,3 +28,18 @@
 footer .specialInfo ul li  .bin { float: left; margin-left : 30px; }
 footer .specialInfo ul li .bin .bin-PopUp { top: 50px }
 footer .specialInfo ul li .bin .bin-PopUp ul { padding: 0px 0 0 18px }
+
+/*custom bin*/
+
+.custom-bin .bin-PopUp { display : none; background : url('/Content/images/bins/pc.bg.png'); background-repeat : no-repeat; position : absolute; width : 352px; height : 118px; left : -85px; z-index : 99999999; }
+.custom-bin .bin-PopUp .arrow { display : block; position : absolute; top : -19px; width : 10%; left : 44%; }
+.custom-bin .bin-PopUp a img { display : block; border : 1px solid #87847d; width: 100%; }
+.custom-bin .bin-PopUp ul { padding: 36px 0 0 20px; overflow : hidden; list-style : none; }
+.custom-bin .bin-PopUp ul li { float : left; width : 45%; margin-right : 5%; }
+
+/*custom bin position - news page*/
+
+.content-news .custom-bin .bin-PopUp {
+    bottom: -35px;
+    left: -40px;
+}

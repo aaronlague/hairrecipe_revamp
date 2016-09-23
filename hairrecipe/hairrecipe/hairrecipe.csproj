@@ -618,12 +618,14 @@
     <Content Include="Content\global-styles.css" />
     <Content Include="Content\jasny-bootstrap.css" />
     <Content Include="Content\jasny-bootstrap.min.css" />
+    <Content Include="Content\pc-css\bin.css" />
     <Content Include="Content\pc-css\cm.css" />
     <Content Include="Content\pc-css\desktop-styles.css" />
     <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\faq.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\sitemap.css" />
+    <Content Include="Content\sp-css\bin.css" />
     <Content Include="Content\sp-css\mobile-cm.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
     <Content Include="Content\sp-css\mobile-product-stories.css" />
