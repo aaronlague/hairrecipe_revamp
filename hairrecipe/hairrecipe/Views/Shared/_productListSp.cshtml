@@ -49,7 +49,7 @@
             <div class="separator"></div>
             <p class="howtouse  full-length center">@Html.Raw(@Model.Howtouse.LineBreak("[sp-br]"))</p>
         }
-        <ul class="actions rr-section" data-sku="@Model.SKU">
+        <ul class="actions rr-section" data-sku="@Model.SKU" data-mode="sp">
             @if (Model.HasBIN == true)
             {
                 <li class="bin">
