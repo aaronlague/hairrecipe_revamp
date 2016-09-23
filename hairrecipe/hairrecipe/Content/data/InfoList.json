@@ -43,9 +43,10 @@
 	"InfoNews": "ついに登場！シャンプー＆トリートメントのお得な詰替用…",
 	"InfoNews2": "ついに登場！シャンプー＆トリートメントのお得な詰替え用。オンラインストアで価格をチェック！",
 	"InfoClass": "wood-rough",
-	"InfoLink": "BIN",
+	"InfoLink": "javascript:void(0)",
 	"gaca" : "[platform]_hairrepi_20161001_news_news4",
- 	"InfoLink": "BIN",
+	"CustomBinContainer": "custom-bin",
+	"CustomBinBtnClass": "info-bin-btn",
  	"alt" : "ついに登場！詰め替え用シャンプー＆トリートメント！"
 },
 
