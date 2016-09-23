@@ -170,3 +170,8 @@ a.btn.to-shop-btn {
 .stitch-cm {
     background:url('/../Content/images/pc/cm/bg1.jpg') repeat;
 }
+
+.embed-responsive {
+    width: 76%;
+    margin: auto;
+}
