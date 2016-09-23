@@ -16,7 +16,7 @@ var api_version = "5.4";
 var num_items = 20;
 var form = $("#rrform");
 var validator;
-var reviewmode = false;
+var mode = "";
 
 $(document).ready(function () {
 
@@ -28,6 +28,8 @@ $(document).ready(function () {
     $('input[name = "passkey"]').val(api_key);
 
     var productSKU = $(".rr-section").attr("data-sku")
+
+    mode = $(".rr-section").attr("data-mode")
 
     // Overall review parameters
     $(".bvOverallRating").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_template' });
@@ -51,7 +53,7 @@ $(document).ready(function () {
         var productID = $(this).attr("data-pid");
         var productLine = $(this).attr("data-line");
 
-        var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
+        var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
         var productName = $("#" + productID + " .jp-title-1").html()
@@ -74,7 +76,7 @@ $(document).ready(function () {
         var productID = $(this).attr("data-pid");
         var productLine = $(this).attr("data-line");
 
-        var icon = "/Content/images/pc/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
+        var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
         var productName = $("#" + productID + " .jp-title-1").html()
