@@ -275,12 +275,11 @@ font-weight:600;
   font-weight: 600;
   font-size: 28px;
   height: 58px;
-  left: 0;
+  left: 306px;
   letter-spacing: 4.5px;
-  margin: auto;
+  margin: auto 0;
   overflow: visible;
   position: absolute;
-  right: 0;
   text-align: center;
   width: 684px;
 }
