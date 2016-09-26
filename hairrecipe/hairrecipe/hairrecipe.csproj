@@ -407,6 +407,11 @@
     <Content Include="Content\images\pc\hr-logo.png" />
     <Content Include="Content\images\pc\info\banner-news.jpg" />
     <Content Include="Content\images\pc\kodawari\banner-kodawari.jpg" />
+    <Content Include="Content\images\pc\kodawari\kodawari-tile-1.jpg" />
+    <Content Include="Content\images\pc\kodawari\kodawari-tile-2.jpg" />
+    <Content Include="Content\images\pc\kodawari\kodawari-tile-3.jpg" />
+    <Content Include="Content\images\pc\kodawari\kodawari-tile-4.jpg" />
+    <Content Include="Content\images\pc\kodawari\kodawari-tile-5.jpg" />
     <Content Include="Content\images\pc\kodawari\menu-bg.jpg" />
     <Content Include="Content\images\pc\kodawari\pc_product-stories_02.jpg" />
     <Content Include="Content\images\pc\kodawari\pc_product-stories_03.jpg" />
@@ -623,6 +628,7 @@
     <Content Include="Content\pc-css\desktop-styles.css" />
     <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\faq.css" />
+    <Content Include="Content\pc-css\kodawari.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\bin.css" />
