@@ -30,8 +30,9 @@ h1, h2, h3 {
 
 .kodawari-menu{
     background:url(/../Content/images/pc/kodawari/menu-bg.jpg);
-    background-size:100%;
+    background-size:cover;
     height:375px;
+    background-repeat:no-repeat;
 }
 
 .kodawari-menu h2 {
@@ -59,39 +60,33 @@ h1, h2, h3 {
     font-family:'Koburina Gothic W3 JIS2004';
 }
 
-.kodawari1 {
-    background:url(/../Content/images/pc/kodawari/pc_product-stories_02.jpg);
-    height:490px;
+.kodawari1 .section img {
+    float:left;
 }
 
-.kodawari2 {
-    background:url(/../Content/images/pc/kodawari/pc_product-stories_03.jpg);
-    height:490px;
+.kodawari2 .section img {
+    float:right;
 }
 
-.kodawari3 {
-    background:url(/../Content/images/pc/kodawari/pc_product-stories_04.jpg);
-    height:490px;
+.kodawari3 .section img {
+    float:left;
 }
 
-.kodawari4 {
-    background:url(/../Content/images/pc/kodawari/pc_product-stories_05.jpg);
-    height:490px;
+.kodawari4 .section img {
+    float:right;
 }
 
-.kodawari5 {
-    background:url(/../Content/images/pc/kodawari/pc_product-stories_06.jpg);
-    height:490px;
+.kodawari5 .section img {
+    float:left;
 }
 
 .right-side {
-    float:right;
-    margin-right:150px;
+    float: right;
+    margin-top: 20%;
 }
 
 .kodawari1 h3, .kodawari2 h3, .kodawari3 h3, .kodawari4 h3, .kodawari5 h3 {
     font-size: 22px;
-    margin-top:50%;
     font-family:Koburina Gothic W3 JIS2004;
     font-weight:600;
 }
@@ -104,20 +99,23 @@ h1, h2, h3 {
 }
 
 .left-side {
+    margin-top: 20%;
     float:left;
-    margin-left:150px;
-}
-
-.left-side h3{
-    margin-top:45%;
     font-size: 22px;
 }
+
 
 .left-side p{
     margin-top:5%;
     line-height:30px;
     margin-right:40px;
     font-size: 12px;
+}
+
+.section {
+    width: 980px;
+    margin: 0 auto;
+    overflow: auto;
 }
 
 .kodawari-menu ul li img, .kodawari-content img {
@@ -224,4 +222,18 @@ a.btn.generic-btn {
 }
 .juicy ul  {
     padding:0;
+}
+
+.tile-content {
+    /*width:982px;
+    margin: 0 auto;
+    overflow:auto;
+    position:absolute;
+    left:11.5%*/
+}
+
+@media only screen and (max-width: 1280px) {
+    .tile-content {
+        border: 1px solid red;
+    }
 }
