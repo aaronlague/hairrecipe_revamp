@@ -17,6 +17,7 @@ var num_items = 20;
 var form = $("#rrform");
 var validator;
 var mode = "";
+var reviewmode = false;
 
 $(document).ready(function () {
 
@@ -37,6 +38,10 @@ $(document).ready(function () {
     // Initialize Rating Widget
     $(".rating_selector").bvRatingSelectorWidget();
 
+
+    $("select").hover(function () {
+        $(this).focus();
+    });
 
     var underage = getCookie("underage");
 
@@ -89,6 +94,16 @@ $(document).ready(function () {
         $("input[name='productid']").val(productSKU);
 
     });
+
+    /* Compute remaining character count */
+    $("#usernickname, #title, #reviewtext, #useremail").keydown(function () {
+        var val = $(this).val();
+        var remain = $(this).siblings(".character-limit").html = $(this).attr("maxlength") - val.length;
+        $(this).siblings(".character-limit").html(remain);
+    });
+
+
+
 
     /* Validate the form */
 
