@@ -70,14 +70,14 @@
 
                                 <div class="formfield nickname">
                                     <span class="label">ユーザー名を入力して下さい。　※5文字以上25文字以内［全角英数字のみ］</span>
-                                    <input id="usernickname" name="usernickname" title="ーザー名を入力して下さい。※5文字以上25文字以内［全角英数字のみ］" type="text" required="" aria-required="true" aria-invalid="true">
+                                    <input id="usernickname" name="usernickname" maxlength="25" title="ーザー名を入力して下さい。※5文字以上25文字以内［全角英数字のみ］" type="text" required="" aria-required="true" aria-invalid="true">
                                     <label class="character-limit">25</label>
                                     <label id="nickname-error" class="error" for="usernickname"></label>
                                     <span class="caption">※これが、今後の投稿すべてに表示されます（実名を使用しないことをおすすめします）</span>
                                 </div>
                                 <div class="formfield title">
                                     <span class="label">タイトルを入力して下さい。　※30文字以内</span>
-                                    <input id="title" name="title" title="レビューのタイトルを入力してください。※30文字以内" type="text" required="" minlength="4" aria-required="true" aria-invalid="true">
+                                    <input id="title" name="title"  maxlength="30" title="レビューのタイトルを入力してください。※30文字以内" type="text" required="" minlength="4" aria-required="true" aria-invalid="true">
                                     <label id="title-error" class="error" for="title"></label>
                                     <label class="character-limit">30</label>
                                     <span class="caption">例） 艶のある染め上がりに！</span>
@@ -224,7 +224,7 @@
 
                                 <div class="formfield useremail">
                                     <span class="label">PCメールアドレスを入力して下さい。</span>
-                                    <input id="useremail" name="useremail" title="PCメールアドレスを入力してください。" type="email" value="" required="" aria-required="true" aria-invalid="true">
+                                    <input id="useremail" name="useremail" maxlength="200"  title="PCメールアドレスを入力してください。" type="email" value="" required="" aria-required="true" aria-invalid="true">
                                     <label id="useremail-error" class="error" for="useremail"></label>
                                     <label class="character-limit">200</label>
                                     <span class="caption">※携帯メールアドレスは登録できません。※入力いただいたメールアドレスは、あなたの投稿に関する通知のみに使用します。</span>

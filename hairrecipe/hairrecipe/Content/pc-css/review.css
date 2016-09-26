@@ -1,9 +1,10 @@
 /* Custom Modal */
 
 .modal.bvrnw {
-    top: 80px;
+    /*top: 80px;*/
     overflow-x: hidden;
     /*overflow-y: hidden !important;*/
+    z-index:9999999999999999999;
 }
 
 .modal.bvrnw .close {
@@ -212,13 +213,13 @@ li.review .rating-score{
 
 .formfield textarea {
     width: 99%;
-    height: 50px;
+    min-height: 75px;
     margin: 5px 0;
-    padding: 10px;
+    padding: 5px 20px 5px 5px;
     border:1px solid #87847d;
     resize: none;
     overflow: hidden;
-    line-height: 20px;
+    line-height: 16px;
 }
 
 .formfield select {
