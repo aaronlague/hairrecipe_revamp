@@ -39,6 +39,10 @@ $(document).ready(function () {
     $(".rating_selector").bvRatingSelectorWidget();
 
 
+    $("select").hover(function () {
+        $(this).focus();
+    });
+
     var underage = getCookie("underage");
 
     if (underage) {
