@@ -175,3 +175,15 @@ ol.carousel-indicators {
     position: absolute;
     font-size: 15px;
 }
+
+
+.row.news{
+    background-image : url('/content/images/pc/homepage/news_bg.jpg');
+    background-repeat : no-repeat;
+    padding-bottom : 0px;
+}
+.row.cm{
+    background-image : url('/content/images/pc/homepage/cm_bg.jpg');
+    background-repeat : no-repeat;
+    padding-bottom : 0px;
+}
