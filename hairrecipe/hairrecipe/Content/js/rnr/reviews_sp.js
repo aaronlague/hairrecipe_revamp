@@ -1,4 +1,4 @@
-﻿// Reviews 
+// Reviews 
 
 // Stage API request configuration
 var api_server = "http://stg.api.bazaarvoice.com/data";
@@ -61,7 +61,7 @@ $(document).ready(function () {
             + " " + $("#" + productID + " .size").html();
 
         $(".modal-title").html(productName);
-
+ 
         // Overall review parameters
         $(".bvOverallRatingPopup").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_popup_template' });
 
@@ -70,7 +70,13 @@ $(document).ready(function () {
     });
 
     // Display Submission form
-    $(".write-review").click(function () {
+    $(".write-review").click(function (e) {
+	
+		$("#rnrw_modal").show();
+		var scrollTop = $(window).scrollTop();
+		$("#rnrw_modal").css("top", scrollTop );		
+		
+		
 
         var productSKU = $(this).attr("data-sku");
         var productID = $(this).attr("data-pid");
@@ -88,6 +94,10 @@ $(document).ready(function () {
 
         $("input[name='productid']").val(productSKU);
 
+    });
+	
+	$(".close").click(function () {
+		$("#rnrw_modal").hide();
     });
 
     /* Compute remaining character count */
@@ -188,7 +198,6 @@ $(document).ready(function () {
     });
 
 });
-
 
 (function () {
     // Truncate a string on word boundaries rather than character boundries. 

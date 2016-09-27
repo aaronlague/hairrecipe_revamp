@@ -59,7 +59,7 @@
 
             @if (Model.HasReview == true)
             {
-                <li><a class="btn to-read-btn gaca-btn write-review" data-toggle="modal" data-target="#rnrw_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewWriteGACA">レビューを書く</a></li>
+                <li><a class="btn to-read-btn gaca-btn write-review" data-target="#rnrw_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewWriteGACA">レビューを書く</a></li>
                 <li><a class="btn to-write-btn  gaca-btn read-review" data-toggle="modal" data-target="#rnrr_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewReadGACA">レビューを読む</a></li>
                 <li><div id="averagerating" class="bvOverallRating"></div></li>
             }
