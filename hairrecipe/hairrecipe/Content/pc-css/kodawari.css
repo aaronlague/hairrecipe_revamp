@@ -115,7 +115,7 @@ h1, h2, h3 {
 .section {
     width: 980px;
     margin: 0 auto;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .kodawari-menu ul li img, .kodawari-content img {
@@ -141,34 +141,38 @@ h1, h2, h3 {
 }
 .recipe {
     background:url('/../Content/images/pc/cm/pc_cm_02.jpg');
-    background-size:100%;
+    background-size:cover;
     height:857px;
     position:relative;
     padding-top: 100px;
+    background-position: center;
 }
 
 .recipe2 {
     background:url('/../Content/images/pc/cm/pc_cm_03.jpg');
-    background-size:100%;
+    background-size:cover;
     height:833px;
     position:relative;
      padding-top: 100px;
+     background-position: center;
 }
 
 .recipe3 {
     background:url('/../Content/images/pc/cm/pc_cm_04.jpg');
-    background-size:100%;
+    background-size:cover;
     height:857px;
     position:relative;
     padding-top: 100px;
+    background-position: center;
 }
 
 .recipe4 {
     background:url('/../Content/images/pc/cm/pc_cm_05.jpg');
-    background-size:100%;
+    background-size:cover;
     height:857px;
     position:relative;
     padding-top: 193px;
+    background-position: center;
 }
 
 a.btn.generic-btn {
@@ -181,10 +185,12 @@ a.btn.generic-btn {
 }
 
 .recipe a.btn.generic-btn, .recipe2 a.btn.generic-btn, .recipe3 a.btn.generic-btn, .recipe4 a.btn.generic-btn {
-    position:absolute;
+    /*position:absolute;
     bottom:100px;
-    left: 38%;
+    left: 38%;*/
     width: 260px;
+    position: relative;
+
 }
 
 .recipe4 a.btn.generic-btn {
@@ -201,6 +207,12 @@ a.btn.generic-btn {
    font-family:'Koburina Gothic W3 JIS2004';
     font-size:20px;
     font-weight:600;
+}
+
+.recipe-btn {
+    position: absolute;
+    width: 100%;
+    bottom: 100px;
 }
 
 .juicy {
