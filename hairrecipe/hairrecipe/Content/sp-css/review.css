@@ -570,6 +570,11 @@ li.review .rating-score {
     margin: 15px 0px 15px 0px;
     height: 20px;
 }
+
+#rnrw_modal .rating-box {
+    margin: 15px 15px 15px 15px;
+}
+
 .rating-box .error {
     margin-left: 10px;
 }

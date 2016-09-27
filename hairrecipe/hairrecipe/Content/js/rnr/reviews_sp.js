@@ -97,7 +97,8 @@ $(document).ready(function () {
     });
 	
 	$(".close").click(function () {
-		$("#rnrw_modal").hide();
+	    $("#rnrw_modal").hide();
+	    resetForm();
     });
 
     /* Compute remaining character count */
@@ -105,6 +106,7 @@ $(document).ready(function () {
         var val = $(this).val();
         var remain = $(this).siblings(".character-limit").html = $(this).attr("maxlength") - val.length;
         $(this).siblings(".character-limit").html(remain);
+
     });
 
 
@@ -261,6 +263,10 @@ $(document).ready(function () {
         $(".br-widget a").removeClass("star-on");
         $(".br-widget a").addClass("star-off");
         $(".pseudo-checkbox").removeClass("error");
+        $(".formfield input ").removeClass("error");
+        $(".formfield textarea ").removeClass("error");
+        $(".formfield select ").removeClass("error");
+
 
     };
 
