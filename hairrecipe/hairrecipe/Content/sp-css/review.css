@@ -108,6 +108,10 @@ Support for star ratings
 	text-align: left;
 }
 
+.rating-score .rating {
+	float:right;
+}
+
 .rating .ratingHighlight {
     display: inline-block;
     background: transparent url(/Content/images/pc/common/rating-stars.png) repeat-x scroll 0 -1px;
@@ -143,13 +147,13 @@ li.review .label {
 }
 
 li.review .author{
-    width:50%;
+    width:70%;
     padding: 0 0 20px 0;
     font-size: 20px;
 }
 
 li.review .submission-time {
-    width:50%;
+    width:30%;
     padding: 0 0 20px 0;
     text-align:right;
 }
@@ -495,8 +499,8 @@ li.review .rating-score{
 
 li.review, li.review:first-child {
     background-color:#ffffff;
-    margin:8%;
-    padding: 10%;
+    margin: 20px;
+    padding: 30px;
 }
 
 
@@ -563,7 +567,7 @@ li.review .rating-score {
 
 
 .rating-box {
-    margin: 15px 15px 15px 15px;
+    margin: 15px 0px 15px 0px;
     height: 20px;
 }
 .rating-box .error {
