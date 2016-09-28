@@ -1,0 +1,60 @@
+﻿@{
+    string checkController = @ViewContext.RouteData.Values["Controller"].ToString();
+    string checkAction = @ViewContext.RouteData.Values["Action"].ToString();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="@ViewBag.Description" />
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="fbTitle" property="og:title" content="@ViewBag.fbTitle" />
+    <meta name="fbType" property="og:type" content="@ViewBag.fbType" />
+    <meta name="fbUrl" property="og:url" content="@ViewBag.fbUrl" />
+    <meta name="fbImage" property="og:image" content="@ViewBag.fbImage" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/global-css")
+    @Styles.Render("~/Content/desktop-css")
+    @Scripts.Render("~/bundles/modernizr")
+    @if (IsSectionDefined("customStyles"))
+    {
+        @RenderSection("customStyles", required: false)
+    }
+    @Styles.Render("~/Content/pc-css/bin.css")
+    @if (checkController == "Product" && checkAction == "ProductLine")
+    {    
+        @Styles.Render("~/Content/pc-css/review.css")
+    }
+    <script type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?3DdNOn6UIFc%3D" charset="utf-8"></script>
+</head>
+<body>
+    <div class="container-hairrecipe s">
+        @{Html.RenderPartial("_navigation", "");}
+        @if (checkController == "Home" && checkAction == "Index")
+        {
+            @Html.Partial("_slider", "")
+        }
+        @RenderBody()
+
+        @if (checkController == "Product" && checkAction == "ProductLine")
+        {
+            @Html.Partial("rnr/_Write", "");
+            @Html.Partial("rnr/_Read", "");
+        }
+        
+        @{Html.RenderPartial("_FooterBlock", ViewData["GACAKeyword"]);}
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+ 
+    @if (checkController == "Product" && checkAction == "ProductLine")
+    {
+        @Scripts.Render("~/Content/js/rnr/jquery.validate.js")
+        @Scripts.Render("~/Content/js/rnr/underscore-min.js")
+        @Scripts.Render("~/Content/js/rnr/reviews.js")
+    }   
+    <script src="~/Scripts/share.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

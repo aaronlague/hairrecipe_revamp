@@ -31,7 +31,7 @@ namespace hairrecipe
             //    Context.RewritePath(urlRequest.Replace(".html", ""));
             //}
 
-            if (Request.Browser.IsMobileDevice)
+            if (Helpers.DeviceHelpers.IsMobile())
             {
                 if (urlRequest.Equals("/sp/diagnosis/index.html"))
                 {
@@ -103,6 +103,12 @@ namespace hairrecipe
             {
                 ContextCondition = Context => Context.Request.Browser.MobileDeviceModel == "iPhone"
             });
+
+            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("tablet")
+            {
+                ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0),
+            });
+
 
             //The mobile view
             //This has a lower priority than the other two so will only be used by a mobile device
