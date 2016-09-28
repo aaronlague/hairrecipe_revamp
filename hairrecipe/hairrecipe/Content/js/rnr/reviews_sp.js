@@ -1,14 +1,14 @@
 // Reviews 
 
 // Stage API request configuration
-var api_server = "http://stg.api.bazaarvoice.com/data";
+// var api_server = "http://stg.api.bazaarvoice.com/data";
 // Stage API key
- var api_key = "ndhxusgk9hj9arfay95nsxjd";
+// var api_key = "ndhxusgk9hj9arfay95nsxjd";
 
 // Prod API request configuration
-//var api_server = "http://api.bazaarvoice.com/data";
+var api_server = "http://api.bazaarvoice.com/data";
 // Prod API key
-//var api_key = "dk182v936arkrh2e68gqaucus";
+var api_key = "pcro76iso26s65nkf5zg90pgc";
 
 
 // Refer to http://developer.bazaarvoice.com to find the latest version
@@ -48,6 +48,10 @@ $(document).ready(function () {
 
     // Display Ratings and Reviews
     $(".read-review").click(function () {
+
+        $("#rnrr_modal").show();
+        var scrollTop = $(window).scrollTop(); console.log(scrollTop);
+        $("#rnrr_modal").css("top", scrollTop);
 
         var productSKU = $(this).attr("data-sku");
         var productID = $(this).attr("data-pid");
@@ -97,7 +101,8 @@ $(document).ready(function () {
     });
 	
 	$(".close").click(function () {
-		$("#rnrw_modal").hide();
+	    $(".modal").hide();
+	    resetForm();
     });
 
     /* Compute remaining character count */
@@ -105,6 +110,7 @@ $(document).ready(function () {
         var val = $(this).val();
         var remain = $(this).siblings(".character-limit").html = $(this).attr("maxlength") - val.length;
         $(this).siblings(".character-limit").html(remain);
+
     });
 
 
@@ -261,6 +267,10 @@ $(document).ready(function () {
         $(".br-widget a").removeClass("star-on");
         $(".br-widget a").addClass("star-off");
         $(".pseudo-checkbox").removeClass("error");
+        $(".formfield input ").removeClass("error");
+        $(".formfield textarea ").removeClass("error");
+        $(".formfield select ").removeClass("error");
+
 
     };
 
