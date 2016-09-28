@@ -49,6 +49,10 @@ $(document).ready(function () {
     // Display Ratings and Reviews
     $(".read-review").click(function () {
 
+        $("#rnrr_modal").show();
+        var scrollTop = $(window).scrollTop(); console.log(scrollTop);
+        $("#rnrr_modal").css("top", scrollTop);
+
         var productSKU = $(this).attr("data-sku");
         var productID = $(this).attr("data-pid");
         var productLine = $(this).attr("data-line");
@@ -97,7 +101,7 @@ $(document).ready(function () {
     });
 	
 	$(".close").click(function () {
-	    $("#rnrw_modal").hide();
+	    $(".modal").hide();
 	    resetForm();
     });
 
