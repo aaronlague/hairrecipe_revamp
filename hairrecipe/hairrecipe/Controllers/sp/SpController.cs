@@ -23,7 +23,7 @@ namespace hairrecipe.Controllers.sp
 
         public ActionResult Index()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "Home");
                 return Redirect("/index.html");
@@ -39,7 +39,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/about")]
         public ActionResult About()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("About", "Home");
                 return Redirect("/about/index.html");
@@ -54,7 +54,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/contact")]
         public ActionResult Contact()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Contact", "Home");
                 return Redirect("/contact/index.html");
@@ -69,7 +69,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/sitemap")]
         public ActionResult Sitemap()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Sitemap", "Home");
                 return Redirect("/sitemap/index.html");
@@ -84,7 +84,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/faq")]
         public ActionResult Faq()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Faq", "Home");
                 return Redirect("/faq/index.html");
@@ -100,7 +100,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/cm")]
         public ActionResult Cm()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Cm", "Home");
                 return Redirect("/cm/index.html");
@@ -116,7 +116,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/reco_recipe")]
         public ActionResult reco_recipe()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("reco_recipe", "Home");
                 return Redirect("/reco_recipe/index.html");
@@ -132,7 +132,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/kodawari")]
         public ActionResult kodawari()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("kodawari", "Home");
                 return Redirect("/kodawari/index.html");
@@ -148,7 +148,7 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/info")]
         public ActionResult info()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("info", "Home");
                 return Redirect("/info/index.html");

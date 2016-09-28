@@ -18,7 +18,7 @@ namespace hairrecipe.Controllers
         [Route("Diagnosis/{question?}/{page?}")]
         public ActionResult Index(string question, string page)
         {
-            if (Request.Browser.IsMobileDevice)
+            if (Helpers.DeviceHelpers.IsMobile())
             {
                 var requestUrl = Request.RawUrl.ToString();
                 return Redirect("/sp/" + requestUrl);
