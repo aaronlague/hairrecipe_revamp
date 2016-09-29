@@ -104,7 +104,7 @@ namespace hairrecipe
                 ContextCondition = Context => Context.Request.Browser.MobileDeviceModel == "iPhone"
             });
 
-            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("tablet")
+            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
             {
                 ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0),
             });

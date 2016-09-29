@@ -914,7 +914,6 @@
     <Content Include="Views\Shared\rnr\_Write.Mobile.cshtml" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
-    <Content Include="Views\Shared\_Layout.Tablet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
