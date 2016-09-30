@@ -67,6 +67,8 @@
     <Compile Include="Entities\Products\ProductSet.cs" />
     <Compile Include="Helpers\ContentHelper.cs" />
     <Compile Include="Helpers\DataExtensions.cs" />
+    <Compile Include="Helpers\StreamFilter.cs" />
+    <Compile Include="Helpers\StreamOutputCDN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BINServices.cs" />
     <Compile Include="Services\JsonServices.cs" />
