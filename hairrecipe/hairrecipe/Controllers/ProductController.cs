@@ -17,7 +17,7 @@ namespace hairrecipe.Controllers
 
         public ActionResult Index()
         {
-            if (Request.Browser.IsMobileDevice)
+            if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "SpProduct");
                 return Redirect("/sp/kodawari/index.html");
@@ -37,7 +37,7 @@ namespace hairrecipe.Controllers
         
         {
 
-            if (Request.Browser.IsMobileDevice)
+            if (Helpers.DeviceHelpers.IsMobile())
             {
                 var requestUrl = Request.RawUrl.ToString();
                 return Redirect("/sp/" + requestUrl);
@@ -47,7 +47,7 @@ namespace hairrecipe.Controllers
                 string url = HttpContext.Request.Url.AbsolutePath;
                 string line = url.Split('/').Last();
 
-                if (Request.Browser.IsMobileDevice)
+                if (Helpers.DeviceHelpers.IsMobile())
                 {
                     return RedirectToAction(line, "sp/product");
 

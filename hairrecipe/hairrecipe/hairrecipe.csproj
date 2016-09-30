@@ -166,6 +166,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DeviceHelpers.cs" />
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
@@ -628,6 +629,7 @@
     <Content Include="Content\js\main.pc.js" />
     <Content Include="Content\js\rnr\jquery.validate.js" />
     <Content Include="Content\js\rnr\reviews.js" />
+    <Content Include="Content\js\rnr\reviews_sp.js" />
     <Content Include="Content\js\rnr\underscore-min.js" />
     <Content Include="Content\mobile-hp.css" />
     <Content Include="Content\mobile-styles.css" />
@@ -918,7 +920,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\hairrecipe.data\hairrecipe.data.csproj">

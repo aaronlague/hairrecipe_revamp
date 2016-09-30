@@ -23,7 +23,7 @@ namespace hairrecipe.Controllers.sp
         [Route("/sp/product")]
         public ActionResult Index()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "Product");
                 //return RedirectToAction("kodawari", "Home");
@@ -50,7 +50,7 @@ namespace hairrecipe.Controllers.sp
         [Route("/sp/product/Mint")]
         public ActionResult ProductLine()
         {
-            if (!Request.Browser.IsMobileDevice)
+            if (!Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "Diagnosis");
                 var requestUrl = Request.RawUrl.ToString().Replace("/sp", "");

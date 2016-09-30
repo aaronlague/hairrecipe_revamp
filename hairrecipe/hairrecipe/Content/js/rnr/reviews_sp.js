@@ -1,14 +1,14 @@
 // Reviews 
 
 // Stage API request configuration
-// var api_server = "http://stg.api.bazaarvoice.com/data";
+var api_server = "http://stg.api.bazaarvoice.com/data";
 // Stage API key
-// var api_key = "ndhxusgk9hj9arfay95nsxjd";
+var api_key = "ndhxusgk9hj9arfay95nsxjd";
 
 // Prod API request configuration
-var api_server = "http://api.bazaarvoice.com/data";
+//var api_server = "http://api.bazaarvoice.com/data";
 // Prod API key
-var api_key = "pcro76iso26s65nkf5zg90pgc";
+//var api_key = "pcro76iso26s65nkf5zg90pgc";
 
 
 // Refer to http://developer.bazaarvoice.com to find the latest version
