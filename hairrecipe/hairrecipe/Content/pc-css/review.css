@@ -7,6 +7,10 @@
     z-index:9999999999999999999;
 }
 
+.modal.bvrnw a, .modal.bvrnw a:visited {
+    color: #87847d;
+}
+
 .modal.bvrnw .close {
     margin-top: 50px;
     opacity: .5;
