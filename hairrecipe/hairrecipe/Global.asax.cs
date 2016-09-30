@@ -124,5 +124,16 @@ namespace hairrecipe
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
+        protected void Application_EndRequest()
+        {
+            if (Context.Response.StatusCode == 404)
+            {
+                Response.Clear();
+                Response.Redirect("/index.html");
+            }
+        }
+
+
     }
+
 }
