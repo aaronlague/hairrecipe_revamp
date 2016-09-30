@@ -1,5 +1,8 @@
 /* Custom Modal */
 
+a, a:hover {
+    color: #87847d;
+}
 .modal.bvrnw {
     /*top: 80px;*/
     overflow-x: hidden;

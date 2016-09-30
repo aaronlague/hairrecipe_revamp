@@ -1,5 +1,8 @@
 /* Custom Modal */
 
+a {
+    color: #87847d;
+}
 .modal.bvrnw {
     overflow-x: hidden;
     z-index:9999999999999999999;
