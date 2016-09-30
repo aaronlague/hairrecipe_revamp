@@ -26,5 +26,14 @@ namespace hairrecipe.Helpers
             }
             return isMobile;
         }
+
+        public static bool IsSearchBot()
+        {
+            String userAgent = HttpContext.Current.Request.UserAgent;
+            Regex r = new Regex("Googlebot", RegexOptions.IgnoreCase);
+            bool IsSearchBot = r.IsMatch(userAgent);
+            return IsSearchBot;
+        }
+
     }
 }
