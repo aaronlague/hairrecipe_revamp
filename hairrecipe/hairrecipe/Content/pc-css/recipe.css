@@ -1,4 +1,9 @@
-﻿.banner-recipe > h1 {
+﻿
+.banner-recipe > h1 {
+    margin: 0;
+}
+
+.banner-recipe > p {
 color:#FFF;
 font-family:Koburina Gothic W3 JIS2004;
 margin-left:-50px;
@@ -7,6 +12,9 @@ position:absolute;
 right:50%;
 text-transform:uppercase;
 top:52%;
+font-size: 36px;
+font-weight: inherit;
+line-height: inherit;
 }
 
 .content-diagnosis {
