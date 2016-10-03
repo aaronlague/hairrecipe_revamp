@@ -201,6 +201,9 @@ footer .sitemap .first ul li{
 footer .base{
     padding : 40px 0 0 0;
 }
+footer .base *{
+    display: inline;
+}
 footer .base ul{
     float : right;
     font-family: Koburina Gothic W3 JIS2004;
