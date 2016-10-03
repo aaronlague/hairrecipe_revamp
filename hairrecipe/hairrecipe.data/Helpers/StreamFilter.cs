@@ -114,12 +114,9 @@ namespace hairrecipe.data.Helpers.PageFilter
                 bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
 
                 if (isCDNActivated) {
-                    finalHtml = finalHtml.Replace("src=\"/", "src=\"" + CDNURL + "/");
-                    finalHtml = finalHtml.Replace("<link href=\"", "<link href=\"" + CDNURL);
-
-
-
-
+                    finalHtml = finalHtml.Replace("src=\"/Content", "src=\"" + CDNURL + "/Content");
+                    finalHtml = finalHtml.Replace("src=\"/Scripts", "src=\"" + CDNURL + "/Scripts");
+                    finalHtml = finalHtml.Replace("<link href=\"/Content", "<link href=\"" + CDNURL + "/Content");
                 }
 
                 //Regex re = null;
