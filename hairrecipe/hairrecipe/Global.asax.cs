@@ -85,6 +85,25 @@ namespace hairrecipe
             //    Context.RewritePath("/sp/diagnosis/q1/abcd");
             //}
 
+
+            // Paano kumg GoogleBot ang UserAgent?
+            Regex r = new Regex("/sp/", RegexOptions.IgnoreCase); ;
+
+            if (r.IsMatch(urlRequest))
+            {
+                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("mobile")
+                {
+                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
+                });
+            }
+            else
+            {
+                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                {
+                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
+                });
+            }
+
         }
 
         protected void Application_Start()
@@ -104,11 +123,11 @@ namespace hairrecipe
                 ContextCondition = Context => Context.Request.Browser.MobileDeviceModel == "iPhone"
             });
 
+            // Para sa iPad, i-display ang pang-desktop ;-)
             DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
             {
-                ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0),
+                ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
             });
-
 
             //The mobile view
             //This has a lower priority than the other two so will only be used by a mobile device
