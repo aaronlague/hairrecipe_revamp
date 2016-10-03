@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Web.Configuration;
+
 
 namespace hairrecipe.data.Helpers.PageFilter
 {
@@ -12,7 +14,15 @@ namespace hairrecipe.data.Helpers.PageFilter
         //-----------------------------------------------------------------------------------------
         public void Init (HttpApplication app)
         {
-            app.ReleaseRequestState         += new EventHandler(InstallResponseFilter);
+            string DomainName = HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Authority);
+            bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
+            string CDNActivatedEnvironment = WebConfigurationManager.AppSettings["CDNActivatedEnvironment"];
+
+            if (isCDNActivated && DomainName == CDNActivatedEnvironment)
+            {
+                app.ReleaseRequestState         += new EventHandler(InstallResponseFilter);
+            }
+
         }
 
 

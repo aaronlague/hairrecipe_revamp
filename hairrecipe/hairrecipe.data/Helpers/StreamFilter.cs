@@ -110,62 +110,10 @@ namespace hairrecipe.data.Helpers.PageFilter
 
                 string finalHtml = responseHtml.ToString();
                 string CDNURL = WebConfigurationManager.AppSettings["CDNURL"];
-                string CDNActivatedEnvironment = WebConfigurationManager.AppSettings["CDNActivatedEnvironment"];
-                bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
 
-                if (isCDNActivated) {
-                    finalHtml = finalHtml.Replace("src=\"/Content", "src=\"" + CDNURL + "/Content");
-                    finalHtml = finalHtml.Replace("src=\"/Scripts", "src=\"" + CDNURL + "/Scripts");
-                    finalHtml = finalHtml.Replace("<link href=\"/Content", "<link href=\"" + CDNURL + "/Content");
-                }
-
-                //Regex re = null;
-
-
-                /*
-                // The title has an id="..." which we need to get rid of
-                re = new Regex("<title(\\s+id=.+?)>", RegexOptions.IgnoreCase);
-                finalHtml = re.Replace(finalHtml, new MatchEvaluator(TitleMatch));
-
-                // Replace language="javascript" with script type="text/javascript"
-                re = new Regex("(?<=script\\s*)(language=\"javascript\")", RegexOptions.IgnoreCase);
-                finalHtml = re.Replace(finalHtml, new MatchEvaluator(JavaScriptMatch));
-
-                // If there are still any language="javascript" are left, delete them
-                finalHtml = Regex.Replace(finalHtml, "language=\"javascript\"", string.Empty, RegexOptions.IgnoreCase);
-
-                // Clean up images. Some images have a border property which is deprecated in XHTML
-                re = new Regex("<img.*(border=\".*?\").*?>", RegexOptions.IgnoreCase);
-                finalHtml = re.Replace(finalHtml, new MatchEvaluator(ImageBorderMatch));
-
-                // Wrap the __VIEWSTATE tag in a div to pass validation
-                re = new Regex("(<input.*?__VIEWSTATE.*?/>)", RegexOptions.IgnoreCase);
-                finalHtml = re.Replace(finalHtml, new MatchEvaluator(ViewStateMatch));
-
-                // If __doPostBack is registered, replace the whole function
-                if (finalHtml.IndexOf("__doPostBack") > -1)
-                {
-                    try
-                    {
-                        int pos1 = finalHtml.IndexOf("var theform;");
-                        int pos2 = finalHtml.IndexOf("theform.__EVENTTARGET", pos1);
-                        string methodText = finalHtml.Substring(pos1, pos2 - pos1);
-                        string formID = Regex.Match(methodText, "document.forms\\[\"(.*?)\"\\];", RegexOptions.IgnoreCase).Groups[1].Value.Replace(":", "_");
-
-                        finalHtml = finalHtml.Replace(methodText,
-                            @"var theform = document.getElementById ('" + formID + "');\r\n\t\t");
-                    }
-                    catch
-                    {
-                    }
-                }
-
-                // Remove the "name" attribute from <form> tags because they are invalid
-                re = new Regex("<form\\s+(name=.*?\\s)", RegexOptions.IgnoreCase);
-                finalHtml = re.Replace(finalHtml, new MatchEvaluator(FormNameMatch));
-
-
-                */
+                finalHtml = finalHtml.Replace("src=\"/Content", "src=\"" + CDNURL + "/Content");
+                finalHtml = finalHtml.Replace("src=\"/Scripts", "src=\"" + CDNURL + "/Scripts");
+                finalHtml = finalHtml.Replace("<link href=\"/Content", "<link href=\"" + CDNURL + "/Content");
 
                 // Write the formatted HTML back
                 byte[] data = System.Text.UTF8Encoding.UTF8.GetBytes(finalHtml);
