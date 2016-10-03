@@ -46,3 +46,20 @@ footer .specialInfo ul li .bin .bin-PopUp ul { padding: 0px 0 0 18px }
     bottom: -35px;
     left: -40px;
 }
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   #myCarousel .carousel-inner  .item:first-child .bin {
+        top: 457px;
+    }
+
+    #myCarousel .bin {
+        left: 168px;
+    }
+}
+
