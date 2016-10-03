@@ -141,7 +141,7 @@ namespace hairrecipe.Controllers
         [Route("/info")]
         public ActionResult info()
         {
-            if (!Helpers.DeviceHelpers.IsMobile())
+            if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("info", "Sp");
                 return Redirect("/sp/info/index.html");
