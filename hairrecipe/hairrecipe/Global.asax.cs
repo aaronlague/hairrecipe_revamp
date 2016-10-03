@@ -8,7 +8,8 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.WebPages;
-
+using System.Web.Configuration;
+using hairrecipe.data.Helpers.PageFilter;
 
 namespace hairrecipe
 {
@@ -21,6 +22,10 @@ namespace hairrecipe
         {
 
             string urlRequest = Request.Url.AbsolutePath.ToString();
+            string DomainName = Request.Url.Host;
+            bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
+            string CDNActivatedEnvironment = WebConfigurationManager.AppSettings["CDNActivatedEnvironment"];
+
 
             //if ((urlRequest.Equals("/sp/diagnosis/index.html")) || (urlRequest.Equals("/diagnosis/index.html")))
             //{
@@ -87,7 +92,7 @@ namespace hairrecipe
 
 
             // Paano kumg GoogleBot ang UserAgent?
-            Regex r = new Regex("/sp/", RegexOptions.IgnoreCase); ;
+            Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
 
             if (r.IsMatch(urlRequest))
             {
@@ -103,6 +108,17 @@ namespace hairrecipe
                     ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
                 });
             }
+
+            // CDN Replacement
+            if (isCDNActivated && DomainName == CDNActivatedEnvironment)
+            {
+                HttpResponse response = HttpContext.Current.Response;
+                if (response.ContentType == "text/html")
+                {
+                    response.Filter = new StreamFilter(response.Filter);
+                }
+            }
+
 
         }
 
