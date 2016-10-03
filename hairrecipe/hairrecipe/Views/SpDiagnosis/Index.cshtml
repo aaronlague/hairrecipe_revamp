@@ -46,7 +46,7 @@
     @{
         string AbsoluteURL = HttpContext.Current.Request.Url.AbsolutePath.ToString();
         AbsoluteURL = AbsoluteURL.Replace("sp", "").Replace("diagnosis", "").Replace("//", "");
-        AbsoluteURL = (AbsoluteURL.Length <= 0) ? "/index" : AbsoluteURL;
+        AbsoluteURL = (AbsoluteURL.Length <= 1) ? "/index" : AbsoluteURL;
     }
 
     <link rel="canonical" href="http://hairrecipe.jp/sp/diagnosis@(AbsoluteURL).html">
