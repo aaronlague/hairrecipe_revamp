@@ -4,8 +4,12 @@
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)についてよく頂くご質問と回答がご覧いただけます。";
     ViewData["GACAKeyword"] = "Q&A";
 }
-<link href="~/Content/sp-css/mobile-faq.css" rel="stylesheet" />
 
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-faq.css" rel="stylesheet" />
+    <link rel="canonical" href="http://hairrecipe.jp/sp/faq/index.html">
+}
 <div class="contact-banner">
     <img src="~/Content/images/sp/faq/1.jpg" />
     <div class="inner">

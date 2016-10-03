@@ -4,7 +4,12 @@
     ViewBag.Description = "HAIR RECIPE（ヘアレシピ)のサイトマップがご覧いただけます。";
     ViewData["GACAKeyword"] = "sitemap";
 }
-<link href="~/Content/sp-css/mobile-sitemap.css" rel="stylesheet" />
+@section customStyles
+{
+    <link href="~/Content/sp-css/mobile-sitemap.css" rel="stylesheet" />
+    <link rel="canonical" href="http://hairrecipejp/sp/sitemap/indexhtml">
+}
+
 
 <div class="contact-banner">
     <img src="~/Content/images/sp/sitemap/1.jpg" />
