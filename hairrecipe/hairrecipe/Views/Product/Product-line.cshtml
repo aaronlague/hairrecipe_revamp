@@ -11,10 +11,12 @@
 @section customStyles
 {
     <link href="~/Content/pc-css/product-line.css" rel="stylesheet" />
+    <link rel="canonical" href="http://hairrecipe.jp/product/@(Model.GroupKeyword).html">	
+    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/product/@(Model.GroupKeyword).html">
 }
 
 
-<div id="@Model.GroupKeyword" class="view">
+><div id="@Model.GroupKeyword" class="view">
     <img class="group-banner" src="~/Content/images/pc/product/@Model.GroupKeyword/banner.jpg" />
     @if (!string.IsNullOrEmpty(Model.BannerText))
     {

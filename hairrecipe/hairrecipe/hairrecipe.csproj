@@ -166,6 +166,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\DeviceHelpers.cs" />
     <Compile Include="Infrastructure\LegacyRoute.cs" />
     <Compile Include="Infrastructure\UrlRequests.cs" />
     <Compile Include="Models\DiagnosisViewModel.cs" />
@@ -628,6 +629,7 @@
     <Content Include="Content\js\main.pc.js" />
     <Content Include="Content\js\rnr\jquery.validate.js" />
     <Content Include="Content\js\rnr\reviews.js" />
+    <Content Include="Content\js\rnr\reviews_sp.js" />
     <Content Include="Content\js\rnr\underscore-min.js" />
     <Content Include="Content\mobile-hp.css" />
     <Content Include="Content\mobile-styles.css" />
@@ -639,6 +641,7 @@
     <Content Include="Content\pc-css\faq.css" />
     <Content Include="Content\pc-css\kodawari.css" />
     <Content Include="Content\pc-css\product-line.css" />
+    <Content Include="Content\pc-css\review.css" />
     <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\bin.css" />
     <Content Include="Content\sp-css\mobile-cm.css" />
@@ -650,6 +653,7 @@
     <Content Include="Content\sp-css\mobile-sitemap.css" />
     <Content Include="Content\sp-css\mobile-contact.css" />
     <Content Include="Content\sp-css\product-line.css" />
+    <Content Include="Content\sp-css\review.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -918,7 +922,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\hairrecipe.data\hairrecipe.data.csproj">
