@@ -40,6 +40,13 @@
 
 }
 
+.text-container-1 h1 {
+  font-size: 1em;
+  font-weight: 600;
+  margin:15px 0 27px 0;
+}
+
+
 .text-container-1 .text2 {
   font-size: 0.6em;
   letter-spacing: 0.3em;

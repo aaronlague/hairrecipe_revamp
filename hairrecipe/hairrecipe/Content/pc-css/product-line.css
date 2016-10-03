@@ -23,6 +23,11 @@ ul, li{
     width : 100%;
 } 
 
+h1.banner  {
+    margin: 0;
+}
+
+
 .center{
     display : block;
     margin-left :auto;

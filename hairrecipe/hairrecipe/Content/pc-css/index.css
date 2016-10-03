@@ -187,3 +187,7 @@ ol.carousel-indicators {
     background-repeat : no-repeat;
     padding-bottom : 0px;
 }
+
+.item h1 {
+    margin:0;
+}
