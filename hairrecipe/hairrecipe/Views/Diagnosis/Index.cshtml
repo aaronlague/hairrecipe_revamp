@@ -43,6 +43,18 @@
 @section customStyles
 {
     <link href="~/Content/pc-css/diagnosis.css" rel="stylesheet" />
+
+    @{
+        //var segments = (HttpContext.Current.Request.Url.AbsolutePath).Split('/');
+        //segments = segments.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
+        string AbsoluteURL = HttpContext.Current.Request.Url.AbsolutePath.ToString();
+        AbsoluteURL = AbsoluteURL.Replace("diagnosis", "").Replace("//","");
+        AbsoluteURL = (AbsoluteURL.Length <= 0)? "index" : AbsoluteURL;
+    }
+
+    <link rel="canonical" href="http://hairrecipe.jp/diagnosis/@(AbsoluteURL).html">
+    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/diagnosis/@(AbsoluteURL).html">
 }
 
 
