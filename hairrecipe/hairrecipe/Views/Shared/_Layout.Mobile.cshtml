@@ -30,7 +30,7 @@
     <link rel="canonical" href="@ViewBag.Conanical" />
     <link rel="alternate" media="handheld" href="@ViewBag.Alternate" />
 </head>
-<body>
+<body>@HttpContext.Current.Request.UserAgent
     @Html.Partial("_navigation.Mobile", "")
 
     @if (checkController == "sp" && checkAction == "Index")
