@@ -93,13 +93,18 @@ ul {
     background-size:100%;
 }
 
-.cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four {
+.cm-lineup-seven {
+    background: url(/Content/images/sp/cm/cm-25.jpg) no-repeat;
+    background-size:100%;
+}
+
+.cm-lineup-one, .cm-lineup-two, .cm-lineup-three, .cm-lineup-four, .cm-lineup-seven {
     position:relative;
     padding: 0 10% 9% 10%;
 
 }
 
-.cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img {
+.cm-lineup-one img, .cm-lineup-two img, .cm-lineup-three img, .cm-lineup-four img, .cm-lineup-seven img  {
     max-width: 100%;
     height: auto;
 }
@@ -124,18 +129,24 @@ ul {
     padding:10%;
 }
 
+.cm-lineup-seven div.inner{
+    padding-top: 37%;
+    padding-bottom: 83%;
+}
+
+
 .cm-lineup-two div.inner {
     padding-top: 5%;
     padding-bottom: 90%;
 }
 
-.cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+.cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2,  .cm-lineup-seven h2 {
     font-family:LubalinGraph-Book;
     font-size: 1.4em;
     margin-top: 40px;
 }
 
-.cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
+.cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-lineup-seven h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
     font-family:Koburina Gothic W3 JIS2004;
     font-size: 19px;
     line-height:30px;
@@ -168,6 +179,11 @@ a.btn.to-read-btn {
        /*font-size:15px;*/
    }
 
+.cm-lineup-seven div.inner {
+    padding-top: 33%;
+    padding-bottom: 81%;
+}
+
    p {
        font-size: 11px;
        line-height:18px;
@@ -178,7 +194,7 @@ a.btn.to-read-btn {
     height: auto;
     }
 
-   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2, .cm-lineup-seven h2 {
        font-size: 1.2em;
    }
 
@@ -221,7 +237,7 @@ a.btn.to-read-btn {
        font-size:11px;
    }
 
-   .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
+   .cm-lineup-one h3, .cm-lineup-two h3, .cm-lineup-three h3, .cm-lineup-four h3, .cm-lineup-seven h3, .cm-one h3, .cm-two h3, .cm-three h3, .cm-four h3, .cm-five h3, .cm-six h3 {
        font-size:15px;
        line-height: 25px;
    }
@@ -236,7 +252,7 @@ a.btn.to-read-btn {
     height: auto;
     }
 
-   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2 {
+   .cm-lineup-one .inner h2, .cm-lineup-two h2, .cm-lineup-three h2, .cm-lineup-four h2, .cm-lineup-seven h2 {
        font-size: 1.1em;
        margin-top: 26px;
    }
@@ -293,7 +309,18 @@ a.btn.to-read-btn {
    .cm-anc li a {
        font-size: 1.4em;
    }
+}
 
+
+/* iphone6  */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3){ 
+    .cm-lineup-seven div.inner {
+        padding-top: 37%;
+        padding-bottom: 83%;
+    }
 }
 
 /* ----------- Galaxy S5 ----------- */
