@@ -63,7 +63,7 @@ h1.banner  {
 .jp-title-2,
 .jp-title-3,
 .size{
-    font-size : 16px;    
+    font-size : 19px;    
     line-height : 150%;
     letter-spacing : 1px;
     font-weight:600;
@@ -115,9 +115,10 @@ h1.banner  {
     font-weight:600;
 }
 .additives .phrases li.phrase{
-    line-height : 150%;
-    font-size : 12px;
-    font-weight:600;    
+    line-height: 150%;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;   
 }
 .howtouse-hdr{
     font-size : 20px;
@@ -126,7 +127,7 @@ h1.banner  {
 }
 .howtouse{
     width : 490px;
-    font-size : 13px;
+    font-size : 14px;
     letter-spacing : 0px;
     line-height : 150%;
 }
@@ -223,9 +224,13 @@ h1.banner  {
 #appleginger #shampoo{
     background-image : url('/Content/images/pc/product/appleginger/shampoo.jpg');    
     height : 880px;
+    padding-top: 20px;
 }
+    #appleginger #shampoo .main-details {
+        margin-top: 47px;
+    }
     #appleginger #shampoo .rr-section{
-        bottom: 125px;
+        bottom: 100px;
         left: 172px;
     }
 
@@ -269,11 +274,22 @@ h1.banner  {
     background-image : url('/Content/images/pc/product/appleginger/treatment.jpg');
     height : 820px;
 }
+    #appleginger #treatment .main-details {
+        margin-top: 100px;
+    }
     #appleginger #treatment .rr-section{
-        bottom: 196px;
+        bottom: 115px;
         right: 172px;
     }
-
+    #appleginger #treatment .additives ul.multi li.column:nth-child(1) .phrases li.phrase:last-child {
+        display : none;
+    }
+    #appleginger #treatment .additives ul.multi li.column:nth-child(1) {
+        width : 60%;
+    }
+    #appleginger #treatment .additives ul.multi li.column:nth-child(2) {
+        width : 40%;
+    }
 /* 3rd product */
 #apricot #mask{
     background-image : url('/Content/images/pc/product/apricot/mask.jpg');

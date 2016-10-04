@@ -46,10 +46,10 @@
 {  
     "ProductId": 5,  
     "ProductName": "Apple Ginger Deep Moisture<br/>Warm Recipe",
-	"ProductNamePC": "Apple Ginger Deep Moisture Warm Recipe",    
+	"ProductNamePC": "Apple Ginger <br/>Deep Moisture Warm Recipe",    
     "ProductImage": "sp-appginger-thumbnail.png",
-	"ProductImagePC": "pc-home_10.jpg",
-	"ProductIntroTextPC": "うるおいとつやを豊富にふくんだ<br />オイルを、とろとろ濃厚な<br />ソースに仕立てて。",
+	"ProductImagePC": "pc-home_05.jpg",
+	"ProductIntroTextPC": "爽やかなアップルと<br/>温かみをだすジンジャーで、<br/>たっぷりのうるおいを。",
 	"ProductIntroText1": "爽やかなアップルと温かみをだすジンジャーで、",
 	"ProductIntroText2": "たっぷりのうるおいを。",
 	"ProductLink": "product/appleginger"
