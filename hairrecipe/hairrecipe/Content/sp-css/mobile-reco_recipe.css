@@ -32,22 +32,6 @@ body {
 }
 
 
-.page-title {
-    /*color: #fff;
-    font-size: 4.857em;
-    font-family: 'Koburina Gothic W3 JIS2004';
-    background:red;
-    position: absolute;*/
-    color: #fff;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 52%;
-    text-align: center;
-    font-size: 4.857em;
-    font-family: 'Koburina Gothic W3 JIS2004';
-    /*background:red;*/
-}
 
 .reco_recipe-main {
     /*color: #87847d;
@@ -390,3 +374,39 @@ and (max-device-width : 667px) {
     }
 }
 
+
+
+/* ttp://i.imgur.com/sa6cZzi.jpg */
+.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+  color: white;
+  font-family: "Koburina Gothic W3 JIS2004";
+  left: 50%;
+  padding: 0.8em 1.2em;
+  position: absolute;
+  top: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  font-size: 28px;
+  left: 87px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 112px;
+  white-space: nowrap;
+}
+
+.container .sub-title {
+  font-family: Koburina Gothic W3 JIS2004;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  margin-top: 40px;
+}

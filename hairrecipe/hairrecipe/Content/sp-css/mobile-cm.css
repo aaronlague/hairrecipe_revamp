@@ -26,7 +26,7 @@
 }
 
 .cm-nav {
-    padding: 10% 10% 18% 17%;
+    padding: 10% 10% 18% 14%;
 }
 
 ul {
@@ -45,16 +45,14 @@ ul {
     font-size:1.4em;
 }
 
-.cm-anc li a:after {
-    content: "";
-    float:right;
-    background: url(/Content/images/sp/cm/cm-li.png) no-repeat;
-    width: 40px;
-    height: 40px;
-    display: block;
-    background-size: 50%;
-    margin: 11px 0px 1px -43px;
-    
+.cm-anc li a::after {
+  background: transparent url("/Content/images/sp/cm/cm-li.png") no-repeat scroll 8px 0 / 50% auto;
+  content: "";
+  display: block;
+  float: right;
+  height: 40px;
+  margin: 11px 0 1px -43px;
+  width: 40px;
 }
 
 .cm-one, .cm-two, .cm-three, .cm-four, .cm-five, .cm-six {
@@ -356,4 +354,40 @@ a.btn.to-read-btn {
     .to-read-btn {
         padding-left: 9px;
     }
+}
+
+
+/* ttp://i.imgur.com/sa6cZzi.jpg */
+.contact-banner {
+    background-color: gold;
+    position: relative;
+}
+
+.contact-banner .inner {
+  color: white;
+  font-family: "Koburina Gothic W3 JIS2004";
+  left: 50%;
+  padding: 0.8em 1.2em;
+  position: absolute;
+  top: 58%;
+  transform: translate(-50%, -50%);
+}
+
+.page-title {
+  font-size: 32px;
+  left: 87px;
+  text-align: center;
+  text-transform: uppercase;
+  top: 112px;
+  white-space: nowrap;
+}
+
+.container .sub-title {
+  font-family: Koburina Gothic W3 JIS2004;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  margin-top: 40px;
 }
