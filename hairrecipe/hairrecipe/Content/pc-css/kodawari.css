@@ -182,6 +182,16 @@ h1, h2, h3 {
     background-position: center;
 }
 
+
+.recipe5{
+    background:url('/../Content/images/pc/cm/pc_cm_06.jpg');
+    background-size:cover;
+    height:857px;
+    position:relative;
+    padding-top: 180px;
+    background-position: center;
+}
+
 a.btn.generic-btn {
     padding:7px 0 0 0;
     font-size:13px;
@@ -191,7 +201,7 @@ a.btn.generic-btn {
     font-weight:600;
 }
 
-.recipe a.btn.generic-btn, .recipe2 a.btn.generic-btn, .recipe3 a.btn.generic-btn, .recipe4 a.btn.generic-btn {
+.recipe a.btn.generic-btn, .recipe2 a.btn.generic-btn, .recipe3 a.btn.generic-btn, .recipe4 a.btn.generic-btn, .recipe5 a.btn.generic-btn {
     /*position:absolute;
     bottom:100px;
     left: 38%;*/
@@ -204,22 +214,34 @@ a.btn.generic-btn {
     padding:15px 0 0 0;
 }
 
-.recipe h2, .recipe2 h2, .recipe3 h2, .recipe4 h2 {
+.recipe h2, .recipe2 h2, .recipe3 h2, .recipe4 h2, .recipe5 h2 {
     font-family: 'LubalinGraph-Book';
     font-size:22px;
     margin-bottom: 20px;
 }
 
-.recipe h3, .recipe2 h3, .recipe3 h3, .recipe4 h3 {
+.recipe h3, .recipe2 h3, .recipe3 h3, .recipe4 h3, .recipe5 h3 {
    font-family:'Koburina Gothic W3 JIS2004';
     font-size:20px;
     font-weight:600;
+}
+
+.recipe5 h2 {
+    top: 175px;
+}
+.recipe5 h3 {
+    top: 221px;
+    left: 457px;
 }
 
 .recipe-btn {
     position: absolute;
     width: 100%;
     bottom: 100px;
+}
+
+.recipe5 .recipe-btn {
+    bottom: 65px;
 }
 
 .juicy {
