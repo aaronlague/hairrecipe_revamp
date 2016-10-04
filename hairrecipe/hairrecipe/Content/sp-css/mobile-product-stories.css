@@ -214,6 +214,38 @@
     }
 
 
+.product-lineup-container .lineup-5 {
+    background: url(/Content/images/sp/product/landing/bg/sp_product-stories-lineup-5.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
+    position: relative;
+    text-align: center;
+}
+
+    .product-lineup-container .lineup-5 .copy {
+            position: relative;
+            padding-bottom: 65%;
+            padding-top: 35%;
+        }
+
+        .product-lineup-container .lineup-5 .copy h1 {
+            font-size: 2.000em;
+            margin-bottom: 20px;
+        }
+
+         .product-lineup-container .lineup-5 .copy p {
+            font-size: 2.571em;
+        }
+
+         .product-lineup-container .lineup-5 .copy p.second-copy {
+            font-size: 1.571em;
+        }
+    .product-lineup-container .lineup-5 .btn {
+        width: 65%;
+        margin-bottom: 8%;
+        padding-top: 7px;
+    }
+
 /*iphone 5*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
@@ -305,6 +337,15 @@
         font-size: 2.2em;
     }
 
+    .product-lineup-container .lineup-5 .copy {
+        padding-bottom: 69%;
+        padding-top: 31%;
+    }
+
+    .product-lineup-container .lineup-5 .copy p {
+        font-size: 2.2em;
+    }
+
 
     .product-lineup-container .lineup-1 .btn,
     .product-lineup-container .lineup-2 .btn,
@@ -373,6 +414,11 @@
 
     .product-lineup-container .lineup-4 .btn{
         padding : 4% 0;
+    }
+
+    .product-lineup-container .lineup-5 .copy {
+        padding-bottom: 70%;
+        padding-top: 33%;
     }
 
 }
@@ -473,6 +519,11 @@
 
     .product-lineup-container .lineup-4 .btn{
         padding : 4% 0;
+    }
+
+    .product-lineup-container .lineup-5 .copy {
+        padding-bottom: 73%;
+        padding-top: 33%;
     }
 
 

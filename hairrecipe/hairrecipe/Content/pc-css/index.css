@@ -34,7 +34,7 @@ h3 {
 }
 
 .generic-btn:hover {
-    position:absolute;
+    
 }
 
 .title-section {
@@ -191,3 +191,30 @@ ol.carousel-indicators {
 .item h1 {
     margin:0;
 }
+
+
+.col-xs-6.col-sm-3:last-child{
+    position : relative;
+    left : 250px;
+    top : 30px;
+}
+    .col-xs-6.col-sm-3:last-child h3,
+    .col-xs-6.col-sm-3:last-child p,
+    .col-xs-6.col-sm-3:last-child .bin{
+        position : absolute;
+        text-align : left;
+    }
+
+    .col-xs-6.col-sm-3:last-child h3{
+        left : 258px;
+        width : 250px;        
+    }
+    .col-xs-6.col-sm-3:last-child p{
+        left : 258px;
+        width : 200px;
+        top : 68px;
+    }
+    .col-xs-6.col-sm-3:last-child .bin{
+        left : 258px;
+        top : 150px;
+    }
