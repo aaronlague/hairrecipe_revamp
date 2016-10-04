@@ -1,7 +1,8 @@
 ﻿@model hairrecipe.data.Entities.Info.InfoList
+
 <div class="row">
     <div class="@Model.InfoClass info-content @Model.CustomBinContainer">
-        <a href="@Model.InfoLink" class="bin-links @Model.CustomBinBtnClass" binid="@Model.CustomBinIdentifier"><img class="lazy" data-original="/Content/images/sp/info/@Model.InfoImage" alt="@Model.alt" /></a>
+        <a href="@("/sp" + Model.InfoLink)" class="bin-links @Model.CustomBinBtnClass" binid="@Model.CustomBinIdentifier"><img class="lazy" data-original="/Content/images/sp/info/@Model.InfoImage" alt="@Model.alt" /></a>
         <span class="news-title">@Model.InfoTitle</span>
         <span class="news-date">@Model.InfoDate</span>
         <p>@Html.Raw(Model.InfoNews)</p>
