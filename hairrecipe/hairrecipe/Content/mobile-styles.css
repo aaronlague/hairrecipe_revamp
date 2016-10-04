@@ -796,3 +796,26 @@ and (max-device-width : 667px) {
         margin: 0 auto;
     }
 }
+
+
+.carousel-inner > .item > h1 {
+   display: inline-block;
+    overflow: hidden;
+}
+
+/* ttp://i.imgur.com/sa6cZzi.jpg */
+
+.contact-banner h1 {
+    margin: 0;
+    display:inline-block;
+}
+
+.container .sub-title {
+    line-height: 1.1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-family: Koburina Gothic W3 JIS2004;
+    font-style: normal;
+    font-weight: normal;	
+	font-size: 21px;
+}

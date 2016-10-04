@@ -361,7 +361,9 @@ ul.actions li a{
     margin : 2%  0 8%;
 }
 
-
+.main .view > h1 {
+    margin: 0;
+}
 
 
 
