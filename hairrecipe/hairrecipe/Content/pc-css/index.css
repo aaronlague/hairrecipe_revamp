@@ -208,6 +208,7 @@ ol.carousel-indicators {
     .col-xs-6.col-sm-3:last-child h3{
         left : 258px;
         width : 250px;        
+        line-height: 135%;
     }
     .col-xs-6.col-sm-3:last-child p{
         left : 258px;

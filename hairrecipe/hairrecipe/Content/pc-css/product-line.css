@@ -281,9 +281,6 @@ h1.banner  {
         bottom: 115px;
         right: 172px;
     }
-    #appleginger #treatment .additives ul.multi li.column:nth-child(1) .phrases li.phrase:last-child {
-        display : none;
-    }
     #appleginger #treatment .additives ul.multi li.column:nth-child(1) {
         width : 60%;
     }
