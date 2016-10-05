@@ -11,12 +11,12 @@
 @section customStyles
 {
     <link href="~/Content/sp-css/product-line.css" rel="stylesheet" />
-    <link rel="canonical" href="http://hairrecipe.jp/product/@(Model.GroupKeyword).html">
+    <link rel="canonical" href="http://hairrecipe.jp/sp/product/@(Model.GroupKeyword).html">
 }
 
 
 <div id="@Model.GroupKeyword" class="view">
-    <h1><img class="group-banner" src="~/Content/images/sp/product/@Model.GroupKeyword/banner.jpg" alt="ブースター オイル トリートメント" /></h1>
+    <h1><img class="group-banner" src="~/Content/images/sp/product/@Model.GroupKeyword/banner.jpg" alt="@Model.BannerAlt" /></h1>
     @if (!string.IsNullOrEmpty(Model.BannerText))
     {
         <h1 class="bannerTxt">@Model.BannerText</h1>
