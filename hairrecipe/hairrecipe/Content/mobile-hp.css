@@ -190,19 +190,19 @@
         line-height: 30px;
     }
 
-        .carousel-inner .item:nth-of-type(1) .slide-text-content.top {
+        .carousel-inner .item:nth-of-type(2) .slide-text-content.top {
             left: 0;
             width: 100%;
             top: 14%;
         }
 
-        .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline {
+        .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline {
             font-size: 19px;
             text-align:center;
             padding-left:10px;
         }
 
-            .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline ~ p {
+            .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline ~ p {
                 text-align:center;
                 line-height: 20px;
             }
@@ -286,19 +286,19 @@
         line-height: 30px;
     }
 
-        .carousel-inner .item:nth-of-type(1) .slide-text-content.top {
+        .carousel-inner .item:nth-of-type(2) .slide-text-content.top {
             left: 0;
             width: 100%;
             top: 14%;
         }
 
-        .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline {
+        .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline {
             font-size: 19px;
             text-align:center;
             padding-left:10px;
         }
 
-            .carousel-inner .item:nth-of-type(1) .slide-text-content.top .slide-headline ~ p {
+            .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline ~ p {
                 text-align:center;
             }
     
