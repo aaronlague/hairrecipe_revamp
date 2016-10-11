@@ -33,7 +33,7 @@ namespace hairrecipe.Controllers
         [Route("/product/Apricot")]
         [Route("/product/Kiwi")]
         [Route("/product/Mint")]
-        [Route("/product/Apple")]
+        [Route("/product/Appleginger")]
         public ActionResult ProductLine()       
         
         {

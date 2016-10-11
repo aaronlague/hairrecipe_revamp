@@ -1,7 +1,7 @@
 {
     groupName : 'appleginger',
     groupkeyword : 'appleginger',
-    gacaKeyword : 'product-appleginger',
+    gacaKeyword : 'apple',
     bannerText : '',
     bannerAlt : '',
     metaTitle : 'キウイ エンパワー ボリューム レシピ｜HAIR RECIPE（ヘアレシピ) | P&amp;G',
@@ -28,9 +28,9 @@
             hasReview : true,
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-appleginger_bin1',
-            binStoreGaca : '[platform]_hairrepi_20161001_product-appleginger_[store]',
-            reviewWriteGACA: '[platform]_hairrepi_20161001_product-appleginger_review_wrigt1',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-appleginger_review_read1',
+            binStoreGaca : '[platform]_hairrepi_20161022_product_apple_bin_sham_[store]',
+            reviewWriteGACA: '[platform]_hairrepi_20161022_product_apple_sham_read',
+            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_sham_post',
             columns :[ 
                 {        
                     header:'添加',
@@ -70,9 +70,9 @@
             hasReview : true,
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-appleginger_bin2',
-            binStoreGaca : '[platform]_hairrepi_20161001_product-appleginger_[store]_2',
-            reviewWriteGACA : '[platform]_hairrepi_20161001_product-appleginger_review_wrigt2',
-            reviewReadGACA : '[platform]_hairrepi_20161001_product-appleginger_review_read2',
+            binStoreGaca : '[platform]_hairrepi_20161022_product_apple_bin_trt_[store]',
+            reviewWriteGACA : '[platform]_hairrepi_20161022_product_apple_trt_read',
+            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_trt_post',
             columns :[ 
                 {        
                     header:'添加',
