@@ -43,11 +43,25 @@
     }
 
     @{
+        string customDate;
+
+        if (Model.GACAKeyword == "apple")
+        {
+            customDate = "20161022_product";
+        }
+        else
+        {
+            customDate = "20161001";
+        }   
+     }
+
+    @{
         string[,] contents = new string[,]
+
 	{
         { Model.FooterBannerBackground, "", "", "" },
-	    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック", "sp_hairrepi_20161001_"+Model.GACAKeyword+"_diagnosis"},
-	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで", "sp_hairrepi_20161001_"+Model.GACAKeyword+"_your-recipe"},
+	    {"/diagnosis", "sp_diagnosis-thumbnail.png", "あなたの髪、うるおっている？ジューシー度チェック", "sp_hairrepi_"+@customDate+"_"+Model.GACAKeyword+"_diagnosis"},
+	    {"/reco_recipe", "sp_reco-recipe-thumbnail.png", "YOUR RECIPE なりたい髪を選んで", "sp_hairrepi_"+@customDate+"_"+Model.GACAKeyword+"_your-recipe"},
 
 	};
         Html.RenderPartial("_FootBannerSp", contents);

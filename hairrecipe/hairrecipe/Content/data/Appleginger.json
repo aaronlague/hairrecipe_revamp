@@ -29,8 +29,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-appleginger_bin1',
             binStoreGaca : '[platform]_hairrepi_20161022_product_apple_bin_sham_[store]',
-            reviewWriteGACA: '[platform]_hairrepi_20161022_product_apple_sham_read',
-            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_sham_post',
+            reviewWriteGACA: '[platform]_hairrepi_20161022_product_apple_sham_post',
+            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_sham_read',
             columns :[ 
                 {        
                     header:'添加',
@@ -71,8 +71,8 @@
             hasBIN : true,
             bingaca : '[platform]_hairrepi_20161001_product-appleginger_bin2',
             binStoreGaca : '[platform]_hairrepi_20161022_product_apple_bin_trt_[store]',
-            reviewWriteGACA : '[platform]_hairrepi_20161022_product_apple_trt_read',
-            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_trt_post',
+            reviewWriteGACA : '[platform]_hairrepi_20161022_product_apple_trt_post',
+            reviewReadGACA : '[platform]_hairrepi_20161022_product_apple_trt_read',
             columns :[ 
                 {        
                     header:'添加',
