@@ -1,6 +1,12 @@
 ﻿@model hairrecipe.data.Entities.Home.HomeProducts
 @{
     string uri = Request.Url.AbsolutePath;
+
+    Int64[] dates;
+    string[] pageName = {};
+    
+    dates = new Int64[] { 20161001, 20161001, 20161001, 20161001, 20161022 }; //dates on binbtngaca
+    pageName = new string[] { "kv", "kv", "kv", "kv", "apple_bin" }; //page name on binbtngaca
 }
 
 <div class="col-xs-6 col-sm-3 text-center">
@@ -8,6 +14,6 @@
     <img src="/Content/images/pc/homepage/@Model.ProductImagePC">
     <p class="product-text">@Html.Raw(Model.ProductIntroTextPC)</p>
     <div class="bin text-center">
-        <a href="javascript:void(0);" binid="common" class="btn generic-btn shop gaca-btn to-shop-btn" binbtngaca="@("[platform]_hairrepi_20161001_top_kv_[store]_"+ @Model.ProductId )" gaca="[platform]_hairrepi_20161001_top_mbin_@Model.ProductId" bineventlabel="external">To Shop</a>
+        <a href="javascript:void(0);" binid="common" class="btn generic-btn shop gaca-btn to-shop-btn" binbtngaca="@("[platform]_hairrepi_"+@dates[@Model.ProductId - 1]+"_top_"+@pageName[@Model.ProductId - 1]+"_[store]_"+ @Model.ProductId )" gaca="[platform]_hairrepi_20161001_top_mbin_@Model.ProductId" bineventlabel="external">To Shop</a>
     </div>
 </div>
