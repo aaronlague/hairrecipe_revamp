@@ -391,7 +391,10 @@
     <Content Include="Content\images\pc\footer-bg.jpg" />
     <Content Include="Content\images\pc\footer-special-amazon.png" />
     <Content Include="Content\images\pc\footer-special-lohaco.png" />
+    <Content Include="Content\images\pc\homepage\cm_bg.jpg" />
+    <Content Include="Content\images\pc\homepage\news_bg.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_04.jpg" />
+    <Content Include="Content\images\pc\homepage\pc-home_05.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_06.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_08.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_10.jpg" />
@@ -409,7 +412,10 @@
     <Content Include="Content\images\pc\homepage\pc-home_44.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_45.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_46.jpg" />
+    <Content Include="Content\images\pc\homepage\pc-home_47.png" />
     <Content Include="Content\images\pc\homepage\pc-home_slide1.jpg" />
+    <Content Include="Content\images\pc\homepage\pc-home_slide1a.jpg" />
+    <Content Include="Content\images\pc\homepage\pc-home_slide1b.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_slide2.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_slide3.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_slide4.jpg" />
