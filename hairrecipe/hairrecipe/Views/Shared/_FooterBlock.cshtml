@@ -1,10 +1,9 @@
 ﻿@{
-    string uri = Request.Url.AbsolutePath;
-
-    string[] pageName = {};
-    string customDate;
+    bool uri = Request.Url.AbsoluteUri.Contains("appleginger");
     
-    if (Model == "apple") {
+    string customDate;
+ 
+    if (uri) {
         customDate = "20161022_product";
     } else {
         customDate = "20161001";
