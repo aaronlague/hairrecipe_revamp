@@ -1,14 +1,9 @@
 // Reviews 
 
-// Stage API request configuration
-var api_server = "http://stg.api.bazaarvoice.com/data";
+// API request configuration
+var api_server = bv_api_server;
 // Stage API key
-var api_key = "ndhxusgk9hj9arfay95nsxjd";
-
-// Prod API request configuration
-//var api_server = "http://api.bazaarvoice.com/data";
-// Prod API key
-//var api_key = "pcro76iso26s65nkf5zg90pgc";
+var api_key = bv_api_key;
 
 
 // Refer to http://developer.bazaarvoice.com to find the latest version
@@ -260,13 +255,14 @@ $(document).ready(function () {
         return "";
     };
 
-    this.resetForm = function resetForm(cname, cvalue, exdays) {
+    this.resetForm = function resetForm() {
         validator.resetForm();
         form[0].reset();
         $(".rating_selector").attr("value", "");
         $(".br-widget a").removeClass("star-on");
         $(".br-widget a").addClass("star-off");
         $(".pseudo-checkbox").removeClass("error");
+        $(".pseudo-checkbox").removeClass("checked");
         $(".formfield input ").removeClass("error");
         $(".formfield textarea ").removeClass("error");
         $(".formfield select ").removeClass("error");

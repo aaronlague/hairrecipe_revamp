@@ -18,6 +18,7 @@ namespace hairrecipe
 
     public class MvcApplication : System.Web.HttpApplication
     {
+
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
 
@@ -119,7 +120,16 @@ namespace hairrecipe
                 }
             }
 
-
+            if (DomainName == CDNActivatedEnvironment)
+            { 
+                Application["bv_api_server"] = WebConfigurationManager.AppSettings["bv_api_server_prod"];
+                Application["bv_api_key"] = WebConfigurationManager.AppSettings["bv_api_key_prod"];
+            }
+            else
+            {
+                Application["bv_api_server"] = WebConfigurationManager.AppSettings["bv_api_server_stage"];
+                Application["bv_api_key"] = WebConfigurationManager.AppSettings["bv_api_key_stage"];
+            }
         }
 
         protected void Application_Start()
