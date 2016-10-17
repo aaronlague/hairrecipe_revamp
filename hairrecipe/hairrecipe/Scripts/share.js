@@ -116,7 +116,7 @@ $(".line-share").click(function () {
 });
 
 $(".sns-cols.results .line-share").click(function () {
-    var text = 髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ http://hairrecipe.jp ";
+    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ http://hairrecipe.jp ";
 
     location.href = "http://line.me/R/msg/text/?" + text;
 });
