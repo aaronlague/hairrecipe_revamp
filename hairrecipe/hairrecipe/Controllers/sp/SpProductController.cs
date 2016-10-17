@@ -48,7 +48,7 @@ namespace hairrecipe.Controllers.sp
         [Route("/sp/product/Apricot")]
         [Route("/sp/product/Kiwi")]
         [Route("/sp/product/Mint")]
-        [Route("/sp/product/Appleginger")]
+        [Route("/sp/product/Apple-ginger")]
         public ActionResult ProductLine()
         {
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
