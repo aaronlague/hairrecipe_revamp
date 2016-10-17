@@ -102,21 +102,21 @@ $(".sns-cols.results .twitter-share, .social-container  .twitter-share").click(f
 });
 
 $(".line-share").click(function () {
-    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？";
+    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ http://hairrecipe.jp ";
 
     location.href = "http://line.me/R/msg/text/?" + text;
 
 });
 
 $(".line-share").click(function () {
-    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？";
+    var text = "髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ http://hairrecipe.jp ";
 
     location.href = "http://line.me/R/msg/text/?" + text;
 
 });
 
 $(".sns-cols.results .line-share").click(function () {
-    var text = "あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！";
+    var text = 髪に、ごちそう。【新ブランド、ごちそうシャンプー　ヘアレシピ誕生！】 栄養士×ヘアエキスパート共同開発コンセプト。髪に、ごちそうフルコースを召し上がれ。あなたにピッタリな髪のごちそうレシピは？ http://hairrecipe.jp ";
 
     location.href = "http://line.me/R/msg/text/?" + text;
 });

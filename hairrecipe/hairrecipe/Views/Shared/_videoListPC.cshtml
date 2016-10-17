@@ -4,7 +4,7 @@
     <h3>@Html.Raw(Model.CMProductNamePc)</h3>
     <div class="embed-responsive embed-responsive-16by9 video-wrapper"><img class="play_vid lazy" src="/Content/images/pc/cm/@Model.CMProductImage2" data-video="http://www.youtube.com/embed/@Model.VideoId?autoplay=1"></div>
     <div class="btns">      
-        <a href="#" class="btn generic-btn gaca-btn" gaca="@("pc_hairrepi_20161001_cm_prpduct" + Model.CMProductId)">動画で紹介されている<br />製品をチェック！</a>
+        <a href="/index.html#products" class="btn generic-btn gaca-btn" gaca="@("pc_hairrepi_20161001_cm_prpduct" + Model.CMProductId)">動画で紹介されている<br />製品をチェック！</a>
         <div class="bin">
             <a class="btn generic-btn shop to-shop-btn gaca-btn" bineventlabel="external" binbtngaca="@("pc_hairrepi_20161001_cm_[store]_" + (Model.CMProductId <= 1 ? "" : Model.CMProductId.ToString()))" gaca="@("pc_hairrepi_20161001_cm_bin" +@Model.CMProductId)" binid="@Model.BINID">To Shop</a>
         </div>

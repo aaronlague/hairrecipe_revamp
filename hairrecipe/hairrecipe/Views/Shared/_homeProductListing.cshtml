@@ -12,7 +12,7 @@
 
 <div class="product-item">
     <p class="product-name">@Html.Raw(Model.ProductName)</p> 
-    <img data-original="/Content/images/sp/home/@Model.ProductImage" class="product-thumbnail lazy"/>
+    <a href="@Model.ProductLink"><img data-original="/Content/images/sp/home/@Model.ProductImage" class="product-thumbnail lazy"/></a>
     <p class="product-intro-text">@Model.ProductIntroText1<br />@Model.ProductIntroText2</p>
     <div class="bin">
         <a href="javascript:void(0);" binid="@binIdKeyword[@Model.ProductId - 1]" binbtngaca="@("[platform]_hairrepi_"+@dates[@Model.ProductId - 1]+"_top_"+@pageName[@Model.ProductId - 1]+"_[store]_"+ @Model.ProductId )" gaca="[platform]_hairrepi_20161001_top_mbin_@Model.ProductId" bineventlabel="external" class="btn to-shop-btn gaca-btn">To Shop</a>
