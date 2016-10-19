@@ -152,7 +152,7 @@ ul {
 }
 
 .cm-lineup-one a.btn.to-read-btn {
-    margin-top:20%;
+    margin-top:15%;
 }
 
 a.btn.to-read-btn {
@@ -220,6 +220,10 @@ a.btn.to-read-btn {
        padding-top: 35%;
        padding-bottom: 65%;
    }
+
+    .cm-lineup-one div.inner {
+        padding-bottom: 70%;
+    }
 }
 
 @media (max-width: 320px) {
@@ -348,6 +352,7 @@ a.btn.to-read-btn {
 
     .cm-lineup-four div.inner {
         padding-top: 100px;
+        padding-bottom: 62%;
     }
 
      .cm-lineup-four img {
