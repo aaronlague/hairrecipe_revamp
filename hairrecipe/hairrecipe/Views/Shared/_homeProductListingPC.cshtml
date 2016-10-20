@@ -13,7 +13,7 @@
 
 <div class="col-xs-6 col-sm-3 text-center">
     <h3>@Html.Raw(Model.ProductNamePC)</h3>
-    <img src="/Content/images/pc/homepage/@Model.ProductImagePC">
+    <a href="@Model.ProductLink"><img src="/Content/images/pc/homepage/@Model.ProductImagePC"></a>
     <p class="product-text">@Html.Raw(Model.ProductIntroTextPC)</p>
     <div class="bin text-center">
         <a href="javascript:void(0);" binid="@binIdKeyword[@Model.ProductId - 1]" class="btn generic-btn shop gaca-btn to-shop-btn" binbtngaca="@("[platform]_hairrepi_"+@dates[@Model.ProductId - 1]+"_top_"+@pageName[@Model.ProductId - 1]+"_[store]_"+ @Model.ProductId )" gaca="[platform]_hairrepi_20161001_top_mbin_@Model.ProductId" bineventlabel="external">To Shop</a>
