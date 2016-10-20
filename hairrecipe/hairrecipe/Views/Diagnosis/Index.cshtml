@@ -11,7 +11,7 @@
         case true:
             fbMetaTitle = "あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！";
             fbType = "article";
-            fbUrl = Request.Url.AbsoluteUri + ".html";
+            fbUrl = Request.Url.AbsoluteUri + "/";
             fbImage = Request.Url.Scheme + "://" + Request.Url.Authority + "/" + "content/images/sp/diagnosis/results/OGP_diagnosis.png";
         break;
 
@@ -50,8 +50,8 @@
         AbsoluteURL = (AbsoluteURL.Length <= 0)? "index" : AbsoluteURL;
     }
 
-    <link rel="canonical" href="http://hairrecipe.jp/diagnosis/@(AbsoluteURL).html">
-    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/diagnosis/@(AbsoluteURL).html">
+    <link rel="canonical" href="http://hairrecipe.jp/diagnosis/@(AbsoluteURL)/">
+    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/diagnosis/@(AbsoluteURL)/">
 }
 
 

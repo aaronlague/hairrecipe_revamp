@@ -27,7 +27,7 @@ namespace hairrecipe.Controllers.sp
             {
                 //return RedirectToAction("Index", "Product");
                 //return RedirectToAction("kodawari", "Home");
-                return Redirect("/kodawari/index.html");
+                return Redirect("/kodawari/");
 
             }
             else
@@ -39,7 +39,7 @@ namespace hairrecipe.Controllers.sp
 
                 //return View(storyList);
                 //return RedirectToAction("kodawari", "Sp");
-                return Redirect("/sp/kodawari/index.html");
+                return Redirect("/sp/kodawari/");
             }
         }
 
@@ -60,8 +60,11 @@ namespace hairrecipe.Controllers.sp
             }
             else
             {
-                string url = HttpContext.Request.Url.AbsolutePath;
-                string line = url.Split('/').Last();
+                /* Get the last segment of the URI to identify the view */
+                Uri uriAddress1 = new Uri(HttpContext.Request.Url.AbsoluteUri);
+                int numsegment = uriAddress1.Segments.Length - 1;
+                string line = uriAddress1.Segments[numsegment].Replace("/", "");
+
                 ViewData["group-title"] = line;
                 string filepath = Server.MapPath("~/Content/data/" + line + ".json");
                 var productLine = ProductService.GetLineDetails(filepath);

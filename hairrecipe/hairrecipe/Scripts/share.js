@@ -71,7 +71,7 @@ function shareToTwitter(d) {
 function shareToTwitterResults(d) {
 
     twDetails = {
-        description: 'あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！ヘアレシピ ｜http://hairrecipe.jp/diagnosis/index.html'
+        description: 'あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！ヘアレシピ ｜http://hairrecipe.jp/diagnosis/'
     }
 
     var pageUrl = 'http://' + window.location.href;

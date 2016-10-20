@@ -20,12 +20,12 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "SpProduct");
-                return Redirect("/sp/kodawari/index.html");
+                return Redirect("/sp/kodawari/");
 
             } else {
 
                 //return View();
-                return Redirect("/kodawari/index.html");
+                return Redirect("/kodawari/");
             }
         }
 
@@ -45,8 +45,10 @@ namespace hairrecipe.Controllers
             }
             else
             {
-                string url = HttpContext.Request.Url.AbsolutePath;
-                string line = url.Split('/').Last();
+                /* Get the last segment of the URI to identify the view */
+                Uri uriAddress1 = new Uri(HttpContext.Request.Url.AbsoluteUri);
+                int numsegment = uriAddress1.Segments.Length - 1;
+                string line = uriAddress1.Segments[numsegment].Replace("/", "");
 
                 if (Helpers.DeviceHelpers.IsMobile())
                 {
