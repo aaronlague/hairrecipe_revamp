@@ -111,14 +111,14 @@ namespace hairrecipe
             }
 
             // CDN Replacement
-            if (isCDNActivated && DomainName == CDNActivatedEnvironment)
-            {
-                HttpResponse response = HttpContext.Current.Response;
-                if (response.ContentType == "text/html")
-                {
-                    response.Filter = new StreamFilter(response.Filter);
-                }
-            }
+            //if (isCDNActivated && DomainName == CDNActivatedEnvironment)
+            //{
+            //    HttpResponse response = HttpContext.Current.Response;
+            //    if (response.ContentType == "text/html")
+            //    {
+            //        response.Filter = new StreamFilter(response.Filter);
+            //    }
+            //}
 
             if (DomainName == CDNActivatedEnvironment)
             { 
