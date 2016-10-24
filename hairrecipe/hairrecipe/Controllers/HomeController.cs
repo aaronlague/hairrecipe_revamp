@@ -170,5 +170,21 @@ namespace hairrecipe.Controllers
                 return View();
             }
         }
+
+        [Route("/hawaii")]
+        public ActionResult hawaii()
+        {
+            if (Helpers.DeviceHelpers.IsMobile())
+            {
+                //return RedirectToAction("Sitemap", "Sp");
+                return Redirect("/sp/hawaii/");
+
+            }
+            else
+            {
+
+                return View();
+            }
+        }
     }
 }

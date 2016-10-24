@@ -1,6 +1,18 @@
 ﻿[  
 {  
     "InfoId": 1,
+	"InfoImage": "info-01.jpg",  
+    "InfoTitle": "イベント",  
+    "InfoDate": "2016.10.31",
+	"InfoNews": "あなたの髪、うるおっていますか？髪のジューシー度をチェッ…",
+	"InfoNews2": "ヘアレシピがビューティートレンドの発信地・ハワイにてメディアで注目を集める旬な女の子たちに向けたビューティーイベントを開催！",
+	"InfoClass": "wall",
+	"InfoLink": "/hawaii/",
+	"gaca" : "[platform]_hairrepi_20161031_news_hawaii",
+ 	"alt" : "ヘアレシピがビューティートレンドの発信地・ハワイにてメディアで注目を集める旬な女の子たちに向けたビューティーイベントを"},
+
+{  
+    "InfoId": 2,
 	"InfoImage": "info-02.jpg",  
     "InfoTitle": "新コンテンツ",  
     "InfoDate": "2016.04.21",
@@ -12,7 +24,7 @@
  	"alt" : "あなたの髪、うるおっている？ジューシー度チェック"},
 
 {  
-    "InfoId": 2,
+    "InfoId": 3,
 	"InfoImage": "info-03.jpg",  
     "InfoTitle": "冬季限定",  
     "InfoDate": "2016.10.15",
@@ -24,7 +36,7 @@
  	"alt" : "冬の髪に、旬のレシピいかがですか？ 売り切れ御礼！おかげさまで、完売しました。"},
 
 {  
-    "InfoId": 3,
+    "InfoId": 4,
 	"InfoImage": "info-04.jpg",  
     "InfoTitle": "夏季限定",  
     "InfoDate": "2015.06.18",
@@ -36,7 +48,7 @@
  	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"},
 
 {  
-    "InfoId": 4,
+    "InfoId": 5,
 	"InfoImage": "info-05.jpg",  
     "InfoTitle": "新登場",  
     "InfoDate": "2015.06.18",
@@ -52,7 +64,7 @@
 },
 
 {  
-    "InfoId": 5,
+    "InfoId": 6,
 	"InfoImage": "info-06.jpg",  
     "InfoTitle": "新発売",  
     "InfoDate": "2015.04.06",
@@ -65,7 +77,7 @@
 },
 
 {  
-    "InfoId": 6,
+    "InfoId": 7,
 	"InfoImage": "info-07.jpg",  
     "InfoTitle": "限定コラボ",  
     "InfoDate": "2015.03.10",
@@ -78,7 +90,7 @@
 },
 
 {  
-    "InfoId": 7,
+    "InfoId": 8,
 	"InfoImage": "info-08.jpg",  
     "InfoTitle": "イベント",  
     "InfoDate": "2014.11.24",

@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "hawaii";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section customStyles
+{
+    <link href="~/Content/pc-css/hawaii.css" rel="stylesheet" />
+    <link rel="canonical" href="http://hairrecipe.jp/hawaii/">
+    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/hawaii/">
+}
+
+<div class="banner-hawaii">
+    <img src="/Content/images/pc/hawaii/banner-hawaii.jpg" alt="">
+</div>
+<div class="wall-hp pb60">
+    <div class="content-hawaii">
+        <p class="lead-title">HAIR RECIPE Natural Beauty Camp</p>
+        <p class="heading-title-1">ヘアレシピ ナチュラルビューティーキャンプ</p>
+        <p class="heading-title-2"><span>2016 in Hawaii</span> イベントレポート</p>
+        <div class="centerthumbs">
+            <p>
+                回、ビューティートレンドの発信地・ハワイにて、<br />                様々なメディアで注目を集める<br />                旬な女の子たちに向けたビューティイベントを開催！<br />                その名も「ヘアレシピ ナチュラルビューティーキャンプ2016 in Hawaii」。<br />                ハワイ ワイキキの癒しの空間で、ヨガ、グルメ、<br />                リラクゼーションなどを通じて、カラダもココロもよろこぶ、<br />                とっておきの“ごちそう”を直入れ体験したイベントをご紹介！
+            </p>
+        </div>
+    </div>
+</div>
+<div class="wood-smooth pb60">
+    <div class="content-hawaii">
+        <p class="lead-title-2">直入れ Salon&ヘアレシピ サロン</p>
+        <p class="heading-title-2"><span>Did you know about</span> “直入れ”？</p>
+        <div class="content-mid">
+            <p class="bottom-copy">            疲れや不調を感じているということは、身体が栄養を欲しているということ。<br />            そのため、身体の内側に優先的に栄養は流れてしまい、なかなか髪にまでは届かないのです。<br />            髪に直接“直入れ”するということは、美しく健やかな髪のためには効果的です。<br />            身体がよろこぶごちそうで身体の内側を満たすように、髪には髪のごちそうを与える直入れサロンで、<br />            こころゆくまで直入れタイムを楽しみました。
+        </p>
+        <img src="/Content/images/pc/hawaii/hawaii-tiles.jpg" alt="">
+        <a class="generic-btn">髪に直入れするヘアレシピをチェック！</a>
+        </div>
+        <div class="content-instagram">
+            <img src="/Content/images/pc/hawaii/hawaii-instagram.png" alt="">
+            <p>#ヘアレシピ  #beautycamp  #直入れ美容</p>
+            <ul>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-1.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-2.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-3.jpg" alt=""></li>
+
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-4.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-5.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-6.jpg" alt=""></li>
+
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-7.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-8.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-9.jpg" alt=""></li>
+
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-10.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-11.jpg" alt=""></li>
+                <li><img src="/Content/images/pc/hawaii/hawaii-insta-12.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="home">
+            @{Html.RenderPartial("_FootBannerBlock", ViewData["GACAKeyword"]);}
+        </div>
+    </div>
+</div>
