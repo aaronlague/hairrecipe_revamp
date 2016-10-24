@@ -409,6 +409,7 @@
     <Content Include="Content\images\pc\hawaii\hawaii-tiles.jpg" />
     <Content Include="Content\images\pc\homepage\cm_bg.jpg" />
     <Content Include="Content\images\pc\homepage\news_bg.jpg" />
+    <Content Include="Content\images\pc\homepage\pc-home_slide1c.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_04.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_05.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_06.jpg" />
@@ -606,6 +607,7 @@
     <Content Include="Content\images\sp\home\sp_news-thumb-1.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-2.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-3.jpg" />
+    <Content Include="Content\images\sp\info\info-01.jpg" />
     <Content Include="Content\images\sp\info\info-02.jpg" />
     <Content Include="Content\images\sp\info\info-03.jpg" />
     <Content Include="Content\images\sp\info\info-04.jpg" />
@@ -703,6 +705,7 @@
     <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\faq.css" />
     <Content Include="Content\pc-css\hawaii.css" />
+    <Content Include="Content\pc-css\index.css" />
     <Content Include="Content\pc-css\kodawari.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\review.css" />
