@@ -70,5 +70,15 @@
     }   
     <script src="~/Scripts/share.js"></script>
     @RenderSection("scripts", required: false)
+    <script type="application/ld+json">
+    { "@@context" : "http://schema.org",
+      "@@type" : "Organization",
+      "name" : "Hair Recipe",
+      "url" : "http://hairrecipe.jp",
+      "sameAs" : [ "https://twitter.com/HairRecipeJapan",
+        "https://www.instagram.com/hairrecipe_official/",
+        "https://www.youtube.com/user/hairrecipe"]
+    }
+    </script>
 </body>
 </html>
