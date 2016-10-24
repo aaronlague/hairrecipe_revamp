@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://hairrecipe.jp/index.html</loc>
+    <loc>http://hairrecipe.jp/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/contact/index.html</loc>
+    <loc>http://hairrecipe.jp/contact/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/product/kiwi.html</loc>
+    <loc>http://hairrecipe.jp/product/kiwi/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/faq/index.html</loc>
+    <loc>http://hairrecipe.jp/faq/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/product/apple.html</loc>
+    <loc>http://hairrecipe.jp/product/apricot/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/product/apricot.html</loc>
+    <loc>http://hairrecipe.jp/reco_recipe/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/reco_recipe/index.html</loc>
+    <loc>http://hairrecipe.jp/product/mint/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/product/mint.html</loc>
+    <loc>http://hairrecipe.jp/product/booster/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/product/booster.html</loc>
+    <loc>http://hairrecipe.jp/product/apple-ginger/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/cm/index.html</loc>
+    <loc>http://hairrecipe.jp/cm/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/info/index.html</loc>
+    <loc>http://hairrecipe.jp/info/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/diagnosis/index.html</loc>
+    <loc>http://hairrecipe.jp/diagnosis/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/kodawari/index.html</loc>
+    <loc>http://hairrecipe.jp/kodawari/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/about/index.html</loc>
+    <loc>http://hairrecipe.jp/about/</loc>
   </url>
   <url>
-    <loc>http://hairrecipe.jp/sitemap/index.html</loc>
+    <loc>http://hairrecipe.jp/sitemap/</loc>
   </url>
 </urlset>

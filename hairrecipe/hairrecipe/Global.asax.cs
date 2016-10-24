@@ -174,7 +174,7 @@ namespace hairrecipe
             if (Context.Response.StatusCode == 404)
             {
                 Response.Clear();
-                Response.Redirect("/index.html");
+                Response.Redirect("/");
             }
         }
 
