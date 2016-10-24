@@ -391,6 +391,22 @@
     <Content Include="Content\images\pc\footer-bg.jpg" />
     <Content Include="Content\images\pc\footer-special-amazon.png" />
     <Content Include="Content\images\pc\footer-special-lohaco.png" />
+    <Content Include="Content\images\pc\hawaii\banner-hawaii.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-1.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-10.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-11.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-12.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-2.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-3.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-4.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-5.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-6.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-7.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-8.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-insta-9.jpg" />
+    <Content Include="Content\images\pc\hawaii\hawaii-instagram.png" />
+    <Content Include="Content\images\pc\hawaii\hawaii-thumbs.png" />
+    <Content Include="Content\images\pc\hawaii\hawaii-tiles.jpg" />
     <Content Include="Content\images\pc\homepage\cm_bg.jpg" />
     <Content Include="Content\images\pc\homepage\news_bg.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_04.jpg" />
@@ -686,11 +702,13 @@
     <Content Include="Content\pc-css\desktop-styles.css" />
     <Content Include="Content\pc-css\diagnosis.css" />
     <Content Include="Content\pc-css\faq.css" />
+    <Content Include="Content\pc-css\hawaii.css" />
     <Content Include="Content\pc-css\kodawari.css" />
     <Content Include="Content\pc-css\product-line.css" />
     <Content Include="Content\pc-css\review.css" />
     <Content Include="Content\pc-css\sitemap.css" />
     <Content Include="Content\sp-css\bin.css" />
+    <Content Include="Content\sp-css\hawaii.css" />
     <Content Include="Content\sp-css\mobile-cm.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
     <Content Include="Content\sp-css\mobile-product-stories.css" />
@@ -964,6 +982,8 @@
     <Content Include="Views\Shared\rnr\_Write.Mobile.cshtml" />
     <Content Include="Scripts\jquery-3.1.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.0.min.map" />
+    <Content Include="Views\Home\hawaii.cshtml" />
+    <Content Include="Views\Sp\hawaii.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />

@@ -1,0 +1,115 @@
+﻿.content-hawaii {
+    width: 980px;
+    margin: 0 auto;
+    text-align:center;
+    padding-top:50px;
+}
+
+    .content-hawaii .lead-title {
+        font-size:18px;
+        font-family : 'Palatino Linotype';
+        font-weight: normal;
+    }
+
+    .content-hawaii .heading-title-1, .content-hawaii .heading-title-2 {
+        margin:0;
+        padding:0;
+        font-size:38px;
+        font-family: Koburina Gothic W3 JIS2004;
+        line-height:45px;
+    }
+
+    .content-hawaii .heading-title-2 {
+        margin:0;
+        padding:0;
+        font-size:50px;
+    }
+
+        .content-hawaii .heading-title-2 span {
+            font-family : 'Palatino Linotype';
+            font-weight:normal;
+        }
+
+    .content-hawaii .centerthumbs {
+        background: url(/Content/images/pc/hawaii/hawaii-thumbs.png) top center;
+        height: 420px;
+        background-repeat: no-repeat;
+        margin-top: 40px;
+    }
+
+        .content-hawaii .centerthumbs p {
+            font-size:18px;
+            line-height:37px;
+            font-family: Koburina Gothic W3 JIS2004;
+            letter-spacing: -1px;
+        }
+
+    .content-hawaii .lead-title-2 {
+        font-size: 30px;
+        font-family: Koburina Gothic W3 JIS2004;
+    }
+
+    .content-hawaii .heading-title-2 {
+        font-size: 40px;
+        font-family: Koburina Gothic W3 JIS2004;
+    }
+
+        .content-hawaii .heading-title-2 span {
+            font-family : 'Palatino Linotype';
+        }
+
+    .content-hawaii .content-mid img {
+        margin-bottom:40px;
+    }
+
+    .content-hawaii .content-mid .generic-btn{
+        width:540px;
+        margin: 0 auto;
+    }
+
+    .content-hawaii .bottom-copy {
+        color: #333333;
+        font-size:16px;
+        line-height: 36px;
+        font-family: Koburina Gothic W3 JIS2004;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .content-hawaii .content-instagram {
+        width: 980px;
+        overflow:hidden;
+        margin-top:70px;
+    }
+
+        .content-hawaii .content-instagram p {
+            font-size:18px;
+            font-family: Koburina Gothic W3 JIS2004;
+            letter-spacing:1px;
+            margin-top:20px;
+            margin-bottom:30px;
+        }
+
+    .content-instagram ul {
+      list-style-type: none;
+      margin:0;
+      padding: 0;
+      width: 1010px;
+      margin-left: -5px;
+
+    }
+
+        .content-instagram ul li {
+            margin-left: -5px;
+        }
+
+    .content-instagram ul li img {
+        float: left;
+        margin: 10px;
+        width: auto;
+        margin-right:23px;
+        margin-bottom:23px;
+    }
+
+    
+
