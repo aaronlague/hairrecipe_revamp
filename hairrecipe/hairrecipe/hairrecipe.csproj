@@ -591,6 +591,10 @@
     <Content Include="Content\images\sp\faq\arrow-down.png" />
     <Content Include="Content\images\sp\faq\arrow-up.png" />
     <Content Include="Content\images\sp\faq\bg2.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_banner.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_instagram.png" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_thumbs.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_tiles.png" />
     <Content Include="Content\images\sp\home\sp-appginger-thumbnail.png" />
     <Content Include="Content\images\sp\home\sp_cm-thumbnail.jpg" />
     <Content Include="Content\images\sp\bg\stitch-b.jpg" />
