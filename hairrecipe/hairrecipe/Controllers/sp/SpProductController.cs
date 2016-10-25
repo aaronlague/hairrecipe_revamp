@@ -27,7 +27,7 @@ namespace hairrecipe.Controllers.sp
             {
                 //return RedirectToAction("Index", "Product");
                 //return RedirectToAction("kodawari", "Home");
-                return Redirect("/kodawari/");
+                return Redirect("/kodawari");
 
             }
             else
@@ -39,7 +39,7 @@ namespace hairrecipe.Controllers.sp
 
                 //return View(storyList);
                 //return RedirectToAction("kodawari", "Sp");
-                return Redirect("/sp/kodawari/");
+                return Redirect("/sp/kodawari");
             }
         }
 

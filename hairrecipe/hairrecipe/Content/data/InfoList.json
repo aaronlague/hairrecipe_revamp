@@ -7,7 +7,7 @@
 	"InfoNews": "あなたの髪、うるおっていますか？髪のジューシー度をチェッ…",
 	"InfoNews2": "ヘアレシピがビューティートレンドの発信地・ハワイにてメディアで注目を集める旬な女の子たちに向けたビューティーイベントを開催！",
 	"InfoClass": "wall",
-	"InfoLink": "/hawaii/",
+	"InfoLink": "/hawaii",
 	"gaca" : "[platform]_hairrepi_20161031_news_hawaii",
  	"alt" : "ヘアレシピがビューティートレンドの発信地・ハワイにてメディアで注目を集める旬な女の子たちに向けたビューティーイベントを"},
 
@@ -19,7 +19,7 @@
 	"InfoNews": "あなたの髪、うるおっていますか？髪のジューシー度をチェッ…",
 	"InfoNews2": "あなたの髪、うるおっていますか？髪のジューシー度をチェックするとあなたにピッタリなレシピをご提案！今すぐチェック！",
 	"InfoClass": "wall",
-	"InfoLink": "/diagnosis/",
+	"InfoLink": "/diagnosis",
 	"gaca" : "[platform]_hairrepi_20161001_news_news1",
  	"alt" : "あなたの髪、うるおっている？ジューシー度チェック"},
 
@@ -43,7 +43,7 @@
 	"InfoNews": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジ…",
 	"InfoNews2": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジュースパックに入ったシャンプー＆トリートメントセットを数量限定で発売！",
 	"InfoClass": "stitch-m",
-	"InfoLink": "/powercharge/",
+	"InfoLink": "/powercharge",
 	"gaca" : "[platform]_hairrepi_20161001_news_news3",
  	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"},
 
@@ -72,7 +72,7 @@
 	"InfoNews2": "新メニューが登場！トリートメントに“まぜる”ごちそうオイル。お好みの量をまぜて、あなただけのレシピをつくりませんか？",
 	"InfoClass": "stitch-s",
     "gaca" : "[platform]_hairrepi_20161001_news_news5",
-	"InfoLink": "/product/booster/",
+	"InfoLink": "/product/booster",
 	"alt" : ""
 },
 
@@ -85,7 +85,7 @@
 	"InfoNews2": "グラノーラ専門店GANORIとヘアレシピがコラボ！「ヘアレシピミックス」1週間限定発売！",
 	"InfoClass": "wood-smooth",
     "gaca" : "[platform]_hairrepi_20161001_news_news6",
-	"InfoLink": "/ganori/",
+	"InfoLink": "/ganori",
 	"alt" : ""
 },
 
@@ -98,7 +98,7 @@
 	"InfoNews2": "六本木ヒルズで開催された商品発売記念のイベントレポートを紹介！",
 	"InfoClass": "stitch-m",
     "gaca" : "[platform]_hairrepi_20161001_news_news7",
-	"InfoLink": "/market/after_index.html",
+	"InfoLink": "/market/after",
 	"alt" : "心に、体に、髪に、ごちそう。HAIR RECIPE Market"
 
 }

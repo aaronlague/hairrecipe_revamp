@@ -28,7 +28,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "Sp");
-                return Redirect("/sp/");
+                return Redirect("/sp");
 
             }
             else
@@ -50,7 +50,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("About", "Sp");
-                return Redirect("/sp/about/");
+                return Redirect("/sp/about");
             }
             else
             {
@@ -64,7 +64,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Contact", "Sp");
-                return Redirect("/sp/contact/");
+                return Redirect("/sp/contact");
 
             }
             else
@@ -80,7 +80,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Faq", "Sp");
-                return Redirect("/sp/faq/");
+                return Redirect("/sp/faq");
 
             }
             else
@@ -96,7 +96,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Cm", "Sp");
-                return Redirect("/sp/cm/");
+                return Redirect("/sp/cm");
 
             }
             else
@@ -112,7 +112,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("reco_recipe", "Sp");
-                return Redirect("/sp/reco_recipe/");
+                return Redirect("/sp/reco_recipe");
 
             }
             else
@@ -128,7 +128,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("kodawari", "Sp");
-                return Redirect("/sp/kodawari/");
+                return Redirect("/sp/kodawari");
 
             }
             else
@@ -161,7 +161,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Sitemap", "Sp");
-                return Redirect("/sp/sitemap/");
+                return Redirect("/sp/sitemap");
 
             }
             else
@@ -177,7 +177,7 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Sitemap", "Sp");
-                return Redirect("/sp/hawaii/");
+                return Redirect("/sp/hawaii");
 
             }
             else

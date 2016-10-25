@@ -20,12 +20,12 @@ namespace hairrecipe.Controllers
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 //return RedirectToAction("Index", "SpProduct");
-                return Redirect("/sp/kodawari/");
+                return Redirect("/sp/kodawari");
 
             } else {
 
                 //return View();
-                return Redirect("/kodawari/");
+                return Redirect("/kodawari");
             }
         }
 

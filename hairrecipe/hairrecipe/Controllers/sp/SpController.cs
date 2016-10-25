@@ -42,7 +42,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("About", "Home");
-                return Redirect("/about/");
+                return Redirect("/about");
 
             }
             else
@@ -57,7 +57,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("Contact", "Home");
-                return Redirect("/contact/");
+                return Redirect("/contact");
 
             }
             else
@@ -72,7 +72,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("Sitemap", "Home");
-                return Redirect("/sitemap/");
+                return Redirect("/sitemap");
 
             }
             else
@@ -87,7 +87,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("Faq", "Home");
-                return Redirect("/faq/");
+                return Redirect("/faq");
 
             }
             else
@@ -103,7 +103,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("Cm", "Home");
-                return Redirect("/cm/");
+                return Redirect("/cm");
 
             }
             else
@@ -119,7 +119,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("reco_recipe", "Home");
-                return Redirect("/reco_recipe/");
+                return Redirect("/reco_recipe");
 
             }
             else
@@ -135,7 +135,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("kodawari", "Home");
-                return Redirect("/kodawari/");
+                return Redirect("/kodawari");
 
             }
             else
@@ -151,7 +151,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("info", "Home");
-                return Redirect("/info/");
+                return Redirect("/info");
 
             }
             else
@@ -167,7 +167,7 @@ namespace hairrecipe.Controllers.sp
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("reco_recipe", "Home");
-                return Redirect("/hawaii/");
+                return Redirect("/hawaii");
 
             }
             else
