@@ -11,8 +11,8 @@
         case true:
             fbMetaTitle = "あなたの髪、うるおっている？髪のジューシー度をチェックすると結果に応じて、あなたの髪にピッタリな“レシピ”を提案！今すぐチェック！";
             fbType = "article";
-            fbUrl = Request.Url.AbsoluteUri + "/";
-            fbImage = Request.Url.Scheme + "://" + Request.Url.Authority + "/" + "content/images/sp/diagnosis/results/OGP_diagnosis.png";
+            fbUrl = Request.Url.AbsoluteUri + "";
+            fbImage = Request.Url.Scheme + ":/" + Request.Url.Authority + "" + "content/images/sp/diagnosis/results/OGP_diagnosis.png";
         break;
 
         case false:
@@ -46,12 +46,12 @@
 
     @{
         string AbsoluteURL = HttpContext.Current.Request.Url.AbsolutePath.ToString();
-        AbsoluteURL = AbsoluteURL.Replace("diagnosis", "").Replace("//","");
+        AbsoluteURL = AbsoluteURL.Replace("diagnosis", "").Replace("/","");
         AbsoluteURL = (AbsoluteURL.Length <= 0)? "index" : AbsoluteURL;
     }
 
-    <link rel="canonical" href="http://hairrecipe.jp/diagnosis/@(AbsoluteURL)/">
-    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/diagnosis/@(AbsoluteURL)/">
+    <link rel="canonical" href="http://hairrecipe.jp/diagnosis/@(AbsoluteURL)">
+    <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/diagnosis/@(AbsoluteURL)">
 }
 
 
