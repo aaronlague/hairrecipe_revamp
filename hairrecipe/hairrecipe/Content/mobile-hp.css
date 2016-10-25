@@ -9,6 +9,10 @@
     color: #000;
 }
 
+    .slide-text-content.hawaii {
+        top:15%;
+    }
+
 .slide-headline {
     font-size: 40px;
 }
@@ -181,6 +185,10 @@
         left: 11%;
     }
 
+    .slide-text-content.hawaii .hawaii-copy {
+        line-height:20px;
+    }
+
     .slide-headline {
         font-size: 22px;
     }
@@ -190,19 +198,19 @@
         line-height: 30px;
     }
 
-        .carousel-inner .item:nth-of-type(2) .slide-text-content.top {
+        .carousel-inner .item:nth-of-type(3) .slide-text-content.top {
             left: 0;
             width: 100%;
             top: 14%;
         }
 
-        .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline {
+        .carousel-inner .item:nth-of-type(3) .slide-text-content.top .slide-headline {
             font-size: 19px;
             text-align:center;
             padding-left:10px;
         }
 
-            .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline ~ p {
+            .carousel-inner .item:nth-of-type(3) .slide-text-content.top .slide-headline ~ p {
                 text-align:center;
                 line-height: 20px;
             }
@@ -250,6 +258,10 @@
         margin-bottom: 40px;
     }
 
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom:35px
+    }
+
 }
 
 @media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
@@ -286,19 +298,19 @@
         line-height: 30px;
     }
 
-        .carousel-inner .item:nth-of-type(2) .slide-text-content.top {
+        .carousel-inner .item:nth-of-type(3) .slide-text-content.top {
             left: 0;
             width: 100%;
             top: 14%;
         }
 
-        .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline {
+        .carousel-inner .item:nth-of-type(3) .slide-text-content.top .slide-headline {
             font-size: 19px;
             text-align:center;
             padding-left:10px;
         }
 
-            .carousel-inner .item:nth-of-type(2) .slide-text-content.top .slide-headline ~ p {
+            .carousel-inner .item:nth-of-type(3) .slide-text-content.top .slide-headline ~ p {
                 text-align:center;
             }
     
@@ -339,5 +351,9 @@
 
     .news-content .news {
         margin-bottom: 40px;
+    }
+
+    .carousel-inner .item:nth-of-type(1) .carousel-caption {
+        bottom:35px
     }
 }
