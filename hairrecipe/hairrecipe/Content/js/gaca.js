@@ -8,7 +8,7 @@
 window.isohub = window.isohub || {};
 
 (function (app) {
-    //Bind onlick function on pageload
+    //Bind onclick function on pageload
     app.Start = function () {
         app.AlterElement();
     },
@@ -46,12 +46,12 @@ window.isohub = window.isohub || {};
             EVENTLABEL = (typeof EVENTLABEL !== 'undefined') ? EVENTLABEL : 'internal';
             $(obj).removeAttr("gaca");
             $(obj).removeAttr("eventlabel");
-            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA.replace("[platform]", isohub.helper.ReturnPlatformKeyword()) + "'])");
+            $(obj).attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', '" + EVENTLABEL + "', '" + GACA.replace("[platform]", isohub.helper.ReturnPlatformKeyword()) + "'])");
         });
         //to top button
         var ToTopGACA = "[platform]_hairrepi_20161001_".replace("[platform]", isohub.helper.ReturnPlatformKeyword());
         var pageKeyword = $("#pageKey").val();
-        $("#back-to-top").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + ToTopGACA + pageKeyword + "_page-top'])");
+        $("#back-to-top").attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + ToTopGACA + pageKeyword + "_page-top'])");
     },
     /*
         customized function made only for diagnosis
@@ -64,23 +64,23 @@ window.isohub = window.isohub || {};
         $('.choices a').each(function (i, obj) {
             var letterKey = $(obj).find(".title").html();
             GACA = GACABase + pageKeyword + "_" + letterKey.toLowerCase();
-            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
+            $(obj).attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
         });
         //return link
         var keyInt = pageKeyword.substr(11, 1);
         var returnKeyword = (parseInt(keyInt - 1) < 1 ? "top" : "q" + parseInt(keyInt - 1));
         var GACABaseTop = GACABase + pageKeyword + "_" + returnKeyword;
-        $(".desc a").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABaseTop + "'])");
+        $(".desc a").attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABaseTop + "'])");
 
         //results Block
         $('.content-block .bin .gaca-btn, .results-page-bottom .bin .gaca-btn, .diagnosis .item .item-detail .bin a, .diagnosis .product-suggest .bin a').each(function (i, obj) {
             GACA = GACABase + pageKeyword + "_" + "bin_" + parseInt(i + 1);
-            $(obj).attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
+            $(obj).attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACA + "'])");
         });
         //result SNS
-        $(".diagnosis .social-container .twitter-share, .results-sns .twitter-share, .diagnosis .social-container .twitter").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
-        $(".diagnosis .social-container .facebook-share, .results-sns .facebook-share, .diagnosis .social-container .fb").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
-        $(".results-sns .line-share").attr("onlick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");               
+        $(".diagnosis .social-container .twitter-share, .results-sns .twitter-share, .diagnosis .social-container .twitter").attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_twitter'])");
+        $(".diagnosis .social-container .facebook-share, .results-sns .facebook-share, .diagnosis .social-container .fb").attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_facebook'])");
+        $(".results-sns .line-share").attr("onclick", "typeof _gaq != 'undefined' && _gaq.push(['_trackEvent', 'link', 'internal', '" + GACABase + pageKeyword + "_line'])");               
     },
     /*
         Create the BIN script for BIN's individual store
