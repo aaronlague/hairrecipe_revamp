@@ -17,6 +17,27 @@ namespace hairrecipe.Controllers.sp
         [Route("sp/diagnosis/{question?}/{page?}")]
         public ActionResult Index(string question, string result, string page)
         {
+            if (question != null && page == null)
+            {
+                ViewEngineResult viewResult = ViewEngines.Engines.FindView(ControllerContext, question, null);
+
+                if (viewResult.View == null)
+                {
+                    return Redirect("/diagnosis");
+                }
+            }
+
+            if (question != null && page != null)
+            {
+                ViewEngineResult viewResult = ViewEngines.Engines.FindView(ControllerContext, question + "/" + page, null);
+
+                if (viewResult.View == null)
+                {
+                    return Redirect("/diagnosis");
+                }
+            }
+  
+
             if (!Helpers.DeviceHelpers.IsMobile() && !Helpers.DeviceHelpers.IsSearchBot())
             {
                 //return RedirectToAction("Index", "Diagnosis");

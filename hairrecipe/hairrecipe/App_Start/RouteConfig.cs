@@ -34,6 +34,11 @@ namespace hairrecipe
                 defaults: new { controller = "Diagnosis", action = "Index", question = UrlParameter.Optional, page = UrlParameter.Optional }
             );
 
+            routes.MapRoute(
+                "CatchAll",
+                "{action}/{*path}",
+                new { controller = "Home", action = "Index" }
+            );
         }
     }
 }
