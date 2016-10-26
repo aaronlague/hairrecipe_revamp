@@ -80,5 +80,13 @@
         "https://www.youtube.com/user/hairrecipe"]
     }
     </script>
+    <script>
+        $(document).ready(function () {
+            console.log(window.location.pathname);
+            if (window.location.pathname == "/") {
+                $("a[binid^='custom-hawaii-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "internal", "pc_hairrepi_20161031_top_hawaii_2"])')
+            }
+        })
+    </script>
 </body>
 </html>
