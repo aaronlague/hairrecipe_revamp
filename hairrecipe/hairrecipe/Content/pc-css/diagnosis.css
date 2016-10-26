@@ -28,6 +28,18 @@
     text-transform: inherit;
 }
 
+footer .generic-btn, footer .generic-btn:hover {
+    display:inline-block;
+    text-transform: uppercase;
+}
+
+footer .generic-btn.shop {
+    padding-left: 48px;
+    padding-right: 42px;
+    padding-top: 6px;
+    padding-bottom: 14px;
+}
+
 .content-diagnosis h1 {
     font-size:65px;
     font-weight:600;
