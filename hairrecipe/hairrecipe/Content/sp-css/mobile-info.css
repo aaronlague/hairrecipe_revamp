@@ -15,6 +15,9 @@
     font-family:Koburina Gothic W3 JIS2004;
 }
 
+.banner h1 {
+    margin:0;
+}
 
 span.news-title {
     float: left;
