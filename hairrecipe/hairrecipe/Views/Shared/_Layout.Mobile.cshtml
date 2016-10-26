@@ -118,5 +118,15 @@
         "https://www.youtube.com/user/hairrecipe"]
     }
     </script>
+    <!--quick-fix on custom image alternate text for hawaii-->
+    <script>
+        $(document).ready(function () {
+            console.log(window.location.pathname);
+            if (window.location.pathname == "/sp/info") {
+                var customImgAlt = $("a[binid^='custom-hawaii-hp']").find('img');
+                customImgAlt.attr('alt', 'ヘアレシピ ビューティーキャンプ');
+            }
+        })
+    </script>
 </body>
 </html>
