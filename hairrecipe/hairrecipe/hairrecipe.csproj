@@ -591,6 +591,10 @@
     <Content Include="Content\images\sp\faq\arrow-down.png" />
     <Content Include="Content\images\sp\faq\arrow-up.png" />
     <Content Include="Content\images\sp\faq\bg2.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_banner.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_instagram.png" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_thumbs.jpg" />
+    <Content Include="Content\images\sp\hawaii\sp_hawaii_tiles.png" />
     <Content Include="Content\images\sp\home\sp-appginger-thumbnail.png" />
     <Content Include="Content\images\sp\home\sp_cm-thumbnail.jpg" />
     <Content Include="Content\images\sp\bg\stitch-b.jpg" />
@@ -607,6 +611,7 @@
     <Content Include="Content\images\sp\home\sp_news-thumb-1.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-2.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-3.jpg" />
+    <Content Include="Content\images\sp\home\sp_news-thumb-hawaii.jpg" />
     <Content Include="Content\images\sp\info\info-01.jpg" />
     <Content Include="Content\images\sp\info\info-02.jpg" />
     <Content Include="Content\images\sp\info\info-03.jpg" />
@@ -659,6 +664,7 @@
     <Content Include="Content\images\sp\slider\sp_slider-2.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-3.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-apple-ginger.jpg" />
+    <Content Include="Content\images\sp\slider\sp_slider-hawaii.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-philosophy-cynthia.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-top.jpg" />
     <Content Include="Content\images\sp\sp_about-img-heading.png" />
@@ -673,6 +679,7 @@
     <Content Include="Content\images\sp\home\sp_hp-spoon.png" />
     <Content Include="Content\images\sp\home\sp_kiwi-thumbnail.png" />
     <Content Include="Content\images\sp\home\sp_life-with-hairrecipe.jpg" />
+    <Content Include="Content\images\sp\sp_hawaii-thumbnail.jpg" />
     <Content Include="Content\images\sp\sp_logo.png" />
     <Content Include="Content\images\sp\home\sp_mint-thumbnail.png" />
     <Content Include="Content\images\sp\home\sp_product-img-heading.png" />

@@ -1,1 +1,311 @@
-﻿
+﻿body #hawaii {
+    font-size:14px;
+}
+
+.top-content {
+    padding-left:2%;
+    padding-right:2%;
+    margin-bottom: 65px;
+}
+
+.top-content .lead-title {
+    font-size: 1.3em;
+    font-family : 'Palatino Linotype';
+    font-weight: normal;
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:20px;
+
+}
+
+.top-content .heading-title-1, .top-content .heading-title-2 {
+    margin:0;
+    padding:0;
+    font-size: 2em;
+    font-family: Koburina Gothic W3 JIS2004;
+    text-align:center;
+}
+
+.top-content .heading-title-2 {
+    font-size: 2.7em;
+}
+
+.top-content .centerthumbs p {
+    font-size:1.8em;
+    text-align: justify;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+}
+
+.mid-content {
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:70px;
+}
+
+.mid-content .lead-title-2 {
+    font-family: Koburina Gothic W3 JIS2004;
+    text-align:center;
+    font-size:2.2em;
+}
+
+    .mid-content .heading-title-2 {
+        font-family: Koburina Gothic W3 JIS2004;
+        text-align:center;
+        font-size: 2.9em;
+    }
+
+    .mid-content .bottom-copy {
+        font-family: Koburina Gothic W3 JIS2004;
+        text-align:justify;
+        font-size: 1.6em;
+        letter-spacing: 2px;
+        padding-bottom:45px;
+    }
+
+    .mid-content .btn {
+        margin-top:50px;
+        width:100%; 
+        margin-bottom:85px;
+    }
+
+.content-instagram {
+    padding-bottom:60px;
+    overflow: auto;
+}
+
+.content-instagram p {
+    font-size:1.4em;
+    text-align:center;
+    letter-spacing:1px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.content-instagram ul {
+      list-style-type: none;
+      margin:0;
+      padding: 0;
+      /*width: 1010px;*/
+      margin-left: -5px;
+    }
+
+        .content-instagram ul li {
+            margin-left: 5px;
+        }
+
+    .content-instagram ul li img {
+        float: left;
+        margin: 15px;
+        width: 45%;
+        /*margin-right:23px;
+        margin-bottom:23px;*/
+        
+    }
+
+.bottom-content {
+    text-align:center;
+    padding-bottom: 60px;
+}
+
+    .bottom-content .footerbanner-heading {
+        font-size:2.7em;
+        margin-top:75px;
+    }
+
+.bottom-content img.banner {
+    width:auto;
+}
+
+    .bottom-content .spoon-h img {
+        width:30%;
+    }
+
+/*iphone 5*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    body #hawaii {
+        font-size:7px; /*base font*/
+    }
+
+    .top-content .lead-title {
+        font-size: 2em;
+    }
+
+    .top-content .heading-title-1 {
+        font-size:1.6em;
+    }
+
+    .top-content .heading-title-2 {
+        font-size: 2.5em;
+    }
+    
+    .top-content .centerthumbs p {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        font-size:1.5em;
+    }
+
+    .mid-content {
+        padding-top:50px;
+    }
+
+    .mid-content .lead-title-2 {
+        font-size: 2em;
+        margin-bottom: 0;
+    }
+
+    .mid-content .heading-title-2 {
+        font-size: 2.5em;
+    }
+
+    .mid-content .bottom-copy {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+    }
+
+        .mid-content .btn {
+            margin-top:30px;
+            margin-bottom:40px;
+        }
+
+    .content-instagram ul li img {
+        margin:7px;
+    }
+
+    .content-instagram p {
+        font-size:1.8em;
+    }
+
+    .bottom-content img.banner {
+        width:85%;
+    }
+    
+}
+
+/*iphone 6*/
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+
+    body #hawaii {
+        font-size:7px; /*base font*/
+    }
+
+    .top-content .lead-title {
+        font-size: 2em;
+    }
+
+    .top-content .heading-title-1 {
+        font-size:2.5em;
+    }
+
+    .top-content .heading-title-2 {
+        font-size: 2.8em;
+    }
+    
+    .top-content .centerthumbs p {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 1px;
+        font-size:1.9em;
+    }
+
+    .mid-content {
+        padding-top:50px;
+    }
+
+    .mid-content .lead-title-2 {
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+    .mid-content .heading-title-2 {
+        font-size: 3em;
+    }
+
+    .mid-content .bottom-copy {
+        font-size:1.7em;
+    }
+
+        .mid-content .btn {
+            margin-top:30px;
+            margin-bottom:40px;
+        }
+
+    .content-instagram ul li img {
+        margin:9px;
+        width: 44%;
+    }
+
+    .content-instagram p {
+        font-size:1.8em;
+    }
+
+    .bottom-content img.banner {
+        width:85%;
+    }
+    
+}
+
+/*iphone 6 plus*/
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    body #hawaii {
+        font-size:7px; /*base font*/
+    }
+
+    .top-content .lead-title {
+        font-size: 2em;
+    }
+
+    .top-content .heading-title-1 {
+        font-size:2.2em;
+    }
+
+    .top-content .heading-title-2 {
+        font-size: 2.8em;
+    }
+    
+    .top-content .centerthumbs p {
+        margin-top: 20px;
+        margin-bottom: 25px;
+        letter-spacing: 3px;
+        font-size:1.8em;
+    }
+
+    .mid-content {
+        padding-top:50px;
+    }
+
+    .mid-content .lead-title-2 {
+        font-size: 2.5em;
+        margin-bottom: 0;
+    }
+
+    .mid-content .heading-title-2 {
+        font-size: 3em;
+    }
+
+    .mid-content .bottom-copy {
+        font-size: 2em;
+        letter-spacing: 1px;
+    }
+
+        .mid-content .btn {
+            margin-top:30px;
+            margin-bottom:40px;
+        }
+
+    .content-instagram ul li img {
+        margin:9px;
+        width: 44%
+    }
+
+    .content-instagram p {
+        font-size:1.8em;
+    }
+
+    .bottom-content img.banner {
+        width:85%;
+    }
+}
