@@ -721,6 +721,7 @@
     <Content Include="Content\sp-css\hawaii.css" />
     <Content Include="Content\sp-css\mobile-cm.css" />
     <Content Include="Content\sp-css\mobile-faq.css" />
+    <Content Include="Content\sp-css\mobile-info.css" />
     <Content Include="Content\sp-css\mobile-product-stories.css" />
     <Content Include="Content\sp-css\mobile-diagnosis.css" />
     <Content Include="Content\sp-css\mobile-reco_recipe.css" />
