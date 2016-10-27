@@ -120,6 +120,15 @@ namespace hairrecipe
             //    }
             //}
 
+            /* Detect current http protocol to switch the bv API protocol  */
+
+            if (HttpContext.Current.Request.IsSecureConnection)
+            {
+                WebConfigurationManager.AppSettings["bv_api_server_prod"].Replace("http", "https");
+                WebConfigurationManager.AppSettings["bv_api_server_stage"].Replace("http", "https");
+            }
+
+
             if (DomainName == CDNActivatedEnvironment)
             { 
                 Application["bv_api_server"] = WebConfigurationManager.AppSettings["bv_api_server_prod"];
