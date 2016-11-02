@@ -1,6 +1,20 @@
-﻿[  
+﻿[
 {  
     "InfoId": 1,
+	"InfoImage": "info-cosme-01.jpg",  
+    "InfoTitle": "キャンペーン",  
+    "InfoDate": "2016.11.07",
+	"InfoNews": "地肌クレンジングシャンプーご購入者限定！クチコミを書いていただいた方の中から抽選でスペシャルケア現品セットをプレゼント！",
+	"InfoNews2": "地肌クレンジングシャンプーご購入者限定！クチコミを書いていただいた方の中から抽選でスペシャルケア現品セットをプレゼント！",
+	"InfoClass": "wall",
+	"InfoLink": "https://www.myrepi.com/tag/hair-recipe-mint-rr-1610",
+	"gaca" : "[platform]_hairrepi_20161107_present",
+	"CustomBinIdentifier": "custom-cosme-hp",
+	"CustomBinContainer": "",
+	"CustomBinBtnClass": "",
+ 	"alt" : "現品セットもらえる！"},  
+{  
+    "InfoId": 2,
 	"InfoImage": "info-01.jpg",  
     "InfoTitle": "イベント",  
     "InfoDate": "2016.10.31",
@@ -15,7 +29,7 @@
  	"alt" : "ナチュラル ビューティーーキャンプ"},
 
 {  
-    "InfoId": 2,
+    "InfoId": 3,
 	"InfoImage": "info-02.jpg",  
     "InfoTitle": "新コンテンツ",  
     "InfoDate": "2016.04.21",
@@ -24,10 +38,10 @@
 	"InfoClass": "wall",
 	"InfoLink": "/diagnosis",
 	"gaca" : "[platform]_hairrepi_20161001_news_news1",
- 	"alt" : "あなたの髪、うるおっている？ジューシー度チェック"},
+ 	"alt" : "ジューシー度チェック現品セットもらえる！"},
 
 {  
-    "InfoId": 3,
+    "InfoId": 4,
 	"InfoImage": "info-03.jpg",  
     "InfoTitle": "冬季限定",  
     "InfoDate": "2016.10.15",
@@ -39,7 +53,7 @@
  	"alt" : "冬の髪に、旬のレシピいかがですか？ 売り切れ御礼！おかげさまで、完売しました。"},
 
 {  
-    "InfoId": 4,
+    "InfoId": 5,
 	"InfoImage": "info-04.jpg",  
     "InfoTitle": "夏季限定",  
     "InfoDate": "2015.06.18",
@@ -51,7 +65,7 @@
  	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"},
 
 {  
-    "InfoId": 5,
+    "InfoId": 6,
 	"InfoImage": "info-05.jpg",  
     "InfoTitle": "新登場",  
     "InfoDate": "2015.06.18",
@@ -67,7 +81,7 @@
 },
 
 {  
-    "InfoId": 6,
+    "InfoId": 7,
 	"InfoImage": "info-06.jpg",  
     "InfoTitle": "新発売",  
     "InfoDate": "2015.04.06",
@@ -80,7 +94,7 @@
 },
 
 {  
-    "InfoId": 7,
+    "InfoId": 8,
 	"InfoImage": "info-07.jpg",  
     "InfoTitle": "限定コラボ",  
     "InfoDate": "2015.03.10",
