@@ -611,6 +611,7 @@
     <Content Include="Content\images\sp\home\sp_news-thumb-1.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-2.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-3.jpg" />
+    <Content Include="Content\images\sp\home\sp_news-thumb-hawaii-2.jpg" />
     <Content Include="Content\images\sp\home\sp_news-thumb-hawaii.jpg" />
     <Content Include="Content\images\sp\info\info-01.jpg" />
     <Content Include="Content\images\sp\info\info-02.jpg" />
@@ -671,6 +672,7 @@
     <Content Include="Content\images\sp\sp_about-img-heading.png" />
     <Content Include="Content\images\sp\home\sp_apricot-thumbnail.png" />
     <Content Include="Content\images\sp\home\sp_booster-thumbnail.png" />
+    <Content Include="Content\images\sp\sp_cosme-thumbnail.jpg" />
     <Content Include="Content\images\sp\sp_diagnosis-thumbnail.png" />
     <Content Include="Content\images\sp\sp_footer-bg.jpg" />
     <Content Include="Content\images\sp\sp_footer-logo.png" />
