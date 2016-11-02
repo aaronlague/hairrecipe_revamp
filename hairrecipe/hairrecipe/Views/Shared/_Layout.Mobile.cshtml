@@ -126,6 +126,10 @@
                 var customImgAlt = $("a[binid^='custom-hawaii-hp']").find('img');
                 customImgAlt.attr('alt', 'ヘアレシピ ビューティーキャンプ');
             }
+
+            if ((window.location.pathname == "/sp") || (window.location.pathname == "/sp/info")) {
+                $("a[binid^='custom-cosme-hp']").attr('target', '_blank');
+            }
         })
     </script>
 </body>
