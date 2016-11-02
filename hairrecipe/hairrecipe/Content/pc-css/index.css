@@ -91,9 +91,9 @@ span.news-date {
 }
 
 .info-content:nth-of-type(6) {
-    margin: 0 auto;
+    /*margin: 0 auto;
     position: relative;
-    float: none;
+    float: none;*/
 }
 
 .main-content img {

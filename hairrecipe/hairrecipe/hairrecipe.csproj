@@ -620,6 +620,7 @@
     <Content Include="Content\images\sp\info\info-06.jpg" />
     <Content Include="Content\images\sp\info\info-07.jpg" />
     <Content Include="Content\images\sp\info\info-08.jpg" />
+    <Content Include="Content\images\sp\info\info-cosme-01.jpg" />
     <Content Include="Content\images\sp\info\sp_info-img-header.jpg" />
     <Content Include="Content\images\sp\modalClose.png" />
     <Content Include="Content\images\sp\navigation\sp_chevron-left.png" />
