@@ -80,23 +80,7 @@
         "https://www.youtube.com/user/hairrecipe"]
     }
     </script>
-    <!--quick-fix on custom GACA for hawaii-->
-    <script>
-        $(document).ready(function () {
-            console.log(window.location.pathname);
-            if (window.location.pathname == "/") {
-                $("a[binid^='custom-hawaii-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "internal", "pc_hairrepi_20161031_top_hawaii_2"])');
-                $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "pc_hairrepi_20161031_top_present"])');
-            }
-
-            if (window.location.pathname == "/info") {
-                $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "pc_hairrepi_20161107_present"])');
-            }
-
-            if ((window.location.pathname == "/") || (window.location.pathname == "/info")) {
-                $("a[binid^='custom-cosme-hp']").attr('target', '_blank');
-            }
-        })
-    </script>
+    <!--front-end overrides-->
+    <script src="~/Content/js/overrides-pc.js"></script>
 </body>
 </html>

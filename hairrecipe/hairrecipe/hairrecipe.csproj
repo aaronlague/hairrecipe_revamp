@@ -538,6 +538,7 @@
     <Content Include="Content\images\pc\tw.png" />
     <Content Include="Content\images\sp\bg\sp_list-bg.png" />
     <Content Include="Content\images\sp\bg\wood-hp-2.jpg" />
+    <Content Include="Content\images\sp\bg\wood-hp-2b.jpg" />
     <Content Include="Content\images\sp\cm\cm-02.jpg" />
     <Content Include="Content\images\sp\cm\cm-05.jpg" />
     <Content Include="Content\images\sp\cm\cm-09.jpg" />
@@ -700,8 +701,10 @@
     <Content Include="Content\js\bin.js" />
     <Content Include="Content\js\gaca.js" />
     <Content Include="Content\js\helper.js" />
+    <Content Include="Content\js\overrides-sp.js" />
     <Content Include="Content\js\main.js" />
     <Content Include="Content\js\main.pc.js" />
+    <Content Include="Content\js\overrides-pc.js" />
     <Content Include="Content\js\rnr\jquery.validate.js" />
     <Content Include="Content\js\rnr\reviews.js" />
     <Content Include="Content\js\rnr\reviews_sp.js" />
