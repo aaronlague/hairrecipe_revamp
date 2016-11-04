@@ -18,6 +18,12 @@
     if (window.location.pathname == "/sp/info") {
         var customImgAlt = $("a[binid^='custom-hawaii-hp']").find('img');
         customImgAlt.attr('alt', 'ヘアレシピ ビューティーキャンプ');
+
+        $("a[binid^='custom-cosme-hp']").attr('href', 'https://www.myrepi.com/tag/hair-recipe-mint-rr-1610');
+        $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "sp_hairrepi_20161107_present"])');
+
+        $('.info-content a[binid^="custom-apple-ginger-hp"] img').css('width', '100%').unwrap();
+
     }
 
     if ((window.location.pathname == "/sp") || (window.location.pathname == "/sp/info")) {

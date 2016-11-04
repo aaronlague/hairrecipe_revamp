@@ -24,6 +24,7 @@ ul, li{
 .product-section .product-item{
     position : absolute;
     top : 0;
+    mix-blend-mode: multiply;
 }
 .product-section .full-length{
     display : block;
