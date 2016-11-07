@@ -415,7 +415,7 @@ li.review .rating-score{
 }
 
 .modal.bvrnw .close {
-    margin: 8% 5% 0 0;
+    margin: 11% 5% 0 0;
     opacity: 1;
     width: 5%
 }
@@ -492,7 +492,7 @@ li.review .rating-score{
     text-transform: uppercase;
     border: 1px solid #87847d;
     padding-top: 18px;
-    padding-left: 12px;
+    /*padding-left: 12px;*/
     margin: 5% auto;
     background-color:#ffffff;
     text-align:center;
@@ -591,7 +591,7 @@ li.review .submission-time {
 }
 
 .rr-section .bvOverallRating {
-    padding-top: 15px;
+    padding-top: 16px;
 }
 
 #rnrw_modal {

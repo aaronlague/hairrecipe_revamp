@@ -55,12 +55,13 @@ $(document).ready(function () {
         var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
-        var productName = $("#" + productID + " .jp-title-1").html()
-            + $("#" + productID + " .jp-title-2").html()
-            + " " + $("#" + productID + " .size").html();
+        //var productName = $("#" + productID + " .jp-title-1").html()
+        //    + $("#" + productID + " .jp-title-2").html()
+        //    + " " + $("#" + productID + " .size").html();
+
+        var productName = $(this).attr("data-title-line-1") + "<br />" + $(this).attr("data-title-line-2");
 
         $(".modal-title").html(productName);
- 
         // Overall review parameters
         $(".bvOverallRatingPopup").bvOverallRatingWidget({ bvproductID: productSKU, bvTemplate: 'overall_rating_popup_template' });
 
@@ -84,9 +85,11 @@ $(document).ready(function () {
         var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
         $(".modal-header-image").css('background-image', "url(" + icon + ")");
 
-        var productName = $("#" + productID + " .jp-title-1").html()
-            + $("#" + productID + " .jp-title-2").html()
-            + " " + $("#" + productID + " .size").html();
+        //var productName = $("#" + productID + " .jp-title-1").html()
+        //    + $("#" + productID + " .jp-title-2").html()
+        //    + " " + $("#" + productID + " .size").html();
+
+        var productName = $(this).attr("data-title-line-1") + "<br />" + $(this).attr("data-title-line-2");
 
         $(".modal-title").html(productName);
 

@@ -2,7 +2,7 @@
 @using hairrecipe.data.Helpers;
 
 <div id="@Model.Name" class="product-section @(Model.BackgroundClass)" >
-    <img class="product-item overlay" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name)-overlay.png" alt="" style="mix-blend-mode: screen; opacity: 1;" />
+    @*<img class="product-item overlay" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name)-overlay.png" alt="" style="mix-blend-mode: screen; opacity: 1;" />*@
     <img class="product-item" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name).png" alt="" />
     @if (!string.IsNullOrEmpty(Model.EnTitle))
     {
@@ -60,8 +60,8 @@
 
             @if (Model.HasReview == true)
             {
-                <li><a class="btn to-read-btn gaca-btn write-review" data-target="#rnrw_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewWriteGACA">レビューを書く</a></li>
-                <li><a class="btn to-write-btn  gaca-btn read-review" data-target="#rnrr_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewReadGACA">レビューを読む</a></li>
+                <li><a class="btn to-read-btn gaca-btn write-review" data-title-line-1="@Html.Raw(@Model.JpTitle1.LineBreak("[sp-br]"))" data-title-line-2="@Html.Raw(@Model.JpTitle2.LineBreak("[sp-br]")) @Html.Raw(@Model.Size)" data-target="#rnrw_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewWriteGACA">レビューを書く</a></li>
+                <li><a class="btn to-write-btn  gaca-btn read-review" data-title-line-1="@Html.Raw(@Model.JpTitle1.LineBreak("[sp-br]"))" data-title-line-2="@Html.Raw(@Model.JpTitle2.LineBreak("[sp-br]")) @Html.Raw(@Model.Size)" data-target="#rnrr_modal" data-sku="@Model.SKU" data-pid="@Model.Name" data-line="@Model.Line.ToLower()" gaca="@Model.ReviewReadGACA">レビューを読む</a></li>
                 <li><div id="averagerating" class="bvOverallRating"></div></li>
             }
         </ul>
