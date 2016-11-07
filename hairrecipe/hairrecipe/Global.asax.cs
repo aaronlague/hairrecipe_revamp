@@ -9,7 +9,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.WebPages;
 using System.Web.Configuration;
-using hairrecipe.data.Helpers.PageFilter;
 
 namespace hairrecipe
 {
@@ -26,16 +25,6 @@ namespace hairrecipe
             string DomainName = Request.Url.Host;
             bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
             string CDNActivatedEnvironment = WebConfigurationManager.AppSettings["CDNActivatedEnvironment"];
-
-
-            //if ((urlRequest.Equals("/sp/diagnosis/index.html")) || (urlRequest.Equals("/diagnosis/index.html")))
-            //{
-            //    Context.RewritePath(urlRequest.Replace("index.html", ""));
-            //}
-            //else
-            //{
-            //    Context.RewritePath(urlRequest.Replace(".html", ""));
-            //}
 
             if (Helpers.DeviceHelpers.IsMobile())
             {
@@ -68,29 +57,6 @@ namespace hairrecipe
 
             }
 
-            
-
-            //if (urlRequest.Equals("/index.html"))
-            //{
-            //    Context.RewritePath("/index");
-            //}
-            //else if (urlRequest.Equals("/sp/index.html"))
-            //{
-            //    Context.RewritePath("/sp/index");
-            //}
-            //else if (urlRequest.Equals("/about/index.html"))
-            //{
-            //    Context.RewritePath("/about");
-            //}
-            //else if (urlRequest.Equals("/sp/about/index.html"))
-            //{
-            //    Context.RewritePath("/sp/about");
-            //}
-            //else if (urlRequest.Equals("/sp/diagnosis/q1/abcd.html"))
-            //{
-            //    Context.RewritePath("/sp/diagnosis/q1/abcd");
-            //}
-
 
             // Paano kumg GoogleBot ang UserAgent?
             Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
@@ -109,16 +75,6 @@ namespace hairrecipe
                     ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
                 });
             }
-
-            // CDN Replacement
-            //if (isCDNActivated && DomainName == CDNActivatedEnvironment)
-            //{
-            //    HttpResponse response = HttpContext.Current.Response;
-            //    if (response.ContentType == "text/html")
-            //    {
-            //        response.Filter = new StreamFilter(response.Filter);
-            //    }
-            //}
 
             if (DomainName == CDNActivatedEnvironment)
             { 
