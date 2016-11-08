@@ -625,11 +625,17 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) {
 
     .navbar {
-        min-height: 70px;
+        height: 70px;
     }
 
     .navmenu-brand {
         width:50%;
+        overflow: auto;
+    }
+
+    .navmenu-brand img {
+        height:69px;
+        width:206px;
     }
 
     .navbar-default .navbar-toggle {
