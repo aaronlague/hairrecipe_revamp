@@ -207,6 +207,7 @@ h1.banner  {
 #mint #cleansing{
     background-image : url('/Content/images/pc/product/mint/cleansing.jpg');    
     height : 892px;
+    background-repeat: no-repeat;
 }
     #mint #cleansing .rr-section{
         bottom: 125px;
