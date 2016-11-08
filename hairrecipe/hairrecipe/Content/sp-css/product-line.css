@@ -21,11 +21,17 @@ ul, li{
     padding-bottom: 1px;
 }
 
-.product-section .product-item{
+.product-section .product-item {
     position : absolute;
     top : 0;
     mix-blend-mode: multiply;
 }
+
+    .product-section .product-item.overlay {
+        mix-blend-mode: screen;
+        opacity: 1;
+    }
+
 .product-section .full-length{
     display : block;
     width : 100%;

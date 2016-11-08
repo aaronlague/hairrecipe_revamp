@@ -2,7 +2,7 @@
 @using hairrecipe.data.Helpers;
 
 <div id="@Model.Name" class="product-section @(Model.BackgroundClass)" >
-    <img class="product-item overlay" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name)-overlay.png" alt="" style="mix-blend-mode: screen; opacity: 1;" />
+    <img class="product-item overlay" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name)-overlay.png" alt=""  />
     <img class="product-item" src="~/Content/images/sp/product/@(Model.Line)/@(Model.Name).png" alt="" />
     @if (!string.IsNullOrEmpty(Model.EnTitle))
     {
