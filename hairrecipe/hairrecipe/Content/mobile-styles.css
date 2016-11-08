@@ -41,6 +41,11 @@ a:hover, a:focus {
 .wood-b-hp{
     background : url("/Content/images/sp/bg/wood-hp-2.jpg");
 }
+
+.wood-b2-hp{
+    background : url("/Content/images/sp/bg/wood-hp-2b.jpg");
+}
+
 .wall {
     background: url("/Content/images/sp/bg/wall-1.jpg");
 }
@@ -826,4 +831,16 @@ and (max-device-width : 667px) {
     font-style: normal;
     font-weight: normal;	
 	font-size: 21px;
+}
+
+.hide-opacity {
+    opacity: 0;
+}
+
+.show-opacity {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+     opacity: 1;
 }

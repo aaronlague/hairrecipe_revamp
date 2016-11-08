@@ -118,23 +118,6 @@
         "https://www.youtube.com/user/hairrecipe"]
     }
     </script>
-    <!--quick-fix on custom image alternate text for hawaii-->
-    <script>
-        $(document).ready(function () {
-            console.log(window.location.pathname);
-            if (window.location.pathname == "/sp/info") {
-                var customImgAlt = $("a[binid^='custom-hawaii-hp']").find('img');
-                customImgAlt.attr('alt', 'ヘアレシピ ビューティーキャンプ');
-
-                $("a[binid^='custom-cosme-hp']").attr('href', 'https://www.myrepi.com/tag/hair-recipe-mint-rr-1610');
-                $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "sp_hairrepi_20161107_present"])');
-                
-            }
-
-            if ((window.location.pathname == "/sp") || (window.location.pathname == "/sp/info")) {
-                $("a[binid^='custom-cosme-hp']").attr('target', '_blank');
-            }
-        })
-    </script>
-</body>
+    <!--front-end overrides-->
+    <script src="~/Content/js/overrides-sp.js"></script></body>
 </html>
