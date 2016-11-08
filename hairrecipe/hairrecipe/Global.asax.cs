@@ -9,7 +9,6 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.WebPages;
 using System.Web.Configuration;
-using hairrecipe.data.Helpers.PageFilter;
 
 namespace hairrecipe
 {
@@ -109,16 +108,6 @@ namespace hairrecipe
                     ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
                 });
             }
-
-            // CDN Replacement
-            //if (isCDNActivated && DomainName == CDNActivatedEnvironment)
-            //{
-            //    HttpResponse response = HttpContext.Current.Response;
-            //    if (response.ContentType == "text/html")
-            //    {
-            //        response.Filter = new StreamFilter(response.Filter);
-            //    }
-            //}
 
             if (DomainName == CDNActivatedEnvironment)
             { 
