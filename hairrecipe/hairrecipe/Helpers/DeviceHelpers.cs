@@ -13,7 +13,12 @@ namespace hairrecipe.Helpers
             String userAgent = HttpContext.Current.Request.UserAgent;
             Boolean isMobile = HttpContext.Current.Request.Browser.IsMobileDevice;
             Regex r = new Regex("Tablet|iPad|PlayBook|BB10|Z30|Nexus 10|Nexus 7|GT-P|SCH-I800|Xoom|Kindle|Silk|KFAPWI", RegexOptions.IgnoreCase); ;
-            bool isTablet = r.IsMatch(userAgent) && isMobile;
+
+            bool isTablet = false;
+            if (userAgent != null)
+            {
+                isTablet = r.IsMatch(userAgent) && isMobile;
+            }
             return isTablet;
         }
 
@@ -31,7 +36,12 @@ namespace hairrecipe.Helpers
         {
             String userAgent = HttpContext.Current.Request.UserAgent;
             Regex r = new Regex("Googlebot", RegexOptions.IgnoreCase);
-            bool IsSearchBot = r.IsMatch(userAgent);
+
+            bool IsSearchBot = false;
+            if (userAgent != null)
+            {
+                IsSearchBot = r.IsMatch(userAgent);
+            }
             return IsSearchBot;
         }
 
