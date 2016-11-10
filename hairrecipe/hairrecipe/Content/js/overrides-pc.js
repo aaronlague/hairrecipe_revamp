@@ -8,6 +8,7 @@
 
     if (window.location.pathname == "/info") {
         $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "pc_hairrepi_20161107_present"])');
+        $('.info-content a[binid^="custom-apple-ginger-hp"] img').css('width', '100%').unwrap();
     }
 
     if ((window.location.pathname == "/") || (window.location.pathname == "/info")) {
