@@ -101,10 +101,11 @@ p.description{
 }
 
 .additives ul.multi li.column:nth-child(1) {
-    width: 55%;
+    /*width: 55%;*/
 }
 .additives ul.multi li.column:nth-child(2) {
-    width: 45%;
+    /*width: 45%;*/
+    width: 48%;
 }
 
 .additives ul.solo li.column {
@@ -136,7 +137,8 @@ li.phrase-title{
 li.phrase{
     padding: 6% 10%;
     text-align: left;
-    font-size: 0.75em;
+    /*font-size: 0.75em;*/
+    font-size: 0.70em;
     letter-spacing: 0.1em;
     line-height : 170%;
 }

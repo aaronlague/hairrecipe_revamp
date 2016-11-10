@@ -291,7 +291,7 @@
         }
 
     .product-stories-top ol {
-        padding-bottom: 36%;
+        padding-bottom: 30%;
     }
 
     .product-stories-content .product-story .story-title {
@@ -306,10 +306,11 @@
 
     .product-lineup-container .lineup-1 .copy {
         padding-bottom: 66%;
+        padding-top: 30%;
     }
 
     .product-lineup-container .lineup-1 .btn {
-        margin-bottom: 9%;
+        margin-bottom: 7%;
     }
 
     .product-lineup-container .lineup-2 .copy {
@@ -318,7 +319,7 @@
     }
 
     .product-lineup-container .lineup-2 .btn {
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
 
     .product-lineup-container .lineup-3 .copy {
@@ -327,7 +328,7 @@
     }
 
     .product-lineup-container .lineup-3 .btn {
-        margin-bottom: 10%;
+        margin-bottom: 7%;
     }
 
     .product-lineup-container .lineup-4 .copy {
@@ -485,7 +486,7 @@
 
     .product-lineup-container .lineup-1 .btn {
         padding-top: 7px;
-        margin-bottom: 10%;
+        margin-bottom: 6%;
     }
 
     .product-lineup-container .lineup-2 .copy {
@@ -494,7 +495,7 @@
 
     .product-lineup-container .lineup-2 .btn {
         padding-top: 7px;
-        margin-bottom: 10%;
+        margin-bottom: 6%;
     }
 
     .product-lineup-container .lineup-3 .copy {
@@ -514,7 +515,7 @@
 
     .product-lineup-container .lineup-4 .btn {
         padding-top: 14px;
-        margin-bottom: 10%;
+        margin-bottom: 6%;
     }
 
     .product-lineup-container .lineup-1 .btn,
