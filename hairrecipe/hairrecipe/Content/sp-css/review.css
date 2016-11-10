@@ -58,8 +58,8 @@ a {
 .modal.bvrnw .modal-header-image {
     margin: 10px 0;
     float: left;
-    width: 100px;
-    height: 150px;
+    /*width: 100px;
+    height: 150px;*/
     background-size: contain;
     background-repeat:no-repeat;
 }
@@ -456,10 +456,10 @@ li.review .rating-score{
     margin: auto;
     clear: both;
     float:none;
-    height: 280px;
-    width:200px;
+    /*height: 280px;
+    width:200px;*/
     background-size:cover;
-    background-position-x: 20px;
+    /*background-position-x: 20px;*/
 }
 
 .modal.bvrnw .modal-title-group {
@@ -608,6 +608,6 @@ li.review .submission-time {
 
 img.packshot {
     width:auto;
-    padding-left: 20%;
+    margin-left: 15%;
     mix-blend-mode:multiply;
 }
