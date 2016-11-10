@@ -53,7 +53,8 @@ $(document).ready(function () {
         var productLine = $(this).attr("data-line");
 
         var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
-        $(".modal-header-image").css('background-image', "url(" + icon + ")");
+        //$(".modal-header-image").css('background-image', "url(" + icon + ")");
+        $(".modal-header-image img").attr('src', icon);
 
         //var productName = $("#" + productID + " .jp-title-1").html()
         //    + $("#" + productID + " .jp-title-2").html()
@@ -83,7 +84,8 @@ $(document).ready(function () {
         var productLine = $(this).attr("data-line");
 
         var icon = "/Content/images/" + mode + "/product/" + productLine + "/" + productLine + "-" + productID + "-rnr.png";
-        $(".modal-header-image").css('background-image', "url(" + icon + ")");
+        //$(".modal-header-image").css('background-image', "url(" + icon + ")");
+        $(".modal-header-image img.packshot").attr('src', icon);
 
         //var productName = $("#" + productID + " .jp-title-1").html()
         //    + $("#" + productID + " .jp-title-2").html()

@@ -606,5 +606,8 @@ li.review .submission-time {
     overflow-y:scroll;
 }
 
-
-
+img.packshot {
+    width:auto;
+    padding-left: 20%;
+    mix-blend-mode:multiply;
+}

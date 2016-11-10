@@ -451,6 +451,8 @@
     <Content Include="Content\images\pc\kodawari\pc_product-stories_04.jpg" />
     <Content Include="Content\images\pc\kodawari\pc_product-stories_05.jpg" />
     <Content Include="Content\images\pc\kodawari\pc_product-stories_06.jpg" />
+    <Content Include="Content\images\pc\product\appleginger\appleginger-shampoo-rnr.png" />
+    <Content Include="Content\images\pc\product\appleginger\appleginger-treatment-rnr.png" />
     <Content Include="Content\images\pc\product\apricot\apricot-mask-rnr.png" />
     <Content Include="Content\images\pc\product\apricot\apricot-shampoo-rnr.png" />
     <Content Include="Content\images\pc\product\apricot\apricot-treatment-rnr.png" />
@@ -512,6 +514,9 @@
     <Content Include="Content\images\sp\product\booster\set_02.png" />
     <Content Include="Content\images\sp\product\booster\set_03.png" />
     <Content Include="Content\images\sp\product\booster\set_04.png" />
+    <Content Include="Content\images\sp\product\kiwi\kiwi-scalp-rnr.png" />
+    <Content Include="Content\images\sp\product\kiwi\kiwi-shampoo-rnr.png" />
+    <Content Include="Content\images\sp\product\kiwi\kiwi-treatment-rnr.png" />
     <Content Include="Content\images\sp\product\kiwi\pack-refill-overlay.png" />
     <Content Include="Content\images\sp\product\kiwi\treatment-refill-overlay.png" />
     <Content Include="Content\images\sp\product\kiwi\scalp-overlay.png" />
@@ -700,6 +705,7 @@
     <Content Include="Content\images\sp\product\landing\sp_story-thumb-5.jpg" />
     <Content Include="Content\images\sp\product\mint\banner.jpg" />
     <Content Include="Content\images\sp\product\mint\cleansing.png" />
+    <Content Include="Content\images\sp\product\mint\mint-cleansing-rnr.png" />
     <Content Include="Content\images\sp\reco\1.jpg" />
     <Content Include="Content\images\sp\reco\2.jpg" />
     <Content Include="Content\images\sp\reco\3.jpg" />
