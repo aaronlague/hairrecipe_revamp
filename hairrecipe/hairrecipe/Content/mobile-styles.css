@@ -629,7 +629,7 @@ and (max-device-width : 667px) {
     }
 
     .navmenu-brand {
-        width:50%;
+        width:80%;
         overflow: auto;
     }
 
