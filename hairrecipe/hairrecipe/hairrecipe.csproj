@@ -407,6 +407,7 @@
     <Content Include="Content\images\pc\hawaii\hawaii-instagram.png" />
     <Content Include="Content\images\pc\hawaii\hawaii-thumbs.png" />
     <Content Include="Content\images\pc\hawaii\hawaii-tiles.jpg" />
+    <Content Include="Content\images\pc\homepage\btn-rakuten-shop-now.jpg" />
     <Content Include="Content\images\pc\homepage\cm_bg.jpg" />
     <Content Include="Content\images\pc\homepage\news_bg.jpg" />
     <Content Include="Content\images\pc\homepage\pc-home_slide1c.jpg" />
@@ -453,6 +454,7 @@
     <Content Include="Content\images\pc\kodawari\pc_product-stories_06.jpg" />
     <Content Include="Content\images\pc\product\appleginger\appleginger-shampoo-rnr.png" />
     <Content Include="Content\images\pc\product\appleginger\appleginger-treatment-rnr.png" />
+    <Content Include="Content\images\pc\product\appleginger\banner.jpg" />
     <Content Include="Content\images\pc\product\apricot\apricot-mask-rnr.png" />
     <Content Include="Content\images\pc\product\apricot\apricot-shampoo-rnr.png" />
     <Content Include="Content\images\pc\product\apricot\apricot-treatment-rnr.png" />
@@ -715,6 +717,7 @@
     <Content Include="Content\images\sp\reco\old.jpg" />
     <Content Include="Content\images\sp\sitemap\1.jpg" />
     <Content Include="Content\images\sp\sitemap\arrow.png" />
+    <Content Include="Content\images\sp\slider\sp-btn-rakuten-shop-now.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-1.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-2.jpg" />
     <Content Include="Content\images\sp\slider\sp_slider-3.jpg" />
