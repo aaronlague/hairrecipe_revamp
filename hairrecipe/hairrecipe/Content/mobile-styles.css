@@ -634,8 +634,8 @@ and (max-device-width : 667px) {
     }
 
     .navmenu-brand img {
-        /*height:69px;
-        width:206px;*/
+        height:69px;
+        width:206px;
     }
 
     .navbar-default .navbar-toggle {
