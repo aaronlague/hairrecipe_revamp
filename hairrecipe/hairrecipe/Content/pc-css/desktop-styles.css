@@ -342,6 +342,11 @@ footer .base ul li{
     top: 6px;
 }
 
+#myCarousel .bin.custom-apple-ginger-btn {
+    left: 184px;
+    top:430px;
+}
+
 /*back to top style */
 #back-to-top {
     position: fixed;
