@@ -26,16 +26,6 @@ namespace hairrecipe
             bool isCDNActivated = Convert.ToBoolean(WebConfigurationManager.AppSettings["isCDNActivated"]);
             string CDNActivatedEnvironment = WebConfigurationManager.AppSettings["CDNActivatedEnvironment"];
 
-
-            //if ((urlRequest.Equals("/sp/diagnosis/index.html")) || (urlRequest.Equals("/diagnosis/index.html")))
-            //{
-            //    Context.RewritePath(urlRequest.Replace("index.html", ""));
-            //}
-            //else
-            //{
-            //    Context.RewritePath(urlRequest.Replace(".html", ""));
-            //}
-
             if (Helpers.DeviceHelpers.IsMobile())
             {
                 if (urlRequest.Equals("/sp/diagnosis/index.html"))
@@ -67,47 +57,42 @@ namespace hairrecipe
 
             }
 
-            
-
-            //if (urlRequest.Equals("/index.html"))
-            //{
-            //    Context.RewritePath("/index");
-            //}
-            //else if (urlRequest.Equals("/sp/index.html"))
-            //{
-            //    Context.RewritePath("/sp/index");
-            //}
-            //else if (urlRequest.Equals("/about/index.html"))
-            //{
-            //    Context.RewritePath("/about");
-            //}
-            //else if (urlRequest.Equals("/sp/about/index.html"))
-            //{
-            //    Context.RewritePath("/sp/about");
-            //}
-            //else if (urlRequest.Equals("/sp/diagnosis/q1/abcd.html"))
-            //{
-            //    Context.RewritePath("/sp/diagnosis/q1/abcd");
-            //}
 
 
-            // Paano kumg GoogleBot ang UserAgent?
             Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
 
             if (r.IsMatch(urlRequest))
             {
+
+                //The mobile view
+                DisplayModeProvider.Instance.Modes.Insert(1, new DefaultDisplayMode("mobile")
+                {
+                    ContextCondition = Context => Context.Request.Browser.IsMobileDevice
+                });
+
+                // GoogleBot UserAgent?
                 DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("mobile")
                 {
                     ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
                 });
+
             }
             else
             {
+                // For iPad, display desktop
                 DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
                 {
                     ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
                 });
+
+                // GoogleBot UserAgent?
+                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                {
+                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
+                });
+
             }
+
 
             if (DomainName == CDNActivatedEnvironment)
             { 
@@ -126,32 +111,6 @@ namespace hairrecipe
         {
 
             AreaRegistration.RegisterAllAreas();
-
-            //The Android view
-            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("android")
-            {
-                ContextCondition = Context => Context.Request.Browser.Platform == "Android"
-            });
-
-            //The iPhone view
-            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("iphone")
-            {
-                ContextCondition = Context => Context.Request.Browser.MobileDeviceModel == "iPhone"
-            });
-
-            // Para sa iPad, i-display ang pang-desktop ;-)
-            DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
-            {
-                ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
-            });
-
-            //The mobile view
-            //This has a lower priority than the other two so will only be used by a mobile device
-            //that isn't Android or iPhone
-            DisplayModeProvider.Instance.Modes.Insert(1, new DefaultDisplayMode("mobile")
-            {
-                ContextCondition = Context => Context.Request.Browser.IsMobileDevice
-            });
 
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
