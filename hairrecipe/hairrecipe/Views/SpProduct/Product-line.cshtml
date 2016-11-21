@@ -21,24 +21,24 @@
     {
         <h1 class="bannerTxt">@Model.BannerText</h1>
     }
-    @foreach (var products in Model.Products)
+    @for (int ctr = 0; ctr <= Model.Products.ToArray().Length - 1; ctr++) 
     {
-        @Html.Partial("_productListSp", products);
+        @Html.Partial("_productListSp", Model.Products.ElementAt(ctr));
     }
 
     @if (Model.CustomContent != null)
     {
-        foreach (var customContent in Model.CustomContent)
+        for (int ctr = 0; ctr <= Model.CustomContent.ToArray().Length - 1; ctr++) 
         {
-            @Html.Raw(customContent.HtmlSection.ToString().Replace("[sw]", "sp").LineBreak("[pc-br]"));
+            @Html.Raw(Model.CustomContent.ElementAt(ctr).HtmlSection.ToString().Replace("[sw]", "sp").LineBreak("[pc-br]"));
         }
     }
 
     @if (Model.ComboSets != null)
     {
-        foreach (var ComboSet in Model.ComboSets)
+        for (int ctr = 0; ctr <= Model.ComboSets.ToArray().Length - 1; ctr++)
         {
-            @Html.Partial("_ProductSetBlock.SP", ComboSet);
+            @Html.Partial("_ProductSetBlock.SP", Model.ComboSets.ElementAt(ctr));
         }
     }
 

@@ -12,9 +12,10 @@
 @if (Model != null && Model.Stores != null && Model.Stores.Count > 0)
 {
     <ul >
-        @foreach (var Store in Model.Stores)
+
+        @for (int ctr = 0; ctr <= Model.Stores.ToArray().Length - 1; ctr++) 
         {
-            <li><a href="@Store.URL" store="@Store.StoreKeyword" target="_blank" class="bin-links" ><img src="~/Content/images/bins/@(Store.StoreKeyword).jpg" alt="@Store.StoreName" /></a></li>
+            <li><a href="@Model.Stores.ElementAt(ctr).URL" store="@Model.Stores.ElementAt(ctr).StoreKeyword" target="_blank" class="bin-links" ><img src="~/Content/images/bins/@(Model.Stores.ElementAt(ctr).StoreKeyword).jpg" alt="@Model.Stores.ElementAt(ctr).StoreName" /></a></li>
         }
     </ul>
 }

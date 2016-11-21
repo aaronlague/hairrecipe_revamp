@@ -28,9 +28,10 @@
                     <li><a href="#cm5" class="gaca-btn" gaca="sp_hairrepi_20161001_cm_webmove">WEB限定ムービー</a></li>
                 </ul>
             </div>
-            @foreach (var item in Model)
+
+            @for (int ctr = 0; ctr <= Model.ToArray().Length - 1; ctr++)
             {
-                @Html.Partial("_videoListSp", item);
+                @Html.Partial("_videoListSp", Model.ElementAt(ctr));
             }
 
             <div class="cm-lineup-one text-center">

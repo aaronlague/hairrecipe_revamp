@@ -52,14 +52,14 @@
                 {
                     <div class="additives">
                         <ul class="columns @Html.Raw(Model.Columns.Count > 1 ? "multi" : "solo")">
-                            @foreach (var column in Model.Columns)
+                            @for (int ctr = 0; ctr <= Model.Columns.ToArray().Length - 1; ctr++)
                             {
                                 <li class="column">
                                     <ul class="phrases">
-                                        <li class="phrase-title">@column.Header.LineBreak("[pc-br]")</li>
-                                        @foreach (var phrase in column.Phrases)
+                                        <li class="phrase-title">@Model.Columns.ElementAt(ctr).Header</li>
+                                        @for (int ctri = 0; ctri <= Model.Columns.ElementAt(ctr).Phrases.ToArray().Length - 1; ctri++)
                                         {
-                                            <li class="phrase">@phrase.Text.LineBreak("[pc-br]")</li>
+                                            <li class="phrase">@Html.Raw(Model.Columns.ElementAt(ctr).Phrases.ElementAt(ctri).Text.LineBreak("[sp-br]"))</li>
                                         }
                                     </ul>
                                 </li>

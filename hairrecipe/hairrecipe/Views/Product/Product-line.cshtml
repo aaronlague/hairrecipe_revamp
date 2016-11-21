@@ -23,34 +23,35 @@
     {
         <h1 class="bannerTxt">@Model.BannerText</h1>
     }
-    @foreach (var products in Model.ProductListMain)
+    
+    @for (int ctr = 0; ctr <= Model.ProductListMain.ToArray().Length - 1; ctr++)
     {
-        @Html.Partial("_ProductBlock", products);
+        @Html.Partial("_ProductBlock", Model.ProductListMain.ElementAt(ctr));
     }
 
     @if (Model.ProductListRefill != null && Model.ProductListRefill.Count > 0)
     {
         <div class="refill">
             <ul class="refill-ul">
-                @foreach (var products in Model.ProductListRefill)
+                @for (int ctr = 0; ctr <= Model.ProductListRefill.ToArray().Length - 1; ctr++)
                 {
-                    @Html.Partial("_ProductRefillBlock", products);
+                    @Html.Partial("_ProductRefillBlock", Model.ProductListRefill.ElementAt(ctr));
                 }
             </ul>
         </div>
     }   
     @if (Model.CustomContent != null)
     {
-        foreach (var customContent in Model.CustomContent)
+        for (int ctr = 0; ctr <= Model.CustomContent.ToArray().Length - 1; ctr++)
         {
-            @Html.Raw(customContent.HtmlSection.LineBreak("[pc-br]").ToString().Replace("[sw]","pc"));
+            @Html.Raw(Model.CustomContent.ElementAt(ctr).HtmlSection.LineBreak("[pc-br]").ToString().Replace("[sw]", "pc"));
         }
     }
     @if (Model.ComboSets != null)
     {
-        foreach (var ComboSet in Model.ComboSets)
+        for (int ctr = 0; ctr <= Model.ComboSets.ToArray().Length - 1; ctr++)
         {            
-            @Html.Partial("_ProductSetBlock", ComboSet);
+            @Html.Partial("_ProductSetBlock", Model.ComboSets.ElementAt(ctr));
         }
     }
 
