@@ -7,13 +7,13 @@
     @if ( Model.ProductSets != null && Model.ProductSets.Count > 0)
     {
     <ul>
-        @foreach (var ProductSet in Model.ProductSets)
+        @for (int ctr = 0; ctr <= Model.ProductSets.ToArray().Length - 1; ctr++) {
         {
             <li>
-                <p>@Html.Raw(ProductSet.JpTitle1)</p>
-                <p>[@Html.Raw(ProductSet.JpTitle2)]</p>
+                <p>@Html.Raw(Model.ProductSets.ElementAt(ctr).JpTitle1)</p>
+                <p>[@Html.Raw(Model.ProductSets.ElementAt(ctr).JpTitle2)]</p>
                 <div class="bin">
-                    <a class="btn to-shop-btn gaca-btn" binbtngaca="@ProductSet.BINStoreGaca" eventlabel="external" bineventlabel="external" gaca="@ProductSet.GACA" binid="@ProductSet.BINID">TO SHOP</a>
+                    <a class="btn to-shop-btn gaca-btn" binbtngaca="@Model.ProductSets.ElementAt(ctr).BINStoreGaca" eventlabel="external" bineventlabel="external" gaca="@Model.ProductSets.ElementAt(ctr).GACA" binid="@Model.ProductSets.ElementAt(ctr).BINID">TO SHOP</a>
                 </div>
             </li>
         }

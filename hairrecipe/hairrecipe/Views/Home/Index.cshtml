@@ -3,8 +3,8 @@
     ViewBag.Title = "ヘアレシピ（HAIR RECIPE）公式サイト｜髪にごちそう";
     ViewBag.Description = "ヘアレシピ（HAIR RECIPE）公式サイト。ノン シリコン シャンプー・トリートメント・ヘアオイル（洗い流さないトリートメント）など、髪にやさしいヘアケアのレシピをご紹介。";
     Layout = "~/Views/Shared/_Layout.cshtml";
-    var DualObj = new hairrecipe.data.Entities.Home.HomeDualObj();
-    DualObj = Model;
+    //var DualObj = new hairrecipe.data.Entities.Home.HomeDualObj();
+    //DualObj = Model;
     ViewData["GACAKeyword"] = "top";
 }
 
@@ -22,9 +22,9 @@
             <h2>Products</h2>
             <img src="/Content/images/pc/homepage/spoon-title.png">
         </div>
-        @foreach (var item in DualObj.HomeProducts)
+        @for (int ctr = 0; ctr <= Model.HomeProducts.ToArray().Length - 1; ctr++)
         {
-            @Html.Partial("_homeProductListingPC", item)
+            @Html.Partial("_homeProductListingPC", Model.HomeProducts.ElementAt(ctr))
         }
 
     </div>
@@ -75,7 +75,7 @@
 
         @for (int ctr = 0; ctr <= 5; ctr++)
         {
-            @Html.Partial("_infoListPc", DualObj.InfoList.ElementAt(ctr))
+            @Html.Partial("_infoListPc", Model.InfoList.ElementAt(ctr))
         }
     <div class="btn-section col-lg-1"><a href="/info" class="home-btn gaca-btn" gaca="pc_hairrepi_20161001_top_news_other">ARCHIVE</a></div>
     </div>
@@ -91,7 +91,7 @@
 
             @for (int ctr = 0; ctr <= 3; ctr++)
             {
-                @Html.Partial("_videoHomeList", DualObj.Videos.ElementAt(ctr))
+                @Html.Partial("_videoHomeList", Model.Videos.ElementAt(ctr))
             }
         <div class="btn-section col-lg-1"><a href="/cm" class="home-btn gaca-btn" gaca="pc_hairrepi_20161001_top_cm_other">Watch other Movies</a></div>
     </div>

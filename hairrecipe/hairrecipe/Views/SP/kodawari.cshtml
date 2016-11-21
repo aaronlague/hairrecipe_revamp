@@ -27,8 +27,8 @@
         </ol>
     </div>
     <div class="product-stories-content">
-        @foreach (var item in Model) {      
-            @Html.Partial("_ProductStories", item)
+        @for (int ctr = 0; ctr <= Model.ToArray().Length - 1; ctr++) { 
+            @Html.Partial("_ProductStories", Model.ElementAt(ctr))
         }
     </div>
     <div class="product-lineup-content">

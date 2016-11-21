@@ -19,9 +19,9 @@
     </div>
 
     <div class="container">
-        @foreach (var item in Model)
+        @for (int ctr = 0; ctr <= Model.ToArray().Length - 1; ctr++)
         {
-            @Html.Partial("_infoListSp", item);
+            @Html.Partial("_infoListSp", Model.ElementAt(ctr));
         }
     </div>
 </div>

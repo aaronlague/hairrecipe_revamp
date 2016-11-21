@@ -27,9 +27,9 @@
             <li><a href="#cm5" class="japanese gaca-btn" gaca="[platform]_hairrepi_20161001_cm_webmove"><span class="english">WEB</span>限定ムービー<br /><img src="~/Content/images/pc/down-arrow.png" /></a></li>
         </ul>
     </div>
-    @foreach (var item in Model)
+    @for (int ctr = 0; ctr <= Model.ToArray().Length - 1; ctr++)
     {
-        @Html.Partial("_videoListPC", item);
+        @Html.Partial("_videoListPC", Model.ElementAt(ctr));
     }
     <div class="recipe text-center">
         <h2>HAIR RECIPE LINEUP</h2>

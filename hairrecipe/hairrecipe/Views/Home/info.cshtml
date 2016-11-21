@@ -23,9 +23,9 @@
 </div>
 <div class="wall-hp">
     <div class="row content-news">
-        @foreach (var item in Model)
+        @for (int ctr = 0; ctr <= Model.ToArray().Length - 1; ctr++)
         {
-            @Html.Partial("_infoListPc", item);
+            @Html.Partial("_infoListPc", Model.ElementAt(ctr));
         }
     </div>
 </div>
