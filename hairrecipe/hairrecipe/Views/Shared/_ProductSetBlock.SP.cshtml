@@ -7,7 +7,7 @@
     @if ( Model.ProductSets != null && Model.ProductSets.Count > 0)
     {
     <ul>
-        @for (int ctr = 0; ctr <= Model.ProductSets.ToArray().Length - 1; ctr++) {
+        @for (int ctr = 0; ctr <= Model.ProductSets.ToArray().Length - 1; ctr++)
         {
             <li>
                 <p>@Html.Raw(Model.ProductSets.ElementAt(ctr).JpTitle1)</p>
