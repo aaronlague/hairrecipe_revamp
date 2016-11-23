@@ -59,40 +59,33 @@ namespace hairrecipe
 
 
 
-            Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
-
-            if (r.IsMatch(urlRequest))
+            if (DisplayModeProvider.Instance != null)
             {
+                Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
 
-                //The mobile view
-                DisplayModeProvider.Instance.Modes.Insert(1, new DefaultDisplayMode("mobile")
+                if (r.IsMatch(urlRequest))
                 {
-                    ContextCondition = Context => Context.Request.Browser.IsMobileDevice
-                });
-
-                // GoogleBot UserAgent?
-                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("mobile")
+                    // GoogleBot UserAgent?
+                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("mobile")
+                    {
+                        ContextCondition = (context => context.Request.UserAgent != null && context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0)
+                    });
+                }
+                else
                 {
-                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
-                });
+                    // For iPad, display desktop
+                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                    {
+                        ContextCondition = (context => context.Request.UserAgent != null && context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0)
+                    });
 
+                    // GoogleBot UserAgent?
+                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                    {
+                        ContextCondition = (context => context.Request.UserAgent != null && context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
+                    });
+                }
             }
-            else
-            {
-                // For iPad, display desktop
-                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
-                {
-                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0),
-                });
-
-                // GoogleBot UserAgent?
-                DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
-                {
-                    ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
-                });
-
-            }
-
 
             if (DomainName == CDNActivatedEnvironment)
             { 
