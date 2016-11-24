@@ -59,7 +59,7 @@ namespace hairrecipe
 
 
 
-            if (DisplayModeProvider.Instance != null)
+            if (DisplayModeProvider.Instance != null && HttpContext.Current.Request.UserAgent != null)
             {
                 Regex r = new Regex("/sp/", RegexOptions.IgnoreCase);
 
@@ -73,16 +73,16 @@ namespace hairrecipe
                 }
                 else
                 {
-                    // For iPad, display desktop
-                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                    // GoogleBot UserAgent?
+                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode()
                     {
-                        ContextCondition = (context => context.Request.UserAgent != null && context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0)
+                        ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("Googlebot", StringComparison.OrdinalIgnoreCase) >= 0)
                     });
 
-                    // GoogleBot UserAgent?
-                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode("")
+                    // For iPad, display desktop
+                    DisplayModeProvider.Instance.Modes.Insert(0, new DefaultDisplayMode()
                     {
-                        ContextCondition = (context => context.Request.UserAgent != null && context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
+                        ContextCondition = (context => context.GetOverriddenUserAgent().IndexOf("iPad", StringComparison.OrdinalIgnoreCase) >= 0)
                     });
                 }
             }
@@ -102,9 +102,7 @@ namespace hairrecipe
 
         protected void Application_Start()
         {
-
             AreaRegistration.RegisterAllAreas();
-
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
