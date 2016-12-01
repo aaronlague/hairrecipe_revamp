@@ -1056,6 +1056,8 @@
     <Content Include="Views\Home\hawaii.cshtml" />
     <Content Include="Views\Sp\hawaii.cshtml" />
     <Content Include="Views\Shared\_LayoutIpad.Mobile.cshtml" />
+    <Content Include="Views\Shared\_sliderIpad.Mobile.cshtml" />
+    <Content Include="Views\Shared\_navigationIpad.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Sp\sitemap.cshtml" />
