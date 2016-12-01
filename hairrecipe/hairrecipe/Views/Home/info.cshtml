@@ -3,7 +3,7 @@
     ViewBag.Title = "News - 新発売シャンプー・イベント情報 | ヘアレシピ";
     ViewBag.Description = "ヘアレシピの最新ニュースをご覧ください。こちらで新発売シャンプーやイベント情報などがご覧いただけます。";
     ViewData["GACAKeyword"] = "news";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -14,7 +14,16 @@
 
 
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-news">
     @*<img src="~/Content/images/pc/info/banner-news.jpg" />
     <h1>NEWS</h1>*@

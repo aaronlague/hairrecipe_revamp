@@ -2,7 +2,7 @@
     ViewBag.Title = "髪の毛に優しいシャンプー ヘアレシピのこだわり | ヘアレシピ";
     ViewBag.Description = "栄養士とヘアエキスパートの共同開発によって生まれたヘアケアブランド『ヘアレシピ（HAIR RECIPE)』の髪の毛に優しいシャンプーを実現するためにこだわった５つのポイントをご紹介しています。";
     ViewData["GACAKeyword"] = "prpduct-stories";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -11,7 +11,16 @@
     <link rel="canonical" href="http://hairrecipe.jp/kodawari">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/kodawari">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-kodawari">
     @*<img src="~/Content/images/pc/kodawari/banner-kodawari.jpg" />
     <h1>PRODUCT STORIES</h1>*@

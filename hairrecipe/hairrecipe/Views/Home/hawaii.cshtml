@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "hawaii";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -9,7 +9,16 @@
     <link rel="canonical" href="http://hairrecipe.jp/hawaii">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/hawaii">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-hawaii">
     <img src="/Content/images/pc/hawaii/banner-hawaii.jpg" alt="">
 </div>

@@ -3,7 +3,7 @@
     ViewBag.Title = "ヘアレシピ CM 動画一覧 | ヘアレシピ";
     ViewBag.Description = "ヘアレシピのTV CMやWEB限定イメージムービー、ヘアレシピシャンプーの使い方などの各種の動画をご覧ください。髪に、はじめてのごちそう。ヘアレシピ（HAIR RECIPE）";
     ViewData["GACAKeyword"] = "cm";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -12,7 +12,16 @@
     <link rel="canonical" href="http://hairrecipe.jp/cm">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/cm">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-cm">
     @*<img src="~/Content/images/pc/cm/banner-cm.jpg" />
     <h1>CM & MOVIE</h1>*@
