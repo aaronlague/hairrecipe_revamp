@@ -44,10 +44,10 @@
 </head>
 <body>
     <div class="container-hairrecipe">
-        @{Html.RenderPartial("_navigation.cshtml", "");}
+        @{Html.RenderPartial("_navigationIpad", "");}
         @if (checkController == "Home" && checkAction == "Index")
         {
-            @Html.Partial("_slider.cshtml", "")
+            @Html.Partial("_sliderIpad.cshtml", "")
         }
         @RenderBody()
 
