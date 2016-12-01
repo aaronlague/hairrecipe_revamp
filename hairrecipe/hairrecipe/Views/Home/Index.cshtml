@@ -2,7 +2,7 @@
 @{
     ViewBag.Title = "ヘアレシピ（HAIR RECIPE）公式サイト｜髪にごちそう";
     ViewBag.Description = "ヘアレシピ（HAIR RECIPE）公式サイト。ノン シリコン シャンプー・トリートメント・ヘアオイル（洗い流さないトリートメント）など、髪にやさしいヘアケアのレシピをご紹介。";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
     //var DualObj = new hairrecipe.data.Entities.Home.HomeDualObj();
     //DualObj = Model;
     ViewData["GACAKeyword"] = "top";
@@ -13,6 +13,17 @@
     <link href="~/Content/pc-css/index.css" rel="stylesheet" />
     <link rel="canonical" href="http://hairrecipe.jp">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp">
+}
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    
 }
 
 <div class="row wall-hp" id="A">
