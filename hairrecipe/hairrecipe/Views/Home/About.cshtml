@@ -2,7 +2,7 @@
     ViewBag.Title = "このサイトについて | ヘアレシピ";
     ViewBag.Description = "ヘアレシピのサイトご利用についてのご案内です。髪に、はじめてのごちそう。ヘアレシピ（HAIR RECIPE）";
     ViewData["GACAKeyword"] = "your-recipe";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -11,7 +11,16 @@
     <link rel="canonical" href="http://hairrecipejp/about">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/about">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-about">
     @*<img src="~/Content/images/pc/about/banner-about.jpg" />
     <h1>ABOUT THIS SITE</h1>*@

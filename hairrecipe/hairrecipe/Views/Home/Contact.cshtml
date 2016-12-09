@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "お問い合わせ | ヘアレシピ";
     ViewBag.Description = "ヘアレシピの製品やサイトについてご質問がございましたら、こちらからお問い合わせください。髪に、はじめてのごちそう。ヘアレシピ（HAIR RECIPE）";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 @section customStyles
@@ -10,7 +10,16 @@
     <link rel="canonical" href="http://hairrecipe.jp/contact">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/contact">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-contact">
     @*<img src="~/Content/images/pc/contact/banner-contact.jpg" />
     <h1>Contact</h1>*@

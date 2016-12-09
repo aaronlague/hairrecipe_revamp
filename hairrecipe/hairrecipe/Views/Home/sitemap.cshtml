@@ -1,6 +1,6 @@
 ﻿@{
     ViewBag.Title = "サイトマップ | ヘアレシピ";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["GACAKeyword"] = "sitemap";
     ViewBag.Description = "ヘアレシピのサイトマップです。髪に、はじめてのごちそう。ヘアレシピ（HAIR RECIPE）";
 }
@@ -11,7 +11,16 @@
     <link rel="canonical" href="http://hairrecipejp/sitemap/indexhtml">
     <link rel="alternate" media="handheld" href="http://hairrecipe.jp/sp/sitemap">
 }
-
+@{
+    var userAgent = HttpContext.Current.Request.UserAgent.ToLower();
+    
+    if (userAgent.Contains("ipad;"))
+    {
+        Layout = "~/Views/Shared/_LayoutIpad.Mobile.cshtml";
+    } else {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
 <div class="banner-about">
     <img src="~/Content/images/pc/sitemap/banner-sitemap.jpg" />
     <h1>Sitemap</h1>
