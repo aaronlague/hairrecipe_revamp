@@ -48,11 +48,8 @@
 	"InfoNews": "新メニュー、アップルジンジャー濃密保湿あたたかレシピ登場…",
 	"InfoNews2": "新メニュー、アップルジンジャー濃密保湿あたたかレシピ登場！乾燥しやすい冬の髪に、高濃度コンディショニング成分で濃密保湿。たっぷりうるおい髪で冬を乗り切りましょう！",
 	"InfoClass": "wood-smooth",
-	"InfoLink": "",
+	"InfoLink": "/product/apple-ginger",
 	"gaca" : "[platform]_hairrepi_20161001_news_news2",
-	"CustomBinIdentifier": "custom-apple-ginger-hp",
-	"CustomBinContainer": "",
-	"CustomBinBtnClass": "",
  	"alt" : "冬の髪に、旬のレシピいかがですか？ 売り切れ御礼！おかげさまで、完売しました。"},
 
 {  
@@ -63,7 +60,7 @@
 	"InfoNews": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジ…",
 	"InfoNews2": "夏の疲れた髪に、ごちそうエネルギーをパワーチャージできるジュースパックに入ったシャンプー＆トリートメントセットを数量限定で発売！",
 	"InfoClass": "stitch-m",
-	"InfoLink": "/powercharge",
+	"InfoLink": "",
 	"gaca" : "[platform]_hairrepi_20161001_news_news3",
  	"alt" : "数量限定発売！夏の髪に、ごちそう。パワーチャージセット発売！"},
 
