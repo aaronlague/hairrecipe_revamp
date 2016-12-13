@@ -357,5 +357,21 @@
                 url :  'http://lohaco.jp/product/3362952/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
             }       
         ]
+    },
+	{
+        id : 'custom-info-bin',
+        productName : 'Custom Info Bin',
+        stores :  [
+            {
+                storeName : 'Amazon',
+                storeKeyword : 'amazon',
+                url :  'https://www.amazon.co.jp/dp/B00X51IAR6/?ie=UTF8&camp=247&creative=1211&linkCode=ur2&tag=pgjp_angelica-22'
+            },
+            {
+                storeName : 'Lohaco',
+                storeKeyword : 'lohaco',
+                url :  'http://lohaco.jp/product/1654751/?sc_e=zb_pmkr_aas_bpg_chrc_dps'
+            }            
+        ]
     }
 ]

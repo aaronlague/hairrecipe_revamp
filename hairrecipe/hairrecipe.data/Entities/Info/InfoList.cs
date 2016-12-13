@@ -22,5 +22,6 @@ namespace hairrecipe.data.Entities.Info
         public string CustomBinIdentifier { get; set; }
         public string CustomBinContainer { get; set;  }
         public string CustomBinBtnClass { get; set; }
+        public string binStoreGaca { get; set; }
     }
 }
