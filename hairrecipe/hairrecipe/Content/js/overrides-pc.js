@@ -4,6 +4,7 @@
         $("a[binid^='custom-hawaii-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "internal", "pc_hairrepi_20161031_top_hawaii_2"])');
         $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "pc_hairrepi_20161031_top_present"])');
         $('.main-content a[binid^="custom-apple-ginger-hp"] img').css('width', '100%').unwrap();
+        $('.main-content a[binid^="custom-news3-hp"] img').css('width', '100%').unwrap();
     }
 
     if (window.location.pathname == "/info") {
