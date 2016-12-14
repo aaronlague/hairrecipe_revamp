@@ -11,6 +11,10 @@
         $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "pc_hairrepi_20161107_present"])');
         $('.info-content a[binid^="custom-apple-ginger-hp"] img').css('width', '100%').unwrap();
         $('.info-content a[binid^="custom-news3-hp"] img').css('width', '100%').unwrap();
+
+        $("a[binid^='custom-info-bin']").attr('binbtngaca', '[platform]_hairrepi_20150618_news_[store]');
+
+
     }
 
     if ((window.location.pathname == "/") || (window.location.pathname == "/info")) {
