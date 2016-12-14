@@ -23,10 +23,13 @@
         $("a[binid^='custom-cosme-hp']").attr('onclick', 'typeof _gaq != "undefined" && _gaq.push(["_trackEvent", "link", "external", "sp_hairrepi_20161107_present"])');
 
         $('.info-content a[binid^="custom-apple-ginger-hp"] img').css('width', '100%').unwrap();
-
+        
+        
+        $("a[binid^='custom-info-bin']").attr('binbtngaca', '[platform]_hairrepi_20150618_news_[store]');
     }
 
     if ((window.location.pathname == "/sp") || (window.location.pathname == "/sp/info")) {
         $("a[binid^='custom-cosme-hp']").attr('target', '_blank');
+        $("a[binid^='custom-info-bin']").attr('href', 'javascript:void(0)');
     }
 })
