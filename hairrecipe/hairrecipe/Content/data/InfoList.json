@@ -95,33 +95,6 @@
     "gaca" : "[platform]_hairrepi_20161001_news_news5",
 	"InfoLink": "/product/booster",
 	"alt" : ""
-},
-
-{  
-    "InfoId": 8,
-	"InfoImage": "info-07.jpg",  
-    "InfoTitle": "限定コラボ",  
-    "InfoDate": "2015.03.10",
-	"InfoNews": "グラノーラ専門店<span>GANORI</span>とヘアレシピがコラボ！「ヘアレシピ…",
-	"InfoNews2": "グラノーラ専門店GANORIとヘアレシピがコラボ！「ヘアレシピミックス」1週間限定発売！",
-	"InfoClass": "wood-smooth",
-    "gaca" : "[platform]_hairrepi_20161001_news_news6",
-	"InfoLink": "/ganori",
-	"alt" : ""
-},
-
-{  
-    "InfoId": 8,
-	"InfoImage": "info-08.jpg",  
-    "InfoTitle": "イベント",  
-    "InfoDate": "2014.11.24",
-	"InfoNews": "六本木ヒルズで開催された商品発売のイベントレポートをチェッ…",
-	"InfoNews2": "六本木ヒルズで開催された商品発売記念のイベントレポートを紹介！",
-	"InfoClass": "stitch-m",
-    "gaca" : "[platform]_hairrepi_20161001_news_news7",
-	"InfoLink": "/market/after",
-	"alt" : "心に、体に、髪に、ごちそう。HAIR RECIPE Market"
-
 }
 
 ]
